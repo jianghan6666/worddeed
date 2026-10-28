@@ -1,0 +1,413 @@
+WEBVTT
+
+NOTE Sentence windows use measured synthesized WAV sample counts.
+Picture boundaries round to nearest frame, ties upward.
+Captions are also burned into the MP4.
+
+N1
+00:00:01.208 --> 00:00:10.292
+This project studies how managerial speech relates to firm behavior, with CEO risk preference as the first measurement setting.
+
+N2
+00:00:10.333 --> 00:00:15.708
+Speech may express a manager's perspective, but it also serves an audience.
+
+N3
+00:00:15.750 --> 00:00:21.542
+Research and development spending reflects choices, opportunities, and constraints.
+
+N4
+00:00:21.583 --> 00:00:26.083
+A model can learn an association between these two sources.
+
+N5
+00:00:26.125 --> 00:00:31.125
+Whether its prediction measures risk preference requires separate evidence.
+
+N6
+00:00:31.167 --> 00:00:41.625
+This walkthrough explains the four existing stages, their assembled agent connections, and what the offline demonstration actually establishes.
+
+N7
+00:00:41.667 --> 00:00:46.583
+The scientific packages and their received results already exist.
+
+N8
+00:00:46.625 --> 00:00:51.833
+The new work connects them through stage adapters and a resumable workflow.
+
+N9
+00:00:51.875 --> 00:01:01.792
+During this assembly, no fresh scientific screening, empirical model training, finance reconstruction, or Stata estimation was executed.
+
+N10
+00:01:01.833 --> 00:01:06.667
+The earlier eight-topic agent demonstration remains available.
+
+N11
+00:01:06.708 --> 00:01:12.958
+The connected demonstration uses three invented topics and scripted model replies.
+
+N12
+00:01:13.000 --> 00:01:22.917
+These distinctions matter: received results, implemented interfaces, and newly executed empirical evidence are different claims.
+
+N13
+00:01:22.958 --> 00:01:29.458
+Step one connects the saved topic catalogue and the delivered matrix of topic densities.
+
+N14
+00:01:29.500 --> 00:01:33.833
+The study fixes three hundred and fifty-four topic columns.
+
+N15
+00:01:33.875 --> 00:01:40.917
+The adapter checks the catalogue, matrix dimensions, and model identity when inference is requested.
+
+N16
+00:01:40.958 --> 00:01:45.708
+Optional inference reuses the existing topic-model code.
+
+N17
+00:01:45.750 --> 00:01:51.083
+For the saved matrix, historical row ordering is taken from the delivery.
+
+N18
+00:01:51.125 --> 00:01:56.500
+This assembly does not independently authenticate that original ordering.
+
+N19
+00:01:56.542 --> 00:02:00.208
+It also retains the supplied sentiment input.
+
+N20
+00:02:00.250 --> 00:02:04.875
+It does not create sentiment measurements for a new corpus.
+
+N21
+00:02:04.917 --> 00:02:08.750
+Fresh screening begins with three independent readers.
+
+N22
+00:02:08.792 --> 00:02:15.292
+Each reader labels the complete descriptor catalogue for binary relevance to risk preference.
+
+N23
+00:02:15.333 --> 00:02:19.042
+The readers do not divide the topics between them.
+
+N24
+00:02:19.083 --> 00:02:24.542
+Each makes an initial judgment about all three hundred and fifty-four topics.
+
+N25
+00:02:24.583 --> 00:02:30.958
+All three initial responses must be sealed before any reader receives source passages.
+
+N26
+00:02:31.000 --> 00:02:34.667
+This is the barrier between the two reading stages.
+
+N27
+00:02:34.708 --> 00:02:40.667
+The fresh-reader default is GPT six Astra at extra-high reasoning effort.
+
+N28
+00:02:40.708 --> 00:02:46.292
+These defaults were not validated with live calls during assembly.
+
+N29
+00:02:46.333 --> 00:02:56.042
+In stage B, each reader continues its own history through eighteen review pages containing one thousand and sixty-two source passages.
+
+N30
+00:02:56.083 --> 00:03:02.208
+Each sees its own initial labels and the source material, without the other readers' votes.
+
+N31
+00:03:02.250 --> 00:03:05.792
+Initial judgments remain separately available.
+
+N32
+00:03:05.833 --> 00:03:13.458
+The original toolkit exports a two-of-three majority for relevance, alongside reasons and minority votes.
+
+N33
+00:03:13.500 --> 00:03:16.333
+Confidence does not weight the votes.
+
+N34
+00:03:16.375 --> 00:03:25.250
+The delivered primary selection contains three hundred and twenty-one topics from Astra, extra-high effort, repetition one.
+
+N35
+00:03:25.292 --> 00:03:30.417
+Its use does not establish superiority over other trials.
+
+N36
+00:03:30.458 --> 00:03:37.708
+Step three passes the selected topic identifiers to the supplied input builder and training script.
+
+N37
+00:03:37.750 --> 00:03:42.583
+The predictors are selected topic features and aggregate sentiment.
+
+N38
+00:03:42.625 --> 00:03:48.292
+The outcome is research and development spending divided by total assets.
+
+N39
+00:03:48.333 --> 00:03:54.708
+The original Ridge and XGBoost implementations retain their seeds and tuning grids.
+
+N40
+00:03:54.750 --> 00:03:59.083
+Firm and CEO connected groups define five folds.
+
+N41
+00:03:59.125 --> 00:04:04.625
+Each out-of-fold score comes from a model trained outside its held-out group.
+
+N42
+00:04:04.667 --> 00:04:08.417
+Firms that share a CEO remain in the same group.
+
+N43
+00:04:08.458 --> 00:04:12.333
+The saved topic representation remains fixed.
+
+N44
+00:04:12.375 --> 00:04:18.167
+These are contemporaneous predictions, rather than forecasts of future behavior.
+
+N45
+00:04:18.208 --> 00:04:26.083
+The implemented method does not first collapse topics into the earlier blueprint’s scalar narrative measure.
+
+N46
+00:04:26.125 --> 00:04:34.375
+The supplied target replaces missing research and development spending with zero, provided that total assets are positive.
+
+N47
+00:04:34.417 --> 00:04:39.875
+Rows with missing or nonpositive assets do not enter model training.
+
+N48
+00:04:39.917 --> 00:04:42.958
+They still receive held-out predictions.
+
+N49
+00:04:43.000 --> 00:04:48.458
+Selected topic densities use a centered log-ratio transformation.
+
+N50
+00:04:48.500 --> 00:04:52.792
+Topic features and aggregate sentiment are standardized.
+
+N51
+00:04:52.833 --> 00:04:57.125
+Imputation and scaling are fitted within training data.
+
+N52
+00:04:57.167 --> 00:05:03.917
+Target winsorization also uses training data, and tuning stays inside the training folds.
+
+N53
+00:05:03.958 --> 00:05:07.417
+Missing spending can mean missing disclosure.
+
+N54
+00:05:07.458 --> 00:05:15.458
+Consequently, the prediction can reflect reporting and industry patterns as well as managerial behavior.
+
+N55
+00:05:15.500 --> 00:05:21.708
+Step four receives the newly generated score file through the original local matcher.
+
+N56
+00:05:21.750 --> 00:05:26.250
+The original rich identity panel remains the matching source.
+
+N57
+00:05:26.292 --> 00:05:30.417
+The adapter checks panel keys and fold identities.
+
+N58
+00:05:30.458 --> 00:05:36.792
+Negative out-of-fold predictions are clipped to zero, then multiplied by one hundred.
+
+N59
+00:05:36.833 --> 00:05:43.333
+This score is in percentage points of predicted research and development relative to assets.
+
+N60
+00:05:43.375 --> 00:05:45.958
+It is not a percentile rank.
+
+N61
+00:05:46.000 --> 00:05:50.708
+Model preparation retains the same twenty-five formulas.
+
+N62
+00:05:50.750 --> 00:05:54.750
+It is a separate stage from estimation in Stata.
+
+N63
+00:05:54.792 --> 00:06:01.375
+A completed preparation stage means that model inputs and the estimation script are ready.
+
+N64
+00:06:01.417 --> 00:06:05.375
+It does not mean regressions have been run.
+
+N65
+00:06:05.417 --> 00:06:09.792
+The downstream outcome is whether the firm pays dividends.
+
+N66
+00:06:09.833 --> 00:06:13.875
+The supplied specifications use logit models.
+
+N67
+00:06:13.917 --> 00:06:22.292
+Nine replication specifications accompany sixteen score specifications, for twenty-five formulas in total.
+
+N68
+00:06:22.333 --> 00:06:32.625
+The score specifications enter Ridge and XGBoost separately, alongside financial and compensation controls and industry and year effects.
+
+N69
+00:06:32.667 --> 00:06:39.917
+One set includes actual research and development relative to assets and its missingness indicator.
+
+N70
+00:06:39.958 --> 00:06:42.292
+The other omits both.
+
+N71
+00:06:42.333 --> 00:06:47.958
+These comparisons examine conditional association with dividend payment.
+
+N72
+00:06:48.000 --> 00:06:53.750
+They do not by themselves establish causality or construct validity.
+
+N73
+00:06:53.792 --> 00:07:00.458
+The coordinator has four named tools: get status, run stage, read result, and finish.
+
+N74
+00:07:00.500 --> 00:07:03.917
+These connect the model to the shared workflow.
+
+N75
+00:07:03.958 --> 00:07:07.042
+The dispatcher enforces stage order.
+
+N76
+00:07:07.083 --> 00:07:14.083
+Both direct execution and agent execution use the same saved state and artifact checks.
+
+N77
+00:07:14.125 --> 00:07:19.250
+A coordinator's completion claim cannot complete an unfinished stage.
+
+N78
+00:07:19.292 --> 00:07:25.708
+The saved outputs determine completion, and completed artifacts are checked again on resume.
+
+N79
+00:07:25.750 --> 00:07:32.000
+The coordinator cannot issue arbitrary commands or redefine the scientific method.
+
+N80
+00:07:32.042 --> 00:07:39.167
+Constructs, specifications, and the interpretation of evidence remain research decisions.
+
+N81
+00:07:39.208 --> 00:07:45.083
+The offline example uses two fabricated rows and three invented topics.
+
+N82
+00:07:45.125 --> 00:07:49.083
+Its selection contains topic one and topic three.
+
+N83
+00:07:49.125 --> 00:07:53.708
+For the first row, the selected weights sum to zero point seven.
+
+N84
+00:07:53.750 --> 00:07:57.125
+For the second, they sum to zero point eight.
+
+N85
+00:07:57.167 --> 00:08:02.250
+Those toy scores are written to a file and carried into the step four input.
+
+N86
+00:08:02.292 --> 00:08:08.250
+They are wiring arithmetic, with no trained-model or scientific interpretation.
+
+N87
+00:08:08.292 --> 00:08:17.083
+The saved summary states that this is a demonstration, with no live model calls, no training, and no estimation.
+
+N88
+00:08:17.125 --> 00:08:22.583
+The connected demonstration was executed and then resumed for this walkthrough.
+
+N89
+00:08:22.625 --> 00:08:26.167
+Both runs returned demonstration complete.
+
+N90
+00:08:26.208 --> 00:08:32.292
+State, event history, stage requests, and results provide a record of the connection.
+
+N91
+00:08:32.333 --> 00:08:38.292
+Resume verifies completed artifacts rather than relying on a narrative assurance.
+
+N92
+00:08:38.333 --> 00:08:44.250
+Fresh screening also preserves reader requests, first responses, and sealed pages.
+
+N93
+00:08:44.292 --> 00:08:49.875
+Invalid or unresolved attempts remain visible for explicit recovery.
+
+N94
+00:08:49.917 --> 00:08:55.833
+The adapter does not silently repair labels or repeat uncertain first requests.
+
+N95
+00:08:55.875 --> 00:09:01.917
+This is a property of the workflow, not a guarantee of scientific correctness.
+
+N96
+00:09:01.958 --> 00:09:08.875
+The assembly's recorded checks cover handoffs, reader independence, stage ordering, and recovery.
+
+N97
+00:09:08.917 --> 00:09:12.917
+They use fixtures and mocked scientific execution.
+
+N98
+00:09:12.958 --> 00:09:18.833
+The original scientific packages and their results remain distinct from these checks.
+
+N99
+00:09:18.875 --> 00:09:25.000
+Reproduction requires the complete assets and the specified scientific runtimes.
+
+N100
+00:09:25.042 --> 00:09:35.833
+Prediction of research and development spending does not by itself establish psychological risk preference, causality, or superiority over other measures.
+
+N101
+00:09:35.875 --> 00:09:41.167
+The current contribution is a connected and inspectable implementation.
+
+N102
+00:09:41.208 --> 00:09:49.917
+An empirical run and independent construct validation remain separate research tasks.

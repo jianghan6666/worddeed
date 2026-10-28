@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Microfoundation Proxy · Narrative–Behavior Measurement</title>
+<meta name="description" content="An academic overview of the assembled four-step research workflow, its independent topic readers, predictive models, score handoffs, and offline demonstration.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#faf9f5">
+<link rel="preload" href="fonts/InstrumentSans.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/Gloock-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">N—B</span><span>Narrative–Behavior <br>Measurement</span></a>
+    <nav class="nav" aria-label="Sections"><a href="#question">Question</a><a href="#workflow">Workflow</a><a href="#system">System</a><a href="#demo">Demo</a><a href="#film">Video</a><a href="#evidence">Evidence</a></nav>
+    <span class="header-status">Research implementation<br><time datetime="2026-10-28">28 October 2026</time></span>
+  </div>
+</header>
+<main id="main">
+<section class="intro wrap" id="top" aria-labelledby="page-title">
+  <p class="eyebrow">AI Microfoundation Proxy / NBM research workflow</p>
+  <div class="intro-grid">
+    <div><h1 id="page-title">From managerial speech <br>to behavioral prediction.</h1><p class="lead">Four existing research stages now connect through one coordinator and a resumable workflow. The first application examines CEO risk preference using speech and R&amp;D investment.</p></div>
+    <aside class="scope"><p class="tag">Current scope</p><h2>Assembled. Demonstrated offline.</h2><p>Three invented topics exercise the connections. No fresh scientific screening, empirical training, finance reconstruction or Stata estimation was executed during assembly.</p><a href="#demo">Inspect the demonstration <span aria-hidden="true">↓</span></a></aside>
+  </div>
+  <ol class="route" aria-label="Four-stage overview">
+    <li><span>01</span><b>Topic representation</b><small>354 saved topics</small></li>
+    <li><span>02</span><b>Relevance screening</b><small>Three independent readers</small></li>
+    <li><span>03</span><b>Behavioral prediction</b><small>Topic features + sentiment</small></li>
+    <li><span>04</span><b>Matching &amp; estimation</b><small>New scores → original formulas</small></li>
+  </ol>
+  <div class="intro-links"><a class="text-link" href="#workflow">Read the method <span aria-hidden="true">↓</span></a><a class="text-link" href="#film">Watch the narrated walkthrough <span aria-hidden="true">↗</span></a></div>
+</section>
+
+<section class="section" id="question" aria-labelledby="question-title"><div class="wrap">
+  <header class="section-label"><span>01 / Research question</span><span>Prediction and measurement</span></header>
+  <div class="section-heading"><h2 id="question-title">What does the prediction measure?</h2><div><p class="lead">Language expresses a perspective. Behavior records a choice. Both also reflect circumstances.</p><p>We study their relationship while keeping the measurement claim open. A model trained to predict R&amp;D/assets may capture risk preference, industry, opportunity, disclosure practices, or a mixture of these. Predictive performance alone cannot resolve that interpretation.</p></div></div>
+  <div class="three-columns witnesses">
+    <article><span class="tag blue">Narrative inputs</span><h3>Managerial speech</h3><p>Selected topic features and aggregate sentiment summarize the supplied speech data.</p></article>
+    <article><span class="tag red">Behavioral target</span><h3>R&amp;D / assets</h3><p>Observed investment supplies the supervised learning target; it is not an independent validity criterion for the resulting score.</p></article>
+    <article><span class="tag purple">Model output</span><h3>Predicted behavior</h3><p>A generated proxy whose psychological meaning needs evidence beyond the training relationship.</p></article>
+  </div>
+</div></section>
+
+<section class="section" id="workflow" aria-labelledby="workflow-title"><div class="wrap">
+  <header class="section-label"><span>02 / Four-step method</span><span>Current implementation</span></header>
+  <div class="section-heading"><h2 id="workflow-title">The method that is connected.</h2><p>The adapters reuse the delivered scientific code and preserve its settings. Empirical programs and inputs are configured externally. Saved inputs, selected topic IDs, score files and model inputs form the handoffs.</p></div>
+  <ol class="stages">
+    <li id="step1"><span class="stage-number">01</span><h3>Topic representation</h3><dl><dt>Input</dt><dd>Saved catalogue, topic densities and component metadata.</dd><dt>Procedure</dt><dd>Bind the ordered 354-topic catalogue and delivered density matrix. Optional inference reuses the existing topic-model implementation and checks model identity.</dd><dt>Output</dt><dd>Topic densities and catalogue for the fixed study.</dd></dl><p class="boundary">Saved row ordering is delivery-declared. The assembly does not independently authenticate historical unkeyed ordering or create new-corpus sentiment.</p><a class="source" href="https://github.com/joyzhzh/ai-microfoundation-proxy/blob/main/agent_system/empirical/step1.py">Step 1 adapter ↗</a></li>
+    <li id="step2"><span class="stage-number">02</span><h3>Relevance screening</h3><dl><dt>Input</dt><dd>All 354 descriptors, followed by the frozen source passages.</dd><dt>Procedure</dt><dd>Three independent initial readings; seal all initial responses; continue each reader’s own history through Stage B; export a two-of-three relevance majority.</dd><dt>Output</dt><dd>Selected topic IDs, initial labels, reasons and minority votes.</dd></dl><p class="boundary">Confidence does not weight votes. The delivered primary is Astra xhigh, repetition 1: 321 selected topics.</p><a class="source" href="https://github.com/joyzhzh/ai-microfoundation-proxy/blob/main/agent_system/empirical/screening.py">Screening adapter ↗</a></li>
+    <li id="step3"><span class="stage-number">03</span><h3>Behavioral prediction</h3><dl><dt>Input</dt><dd>Selected topic features, aggregate sentiment and R&amp;D/assets.</dd><dt>Procedure</dt><dd>Reuse the supplied Ridge and XGBoost training scripts, firm–CEO connected-component grouping, five folds, seeds and tuning grids.</dd><dt>Output</dt><dd>New scores, including grouped out-of-fold predictions.</dd></dl><p class="boundary">The predictors are topic features plus aggregate sentiment. This is not the earlier scalar-<var>N</var>-plus-controls specification.</p><a class="source" href="https://github.com/joyzhzh/ai-microfoundation-proxy/blob/main/agent_system/empirical/step3.py">Step 3 adapter ↗</a></li>
+    <li id="step4"><span class="stage-number">04</span><h3>Matching &amp; estimation</h3><dl><dt>Input</dt><dd>The new score file and original financial/CEO identity sources.</dd><dt>Procedure</dt><dd>Pass scores to the original matcher, check keys and folds, prepare the same 25 formulas, then estimate separately in Stata.</dd><dt>Output</dt><dd>Matched data, model inputs, estimation receipts and tables when executed.</dd></dl><p class="boundary">Regression score = 100 × max(out-of-fold predicted R&amp;D/assets, 0). Preparation and estimation have separate completion states.</p><a class="source" href="https://github.com/joyzhzh/ai-microfoundation-proxy/blob/main/agent_system/empirical/step4.py">Step 4 adapter ↗</a></li>
+  </ol>
+  <div class="screening-detail">
+    <div><p class="tag">Inside Step 2</p><h3>Independent histories.<br>A common release barrier.</h3><p>Each reader sees the full catalogue. The readers do not divide topics between them, and no reader receives peer votes.</p></div>
+    <div class="triad" aria-label="Each of three readers independently reads 354 descriptors, waits until every initial response is sealed, then reviews 18 pages and 1,062 passages in its own history.">
+      <div class="triad-head"><span>Initial reading</span><span>Stage B review</span></div>
+      <div class="reader-row"><b>A</b><span>354 descriptors</span><i aria-hidden="true">→</i><span>18 pages · 1,062 passages</span></div>
+      <div class="reader-row"><b>B</b><span>354 descriptors</span><i aria-hidden="true">→</i><span>18 pages · 1,062 passages</span></div>
+      <div class="reader-row"><b>C</b><span>354 descriptors</span><i aria-hidden="true">→</i><span>18 pages · 1,062 passages</span></div>
+      <p class="barrier">All three initial responses sealed before any passages are released</p>
+      <p class="majority">Stage B relevance: <strong>at least 2 of 3 votes</strong><br><small>Initial labels, reasons and minority judgments remain inspectable.</small></p>
+    </div>
+  </div>
+</div></section>
+
+<section class="section" id="system" aria-labelledby="system-title"><div class="wrap">
+  <header class="section-label"><span>03 / Agent architecture</span><span>Bounded execution</span></header>
+  <div class="section-heading"><h2 id="system-title">Four tools.<br>One durable workflow.</h2><p>The coordinator selects permitted operations. The dispatcher enforces order, and saved artifacts determine completion. Direct and agent execution use the same workflow.</p></div>
+  <div class="authority"><span class="tag">Research authority</span><p>Researchers determine constructs, scientific specifications and interpretation. The coordinator cannot change the method or execute arbitrary commands.</p></div>
+  <div class="architecture">
+    <div class="architecture-label"><span class="tag">Coordinator</span><p>Model-driven tool loop<br><small>Offline demo: scripted replies</small></p></div>
+    <dl class="tools"><div><dt><code>get_status</code></dt><dd>Inspect saved state and verify completed outputs.</dd></div><div><dt><code>run_stage</code></dt><dd>Dispatch the next permitted stage.</dd></div><div><dt><code>read_result</code></dt><dd>Inspect a completed stage’s receipt.</dd></div><div><dt><code>finish</code></dt><dd>Finish only when required artifacts are complete.</dd></div></dl>
+    <div class="dispatcher"><b>Shared dispatcher</b><span>Step 1 → Step 2 → Step 3 → Step 4 preparation → Step 4 estimation</span></div>
+    <div class="persistence"><span>State and event history</span><span>Input and output hashes</span><span>Stage and reader checkpoints</span><span>Preserved interrupted attempts</span></div>
+  </div>
+  <div class="two-columns notes"><p><strong>Reader recovery.</strong> Initial responses and reader histories persist. Resume skips completed pages. Invalid or uncertain attempts remain visible and require explicit recovery; labels are not silently repaired.</p><p><strong>Configured defaults.</strong> Coordinator: GPT-6.1 Sol / high. Fresh screening: three GPT-6 Astra / xhigh readers. These are configurable defaults, not live-provider evaluations performed here.</p></div>
+</div></section>
+
+<section class="section" id="demo" aria-labelledby="demo-title"><div class="wrap">
+  <header class="section-label"><span>04 / Offline demonstration</span><span>Executed and resumed</span></header>
+  <div class="section-heading"><h2 id="demo-title">Follow a score across the boundary.</h2><p>Two fabricated rows make the handoff observable. Selecting T1 and T3 produces toy sums of 0.7 and 0.8, which are written to the Step 3 score file and passed into the Step 4 input.</p></div>
+  <div class="demo-grid">
+    <div class="demo-example"><p class="tag">Invented values · no scientific interpretation</p><div class="table-scroll"><table><caption>Fixture weights and generated toy scores</caption><thead><tr><th scope="col">Row</th><th scope="col">T1</th><th scope="col">T2</th><th scope="col">T3</th><th scope="col">T1 + T3</th></tr></thead><tbody><tr><th scope="row">fixture-a</th><td class="selected">0.1</td><td>0.3</td><td class="selected">0.6</td><td><strong>0.7</strong></td></tr><tr><th scope="row">fixture-b</th><td class="selected">0.6</td><td>0.2</td><td class="selected">0.2</td><td><strong>0.8</strong></td></tr></tbody></table></div><p class="file-handoff"><code>selected_topics.json</code><span aria-hidden="true">↓</span><code>generated_scores.csv</code><span aria-hidden="true">↓</span><code>step4_input.csv</code></p><p>The generated score file and Step 4 input were byte-identical in this fixture run. The numerical subprocess is replaced by toy arithmetic; the dispatcher and persistence logic are real.</p></div>
+    <div class="receipt"><p class="tag">Observed saved summary</p><h3>demonstration_complete</h3><dl><div><dt>demonstration</dt><dd>true</dd></div><div><dt>live_model_calls</dt><dd>false</dd></div><div><dt>training_executed</dt><dd>false</dd></div><div><dt>estimation_executed</dt><dd>false</dd></div><div><dt>scientific_completion</dt><dd>false</dd></div></dl><p>The first run and the resumed run returned the same completion status. This is a software-integration result.</p><a href="video/fixture-evidence.json">Inspect the portable fixture receipt ↗</a></div>
+  </div>
+  <details class="commands"><summary>Run the fixture demonstration locally</summary><div><p>From the repository root with Python 3.11 or later; no API key or empirical assets are needed. Use a fresh output directory for the first command.</p><pre><code>python -m agent_system.empirical.demo --out .local/connected-demo
+python -m agent_system.empirical.demo --out .local/connected-demo --resume</code></pre><p>Inspect <code>summary.json</code>, <code>workflow/state.json</code> and <code>workflow/events.jsonl</code>. See the <a href="https://github.com/joyzhzh/ai-microfoundation-proxy/blob/main/agent_system/empirical/README.md">runtime guide</a> for setup and input contracts.</p></div></details>
+</div></section>
+
+<section class="section film-section" id="film" aria-labelledby="film-title"><div class="wrap">
+  <header class="section-label"><span>05 / Narrated walkthrough</span><span>English · synthetic narration</span></header>
+  <div class="section-heading"><h2 id="film-title">A guided reading of the system.</h2><p>The film follows the method, coordinator, observable handoff and evidence limits. The full explanation is also available as a transcript. English captions are embedded in the picture; the optional caption track starts off to avoid duplication.</p></div>
+  <video id="walkthrough-video" controls playsinline preload="metadata" poster="video/poster.jpg" aria-label="Academic walkthrough of the connected four-step agent" aria-describedby="video-description"><source src="video/four-step-agent.mp4" type="video/mp4"><track kind="captions" src="video/four-step-agent.en.vtt" srclang="en" label="English (optional text track)"><p>Your browser does not support embedded video. <a href="video/four-step-agent.mp4">Download the MP4</a> or <a href="video/transcript.md">read the transcript</a>.</p></video>
+  <p id="video-description" class="caption">Measured narration timing drives the diagrams and captions. The fixture example is explicitly illustrative; no empirical estimates are presented in the film.</p>
+  <div class="film-links"><a href="video/transcript.md">Full transcript ↗</a><a href="video/four-step-agent.mp4" download>Download MP4 ↓</a><a href="video/four-step-agent.en.vtt" download>English captions ↓</a></div>
+  <nav id="chapters" class="chapters" aria-label="Video chapters"><p>Chapter times load with the video. The <a href="video/transcript.md">transcript</a> includes every section.</p></nav>
+  <p id="chapter-status" class="sr-only" aria-live="polite"></p>
+</div></section>
+
+<section class="section" id="evidence" aria-labelledby="evidence-title"><div class="wrap">
+  <header class="section-label"><span>06 / Evidence and limits</span><span>Separate claims</span></header>
+  <div class="section-heading"><h2 id="evidence-title">Connections are inspectable.<br>Validity remains empirical.</h2><p>The received results, the assembly checks, and the measurement claims have different evidential status. Completion of one does not imply completion of the others.</p></div>
+  <div class="evidence-rows"><article><span>01</span><h3>Received scientific work</h3><p>The fixed catalogue, completed screening trials, and supplied Step 3–4 packages are existing research artifacts. The delivered primary selection has 321 topics. This package includes aggregate results; complete study inputs are supplied separately.</p></article><article><span>02</span><h3>Assembled software</h3><p>Four adapters, a coordinator and saved state connect those interfaces. The package includes self-contained tests for the coordinator, handoffs, and resume, plus optional adapter checks. Fixtures cover handoffs, reader independence, completion and recovery.</p></article><article><span>03</span><h3>Empirical execution</h3><p>A coherent real run is a separate action requiring the complete assets and compatible runtimes. Stata estimation follows model preparation. The narrated fixture does not execute these stages scientifically.</p></article><article><span>04</span><h3>Construct interpretation</h3><p>Prediction and conditional associations do not establish psychological validity, causality, or superiority over other measures. Missing R&amp;D handling, industry content, contemporaneous timing, and historical data alignment require substantive attention.</p></article></div>
+  <div class="materials"><h3>Source materials</h3><ul><li><a href="https://github.com/joyzhzh/ai-microfoundation-proxy/blob/main/agent_system/empirical/README.md">Connected agent: interfaces, demo and execution boundaries ↗</a></li><li><a href="https://github.com/joyzhzh/ai-microfoundation-proxy/blob/main/examples/completed-nbm/README.md">Completed empirical example and aggregate results ↗</a></li><li><a href="https://github.com/joyzhzh/ai-microfoundation-proxy/blob/main/workflows/02-screen-topics.md">Independent screening workflow ↗</a></li><li><a href="https://github.com/joyzhzh/ai-microfoundation-proxy/blob/main/ROADMAP.md">Roadmap ↗</a></li></ul><p class="caption">See the repository for setup, workflows, the completed example, and the roadmap. This introduction runs locally.</p></div>
+</div></section>
+</main>
+<footer class="wrap footer"><span>Narrative–Behavior Measurement</span><span>Assembly status · 28 October 2026</span><a href="#top">Back to top ↑</a></footer>
+</body></html>
