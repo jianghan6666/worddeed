@@ -1,0 +1,243 @@
+{
+  "target": "rd_at_fill0",
+  "n_firm_years": 29506,
+  "n_labeled": 29191,
+  "n_topics": 321,
+  "selection": "b1-gpt-6-astra-P0-xhigh.json",
+  "models": {
+    "ridge": {
+      "crossfit": {
+        "r2": 0.5350551225573617,
+        "mse": 0.006005869853653396,
+        "corr": 0.731486266069739
+      },
+      "full_insample_r2": 0.5530652769426496,
+      "full_best_params": {
+        "alpha": 1000
+      },
+      "full_inner_cv_r2": 0.5322112662466401,
+      "full_winsor": [
+        0.0,
+        0.6426804879991755
+      ],
+      "folds": {
+        "0": {
+          "train_folds": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "n_train": 23297,
+          "scores_fold": 0,
+          "n_scored": 5926,
+          "best_params": {
+            "alpha": 1000
+          },
+          "inner_cv_r2": 0.5237427215139286,
+          "winsor": [
+            0.0,
+            0.640521055995118
+          ]
+        },
+        "1": {
+          "train_folds": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "n_train": 23309,
+          "scores_fold": 1,
+          "n_scored": 5981,
+          "best_params": {
+            "alpha": 1000
+          },
+          "inner_cv_r2": 0.5334023109399741,
+          "winsor": [
+            0.0,
+            0.6495076773457624
+          ]
+        },
+        "2": {
+          "train_folds": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "n_train": 23224,
+          "scores_fold": 2,
+          "n_scored": 6025,
+          "best_params": {
+            "alpha": 1000
+          },
+          "inner_cv_r2": 0.528797335732178,
+          "winsor": [
+            0.0,
+            0.6172944038436762
+          ]
+        },
+        "3": {
+          "train_folds": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "n_train": 23487,
+          "scores_fold": 3,
+          "n_scored": 5754,
+          "best_params": {
+            "alpha": 1000
+          },
+          "inner_cv_r2": 0.5368451125803968,
+          "winsor": [
+            0.0,
+            0.6451141593078514
+          ]
+        },
+        "4": {
+          "train_folds": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "n_train": 23447,
+          "scores_fold": 4,
+          "n_scored": 5820,
+          "best_params": {
+            "alpha": 1000
+          },
+          "inner_cv_r2": 0.5269394936691018,
+          "winsor": [
+            0.0,
+            0.6463544481119065
+          ]
+        }
+      },
+      "secs": 81
+    },
+    "xgboost": {
+      "crossfit": {
+        "r2": 0.612837887707173,
+        "mse": 0.005001120286529307,
+        "corr": 0.7828576391040852
+      },
+      "full_insample_r2": 0.8982285501757138,
+      "full_best_params": {
+        "max_depth": 6
+      },
+      "full_inner_cv_r2": 0.609654179978615,
+      "full_winsor": [
+        0.0,
+        0.6426804879991755
+      ],
+      "folds": {
+        "0": {
+          "train_folds": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "n_train": 23297,
+          "scores_fold": 0,
+          "n_scored": 5926,
+          "best_params": {
+            "max_depth": 6
+          },
+          "inner_cv_r2": 0.5949284243621852,
+          "winsor": [
+            0.0,
+            0.640521055995118
+          ]
+        },
+        "1": {
+          "train_folds": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "n_train": 23309,
+          "scores_fold": 1,
+          "n_scored": 5981,
+          "best_params": {
+            "max_depth": 6
+          },
+          "inner_cv_r2": 0.6076800377479364,
+          "winsor": [
+            0.0,
+            0.6495076773457624
+          ]
+        },
+        "2": {
+          "train_folds": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "n_train": 23224,
+          "scores_fold": 2,
+          "n_scored": 6025,
+          "best_params": {
+            "max_depth": 6
+          },
+          "inner_cv_r2": 0.6072640329997223,
+          "winsor": [
+            0.0,
+            0.6172944038436762
+          ]
+        },
+        "3": {
+          "train_folds": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "n_train": 23487,
+          "scores_fold": 3,
+          "n_scored": 5754,
+          "best_params": {
+            "max_depth": 6
+          },
+          "inner_cv_r2": 0.6102886122382667,
+          "winsor": [
+            0.0,
+            0.6451141593078514
+          ]
+        },
+        "4": {
+          "train_folds": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "n_train": 23447,
+          "scores_fold": 4,
+          "n_scored": 5820,
+          "best_params": {
+            "max_depth": 6
+          },
+          "inner_cv_r2": 0.6065449415054744,
+          "winsor": [
+            0.0,
+            0.6463544481119065
+          ]
+        }
+      },
+      "secs": 724
+    }
+  },
+  "versions": {
+    "risk_score_<模型>": "原始值：预测的 R&D / 总资产",
+    "risk_score_<模型>_clip0": "max(原始值, 0)",
+    "risk_score_<模型>_pct": "百分位排名，(0, 1]，在全部 firm-year 上计算，同值取平均排名",
+    "risk_score_<模型>_z": "标准化：(原始值 − 均值) / 标准差，在全部 firm-year 上计算"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "notice": "SYNTHETIC DEMONSTRATION ONLY; not scientific results",
+  "date": "2026-10-28",
+  "source": "agent_system/empirical/demo.py",
+  "source_revision": "029541eefdc4d32f8e72e58d3618f62b9cf5aeec",
+  "commands": [
+    "python -m agent_system.empirical.demo --out <fresh-output-directory>",
+    "python -m agent_system.empirical.demo --out <same-output-directory> --resume"
+  ],
+  "first_run": {
+    "status": "demonstration_complete",
+    "demonstration": true,
+    "scientific_completion": false,
+    "live_model_calls": false,
+    "training_executed": false,
+    "estimation_executed": false
+  },
+  "resumed_run": {
+    "status": "demonstration_complete",
+    "demonstration": true,
+    "scientific_completion": false,
+    "live_model_calls": false,
+    "training_executed": false,
+    "estimation_executed": false
+  },
+  "stages": {
+    "step1": "complete",
+    "step2": "complete",
+    "step3": "complete",
+    "step4_prepare": "complete",
+    "step4": "complete"
+  },
+  "selected_topics": [
+    "T1",
+    "T3"
+  ],
+  "generated_scores": [
+    {
+      "firm": "fixture-a",
+      "year": "2020",
+      "demo_score": "0.7",
+      "notice": "SYNTHETIC DEMONSTRATION ONLY; not scientific results"
+    },
+    {
+      "firm": "fixture-b",
+      "year": "2020",
+      "demo_score": "0.8",
+      "notice": "SYNTHETIC DEMONSTRATION ONLY; not scientific results"
+    }
+  ],
+  "score_sha256": "20c107499a33cc8fd9974382d6468d05bd27f7dacf9da2c70351d9d021343be0",
+  "step4_input_sha256": "20c107499a33cc8fd9974382d6468d05bd27f7dacf9da2c70351d9d021343be0",
+  "identical_handoff_bytes": true
+}

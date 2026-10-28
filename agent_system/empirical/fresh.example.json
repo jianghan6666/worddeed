@@ -1,0 +1,16 @@
+{
+  "profile": "fresh",
+  "packages_root": "../.local/inputs/packages",
+  "python": "../.local/analysis-venv/bin/python",
+  "catalogue": "../.local/inputs/catalogue.json",
+  "step1": {"mode": "saved"},
+  "step2": {
+    "mode": "live",
+    "toolkit": "../.local/inputs/screening/toolkit.py",
+    "packet_root": "../.local/inputs/screening",
+    "model": "gpt-6-astra",
+    "effort": "xhigh"
+  },
+  "coordinator": {"model": "gpt-6.1-sol", "effort": "high"},
+  "stata_exe": "/path/to/Stata19.5/stata-mp"
+}
