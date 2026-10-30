@@ -22,6 +22,7 @@ from scripts.restore_review_bundle import restore
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--out', type=Path, required=True, help='Verification receipt JSON')
+    parser.add_argument('--transport', choices=['gh','curl'], default='gh')
     parser.add_argument('--temp-parent', type=Path, help='Filesystem for disposable download parts')
     args = parser.parse_args()
     gh = shutil.which('gh')
@@ -33,7 +34,7 @@ def main():
     with tempfile.TemporaryDirectory(prefix='nbm-source-verify-', dir=args.temp_parent) as tmp, \
             ThreadPoolExecutor(max_workers=4) as pool:
         directory = Path(tmp)
-        download(gh, manifest.name, directory)
+        download(gh, manifest.name, directory, args.transport)
         if (directory/manifest.name).read_bytes() != manifest.read_bytes():
             raise ValueError('Downloaded manifest differs from the checked-in trust anchor')
         pending = {}
@@ -42,7 +43,7 @@ def main():
             nonlocal next_index
             while len(pending) < 4 and next_index < len(spec['parts']):
                 part = spec['parts'][next_index]
-                pending[part['name']] = pool.submit(download, gh, part['name'], directory)
+                pending[part['name']] = pool.submit(download, gh, part['name'], directory, args.transport)
                 next_index += 1
         prefetch()
         def acquire(part):

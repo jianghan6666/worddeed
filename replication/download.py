@@ -21,20 +21,35 @@ def digest(path):
     return h.hexdigest()
 
 
-def download(gh, name, directory):
+def download(gh, name, directory, transport='gh'):
     directory = Path(directory)
     if (directory/name).exists():
         return
     # A failed transfer never leaves an apparently complete asset to reuse.
     with tempfile.TemporaryDirectory(prefix='.transfer-', dir=directory) as tmp:
-        subprocess.run([gh, 'release', 'download', TAG, '--repo', REPO, '--pattern', name,
-                        '--dir', tmp], check=True)
+        if transport == 'curl':
+            listing = json.loads(subprocess.check_output(
+                [gh, 'release', 'view', TAG, '--repo', REPO, '--json', 'assets'], text=True))
+            url = next(x['apiUrl'] for x in listing['assets'] if x['name'] == name)
+            if not url.startswith(f'https://api.github.com/repos/{REPO}/releases/assets/'):
+                raise ValueError('Unexpected private asset API URL')
+            credential = subprocess.check_output([gh, 'auth', 'token'], text=True).strip()
+            # Credentials travel on stdin, never in argv, files or printed logs.
+            config = f'header = "Authorization: Bearer {credential}"\nheader = "Accept: application/octet-stream"\n'
+            subprocess.run(['curl', '--http1.1', '--fail', '--silent', '--show-error',
+                            '--location', '--config', '-', '--output', str(Path(tmp)/name), url],
+                           input=config, text=True, check=True)
+        else:
+            subprocess.run([gh, 'release', 'download', TAG, '--repo', REPO, '--pattern', name,
+                            '--dir', tmp], check=True)
         (Path(tmp)/name).replace(directory/name)
 
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--out', type=Path, required=True)
+    p.add_argument('--transport', choices=['gh','curl'], default='gh',
+                   help='curl uses authenticated HTTP/1.1 when the default transfer route is unreliable')
     p.add_argument('--source', action='store_true', help='Also download the original 9.2 GB source/model archive (2.9 GB compressed)')
     args = p.parse_args()
     gh = shutil.which('gh')
@@ -53,7 +68,7 @@ def main():
     def fetch(item):
         i, name = item
         print(f'{i}/{len(names)} {name}', flush=True)
-        download(gh, name, args.out)
+        download(gh, name, args.out, args.transport)
         spec = next((x for x in specs if x['name'] == name), None)
         if spec and (digest(args.out/name) != spec['sha256'] or
                      ('bytes' in spec and (args.out/name).stat().st_size != spec['bytes'])):

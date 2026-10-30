@@ -32,6 +32,8 @@ python3.11 -m venv .venv
   --stata /path/to/stata
 ```
 
+If GitHub CLI transfers stall on your network, add `--transport curl` to the download or streaming-verification command. This uses authenticated HTTP/1.1 with the same hash checks; `curl` must be installed.
+
 Use the executable path for your installation (for example `stata-mp`), not the application bundle directory. Supplied historical regressions used **Stata 19.5** and declare `version 19.0`. An explicit `--stata-version 18` creates a separate do-file changing only that declaration; the original do-file remains intact and the same numerical acceptance checks still apply. It is never selected silently.
 
 Without Stata, add `--through step4_prepare` to build all regression inputs. Later rerun the same command with `--stata` and the same output directory to finish estimation. Set the intended `--stata-version` consistently from the first run. Successful completed stages are hash-checked and reused on resume. Interrupted scientific output remains available for inspection; a failed fit may require a new run directory rather than overwriting partial work.
