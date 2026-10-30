@@ -1,8 +1,11 @@
 """Explicit external bindings replace historical workspace fallbacks."""
 
 import json
+import os
+import subprocess
 import tempfile
 import unittest
+import venv
 from pathlib import Path
 from unittest.mock import patch
 
@@ -51,6 +54,14 @@ class ExternalInputTests(unittest.TestCase):
             config["step2"] = {k: "screening" for k in ("toolkit", "packet_root") if k != missing}
             with self.subTest(missing=missing), self.assertRaisesRegex(ValueError, missing):
                 self.read(config)
+
+    def test_configured_interpreter_keeps_virtual_environment(self):
+        environment = self.root / "env"
+        venv.EnvBuilder(with_pip=False, symlinks=os.name != "nt").create(environment)
+        executable = environment / ("Scripts/python.exe" if os.name == "nt" else "bin/python")
+        config = self.read({**self.base(), "python": str(executable)})
+        prefix = subprocess.check_output([config["python"], "-c", "import sys; print(sys.prefix)"], text=True).strip()
+        self.assertEqual(Path(prefix).resolve(), environment.resolve())
 
     def test_missing_screening_inputs_fail_before_toolkit_or_provider_load(self):
         with patch.object(screening, "_load_toolkit") as toolkit:

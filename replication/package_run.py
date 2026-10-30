@@ -35,7 +35,7 @@ def package_run(run, out):
         replacements[config['stata_exe']]='STATA_EXECUTABLE'
     replacements=sorted(replacements.items(),key=lambda x:len(x[0]),reverse=True)
     paths = [p for p in run.iterdir() if p.is_file() and p.suffix=='.json']
-    for folder in ['screening','workflow','supplementary','logs']:
+    for folder in ['screening','workflow','supplementary','logs','diagnostics']:
         paths += [p for p in (run/folder).rglob('*') if p.is_file()]
     archive = out/'fresh-reproduction.tar.gz'
     files, omissions = [], []

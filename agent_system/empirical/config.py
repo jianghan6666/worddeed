@@ -1,6 +1,7 @@
 """Small explicit configuration for the existing study."""
 
 import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -33,7 +34,10 @@ def load(path):
                 paths(item)
             elif key in path_keys and item:
                 p = Path(item).expanduser()
-                value[key] = str((path.parent / p).resolve() if not p.is_absolute() else p.resolve())
+                candidate = path.parent / p if not p.is_absolute() else p
+                # A venv's python is commonly a symlink. Executing the resolved
+                # base binary bypasses pyvenv.cfg and loses the pinned packages.
+                value[key] = os.path.abspath(candidate) if key == "python" else str(candidate.resolve())
     paths(config)
     packages = Path(config["packages_root"])
     step3 = packages / "step3_risk_score_collaborator_20261027"
