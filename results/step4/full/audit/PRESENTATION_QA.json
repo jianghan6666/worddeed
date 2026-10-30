@@ -1,0 +1,2043 @@
+{
+  "passed": true,
+  "workbook_sha256": "0af268532ad0d86d9e8547e68c38d7eca46c91e25cd2bd5b9c86bd723bf1b642",
+  "own_model_panels": 7,
+  "model_count": 25,
+  "numeric_coefficient_SE_cells": 784,
+  "footer_cells": 250,
+  "all_coefficient_SE_and_stars_match_payload": true,
+  "new_replay_compared": true,
+  "new_replay_core_terms": 392,
+  "panels": [
+    {
+      "sheet": "2 Replication",
+      "panel": "Original window2006–2011",
+      "models": [
+        "rep_original_2006_2011_m08",
+        "rep_original_2006_2011_m09",
+        "rep_original_2006_2011_m10"
+      ]
+    },
+    {
+      "sheet": "2 Replication",
+      "panel": "Extended window2006–2023",
+      "models": [
+        "rep_extended_2006_2023_m08",
+        "rep_extended_2006_2023_m09",
+        "rep_extended_2006_2023_m10"
+      ]
+    },
+    {
+      "sheet": "2 Replication",
+      "panel": "Additional window2013–2023",
+      "models": [
+        "rep_2013_2023_m08",
+        "rep_2013_2023_m09",
+        "rep_2013_2023_m10"
+      ]
+    },
+    {
+      "sheet": "3 No actual RD",
+      "panel": "Xgboost synthetic proxy of CEO risk preference |2013–2023",
+      "models": [
+        "score_xgboost_no_rd_m08",
+        "score_xgboost_no_rd_m09",
+        "score_xgboost_no_rd_m10",
+        "score_xgboost_no_rd_m00"
+      ]
+    },
+    {
+      "sheet": "3 No actual RD",
+      "panel": "Ridge synthetic proxy of CEO risk preference |2013–2023",
+      "models": [
+        "score_ridge_no_rd_m08",
+        "score_ridge_no_rd_m09",
+        "score_ridge_no_rd_m10",
+        "score_ridge_no_rd_m00"
+      ]
+    },
+    {
+      "sheet": "4 With actual RD",
+      "panel": "Xgboost synthetic proxy of CEO risk preference |2013–2023",
+      "models": [
+        "score_xgboost_with_rd_m08",
+        "score_xgboost_with_rd_m09",
+        "score_xgboost_with_rd_m10",
+        "score_xgboost_with_rd_m00"
+      ]
+    },
+    {
+      "sheet": "4 With actual RD",
+      "panel": "Ridge synthetic proxy of CEO risk preference |2013–2023",
+      "models": [
+        "score_ridge_with_rd_m08",
+        "score_ridge_with_rd_m09",
+        "score_ridge_with_rd_m10",
+        "score_ridge_with_rd_m00"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "inside_debt_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "ln_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "high_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m08",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m09",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_original_2006_2011_m10",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "inside_debt_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "ln_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "high_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m08",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m09",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_extended_2006_2023_m10",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "inside_debt_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "ln_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "high_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m08",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m09",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "rep_2013_2023_m10",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "inside_debt_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "ln_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "high_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m08",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m09",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m10",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_no_rd_m00",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "inside_debt_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "ln_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "high_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m08",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m09",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m10",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_no_rd_m00",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "inside_debt_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "ln_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "high_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m08",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m09",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m10",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_xgboost_with_rd_m00",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "rd_score",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "cash_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "inside_debt_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "ln_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "high_rellev",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "equity_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "vega_k",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "age",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "ln_tenure",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "rd_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "rd_missing",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "capx_at_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "asset_growth",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "mb",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "profitability_m",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "size_pct",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "re_at",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "retvol255",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m08",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m09",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m10",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    },
+    {
+      "model_id": "score_ridge_with_rd_m00",
+      "term": "_cons",
+      "coef_SE_and_stars_agree": true
+    }
+  ],
+  "note": "Paper reference sheet1 and Excel ModelData sheet are not new regressions."
+}

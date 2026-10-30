@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "release_date": "2026-10-27",
+  "scope": "Only worksheets3 No actual RD and4 With actual RD;16 annual-B score models; both groups include predicted R&D score",
+  "reproduction_boundary": "Second-stage regression from supplied frozen analysis data and OOF scores; not upstream ML retraining or WRDS raw-data rebuild",
+  "analysis": {
+    "rows": 2967,
+    "columns": 66,
+    "ordinary_N": 2927,
+    "ordinary_firms": 591,
+    "log_N": 1653,
+    "log_firms": 340,
+    "years": [
+      2013,
+      2023
+    ]
+  },
+  "input_quality": {
+    "canonical_vs_16_stata_inputs": "all columns and values exact",
+    "csv_numeric_roundtrip": "exact",
+    "frozen_DTA_copy": "byte-identical",
+    "actual_samples": "exact IDs"
+  },
+  "workbook": {
+    "sheets": [
+      "3 No actual RD",
+      "4 With actual RD"
+    ],
+    "numeric_cells_exact": 560,
+    "star_formats_exact": 141,
+    "visual_review": "six final ranges passed",
+    "sha256": "9e73874cf6e7223cb3e907b9f647b4aeb15b703e859b39d7f5513338a0e7f844"
+  },
+  "replay": {
+    "software": "StataNow/SE 19.5",
+    "isolated_replay": "all16 success",
+    "relocated_directory": "independent directory containing spaces",
+    "relocated_replay": "all16 success",
+    "checks": 266,
+    "max_errors": {
+      "coef": 2.621966643800988e-9,
+      "se_oim": 9.246389094411968e-10,
+      "se_cluster": 1.8753944072409606e-9,
+      "p_oim": 1.299852669944812e-8,
+      "p_cluster": 1.196860377472575e-8,
+      "ll_oim": 0,
+      "ll_cluster": 0
+    },
+    "passed": true,
+    "details": [
+      "STATA_REPLAY_CHECK.json",
+      "RELOCATED_REPLAY_CHECK.json"
+    ]
+  },
+  "source_preservation": {
+    "protected_files": 7,
+    "all_unchanged": true,
+    "source_workbook_sha256": "8f3df019e71f2c3d5b8281e51d3fc59936fe0fef5518b45a5f1686843ac1ae40",
+    "claude_record_unchanged": true
+  },
+  "note": "The delivered folder intentionally has no rerun outputs. Running code/01_run_stata.do creates rerun/stata. Frozen results remain in reference and results."
+}

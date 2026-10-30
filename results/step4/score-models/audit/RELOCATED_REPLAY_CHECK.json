@@ -1,0 +1,1184 @@
+{
+  "passed": true,
+  "checks_count": 266,
+  "tolerance": 0.00001,
+  "max_errors": {
+    "coef": 2.621966643800988e-9,
+    "se_oim": 9.246389094411968e-10,
+    "se_cluster": 1.8753944072409606e-9,
+    "p_oim": 1.299852669944812e-8,
+    "p_cluster": 1.196860377472575e-8,
+    "ll_oim": 0,
+    "ll_cluster": 0
+  },
+  "checks": [
+    {
+      "name": "unique_coefficient_keys",
+      "passed": true
+    },
+    {
+      "name": "coefficient_keys",
+      "passed": true,
+      "expected_rows": 1100,
+      "actual_rows": 1100
+    },
+    {
+      "name": "coef",
+      "passed": true,
+      "max_scaled_error": 2.621966643800988e-9
+    },
+    {
+      "name": "se_oim",
+      "passed": true,
+      "max_scaled_error": 9.246389094411968e-10
+    },
+    {
+      "name": "se_cluster",
+      "passed": true,
+      "max_scaled_error": 1.8753944072409606e-9
+    },
+    {
+      "name": "p_oim",
+      "passed": true,
+      "max_scaled_error": 1.299852669944812e-8
+    },
+    {
+      "name": "p_cluster",
+      "passed": true,
+      "max_scaled_error": 1.196860377472575e-8
+    },
+    {
+      "name": "omitted_oim",
+      "passed": true
+    },
+    {
+      "name": "omitted_cluster",
+      "passed": true
+    },
+    {
+      "name": "16_model_ids",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_no_rd_m00:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_no_rd_m00:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m00:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_no_rd_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_no_rd_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_no_rd_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_no_rd_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_ridge_no_rd_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_ridge_with_rd_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_with_rd_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_with_rd_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_ridge_with_rd_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_with_rd_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_with_rd_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m00:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_with_rd_m00:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_with_rd_m00:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m00:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_with_rd_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_with_rd_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_no_rd_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0
+    },
+    {
+      "name": "score_ridge_no_rd_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    }
+  ],
+  "scope": "16 annual-B score models; no original-study Replication models"
+}

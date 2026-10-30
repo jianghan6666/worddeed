@@ -1,0 +1,1815 @@
+{
+  "passed": true,
+  "checks_count": 410,
+  "tolerance": 1e-05,
+  "max_errors": {
+    "coef": 2.6645352591003757e-14,
+    "se_oim": 1.18954238024595e-12,
+    "se_cluster": 3.7518218964801115e-10,
+    "p_oim": 5.296318938974309e-13,
+    "p_cluster": 3.282965010953376e-10,
+    "ll_oim": 1.1368683772161603e-12,
+    "ll_cluster": 0.0
+  },
+  "checks": [
+    {
+      "name": "unique_coefficient_keys",
+      "passed": true
+    },
+    {
+      "name": "coefficient_keys",
+      "passed": true,
+      "expected_rows": 1799,
+      "actual_rows": 1799
+    },
+    {
+      "name": "coef",
+      "passed": true,
+      "max_scaled_error": 2.6645352591003757e-14
+    },
+    {
+      "name": "se_oim",
+      "passed": true,
+      "max_scaled_error": 1.18954238024595e-12
+    },
+    {
+      "name": "se_cluster",
+      "passed": true,
+      "max_scaled_error": 3.7518218964801115e-10
+    },
+    {
+      "name": "p_oim",
+      "passed": true,
+      "max_scaled_error": 5.296318938974309e-13
+    },
+    {
+      "name": "p_cluster",
+      "passed": true,
+      "max_scaled_error": 3.282965010953376e-10
+    },
+    {
+      "name": "omitted_oim",
+      "passed": true
+    },
+    {
+      "name": "omitted_cluster",
+      "passed": true
+    },
+    {
+      "name": "25_model_ids",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:status",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 9.094947017729282e-13
+    },
+    {
+      "name": "rep_2013_2023_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_2013_2023_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 7035,
+      "actual_N": 7035
+    },
+    {
+      "name": "rep_2013_2023_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 7035,
+      "actual_N": 7035
+    },
+    {
+      "name": "rep_2013_2023_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:status",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_2013_2023_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_2013_2023_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 3782,
+      "actual_N": 3782
+    },
+    {
+      "name": "rep_2013_2023_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 3782,
+      "actual_N": 3782
+    },
+    {
+      "name": "rep_2013_2023_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:status",
+      "passed": true
+    },
+    {
+      "name": "rep_2013_2023_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_2013_2023_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_2013_2023_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 7035,
+      "actual_N": 7035
+    },
+    {
+      "name": "rep_2013_2023_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 7035,
+      "actual_N": 7035
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:status",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 13716,
+      "actual_N": 13716
+    },
+    {
+      "name": "rep_extended_2006_2023_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 13716,
+      "actual_N": 13716
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:status",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 7784,
+      "actual_N": 7784
+    },
+    {
+      "name": "rep_extended_2006_2023_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 7784,
+      "actual_N": 7784
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:status",
+      "passed": true
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 13716,
+      "actual_N": 13716
+    },
+    {
+      "name": "rep_extended_2006_2023_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 13716,
+      "actual_N": 13716
+    },
+    {
+      "name": "rep_original_2006_2011_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:status",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_original_2006_2011_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_original_2006_2011_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 5736,
+      "actual_N": 5736
+    },
+    {
+      "name": "rep_original_2006_2011_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 5736,
+      "actual_N": 5736
+    },
+    {
+      "name": "rep_original_2006_2011_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:status",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_original_2006_2011_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_original_2006_2011_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 3416,
+      "actual_N": 3416
+    },
+    {
+      "name": "rep_original_2006_2011_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 3416,
+      "actual_N": 3416
+    },
+    {
+      "name": "rep_original_2006_2011_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:status",
+      "passed": true
+    },
+    {
+      "name": "rep_original_2006_2011_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_original_2006_2011_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "rep_original_2006_2011_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 5736,
+      "actual_N": 5736
+    },
+    {
+      "name": "rep_original_2006_2011_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 5736,
+      "actual_N": 5736
+    },
+    {
+      "name": "score_ridge_no_rd_m00:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m00:ll_oim",
+      "passed": true,
+      "absolute_error": 1.1368683772161603e-12
+    },
+    {
+      "name": "score_ridge_no_rd_m00:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_no_rd_m00:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m00:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_no_rd_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_no_rd_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_no_rd_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_no_rd_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_ridge_no_rd_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_ridge_no_rd_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_no_rd_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_no_rd_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_no_rd_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_no_rd_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m00:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m00:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_with_rd_m00:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_with_rd_m00:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m00:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_with_rd_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_with_rd_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_with_rd_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_with_rd_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_ridge_with_rd_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_ridge_with_rd_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:status",
+      "passed": true
+    },
+    {
+      "name": "score_ridge_with_rd_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_with_rd_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_ridge_with_rd_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_ridge_with_rd_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m00:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_xgboost_no_rd_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_no_rd_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m00:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m08:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_xgboost_with_rd_m09:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 1653,
+      "actual_N": 1653
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:N_input",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:N_after_pure",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:N_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:N_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:N_clusters",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:converged_oim",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:converged_cluster",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:rc",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:base_sic2",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:base_fyear",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:core_omitted",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:status",
+      "passed": true
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:ll_oim",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:ll_cluster",
+      "passed": true,
+      "absolute_error": 0.0
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:esample_oim:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    },
+    {
+      "name": "score_xgboost_with_rd_m10:esample_cluster:IDs",
+      "passed": true,
+      "expected_N": 2927,
+      "actual_N": 2927
+    }
+  ],
+  "scope": "25models:9annual-B Replication +16Ridge/XGBoost score models",
+  "input_origin": "DTA regenerated from reconstructed data; no frozen DTA used"
+}
