@@ -21,6 +21,30 @@ except ImportError:
 
 
 class Step4ContractTests(unittest.TestCase):
+    @unittest.skipIf(pd is None, "pandas and numpy required")
+    def test_audit_integer_conversion_preserves_values_and_rejects_changed_keys(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            package, out = Path(tmp) / "package", Path(tmp) / "out"
+            reference = package / "reference/finance/ceo_selection_audit.parquet"
+            actual = out / step4.REP / "audits/ceo_selection_audit.parquet"
+            reference.parent.mkdir(parents=True)
+            actual.parent.mkdir(parents=True)
+            frame = pd.DataFrame({"anncomp_row_id": pd.Series([2, 0, 1], dtype="int32"),
+                                  "value": [1.1, float("nan"), 3.3]})
+            frame.to_parquet(reference, index=False)
+            wide = frame.astype({"anncomp_row_id": "int64"})
+            wide.to_parquet(actual, index=False)
+            step4._normalize_finance_audit_key(package, out)
+            pd.testing.assert_frame_equal(pd.read_parquet(actual), frame, check_exact=True)
+            receipt = actual.parent / "INTEGER_STORAGE_COMPATIBILITY.json"
+            self.assertTrue(json.loads(receipt.read_text())["all_values_exactly_preserved"])
+            wide.loc[0, "anncomp_row_id"] = 8
+            wide.to_parquet(actual, index=False)
+            before = actual.read_bytes()
+            with self.assertRaises(AssertionError):
+                step4._normalize_finance_audit_key(package, out)
+            self.assertEqual(actual.read_bytes(), before)
+
     def test_source_context_restores_globals_on_failure(self):
         argv, paths, before = sys.argv[:], sys.path[:], dict(os.environ)
         with self.assertRaisesRegex(RuntimeError, "failure"):

@@ -104,6 +104,47 @@ def _match(package, out, scores):
         _main(module, "--out", out / REP / "data/matched" / label)
 
 
+def _normalize_finance_audit_key(package, out):
+    """Record a lossless native-integer width conversion after construction.
+
+    NumPy's native integer width differs between the supplied Windows runtime
+    and macOS. Only the regenerated audit key's storage type may change here;
+    values are checked exactly before and after. The original verifier still
+    checks every value, identity, sample flag and numerical tolerance.
+    """
+    import numpy as np
+    import pandas as pd
+
+    path = out / REP / "audits/ceo_selection_audit.parquet"
+    reference = package / "reference/finance/ceo_selection_audit.parquet"
+    actual, expected = pd.read_parquet(path), pd.read_parquet(reference)
+    key = "anncomp_row_id"
+    source, target = actual[key].dtype, expected[key].dtype
+    if source == target:
+        return
+    if not (pd.api.types.is_integer_dtype(source) and pd.api.types.is_integer_dtype(target)):
+        raise ValueError("Audit key normalization only supports integer storage widths")
+    pd.testing.assert_series_equal(actual[key].sort_values().reset_index(drop=True),
+                                   expected[key].sort_values().reset_index(drop=True),
+                                   check_dtype=False, check_exact=True)
+    limits = np.iinfo(target)
+    if actual[key].isna().any() or not actual[key].between(limits.min, limits.max).all():
+        raise ValueError("Audit key conversion would lose information")
+    converted = actual.copy()
+    converted[key] = actual[key].astype(target)
+    pd.testing.assert_frame_equal(actual, converted, check_dtype=False, check_exact=True)
+    original_hash = hashlib.sha256(path.read_bytes()).hexdigest()
+    converted.to_parquet(path, index=False)
+    pd.testing.assert_frame_equal(pd.read_parquet(path), converted, check_exact=True)
+    _write(out / REP / "audits/INTEGER_STORAGE_COMPATIBILITY.json", {
+        "file": str(path.relative_to(out)), "column": key,
+        "from": str(source), "to": str(target), "rows": len(actual),
+        "all_values_exactly_preserved": True, "reference_values_copied": False,
+        "before_sha256": original_hash,
+        "after_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "supplied_verifier_unchanged": True})
+
+
 def _check_fresh_matching(package, out):
     """Keep every frozen identity/sample check; allow only score values to vary."""
     import pandas as pd
@@ -168,6 +209,7 @@ def prepare(config: dict, out: Path, scores: Path, panel: Path) -> dict:
         identity = _check_identity(package, scores, panel)
         _write(out / "CONNECTED_INPUTS.json", {**identity, "profile": config.get("profile", "reproduce")})
         _load(package / "code/finance_stage.py").run_finance(package, out)
+        _normalize_finance_audit_key(package, out)
         finance = _load(package / "code/verify_finance.py").verify_finance(package, out)
         if finance["status"] != "passed":
             raise ValueError("Financial reconstruction failed its source checks")
