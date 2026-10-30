@@ -6,7 +6,7 @@ AI Microfoundation Proxy connects narrative evidence, AI-assisted topic screenin
 
 **Reviewer results:** [Full four-step results](RESULTS.md) · [PDF report](results/report.pdf) · [Complete results download](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/full-results-2026-10-31)
 
-[Introduction](docs/index.html) · [Video](docs/video/four-step-agent.mp4) · [Completed example](examples/ceo-risk-preference/README.md) · [Roadmap](ROADMAP.md) · [Workflow guide](WORKFLOW.md)
+[Introduction](docs/index.html) · [Video](docs/video/four-step-agent.mp4) · [Completed example](examples/ceo-risk-preference/README.md) · [Roadmap](ROADMAP.md) · [Workflow guide](WORKFLOW.md) · [Reviewer replication](REPLICATION.md)
 
 ## What is AI Microfoundation Proxy?
 
@@ -141,11 +141,11 @@ ai-microfoundation-proxy/
 `-- .github/workflows/        Software checks
 ```
 
-Keep your study inputs, local configurations, and run outputs in the ignored `.local/` directory. This package contains the user-facing workflow and aggregate example results; datasets and full research records are separate inputs.
+Keep your study inputs, local configurations, and run outputs in the ignored `.local/` directory. This private package also includes the scientific code and complete inventoried evidence through its [reviewer replication release](REPLICATION.md); large datasets and models are restored from release assets.
 
 ## Roadmap
 
-The [roadmap](ROADMAP.md) builds on the completed example: run the full empirical chain through the connected agent, strengthen input and screening evidence, assess construct interpretation, and prepare a second application. Each milestone identifies what evidence would establish completion.
+The full empirical chain has now passed a [fresh-download connected reproduction](REPLICATION.md), including new prediction fits and downstream Stata estimation. The remaining [roadmap](ROADMAP.md) strengthens input and screening evidence, assesses construct interpretation, and prepares a second application. Each milestone identifies what evidence would establish completion.
 
 ## Design principles
 

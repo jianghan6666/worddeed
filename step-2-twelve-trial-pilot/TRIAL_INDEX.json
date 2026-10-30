@@ -1,0 +1,373 @@
+{
+  "schema_version": "step2_twelve_trial_delivery_index_v1",
+  "scope": "12 completed P0 trials; no preferred trial or pooled selection adopted",
+  "path_base": "this folder",
+  "evidence_package_root_repository_relative": "step-2-mvp-simple/experiment/expanded-ai-pilot/results-2026-10-21",
+  "reader_record_path_rule": "Resolve reader_records_package_relative paths inside copied selected_topics.json against evidence_package_root_repository_relative, not this delivery folder.",
+  "variant_mapping": {
+    "primary": "first",
+    "supplementary": "recovered"
+  },
+  "trials": [
+    {
+      "trial_id": "b1-gpt-6-astra-P0-high",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "block": 1,
+      "prompt_id": "P0",
+      "repetition": 1,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b1-gpt-6-astra-P0-high/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b1-gpt-6-astra-P0-high/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b1-gpt-6-astra-P0-high/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 37,
+            "relevant": 317,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b1-gpt-6-astra-P0-high/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b1-gpt-6-astra-P0-high/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b1-gpt-6-astra-P0-high/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 37,
+            "relevant": 317,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b1-gpt-6.1-sol-P0-medium",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "block": 1,
+      "prompt_id": "P0",
+      "repetition": 1,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b1-gpt-6.1-sol-P0-medium/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b1-gpt-6.1-sol-P0-medium/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b1-gpt-6.1-sol-P0-medium/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 41,
+            "relevant": 313,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b1-gpt-6.1-sol-P0-medium/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b1-gpt-6.1-sol-P0-medium/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b1-gpt-6.1-sol-P0-medium/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 41,
+            "relevant": 313,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b1-gpt-6-astra-P0-xhigh",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "block": 1,
+      "prompt_id": "P0",
+      "repetition": 1,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b1-gpt-6-astra-P0-xhigh/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b1-gpt-6-astra-P0-xhigh/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b1-gpt-6-astra-P0-xhigh/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 33,
+            "relevant": 321,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b1-gpt-6-astra-P0-xhigh/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b1-gpt-6-astra-P0-xhigh/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b1-gpt-6-astra-P0-xhigh/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 33,
+            "relevant": 321,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b1-gpt-6-astra-P0-medium",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "block": 1,
+      "prompt_id": "P0",
+      "repetition": 1,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b1-gpt-6-astra-P0-medium/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b1-gpt-6-astra-P0-medium/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b1-gpt-6-astra-P0-medium/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b1-gpt-6-astra-P0-medium/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b1-gpt-6-astra-P0-medium/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b1-gpt-6-astra-P0-medium/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b1-gpt-6.1-sol-P0-high",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "block": 1,
+      "prompt_id": "P0",
+      "repetition": 1,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b1-gpt-6.1-sol-P0-high/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b1-gpt-6.1-sol-P0-high/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b1-gpt-6.1-sol-P0-high/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b1-gpt-6.1-sol-P0-high/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b1-gpt-6.1-sol-P0-high/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b1-gpt-6.1-sol-P0-high/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b1-gpt-6.1-sol-P0-xhigh",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "block": 1,
+      "prompt_id": "P0",
+      "repetition": 1,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b1-gpt-6.1-sol-P0-xhigh/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b1-gpt-6.1-sol-P0-xhigh/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b1-gpt-6.1-sol-P0-xhigh/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 36,
+            "relevant": 318,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b1-gpt-6.1-sol-P0-xhigh/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b1-gpt-6.1-sol-P0-xhigh/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b1-gpt-6.1-sol-P0-xhigh/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 36,
+            "relevant": 318,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b2-gpt-6.1-sol-P0-high",
+      "model": "gpt-6.1-sol",
+      "effort": "high",
+      "block": 2,
+      "prompt_id": "P0",
+      "repetition": 2,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b2-gpt-6.1-sol-P0-high/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b2-gpt-6.1-sol-P0-high/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b2-gpt-6.1-sol-P0-high/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b2-gpt-6.1-sol-P0-high/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b2-gpt-6.1-sol-P0-high/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b2-gpt-6.1-sol-P0-high/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b2-gpt-6-astra-P0-medium",
+      "model": "gpt-6-astra",
+      "effort": "medium",
+      "block": 2,
+      "prompt_id": "P0",
+      "repetition": 2,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b2-gpt-6-astra-P0-medium/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b2-gpt-6-astra-P0-medium/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b2-gpt-6-astra-P0-medium/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b2-gpt-6-astra-P0-medium/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b2-gpt-6-astra-P0-medium/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b2-gpt-6-astra-P0-medium/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b2-gpt-6-astra-P0-xhigh",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "block": 2,
+      "prompt_id": "P0",
+      "repetition": 2,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b2-gpt-6-astra-P0-xhigh/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b2-gpt-6-astra-P0-xhigh/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b2-gpt-6-astra-P0-xhigh/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 315,
+            "unresolved": 1
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b2-gpt-6-astra-P0-xhigh/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b2-gpt-6-astra-P0-xhigh/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b2-gpt-6-astra-P0-xhigh/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b2-gpt-6.1-sol-P0-medium",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "block": 2,
+      "prompt_id": "P0",
+      "repetition": 2,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b2-gpt-6.1-sol-P0-medium/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b2-gpt-6.1-sol-P0-medium/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b2-gpt-6.1-sol-P0-medium/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 40,
+            "relevant": 314,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b2-gpt-6.1-sol-P0-medium/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b2-gpt-6.1-sol-P0-medium/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b2-gpt-6.1-sol-P0-medium/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 40,
+            "relevant": 314,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b2-gpt-6-astra-P0-high",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "block": 2,
+      "prompt_id": "P0",
+      "repetition": 2,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b2-gpt-6-astra-P0-high/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b2-gpt-6-astra-P0-high/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b2-gpt-6-astra-P0-high/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 37,
+            "relevant": 317,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b2-gpt-6-astra-P0-high/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b2-gpt-6-astra-P0-high/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b2-gpt-6-astra-P0-high/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 37,
+            "relevant": 317,
+            "unresolved": 0
+          }
+        }
+      }
+    },
+    {
+      "trial_id": "b2-gpt-6.1-sol-P0-xhigh",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "block": 2,
+      "prompt_id": "P0",
+      "repetition": 2,
+      "variants": {
+        "primary": {
+          "selected_topics": "results/primary/handoffs/b2-gpt-6.1-sol-P0-xhigh/selected_topics.json",
+          "topic_labels": "results/primary/handoffs/b2-gpt-6.1-sol-P0-xhigh/topic_labels.csv",
+          "initial_topic_labels": "results/primary/handoffs/b2-gpt-6.1-sol-P0-xhigh/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        },
+        "supplementary": {
+          "selected_topics": "results/supplementary/handoffs/b2-gpt-6.1-sol-P0-xhigh/selected_topics.json",
+          "topic_labels": "results/supplementary/handoffs/b2-gpt-6.1-sol-P0-xhigh/topic_labels.csv",
+          "initial_topic_labels": "results/supplementary/handoffs/b2-gpt-6.1-sol-P0-xhigh/initial_topic_labels.csv",
+          "counts": {
+            "irrelevant": 38,
+            "relevant": 316,
+            "unresolved": 0
+          }
+        }
+      }
+    }
+  ]
+}

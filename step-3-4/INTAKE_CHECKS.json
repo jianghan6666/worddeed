@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-28",
+  "scope": "Private repository intake; no new model training or Stata estimation",
+  "original_manifests": [
+    {
+      "package": "step3_risk_score_collaborator_20261027",
+      "listed_files": 50,
+      "mismatches": [
+        {
+          "path": "README.md",
+          "expected_bytes": 7872,
+          "expected_sha256": "71031e007cffb33473cf899acf8043744e366ed24302968c59ade37dd43335b8",
+          "received_bytes": 7869,
+          "received_sha256": "beb19efd499f6e8cf692d728b36e689f243b35309a6a852633227fb3b4fe8591"
+        }
+      ]
+    },
+    {
+      "package": "step4_full_from_raw_20261027",
+      "listed_files": 182,
+      "mismatches": []
+    },
+    {
+      "package": "step4_rd_score_collaborator_20261027",
+      "listed_files": 96,
+      "mismatches": []
+    }
+  ],
+  "python_syntax": "all 28 supplied Python files parsed",
+  "step2_selection": {
+    "trial_id": "b1-gpt-6-astra-P0-xhigh",
+    "variant": "primary",
+    "relevant": 321,
+    "irrelevant": 33,
+    "unresolved": 0,
+    "sha256": "be14a1f557fbb28a9f4702af15ec49d9fb0ea7534e7701fd5cc301872d4461e9",
+    "comparison": "byte-identical to completed Step 2 primary handoff; all 12 model feature lists agree"
+  },
+  "privacy": "One personal source-file path redacted; no credentials found in scoped text scan; both XLSX files have no Office author-property parts. Research subject identifiers retained for authorized private collaboration.",
+  "source_preserved": true,
+  "changes": "Received Step 3 README has a stale supplied manifest entry. Original manifests preserved under source-manifests; export manifests bind received README and redacted Step 4 provenance bytes. No model, numerical data, coefficient or scientific setting changed.",
+  "omissions": [],
+  "local_repository_checks": {
+    "baseline_tests": {
+      "passed": 40
+    },
+    "agent_contract_tests": {
+      "passed": 17
+    },
+    "offline_agent_demo": "demonstration_complete; fixture model replies and real numerical tools",
+    "exported_step4_manifests": {
+      "full": 182,
+      "compact": 96,
+      "status": "passed"
+    },
+    "full_empirical_training_or_stata_replay": "not_run_for_intake",
+    "complete_archive_verification": {
+      "files": 334,
+      "status": "passed",
+      "archive_sha256": "007bd1fea3b08bf5403c3ff4303f967ed77a72df05ffb96c102f6ac4e135becc"
+    }
+  }
+}

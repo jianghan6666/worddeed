@@ -1,0 +1,47 @@
+{
+  "dataset": "comp_na_daily_all.funda",
+  "joined_identifiers": "comp_na_daily_all.company.sic",
+  "source_url": "https://wrds-www.wharton.upenn.edu/pages/get-data/compustat-capital-iq-standard-poors/compustat/north-america-daily/fundamentals-annual/",
+  "query_url": "https://wrds-www.wharton.upenn.edu/query-manager/query/11827424/",
+  "query_id": 11827424,
+  "downloaded_at_utc": "2026-10-24T19:19:45.771Z",
+  "source_download_name": "p82q6kruixu1aeeg.csv.gz",
+  "local_data_file": "funda_datadate_2003-01_2024-06.csv.gz",
+  "local_sql_file": "funda_datadate_2003-01_2024-06.sql",
+  "date_filter": {
+    "field": "datadate",
+    "start": "2003-01-01",
+    "end": "2024-06-30"
+  },
+  "filters": {
+    "consol": [
+      "C"
+    ],
+    "indfmt": [
+      "INDL"
+    ],
+    "datafmt": [
+      "STD"
+    ],
+    "curcd": [
+      "USD"
+    ],
+    "costat": [
+      "A",
+      "I"
+    ]
+  },
+  "company_codes": "entire database",
+  "popsrc_status": "No selector, output column, or SQL predicate; do not assume popsrc=D.",
+  "industry_filter": "none at extraction",
+  "requested_analysis_fiscal_years": [
+    2006,
+    2023
+  ],
+  "notes": [
+    "Date buffer and prior-history rows retained raw; fyear 2002 and 2024 boundary rows are expected.",
+    "No financial variables constructed, no sample analysis, no regressions."
+  ],
+  "field_documentation_base": "https://wrds-www.wharton.upenn.edu/data-dictionary/comp_na_daily_all/funda/",
+  "timestamp_basis": "Browser-downloaded file modification timestamp"
+}

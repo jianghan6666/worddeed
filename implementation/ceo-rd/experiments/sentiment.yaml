@@ -1,0 +1,32 @@
+# 加入 CEO 讲话情绪 sentiment_transformer（原 robustness_sentiment.py）
+# 配置格式说明见 strict_controls.yaml
+
+name: sentiment
+targets: [rd_at_fill0, rd_sale_fill0]
+require: [y_lag]
+
+control_sets:
+  none:     []
+  base:     [log_at, sic2, year]
+  sic4:     [log_at, sic4, year]
+  lag+sic4: [log_at, y_lag, sic4, year]
+
+text_sets:
+  none:             []
+  sentiment:        [sentiment]
+  topics:           [topics]
+  topics+sentiment: [topics, sentiment]
+
+models:
+  ridge: {}
+  xgboost:
+    params: {min_child_weight: 10}
+    grid: {max_depth: [3, 6]}
+
+comparisons:
+  - label: sentiment | topics
+    text: [topics, topics+sentiment]
+  - label: sentiment | controls
+    text: [none, sentiment]
+  - label: topics | controls
+    text: [none, topics]

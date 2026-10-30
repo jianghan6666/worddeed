@@ -1,0 +1,44 @@
+{
+  "repository": "joyzhzh/ai-microfoundation-proxy",
+  "visibility": "private",
+  "release": "reviewer-replication-2026-10-30",
+  "frozen_bundles": [
+    {
+      "bundle": "source-model",
+      "stages": "1",
+      "manifest": "replication/manifests/source-ceo-rd.manifest.json",
+      "manifest_sha256": "de15f3483e0bc000d76fd414a934461f7c969393089bbf83bcc03413b8e474dd",
+      "members": 61,
+      "compressed_bytes": 2874906374,
+      "expanded_bytes": 9217472766,
+      "archive_sha256": "0a0b4411efeb23380867c3e6c60161325b5cd5b7fabf028dfdacab4d1a0201e0",
+      "asset_parts": 43
+    },
+    {
+      "bundle": "screening",
+      "stages": "2",
+      "manifest": "step-2-mvp-simple/experiment/expanded-ai-pilot/results-2026-10-21/BUNDLE.json",
+      "manifest_sha256": "360b6050a8fd3293f7be2ea4dec298643d7ea4e16ee18204c3a30d0764945500",
+      "members": 3840,
+      "compressed_bytes": 52122800,
+      "expanded_bytes": 239012942,
+      "archive_sha256": "edddd3adf79f93be90a3480ee3dfae607989393f289f2ea72f550d4e6622292d",
+      "asset_parts": 1
+    },
+    {
+      "bundle": "prediction-assessment",
+      "stages": "3-4",
+      "manifest": "step-3-4/DELIVERY.json",
+      "manifest_sha256": "d62caf975f9974c8a63a09f9fbdc98aa28dc0b0a9da5f3a705e7c6aa6ff5c4a2",
+      "members": 334,
+      "compressed_bytes": 1124137415,
+      "expanded_bytes": 1224364997,
+      "archive_sha256": "007bd1fea3b08bf5403c3ff4303f967ed77a72df05ffb96c102f6ac4e135becc",
+      "asset_parts": 17
+    }
+  ],
+  "total_members": 4235,
+  "total_compressed_bytes": 4051166589,
+  "total_expanded_bytes": 10680850705,
+  "scope_note": "Counts include each bundle member, including intentional overlaps between stage packages. Current instructions: REPLICATION.md. Historical density ordering remains delivery-declared; archive integrity does not authenticate its original row/column alignment."
+}

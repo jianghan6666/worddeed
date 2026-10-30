@@ -1,0 +1,47 @@
+# BERTopic 训练配置：复现 models/bertopic_ideo_13-23_relaxed_354Topics
+# 参数抄自 legacy/notebooks/bertopic_new_text_modelling_ideoOnly_13-23_version-Updated2026Jul3-FinallyUsed (1).ipynb
+# （2026-07-03 训练，bertopic 0.16.4）
+#
+# 训练：ceo-rd topics train topic_models/bertopic_ideo_13-23_relaxed.yaml   → models/<name>/
+# 注意：UMAP / HDBSCAN 的结果随库版本、硬件变化，重新训练得到的 topic 不会与已保存模型完全相同；
+#       现有分析都基于已保存的模型，推断请直接用 ceo-rd topics infer models/bertopic_ideo_13-23_relaxed_354Topics。
+
+name: bertopic_ideo_13-23_relaxed
+
+# 文本与训练集：只用有政治捐款意识形态标签（averageDem 非缺失）的发言。
+# 在 paths.yaml 的 corpus（..._w_scores_sentiment.pickle）中为 887,488 条，与原训练集一致；
+# 注意 ..._5years_... pickle 中的 averageDem 口径不同（588,635 条），不能用来筛选训练集。
+text_column: componenttext_masked
+train_filter:
+  notna: [averageDem]
+
+# 原 notebook 用的是本地目录 ./all-mpnet-base-v2；这里写 Hugging Face 名称，也可用 --embedding-model 指定本地路径
+embedding_model: sentence-transformers/all-mpnet-base-v2
+encode_batch_size: 32
+
+umap:
+  n_neighbors: 15
+  n_components: 5
+  min_dist: 0.0
+  metric: cosine
+  random_state: 42
+
+hdbscan:            # "relaxed"：较大的 min_cluster_size / min_samples
+  min_cluster_size: 120
+  min_samples: 100
+  metric: euclidean
+  cluster_selection_method: eom
+  prediction_data: true
+
+vectorizer:         # CountVectorizer
+  stop_words: english
+  min_df: 10
+  ngram_range: [1, 2]
+
+representation:     # 名称即 topic_info 中的列名
+  KeyBERT: {type: keybert}
+  MMR: {type: mmr, diversity: 0.3}
+
+bertopic:
+  top_n_words: 15
+  verbose: true

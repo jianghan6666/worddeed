@@ -21,6 +21,30 @@ except ImportError:
 
 
 class Step4ContractTests(unittest.TestCase):
+    @unittest.skipIf(pd is None, "pandas and numpy required")
+    def test_audit_integer_conversion_preserves_values_and_rejects_changed_keys(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            package, out = Path(tmp) / "package", Path(tmp) / "out"
+            reference = package / "reference/finance/ceo_selection_audit.parquet"
+            actual = out / step4.REP / "audits/ceo_selection_audit.parquet"
+            reference.parent.mkdir(parents=True)
+            actual.parent.mkdir(parents=True)
+            frame = pd.DataFrame({"anncomp_row_id": pd.Series([2, 0, 1], dtype="int32"),
+                                  "value": [1.1, float("nan"), 3.3]})
+            frame.to_parquet(reference, index=False)
+            wide = frame.astype({"anncomp_row_id": "int64"})
+            wide.to_parquet(actual, index=False)
+            step4._normalize_finance_audit_key(package, out)
+            pd.testing.assert_frame_equal(pd.read_parquet(actual), frame, check_exact=True)
+            receipt = actual.parent / "INTEGER_STORAGE_COMPATIBILITY.json"
+            self.assertTrue(json.loads(receipt.read_text())["all_values_exactly_preserved"])
+            wide.loc[0, "anncomp_row_id"] = 8
+            wide.to_parquet(actual, index=False)
+            before = actual.read_bytes()
+            with self.assertRaises(AssertionError):
+                step4._normalize_finance_audit_key(package, out)
+            self.assertEqual(actual.read_bytes(), before)
+
     def test_source_context_restores_globals_on_failure(self):
         argv, paths, before = sys.argv[:], sys.path[:], dict(os.environ)
         with self.assertRaisesRegex(RuntimeError, "failure"):
@@ -54,6 +78,30 @@ class Step4ContractTests(unittest.TestCase):
                     step4.estimate({"profile": "fresh"}, out)
             self.assertEqual(error.exception.artifacts["dofile"], str(script.resolve()))
             self.assertEqual(script.read_text(), "version 19.0\n")
+
+    def test_explicit_stata18_preserves_original_and_checks_results(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp)
+            script = out / "regression/stata/RUN_MODELS.do"
+            script.parent.mkdir(parents=True)
+            original = b"version 19.0\r\nlogit payer score\r\n"
+            script.write_bytes(original)
+            (out / "CONNECTED_INPUTS.json").write_text('{"profile":"reproduce"}')
+            def executed(command, **kwargs):
+                self.assertEqual(command[-1], "RUN_MODELS_stata18.do")
+                (script.parent / "run_finished.txt").write_text("done")
+                return SimpleNamespace(returncode=0)
+            with patch.object(step4, "_package", return_value=Path("/package")), \
+                 patch.object(step4.subprocess, "run", side_effect=executed), \
+                 patch.object(step4, "_load", side_effect=lambda path: path), \
+                 patch.object(step4, "_main", side_effect=ValueError("reference mismatch")):
+                with self.assertRaisesRegex(ValueError, "reference mismatch"):
+                    step4.estimate({"profile":"reproduce", "stata_exe":sys.executable,
+                                    "stata_version":18}, out)
+            self.assertEqual(script.read_bytes(), original)
+            self.assertEqual(script.with_name("RUN_MODELS_stata18.do").read_bytes(),
+                             original.replace(b"version 19.0", b"version 18.0"))
+            self.assertTrue((out / "regression/audit/STATA_COMPATIBILITY.json").exists())
 
     def test_run_prepares_before_stata_check(self):
         with patch.object(step4, "prepare") as prepare, patch.object(step4, "estimate", side_effect=step4.NeedsStataError("needed", {})):

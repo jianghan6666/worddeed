@@ -1,0 +1,9 @@
+# 生成交付结果时使用的版本（Python 3.11.7）。joblib 模型文件需要相同的 scikit-learn / xgboost 版本才能保证加载；
+# 版本不同时可用 models/*/*.json 的可移植格式（见 README）。
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.11.4
+scikit-learn==1.2.2
+xgboost==2.1.1
+joblib==1.2.0
+pyarrow==14.0.2

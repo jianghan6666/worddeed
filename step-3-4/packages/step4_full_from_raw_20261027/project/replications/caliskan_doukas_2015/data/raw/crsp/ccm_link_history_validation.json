@@ -1,0 +1,59 @@
+{
+  "file": "ccm_link_history_all.csv.gz",
+  "rows": 110124,
+  "fields": [
+    "gvkey",
+    "tic",
+    "LINKPRIM",
+    "LIID",
+    "LINKTYPE",
+    "LPERMNO",
+    "LPERMCO",
+    "LINKDT",
+    "LINKENDDT"
+  ],
+  "field_count": 9,
+  "malformed_rows": 0,
+  "gzip_read_to_eof_success": true,
+  "csv_readable": true,
+  "unique_gvkey_count": 46538,
+  "linktype_counts": {
+    "LU": 15916,
+    "NU": 31436,
+    "NR": 37455,
+    "LC": 16908,
+    "LX": 1169,
+    "LD": 112,
+    "LN": 185,
+    "LS": 6943
+  },
+  "linkprim_counts": {
+    "P": 48501,
+    "C": 53424,
+    "N": 4940,
+    "J": 3259
+  },
+  "raw_missing_counts": {
+    "LPERMNO": 68891,
+    "LPERMCO": 68891,
+    "tic": 47
+  },
+  "date_ranges": {
+    "LINKDT": {
+      "min": "1946-01-01",
+      "max": "2025-12-31"
+    },
+    "LINKENDDT": {
+      "min": "1950-05-30",
+      "max": "2026-01-30"
+    }
+  },
+  "raw_date_sentinels": {
+    "LINKDT": {},
+    "LINKENDDT": {
+      "E": 20367
+    }
+  },
+  "sha256": "d08c0887de29af1a1f2381bad13191b0e4ca1b5abdf882f3b35d9dcfe2adb8d1",
+  "bytes": 1249975
+}

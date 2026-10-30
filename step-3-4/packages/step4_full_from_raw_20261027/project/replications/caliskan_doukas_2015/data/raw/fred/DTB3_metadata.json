@@ -1,0 +1,49 @@
+{
+  "dataset": "DTB3",
+  "title": "3-Month Treasury Bill Secondary Market Rate, Discount Basis",
+  "provider": "Federal Reserve Bank of St. Louis FRED",
+  "underlying_source": "Board of Governors of the Federal Reserve System (US), H.15 Selected Interest Rates",
+  "source_page": "https://fred.stlouisfed.org/series/DTB3",
+  "source_download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?bgcolor=%23ebf3fb&chart_type=line&drp=0&fo=open%20sans&graph_bgcolor=%23ffffff&height=450&mode=fred&recession_bars=on&txtcolor=%23444444&ts=12&tts=12&width=1320&nt=0&thu=0&trc=0&show_legend=yes&show_axis_titles=yes&show_tooltip=yes&id=DTB3&scale=left&cosd=2005-01-01&coed=2024-06-30&line_color=%230073e6&link_values=false&line_style=solid&mark_type=none&mw=3&lw=3&ost=-99999&oet=99999&mma=0&fml=a&fq=Daily&fam=avg&fgst=lin&fgsnd=2020-02-01&line_index=1&transformation=lin&vintage_date=2026-10-24&revision_date=2026-10-24&nd=1954-01-04",
+  "download_utc": "2026-10-24T19:18:04.910Z",
+  "download_method": "Chrome FRED UI CSV download; copied unchanged from browser-returned path",
+  "query": {
+    "id": "DTB3",
+    "cosd": "2005-01-01",
+    "coed": "2024-06-30",
+    "frequency": "Daily",
+    "transformation": "lin",
+    "vintage_date": "2026-10-24",
+    "revision_date": "2026-10-24"
+  },
+  "file": "DTB3_2005-01-01_2024-06-30.csv",
+  "bytes": 80562,
+  "sha256": "c75a500df79ed08cd24922a20ba58b564b54abd77629dbbe1fcad99ae1170a86",
+  "fields": [
+    {
+      "name": "observation_date",
+      "description": "Observation date in YYYY-MM-DD"
+    },
+    {
+      "name": "DTB3",
+      "description": "Discount basis rate in percent per annum; raw FRED values; not seasonally adjusted"
+    }
+  ],
+  "rows": 5085,
+  "date_min": "2005-01-03",
+  "date_max": "2024-06-28",
+  "missing_value_rows": 207,
+  "nonmissing_value_rows": 4878,
+  "validation": {
+    "csv_readable": true,
+    "two_columns_every_row": true,
+    "unique_sorted_dates": true,
+    "copy_byte_identical": true,
+    "rate_transformed": false,
+    "missing_imputed": false,
+    "expected_range_note": "Weekends need not appear; public-holiday missing values retained unchanged.",
+    "complete_weekday_date_coverage": true
+  },
+  "expected_weekday_rows": 5085,
+  "source_page_last_updated": "2026-10-23 15:17 CDT"
+}

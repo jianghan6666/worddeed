@@ -1,0 +1,19 @@
+# 主实验：4 组目标变量 x {controls, topics, controls + topics} x 4 个模型（原 train_models.py）
+# 配置格式说明见 strict_controls.yaml。运行时间较长（数小时），可用 --models / --targets 先跑一部分。
+
+name: main
+targets: [rd_at_fill0, rd_at, rd_sale_fill0, rd_sale]
+
+control_sets:
+  none: []
+  base: [log_at, sic2, year]
+
+text_sets:
+  none:   []
+  topics: [topics]
+
+models: [ridge, xgboost, mlp, random_forest]
+
+comparisons:
+  - label: topics | controls
+    text: [none, topics]

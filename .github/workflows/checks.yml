@@ -19,6 +19,12 @@ jobs:
         run: python -m pip install numpy pandas pyarrow
       - name: Test connected runtime
         run: python -m unittest discover -s agent_system/tests -v
+      - name: Verify replication packaging
+        run: |
+          python -m unittest discover -s replication/tests -v
+          python replication/verify.py
+          python step-2-twelve-trial-pilot/verify.py
+          python step-3-4/verify.py
       - name: Run fixture and resume
         run: |
           python -S -m agent_system.empirical.demo --out .local/demo

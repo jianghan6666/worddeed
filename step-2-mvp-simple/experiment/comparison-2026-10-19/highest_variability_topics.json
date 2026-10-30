@@ -1,0 +1,4102 @@
+[
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 36,
+    "irrelevant_conditions": 6,
+    "keywords": [
+      "gene",
+      "gene therapy",
+      "pompe",
+      "therapy",
+      "disease",
+      "enzyme",
+      "patients",
+      "rare",
+      "diseases",
+      "study",
+      "medicine",
+      "programs",
+      "editing",
+      "therapies",
+      "genetic"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "101"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5454545454545454,
+    "relevant_conditions": 6,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "101",
+    "topic_name": "101_gene_gene therapy_pompe_therapy",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "irrelevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "irrelevant",
+    "07-sol6-medium": "relevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "irrelevant",
+    "disagreeing_condition_pairs": 36,
+    "irrelevant_conditions": 6,
+    "keywords": [
+      "oil",
+      "drilling",
+      "production",
+      "basin",
+      "wells",
+      "delaware",
+      "eagle ford",
+      "eagle",
+      "ford",
+      "acreage",
+      "plays",
+      "production growth",
+      "returns",
+      "permian",
+      "resource"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "162"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5454545454545454,
+    "relevant_conditions": 6,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "162",
+    "topic_name": "162_oil_drilling_production_basin",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "relevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 36,
+    "irrelevant_conditions": 6,
+    "keywords": [
+      "alarm",
+      "recurring revenue",
+      "recurring",
+      "security",
+      "access control",
+      "school",
+      "dealers",
+      "locking",
+      "starlink",
+      "intrusion",
+      "schools",
+      "connected home",
+      "access",
+      "locks",
+      "control"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "350"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5454545454545454,
+    "relevant_conditions": 6,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "350",
+    "topic_name": "350_alarm_recurring revenue_recurring_security",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "irrelevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "relevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "relevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 5,
+    "keywords": [
+      "copper",
+      "gold",
+      "mining",
+      "mines",
+      "silver",
+      "production",
+      "ounces",
+      "ore",
+      "coal",
+      "underground",
+      "grade",
+      "exploration",
+      "pit",
+      "cash",
+      "project"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "44"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 7,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "44",
+    "topic_name": "44_copper_gold_mining_mines",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 5,
+    "keywords": [
+      "depression",
+      "sage",
+      "ppd",
+      "217",
+      "patients",
+      "drug",
+      "treatment",
+      "study",
+      "depressive",
+      "schizophrenia",
+      "brain",
+      "disorders",
+      "symptoms",
+      "studies",
+      "data"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "73"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 7,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "73",
+    "topic_name": "73_depression_sage_ppd_217",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "irrelevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 7,
+    "keywords": [
+      "biosimilars",
+      "biosimilar",
+      "humira",
+      "patents",
+      "patent",
+      "payers",
+      "market",
+      "oncology",
+      "generics",
+      "launch",
+      "ip",
+      "competition",
+      "generic",
+      "erosion",
+      "products"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "99"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 5,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "99",
+    "topic_name": "99_biosimilars_biosimilar_humira_patents",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "relevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "relevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 5,
+    "keywords": [
+      "rate case",
+      "case",
+      "rate",
+      "commission",
+      "rate cases",
+      "filing",
+      "file",
+      "cases",
+      "test year",
+      "settlement",
+      "file rate",
+      "regulatory",
+      "lag",
+      "filed",
+      "regulatory lag"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "103"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 7,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "103",
+    "topic_name": "103_rate case_case_rate_commission",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 5,
+    "keywords": [
+      "supply chain",
+      "chain",
+      "supply",
+      "suppliers",
+      "lead times",
+      "issues",
+      "shortages",
+      "constraints",
+      "lead",
+      "challenges",
+      "chain issues",
+      "times",
+      "inventory",
+      "components",
+      "supplier"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "115"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 7,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "115",
+    "topic_name": "115_supply chain_chain_supply_suppliers",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 5,
+    "keywords": [
+      "hurricane",
+      "storm",
+      "hurricanes",
+      "damage",
+      "florida",
+      "storms",
+      "impact",
+      "houston",
+      "harvey",
+      "flooding",
+      "flood",
+      "sandy",
+      "impacted",
+      "affected",
+      "irma"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "182"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 7,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "182",
+    "topic_name": "182_hurricane_storm_hurricanes_damage",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "relevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 5,
+    "keywords": [
+      "advertising",
+      "spend",
+      "marketing",
+      "marketing spend",
+      "ad",
+      "spending",
+      "media",
+      "advertising spend",
+      "ad spend",
+      "brand",
+      "dollars",
+      "tv",
+      "roi",
+      "percentage",
+      "campaign"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "184"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 7,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "184",
+    "topic_name": "184_advertising_spend_marketing_marketing spend",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "relevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 5,
+    "keywords": [
+      "enzymes",
+      "enzyme",
+      "protein",
+      "merck",
+      "pharmaceutical",
+      "protein engineering",
+      "dna",
+      "manufacturing",
+      "novel",
+      "gsk",
+      "biotherapeutics",
+      "engineering",
+      "drug",
+      "food",
+      "molecular"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "210"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 7,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "210",
+    "topic_name": "210_enzymes_enzyme_protein_merck",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 5,
+    "keywords": [
+      "carbon",
+      "climate",
+      "emissions",
+      "climate change",
+      "net zero",
+      "zero",
+      "greenhouse",
+      "energy",
+      "greenhouse gas",
+      "scope",
+      "reduce",
+      "change",
+      "paris",
+      "gas emissions",
+      "net"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "216"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 7,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "216",
+    "topic_name": "216_carbon_climate_emissions_climate change",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 7,
+    "keywords": [
+      "cardiomyopathy",
+      "onpattro",
+      "patients",
+      "study",
+      "apollo",
+      "disease",
+      "hereditary",
+      "wild type",
+      "neuropathy",
+      "wild",
+      "stabilizer",
+      "cardiac",
+      "label",
+      "treatment",
+      "drug"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "236"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 5,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "236",
+    "topic_name": "236_cardiomyopathy_onpattro_patients_study",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "irrelevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "relevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "irrelevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 7,
+    "keywords": [
+      "natural gas",
+      "natural",
+      "gas",
+      "gas liquids",
+      "liquids",
+      "ngl",
+      "partners",
+      "fee based",
+      "gathering processing",
+      "processing",
+      "gathering",
+      "partnership",
+      "williston",
+      "gathered",
+      "growth projects"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "272"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 5,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "272",
+    "topic_name": "272_natural gas_natural_gas_gas liquids",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 7,
+    "keywords": [
+      "lupus",
+      "patients",
+      "disease",
+      "autoimmune",
+      "type diabetes",
+      "study",
+      "diabetes",
+      "jak",
+      "steroid",
+      "therapy",
+      "mf",
+      "stage",
+      "potential",
+      "inhibitor",
+      "dose"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "297"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 5,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "297",
+    "topic_name": "297_lupus_patients_disease_autoimmune",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "irrelevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 35,
+    "irrelevant_conditions": 7,
+    "keywords": [
+      "kinder",
+      "kinder morgan",
+      "kmi",
+      "morgan",
+      "trans",
+      "mountain",
+      "natural gas",
+      "gas",
+      "natural",
+      "terminals",
+      "project",
+      "co2",
+      "assets",
+      "segment",
+      "expansion"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "347"
+      }
+    ],
+    "pair_disagreement_fraction": 0.5303030303030303,
+    "relevant_conditions": 5,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "347",
+    "topic_name": "347_kinder_kinder morgan_kmi_morgan",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "relevant",
+    "02-mixed-xhigh": "irrelevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "irrelevant",
+    "07-sol6-medium": "relevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "irrelevant",
+    "disagreeing_condition_pairs": 32,
+    "irrelevant_conditions": 8,
+    "keywords": [
+      "loan",
+      "deposit",
+      "loan growth",
+      "banking",
+      "loans",
+      "bank",
+      "income",
+      "credit",
+      "mortgage",
+      "net",
+      "deposits",
+      "quarter",
+      "net income",
+      "lending",
+      "growth"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "26"
+      }
+    ],
+    "pair_disagreement_fraction": 0.48484848484848486,
+    "relevant_conditions": 4,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "26",
+    "topic_name": "26_loan_deposit_loan growth_banking",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "relevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 32,
+    "irrelevant_conditions": 4,
+    "keywords": [
+      "security",
+      "cloud",
+      "firewall",
+      "wan",
+      "sd wan",
+      "sd",
+      "network",
+      "network security",
+      "threat",
+      "cybersecurity",
+      "vulnerability",
+      "solution",
+      "endpoint",
+      "secure",
+      "platform"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "30"
+      }
+    ],
+    "pair_disagreement_fraction": 0.48484848484848486,
+    "relevant_conditions": 8,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "30",
+    "topic_name": "30_security_cloud_firewall_wan",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "relevant",
+    "02-mixed-xhigh": "irrelevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "irrelevant",
+    "07-sol6-medium": "relevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "irrelevant",
+    "disagreeing_condition_pairs": 32,
+    "irrelevant_conditions": 8,
+    "keywords": [
+      "loan",
+      "mortgage",
+      "loan growth",
+      "loans",
+      "lenders",
+      "growth",
+      "quarter",
+      "lending",
+      "mortgage business",
+      "little",
+      "bit",
+      "little bit",
+      "pipeline",
+      "purchase",
+      "seeing"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "48"
+      }
+    ],
+    "pair_disagreement_fraction": 0.48484848484848486,
+    "relevant_conditions": 4,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "48",
+    "topic_name": "48_loan_mortgage_loan growth_loans",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "relevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 32,
+    "irrelevant_conditions": 4,
+    "keywords": [
+      "biotech",
+      "pharma",
+      "discovery",
+      "biopharma",
+      "science",
+      "research",
+      "clients",
+      "life",
+      "growth",
+      "life science",
+      "companies",
+      "strong",
+      "drug",
+      "business",
+      "pharma biotech"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "52"
+      }
+    ],
+    "pair_disagreement_fraction": 0.48484848484848486,
+    "relevant_conditions": 8,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "52",
+    "topic_name": "52_biotech_pharma_discovery_biopharma",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "relevant",
+    "02-mixed-xhigh": "irrelevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "irrelevant",
+    "disagreeing_condition_pairs": 32,
+    "irrelevant_conditions": 8,
+    "keywords": [
+      "identity",
+      "okta",
+      "customer identity",
+      "cloud",
+      "security",
+      "auth0",
+      "access",
+      "workforce",
+      "customer",
+      "access management",
+      "governance",
+      "platform",
+      "saas",
+      "authentication",
+      "customers"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "165"
+      }
+    ],
+    "pair_disagreement_fraction": 0.48484848484848486,
+    "relevant_conditions": 4,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "165",
+    "topic_name": "165_identity_okta_customer identity_cloud",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "irrelevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "irrelevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 32,
+    "irrelevant_conditions": 8,
+    "keywords": [
+      "hemophilia",
+      "factor",
+      "factor viii",
+      "viii",
+      "bleeding",
+      "patients",
+      "gene",
+      "therapy",
+      "gene therapy",
+      "ix",
+      "recombinant",
+      "knockdown",
+      "phase",
+      "data",
+      "disorders"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "191"
+      }
+    ],
+    "pair_disagreement_fraction": 0.48484848484848486,
+    "relevant_conditions": 4,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "191",
+    "topic_name": "191_hemophilia_factor_factor viii_viii",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "relevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "irrelevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "relevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 32,
+    "irrelevant_conditions": 4,
+    "keywords": [
+      "rfid",
+      "rain",
+      "premises",
+      "loss prevention",
+      "checkout",
+      "items",
+      "retailers",
+      "item",
+      "readers",
+      "ic",
+      "reader",
+      "retail",
+      "visibility",
+      "prevention",
+      "federal"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "274"
+      }
+    ],
+    "pair_disagreement_fraction": 0.48484848484848486,
+    "relevant_conditions": 8,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "274",
+    "topic_name": "274_rfid_rain_premises_loss prevention",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "irrelevant",
+    "02-mixed-xhigh": "irrelevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "relevant",
+    "05-sol61-high": "irrelevant",
+    "06-sol61-xhigh": "irrelevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "relevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "irrelevant",
+    "12-astra-xhigh": "irrelevant",
+    "disagreeing_condition_pairs": 32,
+    "irrelevant_conditions": 8,
+    "keywords": [
+      "royalty",
+      "royalties",
+      "licensing",
+      "license",
+      "ip",
+      "royalty rate",
+      "royalty stream",
+      "licenses",
+      "deals",
+      "licensee",
+      "royalty rates",
+      "agreement",
+      "royalties think",
+      "patent",
+      "think"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "284"
+      }
+    ],
+    "pair_disagreement_fraction": 0.48484848484848486,
+    "relevant_conditions": 4,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "284",
+    "topic_name": "284_royalty_royalties_licensing_license",
+    "unresolved_conditions": 0
+  },
+  {
+    "01-mixed-high": "relevant",
+    "02-mixed-xhigh": "relevant",
+    "03-mixed-medium": "relevant",
+    "04-sol61-medium": "irrelevant",
+    "05-sol61-high": "relevant",
+    "06-sol61-xhigh": "relevant",
+    "07-sol6-medium": "irrelevant",
+    "08-sol6-high": "irrelevant",
+    "09-sol6-xhigh": "irrelevant",
+    "10-astra-medium": "relevant",
+    "11-astra-high": "relevant",
+    "12-astra-xhigh": "relevant",
+    "disagreeing_condition_pairs": 32,
+    "irrelevant_conditions": 4,
+    "keywords": [
+      "niagen",
+      "tru",
+      "science",
+      "research",
+      "aging",
+      "studies",
+      "ingredient",
+      "dietary",
+      "published",
+      "precursors",
+      "health",
+      "scientific",
+      "dietary supplement",
+      "cellular",
+      "preclinical"
+    ],
+    "observed_label_variation": true,
+    "original_references": [
+      {
+        "condition_id": "01-mixed-high",
+        "decisions_path": "results/2026-10-19-three-models/details/decisions.json",
+        "initial_records": {
+          "A": "results/2026-10-19-three-models/details/readers/A/initial-labels.json",
+          "B": "results/2026-10-19-three-models/details/readers/B/initial-labels.json",
+          "C": "results/2026-10-19-three-models/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "02-mixed-xhigh",
+        "decisions_path": "experiment/runs/02-mixed-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/02-mixed-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/02-mixed-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/02-mixed-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "03-mixed-medium",
+        "decisions_path": "experiment/runs/03-mixed-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/03-mixed-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/03-mixed-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/03-mixed-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "04-sol61-medium",
+        "decisions_path": "experiment/runs/04-sol61-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/04-sol61-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/04-sol61-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/04-sol61-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "05-sol61-high",
+        "decisions_path": "experiment/runs/05-sol61-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/05-sol61-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/05-sol61-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/05-sol61-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "06-sol61-xhigh",
+        "decisions_path": "experiment/runs/06-sol61-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/06-sol61-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/06-sol61-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/06-sol61-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "07-sol6-medium",
+        "decisions_path": "experiment/runs/07-sol6-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/07-sol6-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/07-sol6-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/07-sol6-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "08-sol6-high",
+        "decisions_path": "experiment/runs/08-sol6-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/08-sol6-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/08-sol6-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/08-sol6-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "09-sol6-xhigh",
+        "decisions_path": "experiment/runs/09-sol6-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/09-sol6-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/09-sol6-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/09-sol6-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "10-astra-medium",
+        "decisions_path": "experiment/runs/10-astra-medium/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/10-astra-medium/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/10-astra-medium/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/10-astra-medium/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "11-astra-high",
+        "decisions_path": "experiment/runs/11-astra-high/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/11-astra-high/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/11-astra-high/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/11-astra-high/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      },
+      {
+        "condition_id": "12-astra-xhigh",
+        "decisions_path": "experiment/runs/12-astra-xhigh/details/decisions.json",
+        "initial_records": {
+          "A": "experiment/runs/12-astra-xhigh/details/readers/A/initial-labels.json",
+          "B": "experiment/runs/12-astra-xhigh/details/readers/B/initial-labels.json",
+          "C": "experiment/runs/12-astra-xhigh/details/readers/C/initial-labels.json"
+        },
+        "topic_id": "332"
+      }
+    ],
+    "pair_disagreement_fraction": 0.48484848484848486,
+    "relevant_conditions": 8,
+    "resolved_condition_pairs": 66,
+    "resolved_conditions": 12,
+    "status": "variable",
+    "topic_id": "332",
+    "topic_name": "332_niagen_tru_science_research",
+    "unresolved_conditions": 0
+  }
+]

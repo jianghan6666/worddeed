@@ -1,0 +1,57 @@
+{
+  "observed_on": "2026-10-20",
+  "catalogue_fetched_at": "2026-10-20T00:57:18.420191Z",
+  "client_version": "0.163.0",
+  "source": "Installed Codex model catalogue; visibility=list. Also corroborated by current desktop task interface model options.",
+  "scope": "User-selected GPT-6.1 Sol and GPT-6 Astra; one provider.",
+  "availability_status": "relevant six native model-effort schema checks passed; historical evidence retained outside study",
+  "shared_efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+  ],
+  "models": [
+    {
+      "slug": "gpt-6.1-sol",
+      "display_name": "GPT-6.1-Sol",
+      "default_reasoning_level": "low",
+      "supported_reasoning_efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-6-astra",
+      "display_name": "GPT-6-Astra",
+      "default_reasoning_level": "medium",
+      "supported_reasoning_efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    }
+  ],
+  "main_efforts": [
+    "medium",
+    "high",
+    "xhigh"
+  ],
+  "design_revision": 9,
+  "excluded_by_scope": [
+    "gpt-6-sol",
+    "gpt-6-luna",
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-5.6-luna"
+  ],
+  "selection_note": "Revision 9 narrows the saved inventory using explicit human model correction. Relevant native preflights passed in revision-8 preparation; records remain local."
+}

@@ -1,0 +1,114 @@
+{
+  "target": "rd_at_fill0",
+  "selection": "topic_selections/b1-gpt-6-astra-P0-xhigh.json",
+  "selection_sha256": "be14a1f557fbb28a9f4702af15ec49d9fb0ea7534e7701fd5cc301872d4461e9",
+  "n_topics": 321,
+  "variables": [
+    "topics:astra",
+    "sentiment"
+  ],
+  "models": {
+    "ridge": {
+      "oof_r2": 0.5350551225573617,
+      "oof_mse": 0.006005869853653396,
+      "oof_corr": 0.731486266069739,
+      "full_insample_r2": 0.5530652769426496,
+      "final_best_params": {
+        "alpha": 1000
+      },
+      "final_cv_r2": 0.5322112662466401,
+      "folds": {
+        "0": {
+          "best_params": {
+            "alpha": 1000
+          },
+          "cv_r2": 0.5237427215139286,
+          "n_train": 23297
+        },
+        "1": {
+          "best_params": {
+            "alpha": 1000
+          },
+          "cv_r2": 0.5334023109399741,
+          "n_train": 23309
+        },
+        "2": {
+          "best_params": {
+            "alpha": 1000
+          },
+          "cv_r2": 0.528797335732178,
+          "n_train": 23224
+        },
+        "3": {
+          "best_params": {
+            "alpha": 1000
+          },
+          "cv_r2": 0.5368451125803968,
+          "n_train": 23487
+        },
+        "4": {
+          "best_params": {
+            "alpha": 1000
+          },
+          "cv_r2": 0.5269394936691018,
+          "n_train": 23447
+        }
+      },
+      "secs": 28
+    },
+    "xgboost": {
+      "oof_r2": 0.612837887707173,
+      "oof_mse": 0.005001120286529307,
+      "oof_corr": 0.7828576391040852,
+      "full_insample_r2": 0.8982285501757138,
+      "final_best_params": {
+        "max_depth": 6
+      },
+      "final_cv_r2": 0.609654179978615,
+      "folds": {
+        "0": {
+          "best_params": {
+            "max_depth": 6
+          },
+          "cv_r2": 0.5949284243621852,
+          "n_train": 23297
+        },
+        "1": {
+          "best_params": {
+            "max_depth": 6
+          },
+          "cv_r2": 0.6076800377479364,
+          "n_train": 23309
+        },
+        "2": {
+          "best_params": {
+            "max_depth": 6
+          },
+          "cv_r2": 0.6072640329997223,
+          "n_train": 23224
+        },
+        "3": {
+          "best_params": {
+            "max_depth": 6
+          },
+          "cv_r2": 0.6102886122382667,
+          "n_train": 23487
+        },
+        "4": {
+          "best_params": {
+            "max_depth": 6
+          },
+          "cv_r2": 0.6065449415054744,
+          "n_train": 23447
+        }
+      },
+      "secs": 550
+    }
+  },
+  "transforms": {
+    "raw": "predicted R&D / total assets",
+    "clip0": "max(score, 0)",
+    "pct": "percentile rank over all firm-years, (0, 1], ties averaged",
+    "z": "(score - mean) / sd over all firm-years"
+  }
+}

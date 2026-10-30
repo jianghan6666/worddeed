@@ -1,0 +1,76 @@
+--- original
++++ package
+@@ -1,13 +1,15 @@
++# Portable package adaptation: I/O roots and annual-B output scope only; match criteria unchanged.
+ """Official WRDS ID verification of frozen R&D scores, no estimation or retraining."""
+ from pathlib import Path
+ from datetime import datetime, timezone
+ import argparse,hashlib,json
+ import numpy as np
+ import pandas as pd
+-ROOT=Path(__file__).resolve().parents[3]
+-REP=Path(__file__).resolve().parents[1]
+-OLD=REP/'data/matched/rd_scores_20261025'
+-RAW=REP/'data/raw/linking_20261025'
++import os
++ROOT=Path(os.environ['FULLRAW_INPUT_ROOT']).resolve()
++REP=Path(os.environ['FULLRAW_OUTPUT_ROOT']).resolve()/'replications/caliskan_doukas_2015'
++OLD=REP/'data/matched/local'
++RAW=ROOT/'replications/caliskan_doukas_2015/data/raw/linking_20261025'
+ def sha(p):
+  h=hashlib.sha256()
+  with open(p,'rb') as f:
+@@ -20,13 +22,13 @@
+  df.to_parquet(p.with_suffix('.parquet'),index=False);csv(df,p.with_suffix('.csv'))
+ def js(v):return json.dumps(v,ensure_ascii=False)
+ def main():
+- ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,default=REP/'data/matched/rd_scores_wrds_20261025');args=ap.parse_args();out=args.out.resolve()
++ ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,default=REP/'data/matched/official');args=ap.parse_args();out=args.out.resolve()
+  if out.exists():raise FileExistsError('Output immutable; use a new --out directory: '+str(out))
+- for d in ['', 'audit','annual','pceo']:(out/d).mkdir(parents=True,exist_ok=True)
++ for d in ['', 'audit','annual']:(out/d).mkdir(parents=True,exist_ok=True)
+  protected=[f for f in OLD.rglob('*') if f.is_file()]+[f for f in RAW.rglob('*') if f.is_file()]
+  oldmanifest=json.loads((OLD/'manifest.json').read_text(encoding='utf-8'))
+  protected+= [Path(p) for p in oldmanifest['source_sha256']]
+- protected+=[ROOT/'data/panel/risk_scores.parquet',ROOT/'data/panel/ceo_firm_year_panel.parquet',ROOT/'data/panel/component_map.parquet',ROOT/'data/replication_sample/transcripts_is_ceo.pickle',ROOT/'agents_coop/claude.md']
++ protected+=[ROOT/'data/panel/risk_scores.parquet',ROOT/'data/panel/ceo_firm_year_panel.parquet',ROOT/'data/panel/component_map.parquet',ROOT/'data/replication_sample/transcript_identity.pickle.gz']
+  protected=sorted(set(protected));before={str(p):sha(p) for p in protected}
+  (out/'audit/protected_inputs_before.json').write_text(json.dumps(before,indent=2),encoding='utf-8')
+  print('Protected input hashes recorded',flush=True)
+@@ -38,7 +40,7 @@
+  company['link_start']=pd.to_datetime(company.startdate,errors='raise');company['link_end']=pd.to_datetime(company.enddate,errors='raise')
+  people['official_person_row_id']=np.arange(len(people));assert people['score'].between(1,13).all()
+  # Reconstruct actual company/date requests from every mapped source component, not modal panel IDs.
+- comp=pd.read_pickle(ROOT/'data/replication_sample/transcripts_is_ceo.pickle')
++ comp=pd.read_pickle(ROOT/'data/replication_sample/transcript_identity.pickle.gz')
+  comp=comp[['orig_row','companyid','mostimportantdateutc','directorid','transcriptpersonid','proid']].copy();assert comp.orig_row.is_unique
+  cmap=pd.read_parquet(ROOT/'data/panel/component_map.parquet',columns=['orig_idx','panel_id']);assert cmap.orig_idx.is_unique
+  mapped=cmap.merge(comp,left_on='orig_idx',right_on='orig_row',how='left',validate='1:1',indicator=True)
+@@ -161,8 +163,8 @@
+  def count(df,branch,version,period):
+   counts.append(dict(branch=branch,version=version,period=period,input_n=len(df),candidate_n=int(df.score_key_match.sum()),old_entity_n=int(df.score_entity_match.sum()),official_company_verified_n=int(df.official_company_verified.sum()),official_person_any_score_pair_n=int(df.official_person_pair_any_score.sum()),official_person_verified_n=int(df.official_person_verified.sum()),official_entity_n=int(df.official_entity_verified.sum()),official_fiscal_compatible_n=int(df.official_fiscal_compatible.sum()),official_strict_n=int(df.official_strict_period_match.sum()),newly_verified_n=int(df.official_newly_verified.sum()),old_accepted_not_verified_n=int(df.official_old_accepted_not_verified.sum())))
+  count(j,'master','all','2006_2023')
+- for branch in ['annual','pceo']:
+-  files=sorted((OLD/branch).glob('*.parquet'));assert len(files)==6
++ for branch in ['annual']:
++  files=sorted((OLD/branch).glob('*.parquet'));assert len(files)==3
+   for p in files:
+    df=pd.read_parquet(p);z=df.merge(payload,on=['gvkey','fyear'],how='left',validate='1:1',indicator='payload_join');assert z.payload_join.eq('both').all();z=z.drop(columns='payload_join');pd.testing.assert_frame_equal(z[df.columns],df)
+    save(z,out/branch/p.stem);count(z,branch,p.stem.split('_')[1].upper(),p.stem.split('_',2)[2].replace('_rd_scores',''));tablefiles.append(dict(input=str(p),output=str(out/branch/(p.stem+'.parquet')),rows=len(z),all_old_columns_exact=True))
+@@ -188,14 +190,14 @@
+   dictionary.append(dict(field=c,dtype=str(j[c].dtype),definition=d))
+  csv(pd.DataFrame(dictionary),out/'match_variable_dictionary.csv')
+  after={str(p):sha(p) for p in protected};assert before==after,'Protected source, old outputs, or Claude document changed during build'
+- validation=dict(status='passed',protected_files=len(protected),protected_sha256_unchanged=True,all_old_master_columns_exact=True,all_12_tables_prior_columns_exact=True,source_rows=len(source),master_rows=len(j),mapped_components=len(mapped),company_date_requests=len(requests),source_score_values_exact=True,no_regression_or_retraining=True,no_upstream_gvkey_or_speaker_remap=True,no_transcript_to_personid_numeric_comparison=True,unique_highest_quality_person_policy=True)
++ validation=dict(status='passed',protected_files=len(protected),protected_sha256_unchanged=True,all_old_master_columns_exact=True,all_3_annual_B_tables_prior_columns_exact=True,source_rows=len(source),master_rows=len(j),mapped_components=len(mapped),company_date_requests=len(requests),source_score_values_exact=True,no_regression_or_retraining=True,no_upstream_gvkey_or_speaker_remap=True,no_transcript_to_personid_numeric_comparison=True,unique_highest_quality_person_policy=True)
+  (out/'audit/validation.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2),encoding='utf-8')
+  manifest=dict(created_utc=datetime.now(timezone.utc).isoformat(),operator='Codex',scope='official_link_matching_only_no_regression',protected_sha256=before,builder_sha256=sha(Path(__file__)),input_old_matching=str(OLD),official_raw_root=str(RAW),company_validity_policy='Check all mapped component companyid/date plus each constituent company source accounting date; inclusive observed bounds; missing endpoints unbounded convention, not historical certification; all requests must have unique active target GVKEY',person_policy='BoardEx only; unique execid among score1 highest quality links. Preserve all other scores and styles as diagnostics. Explicit sourceexecid contradiction never overridden, all old family/mixed-ID quarantine remains.',ciq_person_limit='Transcripts and People Intelligence products denied for current account; E-Cquery11828367 returned0; professional PROID is not personid, required ciqprofessional bridge unavailable',recovery_policy='Recover absent inheritedexecid only when official exact BoardEx-ID pair, same original company/calendarlabel/accountingdate/name and existing guards pass; do not move score to corrected GVKEY or change source aggregates/model',output_tables=tablefiles,coverage=counts,validation=validation)
+  (out/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+  table=['| 分支 | 版本 | 原输入N | 旧实体N | 官方实体N | 财年内兼容N | 严格同窗口N | 新补证N | 旧接受未获官方通过N |','|---|---|---:|---:|---:|---:|---:|---:|---:|']
+  for r in counts:
+   if r['branch']=='master' or r['period']=='extended_2006_2023':table.append('| '+str(r['branch'])+' | '+r['version']+' | '+' | '.join(f"{r[k]:,}" for k in ['input_n','old_entity_n','official_entity_n','official_fiscal_compatible_n','official_strict_n','newly_verified_n','old_accepted_not_verified_n'])+' |')
+- report=['# WRDS官方连接核验后的R&D score匹配','','操作者：Codex。本阶段只补充官方身份核验，未运行回归、重训、生成新分数或修复源训练面板。旧版匹配及所有旧列完整保留，新增vendor_*分数和official_*标记。','','## 覆盖和调用','',*table,'','以上均为匹配输入行数，非回归实际N。现有分数仍仅2013–2023，不能匹配2006–2011原期。','最保守调用：读annual/或pceo/下相应parquet，筛official_strict_period_match，使用vendor_strict_risk_score_ridge和vendor_strict_risk_score_xgboost。若仅需要官方实体匹配，筛official_entity_verified并用vendor_risk_score_*，同时解释原自然年标签与财年的差异。_clip0/_pct/_z均保持源值；_full未进入vendor主列。','','## 官方公司核验','','CIQ wrds_gvkey全表145303行，6字段，查询11828375；所有实际组成component的companyid/日期，加每个公司对应源会计期末，共逐请求核验；不只看panel众数companyid。记录的startdate/enddate按含端点比较；缺失端点按无界处理是一项兼容性约定，不代表证实全部历史有效期。若同一日期存在多个GVKEY、不同GVKEY、无链接、超出已知日期等，保留原因并不放行。','发现源GVKEY与官方链接不符时不自动把分数搬给另一个公司：源R&D标签、fold/group和CEO选择可能已受上游错配影响，官方ID复核不能替代源面板重建或重训。','','## 官方人员核验','','People Link全表44373行，查询11828366，保留全部16字段和全部质量分数/匹配方式。官方变量说明1为最高质量、13最低。当前主验收用score=1且该directorid只对应一个execid，须等于回归表选定execid。这是研究者为精准匹配设定的保守规则，不是论文或WRDS要求的唯一阈值。','公司支持型score1–8、existing9、年龄型10/12及一对多都保留诊断。只有低质量年龄候选与旧execid不同，不能据此称旧CEO已被证实错误。','仅直接使用BoardEx directorid；源tp_的transcriptpersonid不等于CIQ People Intelligence personid。PROID官方定义是人与公司等机构的professional实例，也不等于personid。需要ciqprofessional(proid,personid,companyid)桥。当前账号明确无ciq_transcripts、ciq_pplintel权限，ExecuComp-CIQ People Link全量查询11828367返回空；这些行继续待核，不按数字相同补配。','官方directorid↔execid只能认证ID对，不能认证每段讲话原始directorid赋值正确。因此原同名家族/多execid/多公司/人员冲突隔离规则仍保留，明确不一致的继承execid不覆盖。','旧缺execid的行若现在获得唯一最高质量BoardEx链接，且公司/姓名/会计日/其他歧义守卫全部通过，可以新增official_entity_verified；旧列和旧拒配原因仍保留以便审计。','','## 验证','','Master全部293个旧列及12张输入的所有旧列、行序、行数和dtype精确保留；新vendor分数逐值复制candidate交叉拟合源值。原自然年/财年、任职日期、讲话区间标记未变。独立源资料和旧结果SHA保护详见manifest.json。原strict标记不是本次新官方标记，调用勿混淆。','有些公司链接没有历史端点；有些CEO任职日期仍缺失；这些未知不是完整历史认证。score_tenure_start_known和score_tenure_left_date_known继续保留。','','## 文件入口','','- master_with_rd_scores.parquet/csv：全部35151目标行和新增官方证据。','- master_official_entity_matched.* / master_official_strict_period_matched.*：明确新口径子集。','- annual/、pceo/各6张附表，全部旧列不变。','- coverage_summary.csv、coverage_by_year.csv：匹配数和新旧变化。','- audit/source_official_identity.*：全29506源分数的官方公司、人员和组件ID证据。','- audit/company_date_requests.*、company_link_row_evidence.parquet、person_link_row_evidence.parquet：请求、官方原表行号与质量证据。','- audit/newly_verified_missing_inherited_execid.csv、old_accepted_not_officially_verified.csv、unverified_candidates.csv、entity_verified_period_review.csv、source_company_problem_queue.csv：逐行复核清单。','- match_variable_dictionary.csv、manifest.json、audit/validation.json、output_manifest.json：字段、规则、来源和产物SHA。','- 原始来源、查询/权限与原始SQL状态：data/raw/linking_20261025/acquisition_metadata.json（相对replication根）。','','## 可复现命令','','在replication根目录运行：python scripts/verify_rd_score_vendor_links.py --out data/matched/一个全新目录。脚本拒绝覆盖现有目录。没有回归调用。','']
++ report=['# WRDS官方连接核验后的R&D score匹配','','操作者：Codex。本阶段只补充官方身份核验，未运行回归、重训、生成新分数或修复源训练面板。旧版匹配及所有旧列完整保留，新增vendor_*分数和official_*标记。','','## 覆盖和调用','',*table,'','以上均为匹配输入行数，非回归实际N。现有分数仍仅2013–2023，不能匹配2006–2011原期。','最保守调用：读annual/下相应parquet，筛official_strict_period_match，使用vendor_strict_risk_score_ridge和vendor_strict_risk_score_xgboost。若仅需要官方实体匹配，筛official_entity_verified并用vendor_risk_score_*，同时解释原自然年标签与财年的差异。_clip0/_pct/_z均保持源值；_full未进入vendor主列。','','## 官方公司核验','','CIQ wrds_gvkey全表145303行，6字段，查询11828375；所有实际组成component的companyid/日期，加每个公司对应源会计期末，共逐请求核验；不只看panel众数companyid。记录的startdate/enddate按含端点比较；缺失端点按无界处理是一项兼容性约定，不代表证实全部历史有效期。若同一日期存在多个GVKEY、不同GVKEY、无链接、超出已知日期等，保留原因并不放行。','发现源GVKEY与官方链接不符时不自动把分数搬给另一个公司：源R&D标签、fold/group和CEO选择可能已受上游错配影响，官方ID复核不能替代源面板重建或重训。','','## 官方人员核验','','People Link全表44373行，查询11828366，保留全部16字段和全部质量分数/匹配方式。官方变量说明1为最高质量、13最低。当前主验收用score=1且该directorid只对应一个execid，须等于回归表选定execid。这是研究者为精准匹配设定的保守规则，不是论文或WRDS要求的唯一阈值。','公司支持型score1–8、existing9、年龄型10/12及一对多都保留诊断。只有低质量年龄候选与旧execid不同，不能据此称旧CEO已被证实错误。','仅直接使用BoardEx directorid；源tp_的transcriptpersonid不等于CIQ People Intelligence personid。PROID官方定义是人与公司等机构的professional实例，也不等于personid。需要ciqprofessional(proid,personid,companyid)桥。当前账号明确无ciq_transcripts、ciq_pplintel权限，ExecuComp-CIQ People Link全量查询11828367返回空；这些行继续待核，不按数字相同补配。','官方directorid↔execid只能认证ID对，不能认证每段讲话原始directorid赋值正确。因此原同名家族/多execid/多公司/人员冲突隔离规则仍保留，明确不一致的继承execid不覆盖。','旧缺execid的行若现在获得唯一最高质量BoardEx链接，且公司/姓名/会计日/其他歧义守卫全部通过，可以新增official_entity_verified；旧列和旧拒配原因仍保留以便审计。','','## 验证','','Master全部293个旧列及3张年度B输入的所有旧列、行序、行数和dtype精确保留；新vendor分数逐值复制candidate交叉拟合源值。原自然年/财年、任职日期、讲话区间标记未变。独立源资料和旧结果SHA保护详见manifest.json。原strict标记不是本次新官方标记，调用勿混淆。','有些公司链接没有历史端点；有些CEO任职日期仍缺失；这些未知不是完整历史认证。score_tenure_start_known和score_tenure_left_date_known继续保留。','','## 文件入口','','- master_with_rd_scores.parquet/csv：全部35151目标行和新增官方证据。','- master_official_entity_matched.* / master_official_strict_period_matched.*：明确新口径子集。','- annual/下3张年度B附表，全部旧列不变。','- coverage_summary.csv、coverage_by_year.csv：匹配数和新旧变化。','- audit/source_official_identity.*：全29506源分数的官方公司、人员和组件ID证据。','- audit/company_date_requests.*、company_link_row_evidence.parquet、person_link_row_evidence.parquet：请求、官方原表行号与质量证据。','- audit/newly_verified_missing_inherited_execid.csv、old_accepted_not_officially_verified.csv、unverified_candidates.csv、entity_verified_period_review.csv、source_company_problem_queue.csv：逐行复核清单。','- match_variable_dictionary.csv、manifest.json、audit/validation.json、output_manifest.json：字段、规则、来源和产物SHA。','- 原始来源、查询/权限与原始SQL状态：data/raw/linking_20261025/acquisition_metadata.json（相对replication根）。','','## 可复现命令','','From the package directory run: python code/matching_stage.py --stage all. Financial reconstruction must already be complete. Outputs are written only under the selected run-root; existing matching directories are never overwritten.','']
+  (out/'MATCH_REPORT.md').write_text('\n'.join(report),encoding='utf-8')
+  outputs=[p for p in out.rglob('*') if p.is_file() and p.name not in ['output_manifest.json','READY.txt']]
+  (out/'output_manifest.json').write_text(json.dumps([dict(path=str(p.relative_to(out)),bytes=p.stat().st_size,sha256=sha(p)) for p in outputs],ensure_ascii=False,indent=2),encoding='utf-8')

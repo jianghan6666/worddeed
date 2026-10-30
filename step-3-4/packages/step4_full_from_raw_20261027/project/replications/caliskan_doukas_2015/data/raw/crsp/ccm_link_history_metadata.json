@@ -1,0 +1,172 @@
+{
+  "dataset": "CRSP/Compustat Merged Database - Linking Table",
+  "wrds_query_id": "11827431",
+  "source_page": "https://wrds-www.wharton.upenn.edu/pages/get-data/center-research-security-prices-crsp/annual-update/crspcompustat-merged/compustat-crsp-link/",
+  "result_page": "https://wrds-www.wharton.upenn.edu/query-manager/query/11827431/",
+  "download_url": "https://wrds-www.wharton.upenn.edu/query-manager/query-document/29368339/",
+  "download_completed_utc": "2026-10-24T19:24:35.783Z",
+  "validation_utc": "2026-10-24T19:27:02.322Z",
+  "browser_download_filename": "sybpm1tkw1ofavpl.csv.gz",
+  "saved_filename": "ccm_link_history_all.csv.gz",
+  "wrds_reported_rows": 110124,
+  "wrds_reported_size": "1.2 MiB",
+  "query_scope": {
+    "company_scope": "Entire database",
+    "date_filter": "None (full available link history)",
+    "linktype_options_selected": [
+      "LC",
+      "LU",
+      "LS",
+      "LX",
+      "LD",
+      "LN",
+      "NR",
+      "NU"
+    ],
+    "linkprim_filter": "None",
+    "selected_link_fields": [
+      "gvkey",
+      "liid",
+      "linkdt",
+      "linkenddt",
+      "linkprim",
+      "linktype",
+      "lpermco",
+      "lpermno"
+    ],
+    "automatic_identifier": "tic"
+  },
+  "server_implementation": {
+    "library_displayed": "crspa",
+    "file_displayed": "ccmlinktable",
+    "data_dictionary_product": "crsp_a_ccm",
+    "data_dictionary_table": "ccmxpf_lnkhist",
+    "query_parameters_file": "ccm_link_history_query_parameters.json",
+    "query_parameters_note": "Transcribed from expanded WRDS Input Parameters display",
+    "sql_status": "The legacy SAS query result does not expose exact SQL; no invented SQL was saved"
+  },
+  "field_dictionary": [
+    {
+      "name": "gvkey",
+      "source_type": "Char(6)",
+      "description": "Standard and Poor identifier; preserve leading zeros"
+    },
+    {
+      "name": "tic",
+      "description": "Automatically returned company header ticker; not historical security identifier"
+    },
+    {
+      "name": "LINKPRIM",
+      "source_type": "Char(1)",
+      "description": "Primary Link Marker"
+    },
+    {
+      "name": "LIID",
+      "source_type": "Char(3)",
+      "description": "Security-level Identifier"
+    },
+    {
+      "name": "LINKTYPE",
+      "source_type": "Char(2)",
+      "description": "Link Type Code; all available UI types retained"
+    },
+    {
+      "name": "LPERMNO",
+      "source_type": "Float(53)",
+      "description": "Historical CRSP PERMNO link to Compustat record"
+    },
+    {
+      "name": "LPERMCO",
+      "source_type": "Float(53)",
+      "description": "Historical CRSP PERMCO link to Compustat record"
+    },
+    {
+      "name": "LINKDT",
+      "source_type": "Date",
+      "description": "First Effective Date of Link"
+    },
+    {
+      "name": "LINKENDDT",
+      "source_type": "Date",
+      "description": "Last Effective Date of Link; original E sentinel retained unchanged"
+    }
+  ],
+  "dictionary_reference": {
+    "url": "https://wrds-www.wharton.upenn.edu/data-dictionary/crsp_a_ccm/ccmxpf_lnkhist/",
+    "schema": "crsp_a_ccm",
+    "table": "ccmxpf_lnkhist",
+    "reported_row_count": 123388,
+    "reported_linkdt_range": [
+      "1946-01-01",
+      "2026-01-30"
+    ],
+    "reported_linkenddt_range": [
+      "1950-05-30",
+      "2026-01-30"
+    ],
+    "completeness_caveat": "Dictionary Postgres table row count (123388) differs from standard legacy SAS linking-form result (110124). The extract matches the form result but is not asserted to be the complete current Postgres table. Cause is not established."
+  },
+  "validation": {
+    "file": "ccm_link_history_all.csv.gz",
+    "rows": 110124,
+    "fields": [
+      "gvkey",
+      "tic",
+      "LINKPRIM",
+      "LIID",
+      "LINKTYPE",
+      "LPERMNO",
+      "LPERMCO",
+      "LINKDT",
+      "LINKENDDT"
+    ],
+    "field_count": 9,
+    "malformed_rows": 0,
+    "gzip_read_to_eof_success": true,
+    "csv_readable": true,
+    "unique_gvkey_count": 46538,
+    "linktype_counts": {
+      "LU": 15916,
+      "NU": 31436,
+      "NR": 37455,
+      "LC": 16908,
+      "LX": 1169,
+      "LD": 112,
+      "LN": 185,
+      "LS": 6943
+    },
+    "linkprim_counts": {
+      "P": 48501,
+      "C": 53424,
+      "N": 4940,
+      "J": 3259
+    },
+    "raw_missing_counts": {
+      "LPERMNO": 68891,
+      "LPERMCO": 68891,
+      "tic": 47
+    },
+    "date_ranges": {
+      "LINKDT": {
+        "min": "1946-01-01",
+        "max": "2025-12-31"
+      },
+      "LINKENDDT": {
+        "min": "1950-05-30",
+        "max": "2026-01-30"
+      }
+    },
+    "raw_date_sentinels": {
+      "LINKDT": {},
+      "LINKENDDT": {
+        "E": 20367
+      }
+    },
+    "sha256": "d08c0887de29af1a1f2381bad13191b0e4ca1b5abdf882f3b35d9dcfe2adb8d1",
+    "bytes": 1249975
+  },
+  "raw_file_modified": false,
+  "analysis_variables_constructed": false,
+  "analysis_sample_filtered": false,
+  "regressions_run": false
+}
