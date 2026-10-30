@@ -1,0 +1,5208 @@
+{
+  "addendum_sha256": "72e1588fa112a777ec23d35ae4e3c21fd73e48c88cfd5f40d9511d8a57eeb04d",
+  "attempt_id": "first",
+  "catalogue_sha256": "c9efb49c5c225fc4c99954f60affef9f31bd3879bfab4884c180ebd721c22ab8",
+  "defects": [],
+  "design_revision": 9,
+  "initial_seal": null,
+  "labels": [
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors clearly identify a service sector.",
+      "evidence_keywords": [
+        "health care",
+        "medicare",
+        "hospitals"
+      ],
+      "label": "irrelevant",
+      "rationale": "Health care services and payer categories do not specify an organizational risk decision.",
+      "status": "resolved",
+      "topic_id": "0"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Program terminology alone does not establish investment or risk management.",
+      "evidence_keywords": [
+        "aircraft",
+        "defense",
+        "production"
+      ],
+      "label": "irrelevant",
+      "rationale": "Aircraft, defense programs and production describe an industry without a supported risk choice.",
+      "status": "resolved",
+      "topic_id": "1"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The topic is clearly about profitability reporting.",
+      "evidence_keywords": [
+        "gross margin",
+        "margin expansion",
+        "margin improvement"
+      ],
+      "label": "irrelevant",
+      "rationale": "Margin changes describe operating performance rather than willingness to accept uncertainty.",
+      "status": "resolved",
+      "topic_id": "2"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Trial stages support R&D, although funding choices are not explicit.",
+      "evidence_keywords": [
+        "trial",
+        "phase",
+        "clinical",
+        "trials"
+      ],
+      "label": "relevant",
+      "rationale": "Clinical trials and development phases support an R&D scenario with uncertain outcomes.",
+      "status": "resolved",
+      "topic_id": "3"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific uncertainty acceptance or mitigation decision accompanies price pressures.",
+      "evidence_keywords": [
+        "pricing",
+        "inflation",
+        "raw",
+        "costs"
+      ],
+      "label": "irrelevant",
+      "rationale": "Pricing and raw material inflation mainly describe costs and business conditions.",
+      "status": "resolved",
+      "topic_id": "4"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Investment strategies could involve risk choices, but the descriptors remain sectoral.",
+      "evidence_keywords": [
+        "clients",
+        "funds",
+        "wealth",
+        "fee"
+      ],
+      "label": "irrelevant",
+      "rationale": "Funds, clients and fee terminology mainly describe the asset management business.",
+      "status": "resolved",
+      "topic_id": "5"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Specific mechanisms of risk selection and transfer support relevance.",
+      "evidence_keywords": [
+        "underwriting",
+        "reinsurance",
+        "loss",
+        "risk"
+      ],
+      "label": "relevant",
+      "rationale": "Underwriting and reinsurance directly concern accepting and transferring possible losses.",
+      "status": "resolved",
+      "topic_id": "6"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The roster describes energy activities, without an investment or mitigation scenario.",
+      "evidence_keywords": [
+        "energy",
+        "solar",
+        "utility",
+        "generation"
+      ],
+      "label": "irrelevant",
+      "rationale": "Energy generation and utility technologies do not specify a risk-related organizational choice.",
+      "status": "resolved",
+      "topic_id": "7"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "A forecast range alone does not show risk preference or a risk decision.",
+      "evidence_keywords": [
+        "guidance",
+        "quarter",
+        "seasonality",
+        "range"
+      ],
+      "label": "irrelevant",
+      "rationale": "Quarterly guidance and seasonality are routine outlook reporting.",
+      "status": "resolved",
+      "topic_id": "8"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Operating leverage here is embedded in expense reporting rather than financing choices.",
+      "evidence_keywords": [
+        "expenses",
+        "savings",
+        "efficiency",
+        "operating leverage"
+      ],
+      "label": "irrelevant",
+      "rationale": "Expenses, savings and operating leverage concern routine operating efficiency.",
+      "status": "resolved",
+      "topic_id": "9"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Brexit does not establish a risk scenario within these predominantly geographic descriptors.",
+      "evidence_keywords": [
+        "europe",
+        "asia",
+        "international",
+        "countries"
+      ],
+      "label": "irrelevant",
+      "rationale": "International regions and countries mainly identify geographic markets.",
+      "status": "resolved",
+      "topic_id": "10"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors lack a specific risk state or decision.",
+      "evidence_keywords": [
+        "restaurant",
+        "brands",
+        "menu"
+      ],
+      "label": "irrelevant",
+      "rationale": "Restaurants, brands and menus describe food service operations.",
+      "status": "resolved",
+      "topic_id": "11"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Positive language does not itself establish risk taking.",
+      "evidence_keywords": [
+        "excited",
+        "pleased",
+        "proud",
+        "results"
+      ],
+      "label": "irrelevant",
+      "rationale": "Expressions of enthusiasm and satisfaction describe presentation tone and reported performance.",
+      "status": "resolved",
+      "topic_id": "12"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "There is no specified investment commitment or tenant downside decision.",
+      "evidence_keywords": [
+        "lease",
+        "rents",
+        "occupancy"
+      ],
+      "label": "irrelevant",
+      "rationale": "Leasing, rents and occupancy mainly describe property operations.",
+      "status": "resolved",
+      "topic_id": "13"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Acquisition selection is an explicit included decision scenario.",
+      "evidence_keywords": [
+        "acquisitions",
+        "deals",
+        "fit",
+        "disciplined"
+      ],
+      "label": "relevant",
+      "rationale": "Acquisition opportunities, fit and discipline identify choices about undertaking deals.",
+      "status": "resolved",
+      "topic_id": "14"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Clinical terminology lacks a distinct development or organizational risk decision.",
+      "evidence_keywords": [
+        "heart",
+        "valve",
+        "surgery",
+        "device"
+      ],
+      "label": "irrelevant",
+      "rationale": "Heart procedures, patients and devices describe a medical product and treatment area.",
+      "status": "resolved",
+      "topic_id": "15"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Drilling may entail investment uncertainty, but these descriptors emphasize technical operations.",
+      "evidence_keywords": [
+        "wells",
+        "spacing",
+        "laterals",
+        "completion"
+      ],
+      "label": "irrelevant",
+      "rationale": "Well spacing and drilling methods mainly describe petroleum operating techniques.",
+      "status": "resolved",
+      "topic_id": "16"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No concrete risk-related choice is supplied.",
+      "evidence_keywords": [
+        "hotels",
+        "revpar",
+        "rooms",
+        "demand"
+      ],
+      "label": "irrelevant",
+      "rationale": "Hotel demand, rooms and RevPAR are lodging business descriptors and metrics.",
+      "status": "resolved",
+      "topic_id": "17"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Manager identity and succession alone do not support risk preference relevance.",
+      "evidence_keywords": [
+        "board",
+        "ceo",
+        "leadership",
+        "succession"
+      ],
+      "label": "irrelevant",
+      "rationale": "Leadership roles and succession describe management organization without a risk scenario.",
+      "status": "resolved",
+      "topic_id": "18"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors do not specify an investment or uncertainty decision.",
+      "evidence_keywords": [
+        "content",
+        "streaming",
+        "television",
+        "channels"
+      ],
+      "label": "irrelevant",
+      "rationale": "Television, streaming and programming identify media products and distribution channels.",
+      "status": "resolved",
+      "topic_id": "19"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The clustered disclosure phrases explain the risk words as routine reporting.",
+      "evidence_keywords": [
+        "forward looking",
+        "looking statements",
+        "actual results",
+        "sec"
+      ],
+      "label": "irrelevant",
+      "rationale": "Forward-looking statement warnings are disclosure boilerplate without a supported organizational risk choice.",
+      "status": "resolved",
+      "topic_id": "20"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Asset and location descriptions do not establish investment decisions.",
+      "evidence_keywords": [
+        "crude",
+        "barrels",
+        "pipeline",
+        "gulf coast"
+      ],
+      "label": "irrelevant",
+      "rationale": "Oil volumes and pipelines describe commodity transportation assets and operations.",
+      "status": "resolved",
+      "topic_id": "21"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors do not connect governance votes to risk-related organizational choices.",
+      "evidence_keywords": [
+        "vote",
+        "proxy statement",
+        "directors",
+        "meeting"
+      ],
+      "label": "irrelevant",
+      "rationale": "Proxy votes and director proposals mainly concern routine shareholder governance procedures.",
+      "status": "resolved",
+      "topic_id": "22"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Tax effects are present without a deliberate financing or risk management scenario.",
+      "evidence_keywords": [
+        "tax rate",
+        "tax reform",
+        "effective tax",
+        "deferred"
+      ],
+      "label": "irrelevant",
+      "rationale": "Tax rates and reform effects mainly concern tax reporting and policy conditions.",
+      "status": "resolved",
+      "topic_id": "23"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "These are explicit financing mechanisms within the inclusion boundary.",
+      "evidence_keywords": [
+        "debt",
+        "leverage",
+        "revolver",
+        "capital structure"
+      ],
+      "label": "relevant",
+      "rationale": "Debt, leverage and capital structure directly support financing and balance-sheet risk choices.",
+      "status": "resolved",
+      "topic_id": "24"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No risk-related decision scenario is supplied.",
+      "evidence_keywords": [
+        "footwear",
+        "apparel",
+        "fashion",
+        "retail"
+      ],
+      "label": "irrelevant",
+      "rationale": "Apparel and footwear brands describe retail products and categories.",
+      "status": "resolved",
+      "topic_id": "25"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Lending can entail risk decisions, but selection, exposure or financing policy is unspecified.",
+      "evidence_keywords": [
+        "loan growth",
+        "banking",
+        "deposits",
+        "net income"
+      ],
+      "label": "irrelevant",
+      "rationale": "Loans, deposits and banking income primarily describe banking operations and growth.",
+      "status": "resolved",
+      "topic_id": "26"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Agricultural uncertainty is not made into a specific decision scenario.",
+      "evidence_keywords": [
+        "corn",
+        "farmers",
+        "agriculture",
+        "seed"
+      ],
+      "label": "irrelevant",
+      "rationale": "Crop production, farmers and agricultural inputs identify an industry.",
+      "status": "resolved",
+      "topic_id": "27"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "The allocation decision is clear, although downside tradeoffs are implicit.",
+      "evidence_keywords": [
+        "buyback",
+        "share repurchase",
+        "capital",
+        "cash"
+      ],
+      "label": "relevant",
+      "rationale": "Share repurchases represent discretionary capital allocation affecting available financial capacity.",
+      "status": "resolved",
+      "topic_id": "28"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Land appears without explicit acquisition or investment choices.",
+      "evidence_keywords": [
+        "housing",
+        "homes",
+        "communities",
+        "demand"
+      ],
+      "label": "irrelevant",
+      "rationale": "Homes, communities and housing demand mainly describe homebuilding markets.",
+      "status": "resolved",
+      "topic_id": "29"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Threat mitigation is supported, although the topic may also describe security products.",
+      "evidence_keywords": [
+        "firewall",
+        "threat",
+        "cybersecurity",
+        "vulnerability"
+      ],
+      "label": "relevant",
+      "rationale": "Firewalls, cybersecurity and vulnerabilities support deliberate protection against security threats.",
+      "status": "resolved",
+      "topic_id": "30"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No investment commitment or risk management choice is specified.",
+      "evidence_keywords": [
+        "commerce",
+        "stores",
+        "online",
+        "shopping"
+      ],
+      "label": "irrelevant",
+      "rationale": "Online commerce and stores describe retail channels and customer experience.",
+      "status": "resolved",
+      "topic_id": "31"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors clearly identify a service domain.",
+      "evidence_keywords": [
+        "students",
+        "education",
+        "schools",
+        "enrollment"
+      ],
+      "label": "irrelevant",
+      "rationale": "Students, schools and enrollment describe education services.",
+      "status": "resolved",
+      "topic_id": "32"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "A film slate alone does not specify risk acceptance or investment selection.",
+      "evidence_keywords": [
+        "theaters",
+        "films",
+        "box office"
+      ],
+      "label": "irrelevant",
+      "rationale": "Films, theaters and box office describe cinema products and performance.",
+      "status": "resolved",
+      "topic_id": "33"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific policy exposure or organizational response is described.",
+      "evidence_keywords": [
+        "china",
+        "chinese",
+        "market",
+        "chinese government"
+      ],
+      "label": "irrelevant",
+      "rationale": "China and its government mainly identify a geographic business market.",
+      "status": "resolved",
+      "topic_id": "34"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors omit spectrum bidding, investment selection or risk mitigation.",
+      "evidence_keywords": [
+        "spectrum",
+        "5g",
+        "wireless",
+        "lte"
+      ],
+      "label": "irrelevant",
+      "rationale": "Spectrum and wireless network generations describe telecommunications infrastructure and technology.",
+      "status": "resolved",
+      "topic_id": "35"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Operational performance does not supply a concrete risk decision.",
+      "evidence_keywords": [
+        "railroad",
+        "intermodal",
+        "trains",
+        "productivity"
+      ],
+      "label": "irrelevant",
+      "rationale": "Railroads, trains and velocity describe transport operations and productivity.",
+      "status": "resolved",
+      "topic_id": "36"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No supported asset purchase or risk management scenario appears.",
+      "evidence_keywords": [
+        "tenants",
+        "shopping centers",
+        "leasing",
+        "rent"
+      ],
+      "label": "irrelevant",
+      "rationale": "Shopping center tenants, rents and leasing describe retail property operations.",
+      "status": "resolved",
+      "topic_id": "37"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Development and portfolio terms support R&D selection, but the precise commitments are unspecified.",
+      "evidence_keywords": [
+        "pipeline",
+        "development",
+        "business development",
+        "portfolio"
+      ],
+      "label": "relevant",
+      "rationale": "Development pipelines and business development support choices about drug-development opportunities.",
+      "status": "resolved",
+      "topic_id": "38"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Inventory exposure is possible, but deliberate stocking or uncertainty management is not explicit.",
+      "evidence_keywords": [
+        "inventory levels",
+        "destocking",
+        "channel",
+        "demand"
+      ],
+      "label": "irrelevant",
+      "rationale": "Inventory levels and destocking mainly describe supply and demand conditions.",
+      "status": "resolved",
+      "topic_id": "39"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Capex is present, but the topic does not clearly specify an allocation or liquidity decision.",
+      "evidence_keywords": [
+        "working capital",
+        "cash flow",
+        "receivables",
+        "operating cash"
+      ],
+      "label": "irrelevant",
+      "rationale": "Working capital and cash flow primarily describe routine financial performance.",
+      "status": "resolved",
+      "topic_id": "40"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Development activity is supported although managerial investment choices remain implicit.",
+      "evidence_keywords": [
+        "trial",
+        "phase",
+        "clinical",
+        "development"
+      ],
+      "label": "relevant",
+      "rationale": "Vaccine trials, phases and development support an uncertain R&D scenario.",
+      "status": "resolved",
+      "topic_id": "41"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "An explicit distribution policy supports financing relevance, but uncertainty is not directly stated.",
+      "evidence_keywords": [
+        "dividend policy",
+        "payout ratio",
+        "cash flow",
+        "capital"
+      ],
+      "label": "relevant",
+      "rationale": "Dividend policy and payout ratios identify choices about distributing financial resources.",
+      "status": "resolved",
+      "topic_id": "42"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Remote work suggests a response to a defined crisis, though risk policy is implicit.",
+      "evidence_keywords": [
+        "pandemic",
+        "crisis",
+        "work home",
+        "remote"
+      ],
+      "label": "relevant",
+      "rationale": "Pandemic crisis and remote work support an organizational disruption and adaptation scenario.",
+      "status": "resolved",
+      "topic_id": "43"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Exploration and projects could support investment risk, but the dominant descriptors remain industrial.",
+      "evidence_keywords": [
+        "copper",
+        "gold",
+        "mining",
+        "production"
+      ],
+      "label": "irrelevant",
+      "rationale": "Metals, mines and production mainly describe mining activities.",
+      "status": "resolved",
+      "topic_id": "44"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Payment acceptance is described without fraud, credit exposure or financing choice.",
+      "evidence_keywords": [
+        "payments",
+        "card",
+        "merchants",
+        "network"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cards, merchants and payment networks identify payment products and services.",
+      "status": "resolved",
+      "topic_id": "45"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Funding sensitivity may matter for risk, but no deliberate funding or mitigation choice is supplied.",
+      "evidence_keywords": [
+        "deposits",
+        "betas",
+        "deposit growth",
+        "rates"
+      ],
+      "label": "irrelevant",
+      "rationale": "Deposit growth, betas and rates mainly describe banking funding metrics.",
+      "status": "resolved",
+      "topic_id": "46"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No supported uncertainty-related organizational choice appears.",
+      "evidence_keywords": [
+        "pvc",
+        "ethylene",
+        "chemical",
+        "margins"
+      ],
+      "label": "irrelevant",
+      "rationale": "Chemical products, materials and prices mainly describe an industry and its margins.",
+      "status": "resolved",
+      "topic_id": "47"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Credit is an implied business risk, but underwriting or exposure decisions are unspecified.",
+      "evidence_keywords": [
+        "mortgage",
+        "loan growth",
+        "lenders",
+        "pipeline"
+      ],
+      "label": "irrelevant",
+      "rationale": "Mortgage loans, growth and pipelines describe lending business volume.",
+      "status": "resolved",
+      "topic_id": "48"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Build and footprint could imply investment, but the descriptors mainly identify infrastructure.",
+      "evidence_keywords": [
+        "fiber",
+        "broadband",
+        "speeds",
+        "wireline"
+      ],
+      "label": "irrelevant",
+      "rationale": "Fiber networks, broadband and speeds primarily describe telecommunications services.",
+      "status": "resolved",
+      "topic_id": "49"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific investment or risk management decision accompanies the technology descriptors.",
+      "evidence_keywords": [
+        "cloud",
+        "aws",
+        "azure",
+        "workloads"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cloud providers and workloads describe computing architecture and services.",
+      "status": "resolved",
+      "topic_id": "50"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Gaming industry membership does not itself establish managerial risk preference relevance.",
+      "evidence_keywords": [
+        "las vegas",
+        "casino",
+        "properties",
+        "hotel"
+      ],
+      "label": "irrelevant",
+      "rationale": "Las Vegas casinos and hotel properties identify a gaming market.",
+      "status": "resolved",
+      "topic_id": "51"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Discovery and research are present, but a specific R&D commitment or development scenario is unclear.",
+      "evidence_keywords": [
+        "biotech",
+        "pharma",
+        "clients",
+        "life science"
+      ],
+      "label": "irrelevant",
+      "rationale": "Biotech, pharma and life science clients mainly identify a research-serving industry.",
+      "status": "resolved",
+      "topic_id": "52"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "The deal scenario is supported although the risks of achieving synergies are implicit.",
+      "evidence_keywords": [
+        "revenue synergies",
+        "cost synergies",
+        "integration",
+        "transaction"
+      ],
+      "label": "relevant",
+      "rationale": "Transaction synergies and integration support evaluating and realizing acquisition benefits.",
+      "status": "resolved",
+      "topic_id": "53"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Prices alone do not establish a risk-related choice.",
+      "evidence_keywords": [
+        "chicken",
+        "beef",
+        "pork",
+        "food"
+      ],
+      "label": "irrelevant",
+      "rationale": "Meat, poultry and food ingredients describe agricultural product markets.",
+      "status": "resolved",
+      "topic_id": "54"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No fleet investment, financing or mitigation decision is specified.",
+      "evidence_keywords": [
+        "vessels",
+        "fleet",
+        "barge",
+        "utilization"
+      ],
+      "label": "irrelevant",
+      "rationale": "Vessels, barges and fleet utilization describe marine transportation operations.",
+      "status": "resolved",
+      "topic_id": "55"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Legal resolution mechanisms support a risk scenario, but managerial discretion is not explicit.",
+      "evidence_keywords": [
+        "settlement",
+        "litigation",
+        "appeal",
+        "arbitration"
+      ],
+      "label": "relevant",
+      "rationale": "Litigation, settlement and appeals support decisions about managing uncertain legal downside.",
+      "status": "resolved",
+      "topic_id": "56"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Innovation alone does not specify an R&D or risk decision.",
+      "evidence_keywords": [
+        "pet",
+        "animal health",
+        "veterinary",
+        "diagnostics"
+      ],
+      "label": "irrelevant",
+      "rationale": "Pets, veterinarians and animal health describe a product and service sector.",
+      "status": "resolved",
+      "topic_id": "57"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The property portfolio is described without an allocation or downside scenario.",
+      "evidence_keywords": [
+        "senior housing",
+        "skilled nursing",
+        "medical office",
+        "real estate"
+      ],
+      "label": "irrelevant",
+      "rationale": "Senior housing and nursing facilities identify health care property types.",
+      "status": "resolved",
+      "topic_id": "58"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Disposal choices are explicit, while their uncertainty or downside motivation is unstated.",
+      "evidence_keywords": [
+        "dispositions",
+        "asset sales",
+        "noncore",
+        "divestitures"
+      ],
+      "label": "relevant",
+      "rationale": "Selling noncore assets and divestitures support deliberate portfolio and capital reallocation.",
+      "status": "resolved",
+      "topic_id": "59"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Development testing is indicated, but the topic also describes established disease treatments.",
+      "evidence_keywords": [
+        "efficacy",
+        "phase",
+        "atopic dermatitis"
+      ],
+      "label": "relevant",
+      "rationale": "Phase and efficacy descriptors support evaluating uncertain drug-development outcomes.",
+      "status": "resolved",
+      "topic_id": "60"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific geographic exposure or organizational response is supplied.",
+      "evidence_keywords": [
+        "houston",
+        "texas",
+        "california",
+        "markets"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cities, states and regional markets are geographic business descriptors.",
+      "status": "resolved",
+      "topic_id": "61"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Generic intelligence and use cases do not establish risk management.",
+      "evidence_keywords": [
+        "analytics",
+        "platform",
+        "crm",
+        "data analytics"
+      ],
+      "label": "irrelevant",
+      "rationale": "Data analytics platforms and CRM describe business software capabilities.",
+      "status": "resolved",
+      "topic_id": "62"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Harm and FDA references lack a supported organizational risk decision.",
+      "evidence_keywords": [
+        "tobacco",
+        "vapor",
+        "cigarette",
+        "brand"
+      ],
+      "label": "irrelevant",
+      "rationale": "Tobacco, vapor and cigarette brands mainly describe consumer products.",
+      "status": "resolved",
+      "topic_id": "63"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The topic gives no concrete choice or response to those conditions.",
+      "evidence_keywords": [
+        "recession",
+        "economy",
+        "spending",
+        "macro"
+      ],
+      "label": "irrelevant",
+      "rationale": "Recession, inflation and consumer spending mainly describe general economic conditions.",
+      "status": "resolved",
+      "topic_id": "64"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Low-carbon products alone do not specify risk management or investment selection.",
+      "evidence_keywords": [
+        "ethanol",
+        "renewable diesel",
+        "rins",
+        "feedstock"
+      ],
+      "label": "irrelevant",
+      "rationale": "Renewable fuels, feedstocks and fuel credits describe energy products and markets.",
+      "status": "resolved",
+      "topic_id": "65"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Explicit hedging mechanisms distinguish this from currency reporting alone.",
+      "evidence_keywords": [
+        "fx",
+        "hedge",
+        "hedging",
+        "foreign exchange"
+      ],
+      "label": "relevant",
+      "rationale": "Currency hedging directly supports managing foreign-exchange uncertainty.",
+      "status": "resolved",
+      "topic_id": "66"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The topic explicitly concerns committing capital to projects and equipment.",
+      "evidence_keywords": [
+        "capex",
+        "capital spending",
+        "projects",
+        "budget"
+      ],
+      "label": "relevant",
+      "rationale": "Capital spending, project budgets and maintenance capex support investment allocation decisions.",
+      "status": "resolved",
+      "topic_id": "67"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Expansion is explicit, though the descriptors could include routine opening counts.",
+      "evidence_keywords": [
+        "new stores",
+        "opening",
+        "new store",
+        "locations"
+      ],
+      "label": "relevant",
+      "rationale": "Opening new stores supports an expansion investment scenario with uncertain returns.",
+      "status": "resolved",
+      "topic_id": "68"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No exposure-management or investment decision is specified.",
+      "evidence_keywords": [
+        "coal",
+        "export",
+        "thermal",
+        "gas prices"
+      ],
+      "label": "irrelevant",
+      "rationale": "Coal volumes, gas prices and exports describe commodity markets.",
+      "status": "resolved",
+      "topic_id": "69"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Contracts and rigs can involve commitments, but no particular risk decision is supported.",
+      "evidence_keywords": [
+        "rig count",
+        "drilling",
+        "spec",
+        "activity"
+      ],
+      "label": "irrelevant",
+      "rationale": "Rig counts, drilling activity and specifications mainly describe oilfield services operations.",
+      "status": "resolved",
+      "topic_id": "70"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Technology adoption or investment uncertainty is not specified.",
+      "evidence_keywords": [
+        "dental",
+        "dentists",
+        "equipment",
+        "practice management"
+      ],
+      "label": "irrelevant",
+      "rationale": "Dental equipment and practice management identify products and professional services.",
+      "status": "resolved",
+      "topic_id": "71"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Interest-rate conditions appear without a supported hedging or balance-sheet choice.",
+      "evidence_keywords": [
+        "nim",
+        "nii",
+        "net margin",
+        "basis points"
+      ],
+      "label": "irrelevant",
+      "rationale": "Net interest income, margins and rates mainly describe banking profitability metrics.",
+      "status": "resolved",
+      "topic_id": "72"
+    },
+    {
+      "confidence_level": "low",
+      "confidence_reason": "Studies suggest R&D, but the descriptors provide little explicit development or allocation detail.",
+      "evidence_keywords": [
+        "drug",
+        "study",
+        "studies",
+        "data"
+      ],
+      "label": "relevant",
+      "rationale": "Drug studies and resulting data support an uncertain therapeutic research scenario.",
+      "status": "resolved",
+      "topic_id": "73"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Approval and review could involve uncertainty, but a particular organizational decision is absent.",
+      "evidence_keywords": [
+        "regulatory",
+        "regulators",
+        "rules",
+        "legislation"
+      ],
+      "label": "irrelevant",
+      "rationale": "Regulators, legislation and rules mainly describe regulatory processes and conditions.",
+      "status": "resolved",
+      "topic_id": "74"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Contract and budget references do not specify risk allocation or investment choices.",
+      "evidence_keywords": [
+        "navy",
+        "shipbuilding",
+        "submarine",
+        "programs"
+      ],
+      "label": "irrelevant",
+      "rationale": "Naval ships, submarines and programs describe a defense manufacturing sector.",
+      "status": "resolved",
+      "topic_id": "75"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors are product-focused without a supported risk scenario.",
+      "evidence_keywords": [
+        "glass",
+        "display",
+        "oled",
+        "optical communications"
+      ],
+      "label": "irrelevant",
+      "rationale": "Glass, displays and optical communications identify technology products and demand.",
+      "status": "resolved",
+      "topic_id": "76"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No capacity investment or risk-management choice is explicit.",
+      "evidence_keywords": [
+        "nand",
+        "dram",
+        "memory",
+        "bit growth"
+      ],
+      "label": "irrelevant",
+      "rationale": "Memory technologies, storage and bit growth mainly describe semiconductor products and supply.",
+      "status": "resolved",
+      "topic_id": "77"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Retention relates to operational exposure, but no defined risk strategy or unusual commitment is supplied.",
+      "evidence_keywords": [
+        "hiring",
+        "talent",
+        "attrition",
+        "recruiting"
+      ],
+      "label": "irrelevant",
+      "rationale": "Hiring, recruiting and attrition mainly describe routine workforce management.",
+      "status": "resolved",
+      "topic_id": "78"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The acquisition scenario is explicit and within the stated inclusion examples.",
+      "evidence_keywords": [
+        "integration",
+        "acquisition",
+        "merger",
+        "transaction"
+      ],
+      "label": "relevant",
+      "rationale": "Acquisition integration and merger combinations support an organizational transaction risk scenario.",
+      "status": "resolved",
+      "topic_id": "79"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "New technology alone does not establish investment, adoption or risk management decisions.",
+      "evidence_keywords": [
+        "generative ai",
+        "machine learning",
+        "models",
+        "large language"
+      ],
+      "label": "irrelevant",
+      "rationale": "Generative AI and machine learning mainly identify technologies and models.",
+      "status": "resolved",
+      "topic_id": "80"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Incentives can influence risk taking, but that connection is not supported by these descriptors.",
+      "evidence_keywords": [
+        "compensation",
+        "incentive",
+        "bonus",
+        "compensation committee"
+      ],
+      "label": "irrelevant",
+      "rationale": "Bonuses and incentive compensation describe pay arrangements without a specified risk scenario.",
+      "status": "resolved",
+      "topic_id": "81"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Neither gaming nor government references specify managerial risk choices.",
+      "evidence_keywords": [
+        "macao",
+        "singapore",
+        "gaming",
+        "visitation"
+      ],
+      "label": "irrelevant",
+      "rationale": "Macao, Singapore and gaming visitation identify geographic tourism markets.",
+      "status": "resolved",
+      "topic_id": "82"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Specific loss allowances establish a financial downside management scenario.",
+      "evidence_keywords": [
+        "reserve",
+        "cecl",
+        "provision",
+        "losses"
+      ],
+      "label": "relevant",
+      "rationale": "Credit reserves and provisioning support management of possible loan losses.",
+      "status": "resolved",
+      "topic_id": "83"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors omit a concrete investment or uncertainty decision.",
+      "evidence_keywords": [
+        "sales force",
+        "reps",
+        "productivity",
+        "sales organization"
+      ],
+      "label": "irrelevant",
+      "rationale": "Sales teams, representatives and productivity describe selling operations.",
+      "status": "resolved",
+      "topic_id": "84"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Technological novelty alone does not support an organizational risk scenario.",
+      "evidence_keywords": [
+        "hydrogen",
+        "green hydrogen",
+        "fuel cell",
+        "material handling"
+      ],
+      "label": "irrelevant",
+      "rationale": "Hydrogen and fuel cells describe energy technology products.",
+      "status": "resolved",
+      "topic_id": "85"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Legalization can support new ventures, but no entry or investment choice is stated.",
+      "evidence_keywords": [
+        "cannabis",
+        "adult use",
+        "cultivation",
+        "legalization"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cannabis cultivation and adult-use markets describe an industry and its legal environment.",
+      "status": "resolved",
+      "topic_id": "86"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Disposal activity is presented as an industry rather than a risk-management decision.",
+      "evidence_keywords": [
+        "waste",
+        "recycling",
+        "landfill",
+        "collection"
+      ],
+      "label": "irrelevant",
+      "rationale": "Waste collection, recycling and landfill volumes describe routine waste services.",
+      "status": "resolved",
+      "topic_id": "87"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No inventory exposure or financing decision is specified.",
+      "evidence_keywords": [
+        "new vehicle",
+        "used car",
+        "dealerships",
+        "gross profit"
+      ],
+      "label": "irrelevant",
+      "rationale": "New and used vehicles, dealerships and gross profit describe automotive retail.",
+      "status": "resolved",
+      "topic_id": "88"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors clearly concern products and consumption markets.",
+      "evidence_keywords": [
+        "beer",
+        "wine",
+        "spirits",
+        "brands"
+      ],
+      "label": "irrelevant",
+      "rationale": "Beer, wine and spirits brands describe beverage categories.",
+      "status": "resolved",
+      "topic_id": "89"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Costs and demand appear without a specific risk-related choice.",
+      "evidence_keywords": [
+        "packaging",
+        "containerboard",
+        "paper",
+        "corrugated"
+      ],
+      "label": "irrelevant",
+      "rationale": "Paper, containerboard and corrugated packaging describe industrial products and mills.",
+      "status": "resolved",
+      "topic_id": "90"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Explicit capacity additions establish an investment scenario.",
+      "evidence_keywords": [
+        "capacity",
+        "expansion",
+        "add capacity",
+        "additional capacity"
+      ],
+      "label": "relevant",
+      "rationale": "Adding manufacturing capacity and facility expansion support capital commitment under uncertain utilization.",
+      "status": "resolved",
+      "topic_id": "91"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Trial stages are explicit, though investment choices are not directly described.",
+      "evidence_keywords": [
+        "study",
+        "trial",
+        "phase iii",
+        "liver disease"
+      ],
+      "label": "relevant",
+      "rationale": "Clinical trial phases for liver disease support an uncertain R&D scenario.",
+      "status": "resolved",
+      "topic_id": "92"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific regional exposure or entry decision is supplied.",
+      "evidence_keywords": [
+        "brazil",
+        "latin america",
+        "argentina",
+        "economy"
+      ],
+      "label": "irrelevant",
+      "rationale": "Brazil and Latin America identify regional markets and economic conditions.",
+      "status": "resolved",
+      "topic_id": "93"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Trading may involve risk choices, but asset allocation or organizational exposure is unspecified.",
+      "evidence_keywords": [
+        "crypto",
+        "blockchain",
+        "bitcoin",
+        "custody"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cryptocurrency, blockchain and custody mainly describe a financial technology market.",
+      "status": "resolved",
+      "topic_id": "94"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Explicit protection instruments and volatility leave little boundary ambiguity.",
+      "evidence_keywords": [
+        "hedging program",
+        "downside",
+        "collars",
+        "protect",
+        "volatility"
+      ],
+      "label": "relevant",
+      "rationale": "Hedging programs, collars and downside protection directly describe managing commodity-price uncertainty.",
+      "status": "resolved",
+      "topic_id": "95"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Gaming content does not itself describe managerial risk taking.",
+      "evidence_keywords": [
+        "gaming",
+        "games",
+        "console",
+        "titles"
+      ],
+      "label": "irrelevant",
+      "rationale": "Games, consoles and titles describe entertainment products.",
+      "status": "resolved",
+      "topic_id": "96"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors provide no concrete risk-related state or choice.",
+      "evidence_keywords": [
+        "radio",
+        "stations",
+        "audio",
+        "broadcast"
+      ],
+      "label": "irrelevant",
+      "rationale": "Radio stations, audio and advertising describe broadcasting operations.",
+      "status": "resolved",
+      "topic_id": "97"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Visibility alone does not identify a decision to accept or avoid uncertainty.",
+      "evidence_keywords": [
+        "backlog",
+        "orders",
+        "backlogs",
+        "visibility"
+      ],
+      "label": "irrelevant",
+      "rationale": "Backlogs and orders primarily describe booked business and operating visibility.",
+      "status": "resolved",
+      "topic_id": "98"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Patent erosion creates potential downside, but no litigation, development commitment or response is specified.",
+      "evidence_keywords": [
+        "biosimilars",
+        "humira",
+        "patents",
+        "competition"
+      ],
+      "label": "irrelevant",
+      "rationale": "Biosimilars, patents and erosion mainly describe pharmaceutical competition and products.",
+      "status": "resolved",
+      "topic_id": "99"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Testing refers to diagnosis without a supported organizational risk decision.",
+      "evidence_keywords": [
+        "cancer",
+        "tests",
+        "biopsy",
+        "liquid biopsy"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cancer tests and biopsies describe diagnostic products and clinical applications.",
+      "status": "resolved",
+      "topic_id": "100"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Study and programs suggest research, but a defined development trial or resource choice is unclear.",
+      "evidence_keywords": [
+        "gene therapy",
+        "disease",
+        "editing",
+        "therapies"
+      ],
+      "label": "irrelevant",
+      "rationale": "Gene therapies, diseases and editing mainly identify therapeutic technologies.",
+      "status": "resolved",
+      "topic_id": "101"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Harvest and demand do not specify a risk-management or investment choice.",
+      "evidence_keywords": [
+        "lumber",
+        "wood",
+        "lumber prices",
+        "timber"
+      ],
+      "label": "irrelevant",
+      "rationale": "Lumber, logs and timber prices describe forestry products and market conditions.",
+      "status": "resolved",
+      "topic_id": "102"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Settlement and regulatory lag suggest uncertainty, but descriptors emphasize routine rate-setting processes.",
+      "evidence_keywords": [
+        "rate case",
+        "filing",
+        "commission",
+        "test year"
+      ],
+      "label": "irrelevant",
+      "rationale": "Rate cases and filings mainly describe utility regulatory proceedings.",
+      "status": "resolved",
+      "topic_id": "103"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No adoption, development investment or safety decision is specified.",
+      "evidence_keywords": [
+        "autonomous",
+        "adas",
+        "telematics",
+        "self driving"
+      ],
+      "label": "irrelevant",
+      "rationale": "Autonomous vehicles, ADAS and telematics identify automotive technologies.",
+      "status": "resolved",
+      "topic_id": "104"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Government facilities are described without a supported organizational risk scenario.",
+      "evidence_keywords": [
+        "detention",
+        "beds",
+        "prison",
+        "rehabilitation"
+      ],
+      "label": "irrelevant",
+      "rationale": "Prisons, detention facilities and beds describe institutional service operations.",
+      "status": "resolved",
+      "topic_id": "105"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Explicit acquisition and option terms establish commitments and flexibility choices.",
+      "evidence_keywords": [
+        "buy land",
+        "land acquisition",
+        "land development",
+        "option"
+      ],
+      "label": "relevant",
+      "rationale": "Land buying, acquisition, development and options support deliberate property investment choices.",
+      "status": "resolved",
+      "topic_id": "106"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors do not specify investment selection or uncertainty management.",
+      "evidence_keywords": [
+        "toy",
+        "toys",
+        "games",
+        "brands"
+      ],
+      "label": "irrelevant",
+      "rationale": "Toys, games and entertainment brands describe consumer products and intellectual properties.",
+      "status": "resolved",
+      "topic_id": "107"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Nuclear hazards cannot substitute for a supplied risk-related organizational scenario.",
+      "evidence_keywords": [
+        "nuclear",
+        "reactors",
+        "uranium",
+        "nuclear power"
+      ],
+      "label": "irrelevant",
+      "rationale": "Reactors, uranium and nuclear power identify an energy technology sector.",
+      "status": "resolved",
+      "topic_id": "108"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "A specific policy exposure exists, but no organizational response or risk choice is supported.",
+      "evidence_keywords": [
+        "tariffs",
+        "trade",
+        "imports",
+        "duties"
+      ],
+      "label": "irrelevant",
+      "rationale": "Tariffs and import duties mainly describe trade policy and its business effects.",
+      "status": "resolved",
+      "topic_id": "109"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No preparation, insurance or mitigation decision is specified.",
+      "evidence_keywords": [
+        "weather",
+        "winter",
+        "cold",
+        "weather impact"
+      ],
+      "label": "irrelevant",
+      "rationale": "Weather and seasonal impacts mainly describe external operating conditions.",
+      "status": "resolved",
+      "topic_id": "110"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The product vocabulary supplies no concrete risk decision.",
+      "evidence_keywords": [
+        "iot",
+        "bluetooth",
+        "devices",
+        "connectivity"
+      ],
+      "label": "irrelevant",
+      "rationale": "IoT, Bluetooth and connected devices describe technology applications.",
+      "status": "resolved",
+      "topic_id": "111"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Booking and yield metrics alone do not establish risk preference relevance.",
+      "evidence_keywords": [
+        "cruise",
+        "ships",
+        "booking",
+        "guests"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cruise bookings, ships and guests describe travel services and demand.",
+      "status": "resolved",
+      "topic_id": "112"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Data and drug references lack an explicit trial or organizational commitment scenario.",
+      "evidence_keywords": [
+        "sickle cell",
+        "hemoglobin",
+        "disease",
+        "therapy"
+      ],
+      "label": "irrelevant",
+      "rationale": "Sickle-cell disease, hemoglobin and therapies identify medical treatment areas.",
+      "status": "resolved",
+      "topic_id": "113"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Credit appears as a product category without loss exposure or underwriting decisions.",
+      "evidence_keywords": [
+        "card",
+        "rewards",
+        "card members",
+        "credit card"
+      ],
+      "label": "irrelevant",
+      "rationale": "Card rewards and member propositions mainly describe credit-card products.",
+      "status": "resolved",
+      "topic_id": "114"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Disruption is specific, although deliberate mitigation or acceptance choices remain implicit.",
+      "evidence_keywords": [
+        "supply chain",
+        "shortages",
+        "constraints",
+        "lead times"
+      ],
+      "label": "relevant",
+      "rationale": "Supply-chain shortages, constraints and lead-time issues support a concrete operating disruption scenario.",
+      "status": "resolved",
+      "topic_id": "115"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "NAFTA and peso references do not specify a risk response or exposure decision.",
+      "evidence_keywords": [
+        "mexico",
+        "mexican",
+        "pemex",
+        "border"
+      ],
+      "label": "irrelevant",
+      "rationale": "Mexico, Pemex and border transport mainly identify a geographic business market.",
+      "status": "resolved",
+      "topic_id": "116"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Capacity appears without a clear expansion or capital allocation choice.",
+      "evidence_keywords": [
+        "cans",
+        "beverage",
+        "aluminum",
+        "food"
+      ],
+      "label": "irrelevant",
+      "rationale": "Beverage cans, aluminum and food packaging describe product markets.",
+      "status": "resolved",
+      "topic_id": "117"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Electrification alone does not establish an investment or adoption decision.",
+      "evidence_keywords": [
+        "electric vehicles",
+        "ev",
+        "battery",
+        "hybrid"
+      ],
+      "label": "irrelevant",
+      "rationale": "Electric vehicles, batteries and hybrids describe automotive product technologies.",
+      "status": "resolved",
+      "topic_id": "118"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific investment commitment or risk-management action is supplied.",
+      "evidence_keywords": [
+        "steel",
+        "mills",
+        "scrap",
+        "fabrication"
+      ],
+      "label": "irrelevant",
+      "rationale": "Steel mills, scrap and fabrication describe metals production and products.",
+      "status": "resolved",
+      "topic_id": "119"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Patient screening does not establish an organizational risk decision.",
+      "evidence_keywords": [
+        "cologuard",
+        "screening",
+        "cancer screening",
+        "detection"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cologuard and cancer screening identify diagnostic products and clinical use.",
+      "status": "resolved",
+      "topic_id": "120"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Prevention concerns patient treatment rather than organizational uncertainty management.",
+      "evidence_keywords": [
+        "hiv",
+        "hcv",
+        "regimen",
+        "prevention"
+      ],
+      "label": "irrelevant",
+      "rationale": "HIV and hepatitis regimens describe treatments and prevention products.",
+      "status": "resolved",
+      "topic_id": "121"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Water quality and rights do not specify a risk-management or investment choice.",
+      "evidence_keywords": [
+        "water",
+        "wastewater",
+        "water utility",
+        "municipal"
+      ],
+      "label": "irrelevant",
+      "rationale": "Water and wastewater utilities describe a regulated infrastructure service sector.",
+      "status": "resolved",
+      "topic_id": "122"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Climate could involve risk management, but the descriptors do not identify a concrete risk scenario.",
+      "evidence_keywords": [
+        "esg",
+        "sustainability",
+        "governance",
+        "reporting"
+      ],
+      "label": "irrelevant",
+      "rationale": "ESG, sustainability and reporting describe corporate governance and social-environmental agendas.",
+      "status": "resolved",
+      "topic_id": "123"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Project demand is described without a supported investment decision.",
+      "evidence_keywords": [
+        "aggregates",
+        "cement",
+        "concrete",
+        "construction activity"
+      ],
+      "label": "irrelevant",
+      "rationale": "Aggregates, cement and concrete describe construction materials and demand.",
+      "status": "resolved",
+      "topic_id": "124"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Planning and management terms remain generic software functions.",
+      "evidence_keywords": [
+        "hr",
+        "payroll",
+        "hcm",
+        "erp"
+      ],
+      "label": "irrelevant",
+      "rationale": "Payroll, HCM and ERP identify administrative business software.",
+      "status": "resolved",
+      "topic_id": "125"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Event activity supplies no explicit organizational risk scenario.",
+      "evidence_keywords": [
+        "events",
+        "creators",
+        "live events",
+        "tickets"
+      ],
+      "label": "irrelevant",
+      "rationale": "Live events, creators and tickets describe an entertainment platform and market.",
+      "status": "resolved",
+      "topic_id": "126"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Innovation is not tied to an R&D or investment choice.",
+      "evidence_keywords": [
+        "beauty",
+        "skin care",
+        "makeup",
+        "cosmetics"
+      ],
+      "label": "irrelevant",
+      "rationale": "Beauty, skin care and cosmetics describe consumer product categories.",
+      "status": "resolved",
+      "topic_id": "127"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Booking technology and traffic metrics do not support a risk decision.",
+      "evidence_keywords": [
+        "tripadvisor",
+        "hotel",
+        "booking",
+        "travelers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Tripadvisor, hotel booking and travelers describe travel intermediation services.",
+      "status": "resolved",
+      "topic_id": "128"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "FID points to investment decisions, although much of the topic describes the gas market.",
+      "evidence_keywords": [
+        "lng projects",
+        "project",
+        "fid",
+        "liquefaction"
+      ],
+      "label": "relevant",
+      "rationale": "LNG projects and final investment decision terminology support major project commitment choices.",
+      "status": "resolved",
+      "topic_id": "129"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Product performance does not establish a specific risk-related choice.",
+      "evidence_keywords": [
+        "graphics",
+        "gpu",
+        "processors",
+        "cpu"
+      ],
+      "label": "irrelevant",
+      "rationale": "Graphics processors, CPUs and data-center computing describe semiconductor products.",
+      "status": "resolved",
+      "topic_id": "130"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Customer wagering is distinct from a supplied managerial risk decision.",
+      "evidence_keywords": [
+        "sports betting",
+        "igaming",
+        "casino",
+        "wagering"
+      ],
+      "label": "irrelevant",
+      "rationale": "Sports betting and online casinos identify a gambling service industry.",
+      "status": "resolved",
+      "topic_id": "131"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Credit standing and leverage clearly concern potential financial downside and financing constraints.",
+      "evidence_keywords": [
+        "investment grade",
+        "credit rating",
+        "debt",
+        "leverage"
+      ],
+      "label": "relevant",
+      "rationale": "Credit ratings, debt and leverage support an organizational financing-risk capacity scenario.",
+      "status": "resolved",
+      "topic_id": "132"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Explicit hedging instruments establish deliberate risk management beyond rate commentary.",
+      "evidence_keywords": [
+        "duration",
+        "swaps",
+        "hedge",
+        "portfolio"
+      ],
+      "label": "relevant",
+      "rationale": "Duration, swaps and hedges support managing interest-rate exposure in a portfolio.",
+      "status": "resolved",
+      "topic_id": "133"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Food safety appears without a defined organizational mitigation decision.",
+      "evidence_keywords": [
+        "antibiotics",
+        "pet",
+        "food",
+        "nutritional"
+      ],
+      "label": "irrelevant",
+      "rationale": "Animal nutrition, antibiotics and pet food mainly identify products.",
+      "status": "resolved",
+      "topic_id": "134"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Process control and inspection are technical operations without a specified risk choice.",
+      "evidence_keywords": [
+        "nanometer",
+        "node",
+        "foundry",
+        "wafer"
+      ],
+      "label": "irrelevant",
+      "rationale": "Nodes, wafers and foundry processes describe semiconductor manufacturing technology.",
+      "status": "resolved",
+      "topic_id": "135"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Projects involve spending, but the descriptors emphasize government funding rather than managerial investment decisions.",
+      "evidence_keywords": [
+        "highway",
+        "funding",
+        "federal",
+        "infrastructure spending"
+      ],
+      "label": "irrelevant",
+      "rationale": "Federal highway funding and infrastructure spending mainly describe public-sector demand conditions.",
+      "status": "resolved",
+      "topic_id": "136"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No particular risk acceptance or mitigation decision is specified.",
+      "evidence_keywords": [
+        "wage inflation",
+        "wage pressure",
+        "minimum wage",
+        "employees"
+      ],
+      "label": "irrelevant",
+      "rationale": "Wage inflation and minimum-wage pressures describe labor cost conditions.",
+      "status": "resolved",
+      "topic_id": "137"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Routine pricing promotions do not supply a supported risk scenario.",
+      "evidence_keywords": [
+        "promotional activity",
+        "holiday",
+        "black friday",
+        "discounting"
+      ],
+      "label": "irrelevant",
+      "rationale": "Promotions, holiday activity and discounting describe routine retail marketing conditions.",
+      "status": "resolved",
+      "topic_id": "138"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No asset commitment or risk-management decision accompanies the service descriptors.",
+      "evidence_keywords": [
+        "agents",
+        "zillow",
+        "listing",
+        "leads"
+      ],
+      "label": "irrelevant",
+      "rationale": "Agents, listings and Zillow describe real-estate intermediation services.",
+      "status": "resolved",
+      "topic_id": "139"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors identify treatment products without an R&D or organizational risk choice.",
+      "evidence_keywords": [
+        "insulin",
+        "diabetes",
+        "pump",
+        "users"
+      ],
+      "label": "irrelevant",
+      "rationale": "Insulin pumps and diabetes users describe medical devices and access.",
+      "status": "resolved",
+      "topic_id": "140"
+    },
+    {
+      "confidence_level": "low",
+      "confidence_reason": "Deals could mean acquisitions, but their nature and any commitment decision remain unclear.",
+      "evidence_keywords": [
+        "pipeline",
+        "deals",
+        "strong pipeline",
+        "activity"
+      ],
+      "label": "irrelevant",
+      "rationale": "Pipeline strength and activity mainly describe prospective business volume.",
+      "status": "resolved",
+      "topic_id": "141"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Performance marketing is not tied to an explicit risk-related decision.",
+      "evidence_keywords": [
+        "etsy",
+        "sellers",
+        "buyers",
+        "marketplace"
+      ],
+      "label": "irrelevant",
+      "rationale": "Etsy buyers, sellers and marketplace metrics describe e-commerce operations.",
+      "status": "resolved",
+      "topic_id": "142"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Risk is medical rather than an organizational uncertainty preference or choice.",
+      "evidence_keywords": [
+        "ldl",
+        "cholesterol",
+        "cardiovascular risk",
+        "statins"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cardiovascular risk and cholesterol lowering concern patient health outcomes.",
+      "status": "resolved",
+      "topic_id": "143"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Specific stress-testing and capital-capacity terms clearly establish organizational downside management.",
+      "evidence_keywords": [
+        "ccar",
+        "rwa",
+        "buffer",
+        "risk",
+        "stress test"
+      ],
+      "label": "relevant",
+      "rationale": "Stress tests, capital buffers and risk-weighted constraints support financial risk management.",
+      "status": "resolved",
+      "topic_id": "144"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Share outcomes alone do not identify risk taking or mitigation decisions.",
+      "evidence_keywords": [
+        "market share",
+        "share gains",
+        "gaining share",
+        "competitors"
+      ],
+      "label": "irrelevant",
+      "rationale": "Market-share gains and competitors describe competitive performance.",
+      "status": "resolved",
+      "topic_id": "145"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Sports activity and broadcast rights do not supply a risk-related choice.",
+      "evidence_keywords": [
+        "nascar",
+        "daytona",
+        "race",
+        "fans"
+      ],
+      "label": "irrelevant",
+      "rationale": "Nascar races, fans and speedways describe sports entertainment operations.",
+      "status": "resolved",
+      "topic_id": "146"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Expression and skipping suggest research technology, but a trial or commitment scenario is unspecified.",
+      "evidence_keywords": [
+        "muscular dystrophy",
+        "gene therapy",
+        "duchenne",
+        "patients"
+      ],
+      "label": "irrelevant",
+      "rationale": "Muscular dystrophy and gene therapies mainly identify a therapeutic product area.",
+      "status": "resolved",
+      "topic_id": "147"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No explicit research or organizational risk-management scenario appears.",
+      "evidence_keywords": [
+        "xyrem",
+        "sleep",
+        "treatment",
+        "diagnosis"
+      ],
+      "label": "irrelevant",
+      "rationale": "Xyrem, sleep disorders and diagnosis describe medical treatment and patient categories.",
+      "status": "resolved",
+      "topic_id": "148"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Tax service activity does not specify an organizational uncertainty decision.",
+      "evidence_keywords": [
+        "turbotax",
+        "filers",
+        "tax season",
+        "irs"
+      ],
+      "label": "irrelevant",
+      "rationale": "Turbotax, filers and tax season describe tax preparation products and demand.",
+      "status": "resolved",
+      "topic_id": "149"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No investment commitment or risk-management use is supplied.",
+      "evidence_keywords": [
+        "database",
+        "atlas",
+        "developers",
+        "databases"
+      ],
+      "label": "irrelevant",
+      "rationale": "Databases, Atlas and developer workloads identify enterprise software technology.",
+      "status": "resolved",
+      "topic_id": "150"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors are routine business-volume metrics.",
+      "evidence_keywords": [
+        "bookings",
+        "backlog",
+        "quarter bookings",
+        "revenue"
+      ],
+      "label": "irrelevant",
+      "rationale": "Bookings, backlog and quarterly growth describe orders and revenue reporting.",
+      "status": "resolved",
+      "topic_id": "151"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Launch appears without a distinct investment or risk scenario.",
+      "evidence_keywords": [
+        "aesthetics",
+        "botox",
+        "fillers",
+        "medical aesthetics"
+      ],
+      "label": "irrelevant",
+      "rationale": "Botox, fillers and aesthetics describe medical aesthetic products and markets.",
+      "status": "resolved",
+      "topic_id": "152"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Digital construction tools are not explicitly connected to a risk-management choice.",
+      "evidence_keywords": [
+        "construction",
+        "bim",
+        "design",
+        "workflows"
+      ],
+      "label": "irrelevant",
+      "rationale": "BIM, construction design and digital workflows describe industry software applications.",
+      "status": "resolved",
+      "topic_id": "153"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Robotics technology alone does not establish organizational investment risk.",
+      "evidence_keywords": [
+        "robot",
+        "vacuum",
+        "cleaning",
+        "irobot"
+      ],
+      "label": "irrelevant",
+      "rationale": "Home robots, vacuums and cleaning describe consumer devices.",
+      "status": "resolved",
+      "topic_id": "154"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No supported financing, investment or mitigation decision is specified.",
+      "evidence_keywords": [
+        "ink",
+        "printing",
+        "printers",
+        "inkjet"
+      ],
+      "label": "irrelevant",
+      "rationale": "Ink, printers and supplies describe printing technologies and products.",
+      "status": "resolved",
+      "topic_id": "155"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Public safety is a product purpose, but no organizational safety-management decision is described.",
+      "evidence_keywords": [
+        "taser",
+        "police",
+        "cameras",
+        "law enforcement"
+      ],
+      "label": "irrelevant",
+      "rationale": "Tasers, police cameras and evidence describe law-enforcement products.",
+      "status": "resolved",
+      "topic_id": "156"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Combination therapy does not itself identify an R&D or risk choice.",
+      "evidence_keywords": [
+        "cystic fibrosis",
+        "kalydeco",
+        "medicines",
+        "reimbursement"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cystic fibrosis medicines and eligible patients identify treatments and market access.",
+      "status": "resolved",
+      "topic_id": "157"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Geographic and sector descriptors lack a specific risk-related decision.",
+      "evidence_keywords": [
+        "hawaii",
+        "hawaii economy",
+        "tourism",
+        "oahu"
+      ],
+      "label": "irrelevant",
+      "rationale": "Hawaii, tourism and real estate describe a regional economy.",
+      "status": "resolved",
+      "topic_id": "158"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Pain management concerns clinical treatment rather than organizational risk management.",
+      "evidence_keywords": [
+        "exparel",
+        "opioid",
+        "pain management",
+        "anesthesia"
+      ],
+      "label": "irrelevant",
+      "rationale": "Exparel, opioids and nerve blocks describe pain treatments and procedures.",
+      "status": "resolved",
+      "topic_id": "159"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No investment or uncertainty response is supplied.",
+      "evidence_keywords": [
+        "resorts",
+        "pass",
+        "ski",
+        "visitation"
+      ],
+      "label": "irrelevant",
+      "rationale": "Ski resorts, season passes and visitation describe leisure operations.",
+      "status": "resolved",
+      "topic_id": "160"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Clinical care language supplies no supported organizational risk choice.",
+      "evidence_keywords": [
+        "dialysis",
+        "kidney",
+        "renal",
+        "kidney disease"
+      ],
+      "label": "irrelevant",
+      "rationale": "Dialysis and kidney care identify medical services and treatments.",
+      "status": "resolved",
+      "topic_id": "161"
+    },
+    {
+      "confidence_level": "low",
+      "confidence_reason": "Returns suggest investment evaluation, but most descriptors could also describe routine production.",
+      "evidence_keywords": [
+        "drilling",
+        "plays",
+        "production growth",
+        "returns"
+      ],
+      "label": "relevant",
+      "rationale": "Drilling plays, production growth and returns support petroleum development investment choices.",
+      "status": "resolved",
+      "topic_id": "162"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No concrete spending commitment or risk-management choice appears.",
+      "evidence_keywords": [
+        "advertising",
+        "advertisers",
+        "programmatic",
+        "publishers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Advertising platforms, publishers and monetization describe media services.",
+      "status": "resolved",
+      "topic_id": "163"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Travel recovery or demand alone does not establish managerial risk preference relevance.",
+      "evidence_keywords": [
+        "business travel",
+        "leisure",
+        "corporate travel",
+        "demand"
+      ],
+      "label": "irrelevant",
+      "rationale": "Business and leisure travel describe demand conditions and customer activity.",
+      "status": "resolved",
+      "topic_id": "164"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Access management has protective uses, but the topic lacks explicit threats or a risk-management scenario.",
+      "evidence_keywords": [
+        "identity",
+        "okta",
+        "customer identity",
+        "authentication"
+      ],
+      "label": "irrelevant",
+      "rationale": "Identity platforms and authentication mainly identify enterprise software products.",
+      "status": "resolved",
+      "topic_id": "165"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No property allocation or financing decision is specified.",
+      "evidence_keywords": [
+        "manufactured housing",
+        "marina",
+        "properties",
+        "occupancy"
+      ],
+      "label": "irrelevant",
+      "rationale": "Manufactured housing, marinas and occupancy describe property operations.",
+      "status": "resolved",
+      "topic_id": "166"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Capital and targets can inform choices, but no supported investment or risk scenario is given.",
+      "evidence_keywords": [
+        "roe",
+        "roes",
+        "return",
+        "roe target"
+      ],
+      "label": "irrelevant",
+      "rationale": "ROE and return targets mainly describe financial performance measures.",
+      "status": "resolved",
+      "topic_id": "167"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Innovation is not connected to a specific organizational commitment.",
+      "evidence_keywords": [
+        "boating",
+        "fishing",
+        "outdoor",
+        "recreation"
+      ],
+      "label": "irrelevant",
+      "rationale": "Boats, fishing and outdoor recreation describe consumer products and activities.",
+      "status": "resolved",
+      "topic_id": "168"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No concrete competitive response or uncertainty acceptance decision is supplied.",
+      "evidence_keywords": [
+        "competitive",
+        "competition",
+        "competitors",
+        "competitive environment"
+      ],
+      "label": "irrelevant",
+      "rationale": "Competition and competitive landscapes describe general market conditions.",
+      "status": "resolved",
+      "topic_id": "169"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Consolidation suggests deal strategy, although some descriptors may concern industry conditions.",
+      "evidence_keywords": [
+        "consolidation",
+        "consolidate",
+        "opportunities",
+        "consolidator"
+      ],
+      "label": "relevant",
+      "rationale": "Consolidators and consolidation opportunities support acquisition-driven industry restructuring choices.",
+      "status": "resolved",
+      "topic_id": "170"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Default supplies specific credit risk, though servicing industry discussion may dominate.",
+      "evidence_keywords": [
+        "student loan",
+        "repayment",
+        "default",
+        "refi"
+      ],
+      "label": "relevant",
+      "rationale": "Student-loan default, repayment and refinancing support a credit downside and financing scenario.",
+      "status": "resolved",
+      "topic_id": "171"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Demographic content descriptors do not specify organizational risk decisions.",
+      "evidence_keywords": [
+        "hispanic",
+        "spanish language",
+        "audience",
+        "programming"
+      ],
+      "label": "irrelevant",
+      "rationale": "Hispanic audiences and Spanish-language programming describe a media market segment.",
+      "status": "resolved",
+      "topic_id": "172"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Named businesses could accompany transactions, but the descriptors do not explicitly establish those choices.",
+      "evidence_keywords": [
+        "ge",
+        "ge capital",
+        "alstom",
+        "baker hughes"
+      ],
+      "label": "irrelevant",
+      "rationale": "GE and associated named businesses primarily identify a company portfolio.",
+      "status": "resolved",
+      "topic_id": "173"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Asset values alone do not identify investment or disposal decisions.",
+      "evidence_keywords": [
+        "timberland",
+        "timberlands",
+        "timber",
+        "wood products"
+      ],
+      "label": "irrelevant",
+      "rationale": "Timberland, acres and wood products mainly describe forestry assets.",
+      "status": "resolved",
+      "topic_id": "174"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Replacement and reclamation are operational descriptors without a supported risk choice.",
+      "evidence_keywords": [
+        "refrigeration",
+        "refrigerants",
+        "hvac",
+        "cooling"
+      ],
+      "label": "irrelevant",
+      "rationale": "Refrigeration, HVAC and refrigerants identify cooling products and services.",
+      "status": "resolved",
+      "topic_id": "175"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Development stages are explicit, though managerial resource choices are not.",
+      "evidence_keywords": [
+        "study",
+        "phase",
+        "clinical",
+        "phase iii"
+      ],
+      "label": "relevant",
+      "rationale": "Clinical study phases for Alzheimer's disease support uncertain therapeutic R&D.",
+      "status": "resolved",
+      "topic_id": "176"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "A concrete legal dispute scenario is clear, while management's chosen response is unspecified.",
+      "evidence_keywords": [
+        "litigation",
+        "infringement",
+        "court",
+        "appeal"
+      ],
+      "label": "relevant",
+      "rationale": "Patent litigation and appeals support managing uncertain legal and intellectual-property downside.",
+      "status": "resolved",
+      "topic_id": "177"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Funding actions are supported, although expense accounting may also be central.",
+      "evidence_keywords": [
+        "pension plan",
+        "contributions",
+        "funding",
+        "liability"
+      ],
+      "label": "relevant",
+      "rationale": "Pension contributions, funding and liabilities support financial obligation and funding-risk decisions.",
+      "status": "resolved",
+      "topic_id": "178"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Catalogs and subscriptions do not specify an investment or risk decision.",
+      "evidence_keywords": [
+        "music",
+        "artists",
+        "songs",
+        "streaming"
+      ],
+      "label": "irrelevant",
+      "rationale": "Music artists, songs and streaming describe entertainment content and distribution.",
+      "status": "resolved",
+      "topic_id": "179"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No satellite investment commitment or risk-management action is supplied.",
+      "evidence_keywords": [
+        "satellite",
+        "broadband",
+        "terminals",
+        "subscriber"
+      ],
+      "label": "irrelevant",
+      "rationale": "Satellite broadband, terminals and subscribers describe communications services.",
+      "status": "resolved",
+      "topic_id": "180"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Fleet and asset references do not specify a risk-related allocation choice.",
+      "evidence_keywords": [
+        "truckload",
+        "logistics",
+        "freight",
+        "fleet"
+      ],
+      "label": "irrelevant",
+      "rationale": "Trucking, logistics and freight networks describe transportation operations.",
+      "status": "resolved",
+      "topic_id": "181"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Concrete physical downside is present, but no preparedness, insurance or organizational risk decision appears.",
+      "evidence_keywords": [
+        "hurricane",
+        "storm",
+        "damage",
+        "flooding"
+      ],
+      "label": "irrelevant",
+      "rationale": "Hurricanes, flooding and damage mainly describe external events and their impacts.",
+      "status": "resolved",
+      "topic_id": "182"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Product novelty does not establish an investment or risk-management scenario.",
+      "evidence_keywords": [
+        "gopro",
+        "camera",
+        "vr",
+        "subscription"
+      ],
+      "label": "irrelevant",
+      "rationale": "GoPro cameras, VR and subscriptions describe consumer media devices and services.",
+      "status": "resolved",
+      "topic_id": "183"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Resource commitment and return evaluation are supported, although ordinary expense reporting is possible.",
+      "evidence_keywords": [
+        "marketing spend",
+        "advertising spend",
+        "spending",
+        "roi"
+      ],
+      "label": "relevant",
+      "rationale": "Marketing spending and ROI support discretionary investment in advertising under uncertain returns.",
+      "status": "resolved",
+      "topic_id": "184"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Study suggests research, but the descriptors lack an explicit trial stage or resource decision.",
+      "evidence_keywords": [
+        "eylea",
+        "dme",
+        "retinal",
+        "macular edema"
+      ],
+      "label": "irrelevant",
+      "rationale": "Eylea, retinal disease and eye outcomes mainly describe ophthalmic treatments.",
+      "status": "resolved",
+      "topic_id": "185"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No investment, adoption or risk mitigation decision is specified.",
+      "evidence_keywords": [
+        "aircraft",
+        "bandwidth",
+        "connectivity",
+        "antenna"
+      ],
+      "label": "irrelevant",
+      "rationale": "Aircraft connectivity, bandwidth and antennas identify aviation communications products.",
+      "status": "resolved",
+      "topic_id": "186"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Capital and structure could support financing choices, but no choice is explicit.",
+      "evidence_keywords": [
+        "reit",
+        "reits",
+        "real estate",
+        "reit structure"
+      ],
+      "label": "irrelevant",
+      "rationale": "REITs and real-estate ownership structures mainly identify an investment vehicle and sector.",
+      "status": "resolved",
+      "topic_id": "187"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The supplied descriptors lack any identifiable risk-related state or decision.",
+      "evidence_keywords": [
+        "million",
+        "billion",
+        "range",
+        "run rate"
+      ],
+      "label": "irrelevant",
+      "rationale": "Amounts, ranges and run rates are generic quantitative business reporting.",
+      "status": "resolved",
+      "topic_id": "188"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Financial obligations and oversight support downside relevance, though the geographic descriptors are prominent.",
+      "evidence_keywords": [
+        "insured",
+        "bonds",
+        "debt",
+        "creditors",
+        "oversight board"
+      ],
+      "label": "relevant",
+      "rationale": "Insured bonds, debt, creditors and oversight support a credit exposure and resolution scenario.",
+      "status": "resolved",
+      "topic_id": "189"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No organizational development or risk choice is supplied.",
+      "evidence_keywords": [
+        "lens",
+        "lenses",
+        "cataract",
+        "vision"
+      ],
+      "label": "irrelevant",
+      "rationale": "Lenses, cataracts and vision procedures describe ophthalmic products and services.",
+      "status": "resolved",
+      "topic_id": "190"
+    },
+    {
+      "confidence_level": "low",
+      "confidence_reason": "Phase suggests development testing, but trial design and managerial commitments are not explicit.",
+      "evidence_keywords": [
+        "gene therapy",
+        "phase",
+        "data",
+        "hemophilia"
+      ],
+      "label": "relevant",
+      "rationale": "Gene-therapy phase and data descriptors support uncertain hemophilia drug development.",
+      "status": "resolved",
+      "topic_id": "191"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "A structural resource decision is explicit, while its downside tradeoff remains implicit.",
+      "evidence_keywords": [
+        "consolidate",
+        "close",
+        "footprint",
+        "closures"
+      ],
+      "label": "relevant",
+      "rationale": "Branch closures and consolidation support deliberate restructuring of a banking footprint.",
+      "status": "resolved",
+      "topic_id": "192"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No construction commitment or risk-management choice accompanies the logistics descriptors.",
+      "evidence_keywords": [
+        "delivery",
+        "fulfillment",
+        "pickup",
+        "fulfillment centers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Delivery, pickup and fulfillment centers describe retail logistics operations.",
+      "status": "resolved",
+      "topic_id": "193"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No venture-entry, investment or uncertainty decision is specified.",
+      "evidence_keywords": [
+        "lyft",
+        "uber",
+        "rideshare",
+        "drivers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Lyft, Uber and rideshare users describe mobility services.",
+      "status": "resolved",
+      "topic_id": "194"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "China and OEM references do not specify a policy exposure or risk response.",
+      "evidence_keywords": [
+        "huawei",
+        "qct",
+        "handset",
+        "5g"
+      ],
+      "label": "irrelevant",
+      "rationale": "Huawei, handsets and 5G describe mobile semiconductor markets and products.",
+      "status": "resolved",
+      "topic_id": "195"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Routine contract renewal activity does not support a distinct risk decision.",
+      "evidence_keywords": [
+        "renewal",
+        "renewal rates",
+        "contract",
+        "retention"
+      ],
+      "label": "irrelevant",
+      "rationale": "Renewal rates and customer retention describe contract and sales continuity metrics.",
+      "status": "resolved",
+      "topic_id": "196"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific crop-risk mitigation or investment scenario is supplied.",
+      "evidence_keywords": [
+        "lemon",
+        "fruit",
+        "citrus",
+        "harvest"
+      ],
+      "label": "irrelevant",
+      "rationale": "Lemons, citrus and harvest volumes describe agribusiness products and operations.",
+      "status": "resolved",
+      "topic_id": "197"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors identify a service market without a supported risk choice.",
+      "evidence_keywords": [
+        "quickbooks",
+        "small business",
+        "accountants",
+        "payroll"
+      ],
+      "label": "irrelevant",
+      "rationale": "QuickBooks and small-business accounting describe software products and customers.",
+      "status": "resolved",
+      "topic_id": "198"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "A downside-resolution scenario is supported even though advisory business activity may be the focus.",
+      "evidence_keywords": [
+        "restructuring",
+        "corporate finance",
+        "debt",
+        "default"
+      ],
+      "label": "relevant",
+      "rationale": "Debt restructuring, corporate finance and default support financial distress and resolution decisions.",
+      "status": "resolved",
+      "topic_id": "199"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Risk transfer is directly supplied as a specific management mechanism.",
+      "evidence_keywords": [
+        "pension risk",
+        "risk transfer",
+        "defined benefit",
+        "transfer"
+      ],
+      "label": "relevant",
+      "rationale": "Pension risk transfer explicitly describes reallocating uncertain pension obligations.",
+      "status": "resolved",
+      "topic_id": "200"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "R&D spending is supported, although the topic may largely report accounting changes.",
+      "evidence_keywords": [
+        "clinical",
+        "development",
+        "research development",
+        "operating expenses"
+      ],
+      "label": "relevant",
+      "rationale": "Research-development and clinical expense increases support resources committed to uncertain development activities.",
+      "status": "resolved",
+      "topic_id": "201"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No investment or risk-management decision is described.",
+      "evidence_keywords": [
+        "paint",
+        "diy",
+        "contractor",
+        "home depot"
+      ],
+      "label": "irrelevant",
+      "rationale": "Paint, DIY and contractors describe home-improvement products and channels.",
+      "status": "resolved",
+      "topic_id": "202"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Research is a product application here; a specific uncertain development commitment is not supplied.",
+      "evidence_keywords": [
+        "sequencing",
+        "genomics",
+        "illumina",
+        "throughput"
+      ],
+      "label": "irrelevant",
+      "rationale": "Sequencing, genomics and throughput describe research instruments and applications.",
+      "status": "resolved",
+      "topic_id": "203"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No safety, funding or organizational risk-management choice is specified.",
+      "evidence_keywords": [
+        "plasma",
+        "blood",
+        "collection",
+        "donor"
+      ],
+      "label": "irrelevant",
+      "rationale": "Plasma, blood collection and donors describe medical supply operations.",
+      "status": "resolved",
+      "topic_id": "204"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Sales and brand descriptors do not establish risk-related choices.",
+      "evidence_keywords": [
+        "jack daniel",
+        "whiskey",
+        "brands",
+        "spirits"
+      ],
+      "label": "irrelevant",
+      "rationale": "Jack Daniel's, whiskey and premium spirits describe beverage brands and categories.",
+      "status": "resolved",
+      "topic_id": "205"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No investment or uncertainty-management scenario is specified.",
+      "evidence_keywords": [
+        "adobe",
+        "creative",
+        "document",
+        "marketing cloud"
+      ],
+      "label": "irrelevant",
+      "rationale": "Adobe creative and document clouds describe software products and services.",
+      "status": "resolved",
+      "topic_id": "206"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Treatment technology is not tied to an explicit organizational risk decision.",
+      "evidence_keywords": [
+        "radiation therapy",
+        "proton",
+        "oncology",
+        "imaging"
+      ],
+      "label": "irrelevant",
+      "rationale": "Radiation therapy, proton systems and imaging identify cancer treatment technology.",
+      "status": "resolved",
+      "topic_id": "207"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific uncertainty or downside-management scenario accompanies these themes.",
+      "evidence_keywords": [
+        "diversity",
+        "inclusion",
+        "equality",
+        "gender"
+      ],
+      "label": "irrelevant",
+      "rationale": "Diversity, inclusion and equality describe workforce and social issues.",
+      "status": "resolved",
+      "topic_id": "208"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Approval and launch describe product status without a clear risk decision.",
+      "evidence_keywords": [
+        "women health",
+        "hormone",
+        "fda approved",
+        "prescriptions"
+      ],
+      "label": "irrelevant",
+      "rationale": "Women's health, hormones and prescriptions describe approved medical products.",
+      "status": "resolved",
+      "topic_id": "209"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Novel engineering suggests innovation, but explicit R&D trials or commitments are absent.",
+      "evidence_keywords": [
+        "enzymes",
+        "protein engineering",
+        "biotherapeutics",
+        "manufacturing"
+      ],
+      "label": "irrelevant",
+      "rationale": "Enzymes, protein engineering and biotherapeutics mainly describe technologies and products.",
+      "status": "resolved",
+      "topic_id": "210"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Innovation alone does not establish investment or risk preference relevance.",
+      "evidence_keywords": [
+        "coffee",
+        "starbucks",
+        "tea",
+        "cups"
+      ],
+      "label": "irrelevant",
+      "rationale": "Coffee, tea and Starbucks brands describe beverage products and retail activity.",
+      "status": "resolved",
+      "topic_id": "211"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Specific exposure is supplied, although the organizational acceptance or mitigation decision is unstated.",
+      "evidence_keywords": [
+        "sanctions",
+        "war",
+        "business russia",
+        "exposure"
+      ],
+      "label": "relevant",
+      "rationale": "War, sanctions and exposure support a defined geopolitical downside scenario for business operations.",
+      "status": "resolved",
+      "topic_id": "212"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No investment or risk-management scenario accompanies usage reporting.",
+      "evidence_keywords": [
+        "mobile",
+        "app",
+        "web",
+        "engagement"
+      ],
+      "label": "irrelevant",
+      "rationale": "Mobile apps, web traffic and engagement describe digital channels and usage metrics.",
+      "status": "resolved",
+      "topic_id": "213"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Pricing may involve managerial choices, but no specific risk tradeoff is supported.",
+      "evidence_keywords": [
+        "drug pricing",
+        "rebates",
+        "affordability",
+        "access"
+      ],
+      "label": "irrelevant",
+      "rationale": "Drug pricing, rebates and affordability mainly describe pharmaceutical market access conditions.",
+      "status": "resolved",
+      "topic_id": "214"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Rights are mentioned without acquisition spending or investment-selection decisions.",
+      "evidence_keywords": [
+        "sports",
+        "espn",
+        "nfl",
+        "rights"
+      ],
+      "label": "irrelevant",
+      "rationale": "Sports leagues, ESPN and broadcast rights describe media content and programming.",
+      "status": "resolved",
+      "topic_id": "215"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Climate action can involve risk management, but these descriptors lack a concrete exposure or investment choice.",
+      "evidence_keywords": [
+        "carbon",
+        "emissions",
+        "net zero",
+        "reduce"
+      ],
+      "label": "irrelevant",
+      "rationale": "Emissions reduction and net-zero themes describe environmental goals and performance.",
+      "status": "resolved",
+      "topic_id": "216"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Integration could imply transaction risk, but no acquisition or commitment is explicitly identified.",
+      "evidence_keywords": [
+        "fedex",
+        "express",
+        "ground",
+        "operating income"
+      ],
+      "label": "irrelevant",
+      "rationale": "FedEx networks, express services and operating income mainly describe logistics operations.",
+      "status": "resolved",
+      "topic_id": "217"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Vertical integration is mentioned without a supported investment decision.",
+      "evidence_keywords": [
+        "ssd",
+        "flash",
+        "storage",
+        "controller"
+      ],
+      "label": "irrelevant",
+      "rationale": "SSDs, flash and storage controllers describe semiconductor products and architecture.",
+      "status": "resolved",
+      "topic_id": "218"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The technology vocabulary supplies no risk-related organizational choice.",
+      "evidence_keywords": [
+        "linux",
+        "open source",
+        "hybrid cloud",
+        "containers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Linux, open source and hybrid cloud describe software technology and workloads.",
+      "status": "resolved",
+      "topic_id": "219"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No capital budgeting or specific mitigation scenario is supplied.",
+      "evidence_keywords": [
+        "lighting",
+        "led lighting",
+        "retrofit",
+        "fixtures"
+      ],
+      "label": "irrelevant",
+      "rationale": "LED lighting, fixtures and retrofits describe lighting products and applications.",
+      "status": "resolved",
+      "topic_id": "220"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Policy and coverage establish a financial decision scenario, though downside is implicit.",
+      "evidence_keywords": [
+        "coverage ratio",
+        "distribution coverage",
+        "distribution policy",
+        "cash flow"
+      ],
+      "label": "relevant",
+      "rationale": "Distribution policy and cash-flow coverage support financing-capacity and payout choices.",
+      "status": "resolved",
+      "topic_id": "221"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific organizational risk decision is described.",
+      "evidence_keywords": [
+        "flooring",
+        "ceramic",
+        "carpet",
+        "tile"
+      ],
+      "label": "irrelevant",
+      "rationale": "Flooring, ceramic tile and carpet describe building products and markets.",
+      "status": "resolved",
+      "topic_id": "222"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Investment allocation is supported, although some descriptors also identify the lending sector.",
+      "evidence_keywords": [
+        "portfolio companies",
+        "investment",
+        "credit",
+        "origination",
+        "investments"
+      ],
+      "label": "relevant",
+      "rationale": "Portfolio investments and loan origination support private-credit capital deployment choices.",
+      "status": "resolved",
+      "topic_id": "223"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Opportunity language lacks a concrete market-entry or investment decision.",
+      "evidence_keywords": [
+        "canada",
+        "canadian",
+        "canadian market",
+        "ontario"
+      ],
+      "label": "irrelevant",
+      "rationale": "Canada and Canadian markets describe a geographic business area.",
+      "status": "resolved",
+      "topic_id": "224"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No credit selection, financing or risk-management scenario is specified.",
+      "evidence_keywords": [
+        "banking",
+        "fintech",
+        "digital",
+        "banking platform"
+      ],
+      "label": "irrelevant",
+      "rationale": "Digital banking, fintech and platforms describe financial technology services.",
+      "status": "resolved",
+      "topic_id": "225"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Threat and protection are explicit, although the topic may describe protective products.",
+      "evidence_keywords": [
+        "fraud",
+        "theft",
+        "breach",
+        "protection"
+      ],
+      "label": "relevant",
+      "rationale": "Identity theft, fraud, breaches and protection support managing information-related downside.",
+      "status": "resolved",
+      "topic_id": "226"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Growth outcomes alone do not identify risk acceptance or investment decisions.",
+      "evidence_keywords": [
+        "organic growth",
+        "growth rate",
+        "single digit",
+        "organically"
+      ],
+      "label": "irrelevant",
+      "rationale": "Organic growth and growth rates mainly describe financial performance reporting.",
+      "status": "resolved",
+      "topic_id": "227"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Technology development is not linked to trials, investment choices or specific risk management.",
+      "evidence_keywords": [
+        "battery",
+        "lithium",
+        "energy density",
+        "solid state"
+      ],
+      "label": "irrelevant",
+      "rationale": "Lithium batteries, energy density and separators describe battery technology.",
+      "status": "resolved",
+      "topic_id": "228"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No capacity commitment or risk mitigation decision is supplied.",
+      "evidence_keywords": [
+        "sand",
+        "frac sand",
+        "logistics",
+        "mines"
+      ],
+      "label": "irrelevant",
+      "rationale": "Frac sand, mines and basin logistics describe oilfield materials and supply.",
+      "status": "resolved",
+      "topic_id": "229"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Weight management is a product purpose rather than organizational risk management.",
+      "evidence_keywords": [
+        "nutrition",
+        "weight management",
+        "products",
+        "distributors"
+      ],
+      "label": "irrelevant",
+      "rationale": "Nutrition products, weight management and distributors describe consumer health products.",
+      "status": "resolved",
+      "topic_id": "230"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors provide no supported risk-related decision.",
+      "evidence_keywords": [
+        "monster",
+        "coca cola",
+        "energy drink",
+        "bottlers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Monster, Coca-Cola and energy drinks identify beverage brands and distribution.",
+      "status": "resolved",
+      "topic_id": "231"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Specific portfolio exposure and credit-management mechanisms establish downside relevance.",
+      "evidence_keywords": [
+        "energy portfolio",
+        "exposure",
+        "reserve",
+        "redetermination",
+        "borrowers"
+      ],
+      "label": "relevant",
+      "rationale": "Energy-loan exposure, reserves and redetermination support credit-risk assessment and management.",
+      "status": "resolved",
+      "topic_id": "232"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Debt and dispositions occur, but the dominant topic is earnings measurement and outlook.",
+      "evidence_keywords": [
+        "ffo",
+        "noi",
+        "guidance",
+        "store noi"
+      ],
+      "label": "irrelevant",
+      "rationale": "FFO, NOI and guidance mainly describe property financial reporting.",
+      "status": "resolved",
+      "topic_id": "233"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "The acquisition scenario is explicit, though purchase accounting may dominate some discussion.",
+      "evidence_keywords": [
+        "accretion",
+        "purchase price",
+        "synergies",
+        "transaction",
+        "acquisition"
+      ],
+      "label": "relevant",
+      "rationale": "Acquisition accretion, purchase price and synergies support evaluating transaction financial outcomes.",
+      "status": "resolved",
+      "topic_id": "234"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Harsh applications do not themselves specify an organizational risk decision.",
+      "evidence_keywords": [
+        "sensor",
+        "sensors",
+        "connector",
+        "connectors"
+      ],
+      "label": "irrelevant",
+      "rationale": "Sensors and connectors describe industrial and automotive components.",
+      "status": "resolved",
+      "topic_id": "235"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Study suggests research, but a clear trial phase or organizational commitment is absent.",
+      "evidence_keywords": [
+        "cardiomyopathy",
+        "onpattro",
+        "patients",
+        "treatment"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cardiomyopathy, Onpattro and patients primarily identify a disease and treatment area.",
+      "status": "resolved",
+      "topic_id": "236"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No investment or risk-management choice is supplied.",
+      "evidence_keywords": [
+        "pc",
+        "pc market",
+        "notebook",
+        "demand"
+      ],
+      "label": "irrelevant",
+      "rationale": "PCs, notebooks and refresh demand describe computer product markets.",
+      "status": "resolved",
+      "topic_id": "237"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Rejecting or recovering ethane may be an operating choice, but uncertainty or risk management is not established.",
+      "evidence_keywords": [
+        "ethane",
+        "rejection",
+        "recovery",
+        "plants"
+      ],
+      "label": "irrelevant",
+      "rationale": "Ethane rejection, recovery and gas plants mainly describe processing economics and operations.",
+      "status": "resolved",
+      "topic_id": "238"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "An asset and rights transaction is supported, though political and geographic descriptors remain prominent.",
+      "evidence_keywords": [
+        "agreement",
+        "divestment",
+        "contract",
+        "rights"
+      ],
+      "label": "relevant",
+      "rationale": "Divestment agreements and contract rights support choices about restructuring a mining position.",
+      "status": "resolved",
+      "topic_id": "239"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Generic pressures and customer categories do not establish a risk scenario.",
+      "evidence_keywords": [
+        "qvc",
+        "zulily",
+        "shopping",
+        "digital platforms"
+      ],
+      "label": "irrelevant",
+      "rationale": "QVC, Zulily and digital shopping platforms describe retail businesses and channels.",
+      "status": "resolved",
+      "topic_id": "240"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "III may indicate development, but no explicit phase, trial or managerial commitment accompanies it.",
+      "evidence_keywords": [
+        "pulmonary hypertension",
+        "remodulin",
+        "pump",
+        "therapy"
+      ],
+      "label": "irrelevant",
+      "rationale": "Pulmonary disease, pumps and therapies mainly identify a medical treatment area.",
+      "status": "resolved",
+      "topic_id": "241"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No entry, asset investment or risk-management decision is specified.",
+      "evidence_keywords": [
+        "airbnb",
+        "hosts",
+        "guests",
+        "stays"
+      ],
+      "label": "irrelevant",
+      "rationale": "Airbnb hosts, guests and stays describe a travel accommodation marketplace.",
+      "status": "resolved",
+      "topic_id": "242"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors do not specify deliberate downside management or uncertainty acceptance.",
+      "evidence_keywords": [
+        "retention rates",
+        "client retention",
+        "revenue retention",
+        "clients"
+      ],
+      "label": "irrelevant",
+      "rationale": "Client and revenue retention rates describe routine customer performance metrics.",
+      "status": "resolved",
+      "topic_id": "243"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Specific credit-loss indicators directly establish financial risk exposure.",
+      "evidence_keywords": [
+        "delinquency",
+        "charge offs",
+        "credit quality",
+        "losses"
+      ],
+      "label": "relevant",
+      "rationale": "Delinquencies, charge-offs and credit losses support a concrete loan-portfolio downside scenario.",
+      "status": "resolved",
+      "topic_id": "244"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Trial development is explicit, though managerial funding decisions are not supplied.",
+      "evidence_keywords": [
+        "phase",
+        "clinical",
+        "trial",
+        "phase iii"
+      ],
+      "label": "relevant",
+      "rationale": "Clinical trials and phase III programs support uncertain neuromuscular R&D outcomes.",
+      "status": "resolved",
+      "topic_id": "245"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Decision scenarios are supported, although some descriptors describe transaction-market conditions.",
+      "evidence_keywords": [
+        "valuations",
+        "financing",
+        "transactions",
+        "private equity",
+        "deals"
+      ],
+      "label": "relevant",
+      "rationale": "Financing, valuations and private-equity transactions support deal and capital deployment decisions.",
+      "status": "resolved",
+      "topic_id": "246"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "A trial scenario is supplied, but development commitments and managerial choices are implicit.",
+      "evidence_keywords": [
+        "heart failure",
+        "clinical",
+        "trial"
+      ],
+      "label": "relevant",
+      "rationale": "Clinical trial activity in heart failure supports uncertain therapeutic research.",
+      "status": "resolved",
+      "topic_id": "247"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Fleet ownership is not accompanied by a supported acquisition or financing choice.",
+      "evidence_keywords": [
+        "trucks",
+        "rental",
+        "fleet",
+        "leasing"
+      ],
+      "label": "irrelevant",
+      "rationale": "Truck rental, leasing and fleet demand describe vehicle service operations.",
+      "status": "resolved",
+      "topic_id": "248"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Voluntary churn and prices do not establish a particular organizational risk decision.",
+      "evidence_keywords": [
+        "churn",
+        "churn rate",
+        "low churn",
+        "retention"
+      ],
+      "label": "irrelevant",
+      "rationale": "Customer churn and retention describe service continuity metrics.",
+      "status": "resolved",
+      "topic_id": "249"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Upgrades can involve investment, but the topic mainly describes products and their sales cycle.",
+      "evidence_keywords": [
+        "sequencing",
+        "high throughput",
+        "instrument",
+        "upgrade cycle"
+      ],
+      "label": "irrelevant",
+      "rationale": "Sequencing instruments, throughput and upgrades describe laboratory product demand.",
+      "status": "resolved",
+      "topic_id": "250"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Generic strategic introductions do not specify a risk-related scenario.",
+      "evidence_keywords": [
+        "overview",
+        "provide update",
+        "strategic overview",
+        "outlook general"
+      ],
+      "label": "irrelevant",
+      "rationale": "Overview and update phrases describe presentation structure and general outlook remarks.",
+      "status": "resolved",
+      "topic_id": "251"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "A specific venture and organizational investment structure is explicit.",
+      "evidence_keywords": [
+        "joint venture",
+        "jv partner",
+        "capital",
+        "jv structure"
+      ],
+      "label": "relevant",
+      "rationale": "Joint-venture structures and partners support choices about sharing capital commitments and venture exposure.",
+      "status": "resolved",
+      "topic_id": "252"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Launches and price changes do not specify a supported uncertainty decision.",
+      "evidence_keywords": [
+        "generics",
+        "manufacturers",
+        "deflation",
+        "pricing"
+      ],
+      "label": "irrelevant",
+      "rationale": "Generic drugs and price deflation describe pharmaceutical product markets and pricing conditions.",
+      "status": "resolved",
+      "topic_id": "253"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The descriptors identify products and industry activity without a risk scenario.",
+      "evidence_keywords": [
+        "rv",
+        "grand design",
+        "winnebago",
+        "dealers"
+      ],
+      "label": "irrelevant",
+      "rationale": "RVs, Winnebago and dealers describe recreational vehicle brands and retail channels.",
+      "status": "resolved",
+      "topic_id": "254"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Input materials and sales do not support a concrete risk choice.",
+      "evidence_keywords": [
+        "coatings",
+        "architectural",
+        "industrial coatings",
+        "raw material"
+      ],
+      "label": "irrelevant",
+      "rationale": "Architectural and industrial coatings describe chemical products and segment operations.",
+      "status": "resolved",
+      "topic_id": "255"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Explicit hazard, mitigation and liability terms establish a deliberate risk-management scenario.",
+      "evidence_keywords": [
+        "wildfire",
+        "mitigation",
+        "risk",
+        "liability",
+        "safety"
+      ],
+      "label": "relevant",
+      "rationale": "Wildfire mitigation, liability and safety directly support managing physical and legal downside.",
+      "status": "resolved",
+      "topic_id": "256"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Generic directional impacts do not identify any particular risk state or decision.",
+      "evidence_keywords": [
+        "headwind",
+        "tailwind",
+        "headwinds",
+        "quarter"
+      ],
+      "label": "irrelevant",
+      "rationale": "Headwinds and tailwinds mainly characterize effects on routine financial outlooks.",
+      "status": "resolved",
+      "topic_id": "257"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No supported investment or risk-management decision appears.",
+      "evidence_keywords": [
+        "lawn",
+        "lawn garden",
+        "garden",
+        "irrigation"
+      ],
+      "label": "irrelevant",
+      "rationale": "Lawn, garden and irrigation equipment describe seasonal outdoor product markets.",
+      "status": "resolved",
+      "topic_id": "258"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Named stores and properties do not establish a transaction or risk choice.",
+      "evidence_keywords": [
+        "saks",
+        "lord",
+        "taylor",
+        "stores"
+      ],
+      "label": "irrelevant",
+      "rationale": "Saks, department-store banners and real estate mainly identify retail businesses.",
+      "status": "resolved",
+      "topic_id": "259"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Evaluation language supports a structural choice, though its risk implications are implicit.",
+      "evidence_keywords": [
+        "mlp structure",
+        "distributions",
+        "evaluate",
+        "better suited"
+      ],
+      "label": "relevant",
+      "rationale": "Evaluating MLP structure and distributions supports choices about organizational financing arrangements.",
+      "status": "resolved",
+      "topic_id": "260"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No capital allocation or risk mitigation decision is specified.",
+      "evidence_keywords": [
+        "optical",
+        "100 gig",
+        "long haul",
+        "bandwidth"
+      ],
+      "label": "irrelevant",
+      "rationale": "Optical networks, bandwidth and long-haul transport describe communications technology.",
+      "status": "resolved",
+      "topic_id": "261"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Trial stages clearly indicate R&D, but investment decisions remain unstated.",
+      "evidence_keywords": [
+        "phase",
+        "trial",
+        "phase ii",
+        "ii trial"
+      ],
+      "label": "relevant",
+      "rationale": "Phase II trials and modulators support an uncertain therapeutic development scenario.",
+      "status": "resolved",
+      "topic_id": "262"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Projection phrases do not identify risk-related organizational choices.",
+      "evidence_keywords": [
+        "microchip",
+        "analog",
+        "microcontroller",
+        "microcontrollers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Microcontrollers, analog products and named chip businesses describe semiconductor operations.",
+      "status": "resolved",
+      "topic_id": "263"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Price setting can involve uncertainty, but no concrete downside or commitment scenario is supplied.",
+      "evidence_keywords": [
+        "pricing",
+        "drug",
+        "payers",
+        "price point"
+      ],
+      "label": "irrelevant",
+      "rationale": "Drug pricing, payers and patient access describe pharmaceutical commercialization conditions.",
+      "status": "resolved",
+      "topic_id": "264"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Technology applications do not specify a supported R&D or investment decision.",
+      "evidence_keywords": [
+        "lasers",
+        "fiber",
+        "additive manufacturing",
+        "materials processing"
+      ],
+      "label": "irrelevant",
+      "rationale": "Lasers and additive manufacturing describe industrial technology products and applications.",
+      "status": "resolved",
+      "topic_id": "265"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The business model is described without a concrete risk-related choice.",
+      "evidence_keywords": [
+        "distribution",
+        "distributors",
+        "channel",
+        "distribution partners"
+      ],
+      "label": "irrelevant",
+      "rationale": "Distributors, direct channels and partner relationships describe sales distribution arrangements.",
+      "status": "resolved",
+      "topic_id": "266"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "The epidemic and criminal-justice references do not establish organizational risk management.",
+      "evidence_keywords": [
+        "probuphine",
+        "vivitrol",
+        "treatment",
+        "addiction"
+      ],
+      "label": "irrelevant",
+      "rationale": "Opioid addiction treatments and medications identify a medical product area.",
+      "status": "resolved",
+      "topic_id": "267"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "An explicitly included transaction decision scenario is clearly supplied.",
+      "evidence_keywords": [
+        "acquisitions",
+        "interested",
+        "fit",
+        "opportunities",
+        "deals"
+      ],
+      "label": "relevant",
+      "rationale": "Bank acquisitions, fit and deal opportunities directly support acquisition selection choices.",
+      "status": "resolved",
+      "topic_id": "268"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No trial, allocation or organizational risk-management decision is specified.",
+      "evidence_keywords": [
+        "obesity",
+        "genetic",
+        "weight loss",
+        "receptor"
+      ],
+      "label": "irrelevant",
+      "rationale": "Obesity, genetic pathways and weight loss describe diseases and therapeutic mechanisms.",
+      "status": "resolved",
+      "topic_id": "269"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Opportunity and research terms do not establish a particular entry or development commitment.",
+      "evidence_keywords": [
+        "china",
+        "chinese market",
+        "reimbursement",
+        "products"
+      ],
+      "label": "irrelevant",
+      "rationale": "China, reimbursement and research products describe a geographic pharmaceutical market.",
+      "status": "resolved",
+      "topic_id": "270"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No spending allocation or risk management choice is supplied.",
+      "evidence_keywords": [
+        "twitter",
+        "advertisers",
+        "ads",
+        "tweets"
+      ],
+      "label": "irrelevant",
+      "rationale": "Twitter, advertisers and tweets describe social media advertising services.",
+      "status": "resolved",
+      "topic_id": "271"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Growth projects might involve investment, but the dominant descriptors identify an industry and revenue model.",
+      "evidence_keywords": [
+        "natural gas",
+        "gas liquids",
+        "gathering processing",
+        "processing"
+      ],
+      "label": "irrelevant",
+      "rationale": "Natural gas gathering, processing and liquids mainly describe midstream operations.",
+      "status": "resolved",
+      "topic_id": "272"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Data generation suggests evidence development, but no trial or organizational risk decision is explicit.",
+      "evidence_keywords": [
+        "payers",
+        "indications",
+        "refractory patients",
+        "managed care"
+      ],
+      "label": "irrelevant",
+      "rationale": "Payers, indications and refractory patients describe clinical use and reimbursement access.",
+      "status": "resolved",
+      "topic_id": "273"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "A concrete protective use is supplied, although product-market discussion may dominate.",
+      "evidence_keywords": [
+        "rfid",
+        "loss prevention",
+        "retailers",
+        "prevention"
+      ],
+      "label": "relevant",
+      "rationale": "RFID loss prevention supports deliberate protection against retail inventory losses.",
+      "status": "resolved",
+      "topic_id": "274"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Brand categories do not specify investment or uncertainty management decisions.",
+      "evidence_keywords": [
+        "private label",
+        "brands",
+        "private brand",
+        "retailers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Private-label brands and retailers describe consumer product positioning.",
+      "status": "resolved",
+      "topic_id": "275"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Transaction valuation is supported, although the topic may mainly report market pricing conditions.",
+      "evidence_keywords": [
+        "cap rates",
+        "transactions",
+        "buyers",
+        "cost capital",
+        "sellers"
+      ],
+      "label": "relevant",
+      "rationale": "Cap rates, transactions and cost of capital support property investment valuation decisions.",
+      "status": "resolved",
+      "topic_id": "276"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No property purchase or other risk-related commitment is specified.",
+      "evidence_keywords": [
+        "apartments",
+        "costar",
+        "information",
+        "marketing"
+      ],
+      "label": "irrelevant",
+      "rationale": "Apartments.com, CoStar and real-estate information describe property marketing services.",
+      "status": "resolved",
+      "topic_id": "277"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Accounting presentation does not establish an organizational risk decision.",
+      "evidence_keywords": [
+        "gaap",
+        "non gaap",
+        "financial measures",
+        "gaap results"
+      ],
+      "label": "irrelevant",
+      "rationale": "GAAP and adjusted measures describe financial reporting conventions.",
+      "status": "resolved",
+      "topic_id": "278"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Meeting format and voting do not supply a risk-related organizational scenario.",
+      "evidence_keywords": [
+        "virtual meeting",
+        "stockholders",
+        "annual meeting",
+        "participation"
+      ],
+      "label": "irrelevant",
+      "rationale": "Virtual annual meetings and participation describe shareholder meeting procedures.",
+      "status": "resolved",
+      "topic_id": "279"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Named holdings alone do not specify allocation or transaction choices.",
+      "evidence_keywords": [
+        "liberty",
+        "siriusxm",
+        "charter",
+        "live nation"
+      ],
+      "label": "irrelevant",
+      "rationale": "Liberty, SiriusXM and associated entertainment businesses primarily identify a company portfolio.",
+      "status": "resolved",
+      "topic_id": "280"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Approval can be uncertain, but the descriptors do not identify a specific development or entry decision.",
+      "evidence_keywords": [
+        "europe",
+        "reimbursement",
+        "approval",
+        "countries"
+      ],
+      "label": "irrelevant",
+      "rationale": "European reimbursement, approvals and launches describe pharmaceutical market access by country.",
+      "status": "resolved",
+      "topic_id": "281"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Bidding is a concrete decision mechanism, though bid risk and investment terms are unstated.",
+      "evidence_keywords": [
+        "projects",
+        "bid",
+        "bid market",
+        "bidding"
+      ],
+      "label": "relevant",
+      "rationale": "Project bidding supports choices about pursuing and committing to uncertain project contracts.",
+      "status": "resolved",
+      "topic_id": "282"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Clean-air product terminology does not establish a specific risk-management choice.",
+      "evidence_keywords": [
+        "vehicle",
+        "gm",
+        "truck",
+        "aftermarket"
+      ],
+      "label": "irrelevant",
+      "rationale": "GM vehicles, trucks and aftermarket products describe automotive markets.",
+      "status": "resolved",
+      "topic_id": "283"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Deals may be strategic, but the descriptors do not clearly support investment uncertainty or risk sharing.",
+      "evidence_keywords": [
+        "royalty",
+        "royalties",
+        "licensing",
+        "royalty rate"
+      ],
+      "label": "irrelevant",
+      "rationale": "Royalties, licenses and royalty rates mainly describe intellectual-property revenues and contracts.",
+      "status": "resolved",
+      "topic_id": "284"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "A specific cost-transfer mechanism is supplied, although much of the topic describes market price impacts.",
+      "evidence_keywords": [
+        "fuel prices",
+        "surcharge",
+        "fuel surcharge",
+        "fuel price"
+      ],
+      "label": "relevant",
+      "rationale": "Fuel surcharges support passing through fuel-price exposure as a cost-risk management mechanism.",
+      "status": "resolved",
+      "topic_id": "285"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No supported investment or uncertainty-management scenario appears.",
+      "evidence_keywords": [
+        "media",
+        "agencies",
+        "creative",
+        "agency"
+      ],
+      "label": "irrelevant",
+      "rationale": "Media agencies, creative services and clients describe advertising agency operations.",
+      "status": "resolved",
+      "topic_id": "286"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Geography alone does not specify political exposure or an organizational risk response.",
+      "evidence_keywords": [
+        "middle east",
+        "saudi arabia",
+        "qatar",
+        "region"
+      ],
+      "label": "irrelevant",
+      "rationale": "Middle Eastern countries and regional oil markets identify geographic business areas.",
+      "status": "resolved",
+      "topic_id": "287"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Technology competition does not specify investment selection or risk management.",
+      "evidence_keywords": [
+        "arm",
+        "x86",
+        "server",
+        "architecture"
+      ],
+      "label": "irrelevant",
+      "rationale": "ARM, x86 and server architectures describe semiconductor and computing technologies.",
+      "status": "resolved",
+      "topic_id": "288"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No acquisition, development commitment or tenant-risk decision is supplied.",
+      "evidence_keywords": [
+        "life science",
+        "tenants",
+        "lab",
+        "leasing"
+      ],
+      "label": "irrelevant",
+      "rationale": "Life-science tenants, labs and leasing describe specialized office property operations.",
+      "status": "resolved",
+      "topic_id": "289"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Launch alone does not establish a supported risk-related decision.",
+      "evidence_keywords": [
+        "migraine",
+        "aimovig",
+        "cgrp",
+        "prescribers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Migraine treatments, neurologists and prescribers describe medical products and commercialization.",
+      "status": "resolved",
+      "topic_id": "290"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Land positions could reflect investment choices, but acquisition or exploratory commitment is not explicit.",
+      "evidence_keywords": [
+        "acreage",
+        "acreage position",
+        "drilling",
+        "laterals"
+      ],
+      "label": "irrelevant",
+      "rationale": "Acreage positions, wells and laterals mainly describe petroleum land and drilling operations.",
+      "status": "resolved",
+      "topic_id": "291"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Development phases are explicit; lower risk describes patients rather than managerial risk preference.",
+      "evidence_keywords": [
+        "clinical",
+        "phase",
+        "phase iii",
+        "relapsed refractory"
+      ],
+      "label": "relevant",
+      "rationale": "Clinical phase III descriptors support uncertain hematologic therapeutic development.",
+      "status": "resolved",
+      "topic_id": "292"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Election-related spending is presented as market activity without an organizational risk choice.",
+      "evidence_keywords": [
+        "political advertising",
+        "election",
+        "campaign",
+        "political revenue"
+      ],
+      "label": "irrelevant",
+      "rationale": "Political advertising and election campaigns describe a media revenue market.",
+      "status": "resolved",
+      "topic_id": "293"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Impairments reflect downside, but no prior investment decision or deliberate risk-management scenario is supplied.",
+      "evidence_keywords": [
+        "impairment",
+        "goodwill",
+        "impairment charge",
+        "carrying value"
+      ],
+      "label": "irrelevant",
+      "rationale": "Goodwill impairment charges and carrying values mainly describe asset accounting.",
+      "status": "resolved",
+      "topic_id": "294"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No supported risk-related organizational state or decision is specified.",
+      "evidence_keywords": [
+        "vistaprint",
+        "upload print",
+        "mass customization",
+        "small businesses"
+      ],
+      "label": "irrelevant",
+      "rationale": "Vistaprint, customization and small-business design describe printing products and services.",
+      "status": "resolved",
+      "topic_id": "295"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Exploration combined with return evaluation supports investment relevance, though actual commitments are implicit.",
+      "evidence_keywords": [
+        "exploration",
+        "resource",
+        "returns",
+        "financial returns",
+        "cash flow"
+      ],
+      "label": "relevant",
+      "rationale": "Exploration and financial returns support assessing uncertain petroleum resource investment.",
+      "status": "resolved",
+      "topic_id": "296"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Study and potential suggest research, but a defined trial or allocation scenario is unclear.",
+      "evidence_keywords": [
+        "lupus",
+        "autoimmune",
+        "therapy",
+        "inhibitor"
+      ],
+      "label": "irrelevant",
+      "rationale": "Lupus, autoimmune disease and therapeutic mechanisms mainly describe a medical product area.",
+      "status": "resolved",
+      "topic_id": "297"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Price and customer metrics do not establish risk acceptance or mitigation choices.",
+      "evidence_keywords": [
+        "arpu",
+        "churn",
+        "adds",
+        "subscriber"
+      ],
+      "label": "irrelevant",
+      "rationale": "ARPU, churn and subscriber additions describe telecommunications customer metrics.",
+      "status": "resolved",
+      "topic_id": "298"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "A trial scenario is explicit, although managerial investment choices are not supplied.",
+      "evidence_keywords": [
+        "ocular",
+        "phase",
+        "trial",
+        "treatment"
+      ],
+      "label": "relevant",
+      "rationale": "Ocular treatment phases and trials support uncertain clinical R&D.",
+      "status": "resolved",
+      "topic_id": "299"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No investment, financing or risk-management choice is supplied.",
+      "evidence_keywords": [
+        "mattress",
+        "fabrics",
+        "bedding",
+        "upholstery"
+      ],
+      "label": "irrelevant",
+      "rationale": "Mattresses, bedding and upholstery fabrics describe household product manufacturing.",
+      "status": "resolved",
+      "topic_id": "300"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "A structural choice and possible lost synergies are explicit, while its risk implications remain implicit.",
+      "evidence_keywords": [
+        "separation",
+        "split",
+        "separate businesses",
+        "dis synergies",
+        "allocation"
+      ],
+      "label": "relevant",
+      "rationale": "Separating and splitting businesses support deliberate corporate restructuring and allocation choices.",
+      "status": "resolved",
+      "topic_id": "301"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "New supply describes conditions without a specific development or investment commitment.",
+      "evidence_keywords": [
+        "self storage",
+        "storage rental",
+        "properties",
+        "new supply"
+      ],
+      "label": "irrelevant",
+      "rationale": "Self-storage rental, properties and new supply describe a property service market.",
+      "status": "resolved",
+      "topic_id": "302"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Insurance sector membership appears without underwriting, loss exposure or risk-transfer decisions.",
+      "evidence_keywords": [
+        "japan",
+        "insurance",
+        "policyholders",
+        "products"
+      ],
+      "label": "irrelevant",
+      "rationale": "Japanese insurance products, policyholders and distribution describe a geographic product market.",
+      "status": "resolved",
+      "topic_id": "303"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Big-ticket items do not by themselves establish a managerial investment or risk decision.",
+      "evidence_keywords": [
+        "tools group",
+        "tools",
+        "diagnostics",
+        "repair"
+      ],
+      "label": "irrelevant",
+      "rationale": "Tools, diagnostics and repair products describe an equipment business.",
+      "status": "resolved",
+      "topic_id": "304"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Stability and commodity references do not supply a concrete risk-management choice.",
+      "evidence_keywords": [
+        "compression",
+        "horsepower",
+        "natural gas",
+        "equipment"
+      ],
+      "label": "irrelevant",
+      "rationale": "Compression equipment and horsepower describe natural-gas service operations.",
+      "status": "resolved",
+      "topic_id": "305"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Relationships alone do not specify concentration risk or an organizational commitment.",
+      "evidence_keywords": [
+        "amazon",
+        "walmart",
+        "commerce",
+        "retailers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Amazon, Walmart and retailer relationships describe commerce channels and counterparties.",
+      "status": "resolved",
+      "topic_id": "306"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Negotiations can involve downside tradeoffs, but no disruption or risk-management scenario is specified.",
+      "evidence_keywords": [
+        "union",
+        "bargaining",
+        "collective bargaining",
+        "contract"
+      ],
+      "label": "irrelevant",
+      "rationale": "Unions, bargaining and agreements describe routine labor contract relations.",
+      "status": "resolved",
+      "topic_id": "307"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "FedRAMP alone does not establish a deliberate risk-management or investment decision.",
+      "evidence_keywords": [
+        "federal government",
+        "public sector",
+        "agencies",
+        "federal market"
+      ],
+      "label": "irrelevant",
+      "rationale": "Federal agencies and public-sector markets describe government customers for services.",
+      "status": "resolved",
+      "topic_id": "308"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific expansion, acquisition or uncertainty decision is supported.",
+      "evidence_keywords": [
+        "scale",
+        "size",
+        "benefits scale",
+        "bigger"
+      ],
+      "label": "irrelevant",
+      "rationale": "Scale, size and scale benefits describe general business advantages.",
+      "status": "resolved",
+      "topic_id": "309"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Bank resilience constraints are supported, though much of the topic may describe regulation generally.",
+      "evidence_keywords": [
+        "dodd frank",
+        "sifi",
+        "liquidity",
+        "250 billion"
+      ],
+      "label": "relevant",
+      "rationale": "Systemic-bank regulation, liquidity and size thresholds support financial risk constraints and management.",
+      "status": "resolved",
+      "topic_id": "310"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Risk and uncertainty language is embedded in reporting boilerplate without a specific decision.",
+      "evidence_keywords": [
+        "looking statements",
+        "forward looking",
+        "form 10",
+        "sec"
+      ],
+      "label": "irrelevant",
+      "rationale": "Forward-looking statements and SEC references identify routine disclosure warnings.",
+      "status": "resolved",
+      "topic_id": "311"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Synergies could indicate a transaction, but no explicit acquisition or investment choice is supplied.",
+      "evidence_keywords": [
+        "mobile",
+        "vodafone",
+        "fixed mobile",
+        "broadband"
+      ],
+      "label": "irrelevant",
+      "rationale": "Mobile, broadband and convergence mainly describe telecommunications operations and markets.",
+      "status": "resolved",
+      "topic_id": "312"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Yield here lacks investment-allocation, financing or risk-management context.",
+      "evidence_keywords": [
+        "yield",
+        "revenue yield",
+        "peak period",
+        "volume"
+      ],
+      "label": "irrelevant",
+      "rationale": "Revenue yields, volumes and peak periods describe operating performance metrics.",
+      "status": "resolved",
+      "topic_id": "313"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Activation could imply a capacity choice, but no explicit investment or downside scenario is established.",
+      "evidence_keywords": [
+        "pressure pumping",
+        "equipment",
+        "rig count",
+        "maintenance"
+      ],
+      "label": "irrelevant",
+      "rationale": "Pressure pumping, rigs and equipment describe oilfield services and operating activity.",
+      "status": "resolved",
+      "topic_id": "314"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Demographic categories do not specify organizational risk preferences or decisions.",
+      "evidence_keywords": [
+        "millennials",
+        "younger",
+        "demographic",
+        "age"
+      ],
+      "label": "irrelevant",
+      "rationale": "Millennials, age and demographic segments describe customer populations.",
+      "status": "resolved",
+      "topic_id": "315"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Routine retention marketing lacks a concrete uncertainty or downside decision.",
+      "evidence_keywords": [
+        "loyalty program",
+        "rewards",
+        "membership",
+        "retention"
+      ],
+      "label": "irrelevant",
+      "rationale": "Loyalty programs, rewards and membership describe customer marketing mechanisms.",
+      "status": "resolved",
+      "topic_id": "316"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Security is a generic feature without explicit threats or a risk-management scenario.",
+      "evidence_keywords": [
+        "box",
+        "content management",
+        "cloud content",
+        "collaboration"
+      ],
+      "label": "irrelevant",
+      "rationale": "Box, cloud content and collaboration describe enterprise software products.",
+      "status": "resolved",
+      "topic_id": "317"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No fraud, credit or financing decision is specified.",
+      "evidence_keywords": [
+        "paypal",
+        "payments",
+        "checkout",
+        "wallet"
+      ],
+      "label": "irrelevant",
+      "rationale": "PayPal, checkout and mobile wallets describe payment services.",
+      "status": "resolved",
+      "topic_id": "318"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Critical supply terminology does not establish a specific organizational risk scenario.",
+      "evidence_keywords": [
+        "rare",
+        "earth",
+        "uranium",
+        "minerals"
+      ],
+      "label": "irrelevant",
+      "rationale": "Rare earths, uranium and minerals describe materials production and supply.",
+      "status": "resolved",
+      "topic_id": "319"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Environmental product attributes do not specify investment or risk-management decisions.",
+      "evidence_keywords": [
+        "plastic",
+        "recycling",
+        "recycled content",
+        "circular economy"
+      ],
+      "label": "irrelevant",
+      "rationale": "Plastic recycling and circular packaging describe materials processes and product characteristics.",
+      "status": "resolved",
+      "topic_id": "320"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Risk assessment concerns patient diagnosis rather than organizational downside choices.",
+      "evidence_keywords": [
+        "ovarian cancer",
+        "detection",
+        "risk assessment",
+        "clinical utility"
+      ],
+      "label": "irrelevant",
+      "rationale": "Ovarian cancer detection and risk assessment describe clinical diagnostic products.",
+      "status": "resolved",
+      "topic_id": "321"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Spin and capacity could imply restructuring or investment, but their meanings are unclear within product descriptors.",
+      "evidence_keywords": [
+        "lithium",
+        "carbonate",
+        "brine",
+        "refining"
+      ],
+      "label": "irrelevant",
+      "rationale": "Lithium, carbonate and brine processing mainly describe mining and refining products.",
+      "status": "resolved",
+      "topic_id": "322"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No defined uncertainty or organizational risk decision is supplied.",
+      "evidence_keywords": [
+        "stakeholder",
+        "capitalism",
+        "communities",
+        "society"
+      ],
+      "label": "irrelevant",
+      "rationale": "Stakeholder capitalism, communities and equality describe corporate social purpose.",
+      "status": "resolved",
+      "topic_id": "323"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Gambling services and EBITDA do not establish managerial risk choices.",
+      "evidence_keywords": [
+        "derby",
+        "casino",
+        "racing",
+        "wagering"
+      ],
+      "label": "irrelevant",
+      "rationale": "Derby racing, casinos and wagering describe gaming entertainment operations.",
+      "status": "resolved",
+      "topic_id": "324"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Digitalization is not connected to a specific investment or risk-management decision.",
+      "evidence_keywords": [
+        "opentext",
+        "information management",
+        "managed services",
+        "business network"
+      ],
+      "label": "irrelevant",
+      "rationale": "OpenText, information management and managed services identify enterprise software offerings.",
+      "status": "resolved",
+      "topic_id": "325"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No specific commitment or risk-management scenario accompanies segment reporting.",
+      "evidence_keywords": [
+        "insulation",
+        "roofing",
+        "composites",
+        "ebit growth"
+      ],
+      "label": "irrelevant",
+      "rationale": "Insulation, roofing and composites describe building-material segments and earnings performance.",
+      "status": "resolved",
+      "topic_id": "326"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Rent restrictions can create downside, but no organizational exposure choice or response is specified.",
+      "evidence_keywords": [
+        "rent",
+        "control",
+        "ballot",
+        "law"
+      ],
+      "label": "irrelevant",
+      "rationale": "Rent control, housing laws and ballot measures mainly describe property regulation conditions.",
+      "status": "resolved",
+      "topic_id": "327"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Routine marketing activity does not specify a risk-related decision.",
+      "evidence_keywords": [
+        "coupons",
+        "retailers",
+        "shopper",
+        "promotions"
+      ],
+      "label": "irrelevant",
+      "rationale": "Coupons, shoppers and promoted listings describe retail promotion products and activity.",
+      "status": "resolved",
+      "topic_id": "328"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Revenue composition does not itself establish a choice about uncertainty.",
+      "evidence_keywords": [
+        "professional services",
+        "subscription",
+        "recurring revenue",
+        "license revenue"
+      ],
+      "label": "irrelevant",
+      "rationale": "Professional services, subscriptions and licenses describe software revenue categories.",
+      "status": "resolved",
+      "topic_id": "329"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Named products and retail channels lack a supported organizational risk scenario.",
+      "evidence_keywords": [
+        "motorcycle",
+        "powersports",
+        "motorcycles",
+        "dealers"
+      ],
+      "label": "irrelevant",
+      "rationale": "Motorcycles, powersports and dealers describe recreational vehicle markets.",
+      "status": "resolved",
+      "topic_id": "330"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "New customers do not establish new ventures or investment-risk choices.",
+      "evidence_keywords": [
+        "new logos",
+        "existing customers",
+        "cross sell",
+        "upsells"
+      ],
+      "label": "irrelevant",
+      "rationale": "New logos, existing customers and upselling describe customer acquisition and sales metrics.",
+      "status": "resolved",
+      "topic_id": "331"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Research and preclinical studies suggest R&D, but a development commitment or trial scenario is not clear.",
+      "evidence_keywords": [
+        "niagen",
+        "dietary supplement",
+        "published",
+        "preclinical"
+      ],
+      "label": "irrelevant",
+      "rationale": "Niagen, dietary supplements and published science mainly describe product evidence and attributes.",
+      "status": "resolved",
+      "topic_id": "332"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Acquisition and financing phrases occur, but their warning context does not support a concrete decision scenario.",
+      "evidence_keywords": [
+        "statements",
+        "risks uncertainties",
+        "comments outlook",
+        "factors discussed"
+      ],
+      "label": "irrelevant",
+      "rationale": "Statements, outlook comments and risk warnings describe disclosure and meeting presentation language.",
+      "status": "resolved",
+      "topic_id": "333"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Infrastructure assets appear without construction or investment-allocation choices.",
+      "evidence_keywords": [
+        "data center",
+        "data centers",
+        "hyperscale",
+        "leasing"
+      ],
+      "label": "irrelevant",
+      "rationale": "Data centers, cloud customers and leasing describe computing infrastructure services.",
+      "status": "resolved",
+      "topic_id": "334"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Explicit capital-raising mechanisms clearly establish a financing decision scenario.",
+      "evidence_keywords": [
+        "atm program",
+        "issuance",
+        "leverage",
+        "match fund",
+        "raise equity"
+      ],
+      "label": "relevant",
+      "rationale": "ATM equity issuance and match funding directly support financing and leverage choices.",
+      "status": "resolved",
+      "topic_id": "335"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Named providers and footprints do not establish acquisition or investment decisions.",
+      "evidence_keywords": [
+        "cable",
+        "broadband",
+        "video",
+        "comcast"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cable, broadband and video providers identify telecommunications services and companies.",
+      "status": "resolved",
+      "topic_id": "336"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Replacement and partnership terms do not specify an investment or risk-management scenario.",
+      "evidence_keywords": [
+        "sap",
+        "oracle",
+        "erp",
+        "fusion"
+      ],
+      "label": "irrelevant",
+      "rationale": "SAP, Oracle and ERP products describe enterprise software competitors and relationships.",
+      "status": "resolved",
+      "topic_id": "337"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Capabilities and added services do not establish organizational risk decisions.",
+      "evidence_keywords": [
+        "clover",
+        "isv",
+        "merchant",
+        "software"
+      ],
+      "label": "irrelevant",
+      "rationale": "Clover, merchants and ISVs describe payment software platforms and capabilities.",
+      "status": "resolved",
+      "topic_id": "338"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Explicit purchase and disposal actions establish a concrete investment scenario.",
+      "evidence_keywords": [
+        "sell",
+        "portfolio",
+        "buy",
+        "cap rate",
+        "value"
+      ],
+      "label": "relevant",
+      "rationale": "Buying and selling property assets with cap-rate valuation support portfolio investment decisions.",
+      "status": "resolved",
+      "topic_id": "339"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Funding supports research, but the descriptors do not identify a manager's R&D commitment or risk choice.",
+      "evidence_keywords": [
+        "nih",
+        "academic",
+        "universities",
+        "funding environment"
+      ],
+      "label": "irrelevant",
+      "rationale": "NIH, universities and research funding mainly describe academic demand and government budget conditions.",
+      "status": "resolved",
+      "topic_id": "340"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Transformation and strategies remain generic without a concrete risk-related scenario.",
+      "evidence_keywords": [
+        "ups",
+        "network",
+        "peak season",
+        "package"
+      ],
+      "label": "irrelevant",
+      "rationale": "UPS networks, packages and peak-season commerce describe logistics operations.",
+      "status": "resolved",
+      "topic_id": "341"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Phase occurs without a trial or clear development decision, leaving the topic predominantly clinical and commercial.",
+      "evidence_keywords": [
+        "linzess",
+        "ibs",
+        "constipation",
+        "symptoms"
+      ],
+      "label": "irrelevant",
+      "rationale": "Linzess, IBS and constipation symptoms describe a gastrointestinal treatment market.",
+      "status": "resolved",
+      "topic_id": "342"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Strategy and growth opportunity phrases do not specify investment or risk acceptance.",
+      "evidence_keywords": [
+        "charter",
+        "comcast",
+        "cable",
+        "product sets"
+      ],
+      "label": "irrelevant",
+      "rationale": "Charter, Comcast and cable product sets describe telecommunications companies and offerings.",
+      "status": "resolved",
+      "topic_id": "343"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Labor-market management is present without a specific risk-related state or choice.",
+      "evidence_keywords": [
+        "driver",
+        "pay",
+        "recruiting",
+        "turnover"
+      ],
+      "label": "irrelevant",
+      "rationale": "Driver pay, recruiting and turnover describe trucking workforce operations.",
+      "status": "resolved",
+      "topic_id": "344"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Phase may suggest research, but a defined trial or managerial development commitment is not supplied.",
+      "evidence_keywords": [
+        "inbrija",
+        "ampyra",
+        "parkinson disease",
+        "formulation"
+      ],
+      "label": "irrelevant",
+      "rationale": "Inbrija, Ampyra and Parkinson's disease mainly describe neurological products and indications.",
+      "status": "resolved",
+      "topic_id": "345"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Specific safety management actions and incident outcomes clearly support risk management.",
+      "evidence_keywords": [
+        "safety",
+        "incidents",
+        "commitment safety",
+        "training"
+      ],
+      "label": "relevant",
+      "rationale": "Safety commitments, incident performance and training support deliberate prevention of workplace downside.",
+      "status": "resolved",
+      "topic_id": "346"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Project and expansion suggest investment, but no specific capital commitment is established.",
+      "evidence_keywords": [
+        "kinder morgan",
+        "natural gas",
+        "terminals",
+        "assets"
+      ],
+      "label": "irrelevant",
+      "rationale": "Kinder Morgan, gas terminals and assets mainly identify an energy infrastructure business.",
+      "status": "resolved",
+      "topic_id": "347"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "Demand and shipment volumes do not establish organizational risk decisions.",
+      "evidence_keywords": [
+        "tissue",
+        "paperboard",
+        "pulp",
+        "private label"
+      ],
+      "label": "irrelevant",
+      "rationale": "Tissue, paperboard and private-label products describe paper manufacturing markets.",
+      "status": "resolved",
+      "topic_id": "348"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Pipeline suggests development, but trials, resource choices and specific uncertainty scenarios are absent.",
+      "evidence_keywords": [
+        "ms",
+        "tecfidera",
+        "tysabri",
+        "therapies"
+      ],
+      "label": "irrelevant",
+      "rationale": "MS therapies, named medicines and patients mainly identify a neurological product portfolio.",
+      "status": "resolved",
+      "topic_id": "349"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Protective mechanisms are concrete, although the topic also describes a security-product revenue business.",
+      "evidence_keywords": [
+        "alarm",
+        "access control",
+        "intrusion",
+        "locks"
+      ],
+      "label": "relevant",
+      "rationale": "Alarms, intrusion protection and access control support deliberate physical-security risk prevention.",
+      "status": "resolved",
+      "topic_id": "350"
+    },
+    {
+      "confidence_level": "high",
+      "confidence_reason": "No particular investment or risk-management use is supplied.",
+      "evidence_keywords": [
+        "network",
+        "cloud",
+        "networking",
+        "ethernet"
+      ],
+      "label": "irrelevant",
+      "rationale": "Cloud networking, edge systems and Ethernet describe communications infrastructure products.",
+      "status": "resolved",
+      "topic_id": "351"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Automation may require investment, but no deployment commitment or uncertainty tradeoff is specified.",
+      "evidence_keywords": [
+        "automation",
+        "automated",
+        "robotics",
+        "manual"
+      ],
+      "label": "irrelevant",
+      "rationale": "Automation and robotics mainly describe manufacturing technologies and labor substitution.",
+      "status": "resolved",
+      "topic_id": "352"
+    },
+    {
+      "confidence_level": "medium",
+      "confidence_reason": "Pending awards imply uncertainty, but no bid selection or risk acceptance decision is supplied.",
+      "evidence_keywords": [
+        "awards",
+        "new awards",
+        "timing awards",
+        "new work"
+      ],
+      "label": "irrelevant",
+      "rationale": "Contract awards and their timing mainly describe project order activity.",
+      "status": "resolved",
+      "topic_id": "353"
+    }
+  ],
+  "literal_response": {
+    "original_sha256": "e65fcd4d45caa263a9ac7204c84f3a9455269dc48919a8a9a7873300ad6cfaa8",
+    "path": "evidence/runtime/b1-gpt-6.1-sol-P0-high/admin/A/initial/first/literal-response.json",
+    "sha256": "e65fcd4d45caa263a9ac7204c84f3a9455269dc48919a8a9a7873300ad6cfaa8"
+  },
+  "metadata": {
+    "backend_version": null,
+    "block": 1,
+    "chat_id": "b1-gpt-6.1-sol-P0-high/A",
+    "client_version": null,
+    "effort_observed": null,
+    "effort_requested": "high",
+    "end_utc": null,
+    "model_observed": null,
+    "model_requested": "gpt-6.1-sol",
+    "observations": {
+      "assembly": {
+        "checks": [
+          "354 rows",
+          "exact catalogue ID order and uniqueness",
+          "required fields and status-label-confidence pairing",
+          "1 to 5 distinct exact supplied keywords per resolved row",
+          "assembled rows exactly equal parsed literal fragments"
+        ],
+        "initial_literal_sha256": "e65fcd4d45caa263a9ac7204c84f3a9455269dc48919a8a9a7873300ad6cfaa8",
+        "judgment_origin": "Every row, label, rationale, keyword citation and confidence field was individually authored by this reader in this chat.",
+        "method": "Concatenated the unchanged literal object interiors of six ordered JSON array fragments into one labels array; no row field was generated, normalized or substantively rewritten.",
+        "programmatic_classification_or_defaults": false,
+        "substantive_repairs": []
+      },
+      "assignment_id": "b1-gpt-6.1-sol-P0-high",
+      "chat_id": "b1-gpt-6.1-sol-P0-high/A",
+      "chat_id_observation": "CODEX_THREAD_ID and CODEX_SESSION_ID from native environment both matched this ID.",
+      "context_observations": {
+        "observable_chat_restart_or_loss": false,
+        "observable_compaction_events": [],
+        "observable_context_recovery_events": [],
+        "unobservable_events": "unknown"
+      },
+      "evidence_boundary": {
+        "cli_or_api_model_inference": false,
+        "cross_chat_messages": false,
+        "delegated_classification": false,
+        "other_readonly_actions": [
+          "Filtered native tool metadata to look for a current-chat metadata capability; no other chat contents were read.",
+          "Read only named chat/session/settings environment variables; only session and thread IDs were returned."
+        ],
+        "peer_result_access": false,
+        "project_discussion_or_history_access": false,
+        "scientific_input": "Only supplied P0 Stage A packet: addendum, prompt, schema and all ordered descriptors.",
+        "source_passage_access": false,
+        "web_access": false
+      },
+      "literal_fragment_sha256": {
+        "literal-fragment-000-059.json": "2cffae925d57ea148a369e423f5f17a358fff6170609795febebe156624edbaf",
+        "literal-fragment-060-119.json": "c3e34d8600ce0e89966e7001eec64a5c3d61a33535defb31b07fafb264abdb6e",
+        "literal-fragment-120-179.json": "3d4d1c40ed5b295581f73b233e5bac8741914808708d917f0552eaba35683749",
+        "literal-fragment-180-239.json": "3e2f3fdfb3b9f7c1166ad5edebe4055a529d9100d3a824eb67eec5df230feec5",
+        "literal-fragment-240-299.json": "132a70c310ddb45b1082aeba5fbccf39c27353a984a03929d9b615f5e02d785e",
+        "literal-fragment-300-353.json": "252d79fb3499820b0e52d9b0dcb37f06ac87e51815aaaa9f625469e3c4acaee8"
+      },
+      "literal_fragments": [
+        "literal-fragment-000-059.json",
+        "literal-fragment-060-119.json",
+        "literal-fragment-120-179.json",
+        "literal-fragment-180-239.json",
+        "literal-fragment-240-299.json",
+        "literal-fragment-300-353.json"
+      ],
+      "packet_characters": 156056,
+      "packet_path": "evidence/runtime/data-analysis/packets/stageA/P0.json",
+      "packet_sha256": "5bc26145345c676b4a0d9a5ea0afbc2903762fe79eef661ccfb84160c4dee643",
+      "reader": "A",
+      "roster_hash_encoding": "SHA256 of UTF-8 json.dumps(topics, ensure_ascii=False, sort_keys=True, separators=(comma,colon)); exact topic array order retained.",
+      "roster_sha256": "3ca00f3c7742275f53437f01fdf35372c6069c24ec6f6ffc5233b3c84d8b3f6f",
+      "saved_at_utc": "2026-10-21T01:07:10.042555+00:00",
+      "settings_observations": {
+        "assigned_effort": "high",
+        "assigned_model": "gpt-6.1-sol",
+        "independent_runtime_effort_verification": "unknown",
+        "independent_runtime_model_verification": "unknown",
+        "model_or_effort_changes_observed": false,
+        "same_chat_used_for_all_topics": true
+      },
+      "topic_model_id": "bertopic_ideo_13-23_relaxed_354Topics:sha256:52deaf6581036e750af07604268d4665bfa3386b3797874e8374b3876b3b683f",
+      "transport": {
+        "all_begin_and_end_markers_matched_checked_intervals": true,
+        "all_reported_packet_hashes_matched": true,
+        "checked_intervals": [
+          [
+            0,
+            6000
+          ],
+          [
+            6000,
+            12000
+          ],
+          [
+            12000,
+            18000
+          ],
+          [
+            18000,
+            24000
+          ],
+          [
+            24000,
+            30000
+          ],
+          [
+            30000,
+            36000
+          ],
+          [
+            36000,
+            42000
+          ],
+          [
+            42000,
+            48000
+          ],
+          [
+            48000,
+            54000
+          ],
+          [
+            54000,
+            60000
+          ],
+          [
+            60000,
+            66000
+          ],
+          [
+            66000,
+            72000
+          ],
+          [
+            72000,
+            78000
+          ],
+          [
+            78000,
+            84000
+          ],
+          [
+            84000,
+            90000
+          ],
+          [
+            90000,
+            96000
+          ],
+          [
+            96000,
+            102000
+          ],
+          [
+            102000,
+            108000
+          ],
+          [
+            108000,
+            114000
+          ],
+          [
+            114000,
+            120000
+          ],
+          [
+            120000,
+            126000
+          ],
+          [
+            126000,
+            132000
+          ],
+          [
+            132000,
+            138000
+          ],
+          [
+            138000,
+            144000
+          ],
+          [
+            144000,
+            150000
+          ],
+          [
+            150000,
+            156000
+          ],
+          [
+            156000,
+            156056
+          ]
+        ],
+        "complete_packet_read_before_first_judgment_fragment": true,
+        "interval_semantics": "Contiguous half-open character ranges.",
+        "method": "Supplied toolkit.py read A P0 --start START --end END; each stdout emitted directly via text(r.output).",
+        "nested_shell_max_output_tokens": 4000,
+        "outer_exec_max_output_tokens": "10000 default",
+        "outer_exec_slice_groups": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3
+        ],
+        "recovery_reads": [],
+        "truncation_observed": false
+      }
+    },
+    "prompt_id": "P0",
+    "reader_id": "A",
+    "start_utc": null,
+    "trial_id": "b1-gpt-6.1-sol-P0-high",
+    "usage": null
+  },
+  "missing_attempt": false,
+  "page_id": null,
+  "page_packet_sha256": null,
+  "prompt_sha256": "93358bb60df3b82069885dc624a6c92e52e877dec38faed5d7132bd2e3426756",
+  "recovery": null,
+  "release_receipt": null,
+  "review_prompt_sha256": null,
+  "schedule_sha256": "b80e312b4e51ffef320bf85c4ad0613b9b44aeb405f608a0fecf6ee68e37d561",
+  "schema_sha256": "7bdbce54956b9904255eb47c2b6fe2ac0fb5b43a821c4992c2508f6d6c72e194",
+  "schema_version": "step2_native_staged_v1",
+  "sealed_utc": "2026-10-21T01:11:40.706748+00:00",
+  "source_packet_sha256": null,
+  "stage": "initial_descriptor",
+  "topic_model_id": "bertopic_ideo_13-23_relaxed_354Topics:sha256:52deaf6581036e750af07604268d4665bfa3386b3797874e8374b3876b3b683f"
+}

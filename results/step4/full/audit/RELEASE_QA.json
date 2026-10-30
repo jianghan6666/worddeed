@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "release_date": "2026-10-27",
+  "boundary": "Raw finance/security/compensation data plus fixed OOF scores and all-row identity source; no ML retraining",
+  "full_single_command_test": true,
+  "steps": [
+    {
+      "stage": "finance",
+      "returncode": 0,
+      "seconds": 344.155999999959,
+      "log": "logs\\finance.log"
+    },
+    {
+      "stage": "matching",
+      "returncode": 0,
+      "seconds": 335.14100000000326,
+      "log": "logs\\matching.log"
+    },
+    {
+      "stage": "verify_finance",
+      "returncode": 0,
+      "seconds": 4.4060000000172295,
+      "log": "logs\\verify_finance.log"
+    },
+    {
+      "stage": "verify_matching",
+      "returncode": 0,
+      "seconds": 22.07799999997951,
+      "log": "logs\\verify_matching.log"
+    },
+    {
+      "stage": "models",
+      "returncode": 0,
+      "seconds": 4.063000000023749,
+      "log": "logs\\models.log"
+    },
+    {
+      "stage": "estimate",
+      "returncode": 0,
+      "seconds": 39.92099999997299,
+      "log": "logs\\estimate.log"
+    },
+    {
+      "stage": "check",
+      "returncode": 0,
+      "seconds": 1.0940000000409782,
+      "log": "logs\\check.log"
+    },
+    {
+      "stage": "report",
+      "returncode": 0,
+      "seconds": 0.46899999998277053,
+      "log": "logs\\report.log"
+    },
+    {
+      "stage": "presentation",
+      "returncode": 0,
+      "seconds": 0.8589999999967404,
+      "log": "logs\\presentation.log"
+    }
+  ],
+  "elapsed_seconds": 752.2189999999828,
+  "finance_reference_files": 8,
+  "finance_all_numeric_values_exact": true,
+  "matching_reference_tables": 4,
+  "matching_all_values_exact": true,
+  "models": 25,
+  "strict_score_input_rows": 2967,
+  "all_regressions_from_newly_rebuilt_data": true,
+  "regression_comparison": {
+    "coef": 2.6645352591003757e-14,
+    "se_oim": 1.18954238024595e-12,
+    "se_cluster": 3.7518218964801115e-10,
+    "p_oim": 5.296318938974309e-13,
+    "p_cluster": 3.282965010953376e-10,
+    "ll_oim": 1.1368683772161603e-12,
+    "ll_cluster": 0.0
+  },
+  "identity_source": {
+    "rows": 1775355,
+    "columns": 14,
+    "all_rows_preserved": true,
+    "values_dtypes_index_exact": true
+  },
+  "protected_production_files_and_old_package_unchanged": true,
+  "markdown_local_links": 32,
+  "python_syntax": "passed",
+  "delivered_folder_has_no_test_rerun_or_caches": true
+}
