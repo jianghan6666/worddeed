@@ -5,6 +5,7 @@ compressed archive and all expanded members, then discards only these temporary
 downloads. It does not extract files or fit a topic model.
 """
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
 from pathlib import Path
@@ -29,14 +30,25 @@ def main():
     manifest = ROOT/'replication/manifests/source-ceo-rd.manifest.json'
     spec = json.loads(manifest.read_text())
     assets = []
-    with tempfile.TemporaryDirectory(prefix='nbm-source-verify-', dir=args.temp_parent) as tmp:
+    with tempfile.TemporaryDirectory(prefix='nbm-source-verify-', dir=args.temp_parent) as tmp, \
+            ThreadPoolExecutor(max_workers=4) as pool:
         directory = Path(tmp)
         download(gh, manifest.name, directory)
         if (directory/manifest.name).read_bytes() != manifest.read_bytes():
             raise ValueError('Downloaded manifest differs from the checked-in trust anchor')
+        pending = {}
+        next_index = 0
+        def prefetch():
+            nonlocal next_index
+            while len(pending) < 4 and next_index < len(spec['parts']):
+                part = spec['parts'][next_index]
+                pending[part['name']] = pool.submit(download, gh, part['name'], directory)
+                next_index += 1
+        prefetch()
         def acquire(part):
             print(f"{len(assets)+1}/{len(spec['parts'])} {part['name']}", flush=True)
-            download(gh, part['name'], directory)
+            pending.pop(part['name']).result()
+            prefetch()
             assets.append(part)
             return directory/part['name']
         report = restore(manifest, acquire=acquire, release=lambda path: Path(path).unlink())

@@ -1,10 +1,12 @@
 """Download this private repository's frozen reviewer assets with GitHub CLI."""
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 import hashlib
 import json
 from pathlib import Path
 import shutil
 import subprocess
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'joyzhzh/ai-microfoundation-proxy'
@@ -20,8 +22,14 @@ def digest(path):
 
 
 def download(gh, name, directory):
-    subprocess.run([gh, 'release', 'download', TAG, '--repo', REPO, '--pattern', name,
-                    '--dir', str(directory), '--skip-existing'], check=True)
+    directory = Path(directory)
+    if (directory/name).exists():
+        return
+    # A failed transfer never leaves an apparently complete asset to reuse.
+    with tempfile.TemporaryDirectory(prefix='.transfer-', dir=directory) as tmp:
+        subprocess.run([gh, 'release', 'download', TAG, '--repo', REPO, '--pattern', name,
+                        '--dir', tmp], check=True)
+        (Path(tmp)/name).replace(directory/name)
 
 
 def main():
@@ -42,13 +50,17 @@ def main():
     names = [x['name'] for x in specs] + ['DELIVERY.json']
     if args.source:
         names.append('source-ceo-rd.manifest.json')
-    for i, name in enumerate(names, 1):
+    def fetch(item):
+        i, name = item
         print(f'{i}/{len(names)} {name}', flush=True)
         download(gh, name, args.out)
         spec = next((x for x in specs if x['name'] == name), None)
         if spec and (digest(args.out/name) != spec['sha256'] or
                      ('bytes' in spec and (args.out/name).stat().st_size != spec['bytes'])):
             raise ValueError('Asset size/hash mismatch: '+name+'; move this file aside and download again')
+    # Independent transport requests only; scientific worker settings are unchanged.
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        list(pool.map(fetch, enumerate(names, 1)))
     # The checked-in manifests are the trust anchor, not a mutable downloaded manifest.
     expected = ROOT/'step-3-4/DELIVERY.json'
     if (args.out/'DELIVERY.json').read_bytes() != expected.read_bytes():

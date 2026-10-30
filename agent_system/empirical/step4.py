@@ -142,6 +142,8 @@ def artifacts(out):
         "prepared_data": out / "regression/stata/inputs",
         "model_specifications": out / "regression/model_specifications.json",
         "dofile": out / "regression/stata/RUN_MODELS.do",
+        "stata18_dofile": out / "regression/stata/RUN_MODELS_stata18.do",
+        "stata_compatibility": out / "regression/audit/STATA_COMPATIBILITY.json",
         "regression_results": out / "regression/stata/coefficients.csv",
         "model_summary": out / "regression/stata/model_summary.csv",
         "local_match_report": out / REP / "data/matched/local/MATCH_REPORT.md",
