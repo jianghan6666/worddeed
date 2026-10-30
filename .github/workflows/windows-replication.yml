@@ -1,8 +1,5 @@
 name: Windows empirical replication
 on:
-  push:
-    branches: [codex/reviewer-replication-package]
-    paths: ['.github/workflows/windows-replication.yml']
   workflow_dispatch:
 permissions:
   contents: read
