@@ -1,0 +1,44 @@
+name: Windows empirical replication
+on:
+  push:
+    branches: [codex/reviewer-replication-package]
+    paths: ['.github/workflows/windows-replication.yml', 'replication/windows_refit.py']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  refit:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11.7'
+          architecture: x64
+      - name: Install the supplied analysis versions
+        run: python -m pip install -r agent_system/empirical/requirements.txt
+      - name: Fresh-download the frozen private inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python replication/download.py --out .local/downloads
+      - name: Replay screening and refit the supplied models
+        run: python replication/reproduce.py --downloads .local/downloads --out .local/reproduction --through step3
+      - name: Run original saved-model and three-seed checks
+        run: python replication/check_supplementary.py --run .local/reproduction
+      - name: Export results and verification evidence
+        if: always()
+        run: python replication/windows_refit.py --run .local/reproduction --out reviewer-windows-handoff
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: reviewer-windows-handoff
+          path: reviewer-windows-handoff/
+          if-no-files-found: error
