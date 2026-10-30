@@ -1,0 +1,20 @@
+name: Results package checks
+on:
+  pull_request:
+    paths: ['results/**', 'RESULTS.md', '.github/workflows/results.yml']
+  push:
+    branches: [main]
+    paths: ['results/**', 'RESULTS.md', '.github/workflows/results.yml']
+permissions:
+  contents: read
+jobs:
+  results:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - run: python results/verify.py
