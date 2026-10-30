@@ -70,7 +70,13 @@ This downloads each part into a new temporary directory, checks each part, the f
 
 ## Additional supplied analyses
 
-The release retains Step 3 saved-model/portable-model checks and all seed robustness evidence. After the connected run, use the restored Step 3 package's `code/04_verify.py` for its original saved-model checks and `code/03_seed_robustness.py` for the original additional-seed analysis. Run these from that package root with the pinned environment; use explicit output paths and preserve its original inputs. The connected core run and any separately executed robustness checks are distinguished in the verification record.
+The release retains Step 3 saved-model/portable-model checks and all seed robustness evidence. To execute the original checks and the three supplied robustness seeds after the connected run:
+
+```sh
+.venv/bin/python replication/check_supplementary.py --run .local/reproduction
+```
+
+This invokes the unchanged supplied scientific scripts, compares the rebuilt panel exactly, and checks the robustness metrics at the original `1e-9` tolerance. It writes `supplementary/VERIFICATION.json` and preserves the generated metrics and logs. The connected core run and these additional checks are recorded separately.
 
 The compact Step 4 package provides a separate 16-model frozen-input replay. It is included for review but is not a substitute for the connected full raw-data route. Its README supplies its original execution commands.
 
