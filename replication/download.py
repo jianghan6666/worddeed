@@ -7,6 +7,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import tempfile
+import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'joyzhzh/ai-microfoundation-proxy'
@@ -33,6 +34,9 @@ def download(gh, name, directory, transport='gh'):
             url = next(x['apiUrl'] for x in listing['assets'] if x['name'] == name)
             if not url.startswith(f'https://api.github.com/repos/{REPO}/releases/assets/'):
                 raise ValueError('Unexpected private asset API URL')
+            # Request a fresh signed redirect rather than reusing an intermediary's
+            # stale cached asset response. Identity still comes from frozen hashes.
+            url += '?download=1&fresh=' + uuid.uuid4().hex
             credential = subprocess.check_output([gh, 'auth', 'token'], text=True).strip()
             # Credentials travel on stdin, never in argv, files or printed logs.
             config = f'header = "Authorization: Bearer {credential}"\nheader = "Accept: application/octet-stream"\n'
