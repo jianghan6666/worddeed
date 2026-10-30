@@ -13,26 +13,39 @@ The executable replay starts from the **saved topic representation and saved rea
 | 3. Behavioral prediction | [Supplied method and code](step-3-4/packages/step3_risk_score_collaborator_20261027/README.md), [connected adapter](agent_system/empirical/step3.py) | Components, density matrix, Compustat input, saved fits and scores, seed robustness results | Rebuild 29,506 firm-years; refit grouped five-fold Ridge/XGBoost with the delivered settings and 321-topic selection. |
 | 4. Downstream assessment | [Full package](step-3-4/packages/step4_full_from_raw_20261027/README.md), [compact route](step-3-4/packages/step4_rd_score_collaborator_20261027/README.md), [adapter](agent_system/empirical/step4.py) | Raw financial/market/compensation data, identity links, model inputs, coefficients, tables and audit outputs | Full route rebuilds the analysis data and runs 25 regressions (9 annual-behavior + 16 score models). The compact package is a separate frozen-input route. |
 
-All 334 files in the three supplied Step 3/4 packages are inventoried in [DELIVERY.json](step-3-4/DELIVERY.json). The [Step 2 inventory](step-2-mvp-simple/experiment/expanded-ai-pilot/results-2026-10-21/BUNDLE.json) and [source/model inventory](replication/manifests/source-ceo-rd.manifest.json) bind every release member. [IMPORT.json](replication/IMPORT.json) records the imported Git files and their original hashes. The supplied scientific package files remain unchanged from the reviewed export. Original supplied manifests are retained, including the recorded stale Step 3 README entry. The export redacts one personal path and refreshes the affected manifests; numerical files are unchanged.
+The [complete bundle inventory](replication/INVENTORY.json) covers 4,235 frozen archive members (4.05 GB compressed; 10.68 GB expanded, including intentional overlaps). All 334 files in the three supplied Step 3/4 packages are inventoried in [DELIVERY.json](step-3-4/DELIVERY.json). The [Step 2 inventory](step-2-mvp-simple/experiment/expanded-ai-pilot/results-2026-10-21/BUNDLE.json) and [source/model inventory](replication/manifests/source-ceo-rd.manifest.json) bind every release member. [IMPORT.json](replication/IMPORT.json) records the imported Git files and their original hashes. The supplied scientific package files remain unchanged from the reviewed export. Original supplied manifests are retained, including the recorded stale Step 3 README entry. The export redacts one personal path and refreshes the affected manifests; numerical files are unchanged.
 
 Historical imported guides may mention the development repository, earlier plans or local paths. They document their original context. Use this guide and the release in this repository for current access and execution.
 
 ## Fresh checkout and core reproduction
 
-Prerequisites: access to this private repository, authenticated GitHub CLI (`gh`), Python **3.11.7**, and a Stata installation for estimation. The exact Python dependencies are in [requirements.txt](agent_system/empirical/requirements.txt). The core download is approximately 1.18 GB; restored inputs, evidence and generated models need additional working space. The original source/model bundle is separate so routine replay does not duplicate its 9.2 GB expanded corpus.
+Prerequisites: access to this private repository, authenticated GitHub CLI (`gh`), **Windows x64 with Python 3.11.7** for the historical numerical pipeline, and a Stata installation for estimation. The exact Python dependencies are in [requirements.txt](agent_system/empirical/requirements.txt). The core download is approximately 1.18 GB; restored inputs, evidence and generated models need additional working space. The original source/model bundle is separate so routine replay does not duplicate its 9.2 GB expanded corpus.
 
-```sh
+The supplied XGBoost fits and exact score transformations are platform-sensitive. A newly executed Mac ARM64 refit failed the original comparisons despite identical panel values; its failure is retained in [MACOS_DIAGNOSTICS.json](replication/verification/MACOS_DIAGNOSTICS.json). XGBoost documents differences in random sampling between Windows and other platforms, even with the same seed ([official documentation](https://xgboost.readthedocs.io/en/stable/tutorials/learning_to_rank.html)). Do not loosen tolerances to make a different-platform run pass.
+
+Run these commands in PowerShell with Python 3.11.7 installed:
+
+```powershell
 gh repo clone joyzhzh/ai-microfoundation-proxy
 cd ai-microfoundation-proxy
-python3.11 -m venv .venv
-.venv/bin/python -m pip install -r agent_system/empirical/requirements.txt
-.venv/bin/python replication/download.py --out .local/downloads
-.venv/bin/python replication/reproduce.py \
-  --downloads .local/downloads --out .local/reproduction \
-  --stata /path/to/stata
+py -3.11 --version
+py -3.11 -m venv .venv
+.venv\Scripts\python.exe -m pip install -r agent_system/empirical/requirements.txt
+$env:PYTHONUTF8 = "1"
+.venv\Scripts\python.exe replication/download.py --out .local/downloads
+.venv\Scripts\python.exe replication/reproduce.py --downloads .local/downloads --out .local/reproduction --stata "C:\path\to\StataMP-64.exe"
 ```
 
-If GitHub CLI transfers stall on your network, add `--transport curl` to the download or streaming-verification command. This uses authenticated HTTP/1.1 with the same hash checks; `curl` must be installed.
+If GitHub CLI transfers stall on your network, add `--transport curl` to the download or streaming-verification command. This uses authenticated HTTP/1.1 with the same hash checks; `curl` must be installed. For a network with intermittently stalled asset connections, `--refresh-slow` retries a fresh signed URL after 15 seconds below 256 KiB/s. It affects downloads only.
+
+For the separate Mac diagnostic, XGBoost also needed an OpenMP runtime matching the Python architecture. The verification machine used the universal `libomp.dylib` already installed with Stata 18, without modifying either application or scientific code:
+
+```sh
+export DYLD_LIBRARY_PATH=/Applications/Stata/StataMP.app/Contents/Frameworks
+.venv/bin/python -c "import xgboost; print(xgboost.__version__)"
+```
+
+Use that example only when the library exists at that installation path; otherwise provide your compatible OpenMP installation. The verification record includes the exact library hash. No native runtime binary is redistributed in this package.
 
 Use the executable path for your installation (for example `stata-mp`), not the application bundle directory. Supplied historical regressions used **Stata 19.5** and declare `version 19.0`. An explicit `--stata-version 18` creates a separate do-file changing only that declaration; the original do-file remains intact and the same numerical acceptance checks still apply. It is never selected silently.
 
@@ -50,9 +63,30 @@ Inspect these outputs:
 
 The driver preserves the supplied model grids, folds, seeds and computational settings. The Step 3 code uses its original 16-worker setting. No resource cap or scientific shortcut is introduced by the replication wrapper.
 
+### Windows preparation and local Stata continuation
+
+The [Windows verification workflow](.github/workflows/windows-replication.yml) fresh-downloads the private inputs, replays all screening analyses, refits both models, runs the supplied saved-model and three-seed checks, resumes completed fits without refitting, and rebuilds the financial data and 25 Stata model inputs. It uses a read-only token. Git preserves inventoried bytes on Windows; the replay wrapper specifies only UTF-8/LF JSON serialization and portable path separators. Frozen scientific code and output comparisons remain unchanged.
+
+The workflow exports `reviewer-windows-handoff` with a file-by-file inventory, original and portable-export hashes, package manifests, selection identity, commit and Actions run identifiers. After a successful run, download that artifact to a machine with Stata and the pinned Python environment. Restore the same core input bundles on that machine, then run:
+
+```sh
+.venv/bin/python replication/download.py --out .local/downloads
+.venv/bin/python scripts/restore_review_bundle.py \
+  .local/downloads/DELIVERY.json --out .local/reproduction/inputs
+gh run download RUN_ID --repo joyzhzh/ai-microfoundation-proxy \
+  --name reviewer-windows-handoff --dir .local/windows-handoff
+.venv/bin/python replication/continue_stata.py \
+  --handoff .local/windows-handoff \
+  --packages .local/reproduction/inputs/packages \
+  --out .local/connected-reproduction \
+  --stata /path/to/stata --stata-version 18
+```
+
+Use `.venv/Scripts/python.exe` on Windows. Omit `--stata-version 18` for Stata 19. The continuation rechecks every restored input and exported handoff file, verifies completed-stage output lineage, then estimates the Windows-prepared model inputs. It records a split-runtime run explicitly; it does not rewrite the Windows workflow state or pass off frozen scores as new fits. Failed evidence remains available, and a failed handoff cannot be continued. [STATA18_REFERENCE_CHECK.json](replication/verification/STATA18_REFERENCE_CHECK.json) separately records the successful 25-model Stata 18 compatibility test from frozen reference tables.
+
 ## Full source/model download or streaming verification
 
-To retain all original source/model files as well as the core assets:
+To retain all original source/model files as well as the core assets (the examples below use the Unix virtual-environment path; on Windows substitute `.venv/Scripts/python.exe`):
 
 ```sh
 .venv/bin/python replication/download.py --out .local/downloads --source

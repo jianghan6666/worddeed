@@ -1,0 +1,3871 @@
+{
+  "scope": "Independent Stata 18 estimation from frozen reference annual/matched tables; not a new-fit connected chain",
+  "passed": true,
+  "models": 25,
+  "regression": {
+    "passed": true,
+    "checks_count": 410,
+    "tolerance": 1e-05,
+    "max_errors": {
+      "coef": 2.6219681981132226e-09,
+      "se_oim": 9.246089533472582e-10,
+      "se_cluster": 1.875318012737057e-09,
+      "p_oim": 1.299852714353733e-08,
+      "p_cluster": 3.8236058541585294e-08,
+      "ll_oim": 1.1368683772161603e-12,
+      "ll_cluster": 1.1368683772161603e-12
+    },
+    "checks": [
+      {
+        "name": "unique_coefficient_keys",
+        "passed": true
+      },
+      {
+        "name": "coefficient_keys",
+        "passed": true,
+        "expected_rows": 1799,
+        "actual_rows": 1799
+      },
+      {
+        "name": "coef",
+        "passed": true,
+        "max_scaled_error": 2.6219681981132226e-09
+      },
+      {
+        "name": "se_oim",
+        "passed": true,
+        "max_scaled_error": 9.246089533472582e-10
+      },
+      {
+        "name": "se_cluster",
+        "passed": true,
+        "max_scaled_error": 1.875318012737057e-09
+      },
+      {
+        "name": "p_oim",
+        "passed": true,
+        "max_scaled_error": 1.299852714353733e-08
+      },
+      {
+        "name": "p_cluster",
+        "passed": true,
+        "max_scaled_error": 3.8236058541585294e-08
+      },
+      {
+        "name": "omitted_oim",
+        "passed": true
+      },
+      {
+        "name": "omitted_cluster",
+        "passed": true
+      },
+      {
+        "name": "25_model_ids",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:N_input",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:N_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:rc",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:status",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m08:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_2013_2023_m08:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_2013_2023_m08:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 7035,
+        "actual_N": 7035
+      },
+      {
+        "name": "rep_2013_2023_m08:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 7035,
+        "actual_N": 7035
+      },
+      {
+        "name": "rep_2013_2023_m09:N_input",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:N_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:rc",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:status",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m09:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_2013_2023_m09:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_2013_2023_m09:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 3782,
+        "actual_N": 3782
+      },
+      {
+        "name": "rep_2013_2023_m09:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 3782,
+        "actual_N": 3782
+      },
+      {
+        "name": "rep_2013_2023_m10:N_input",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:N_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:rc",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:status",
+        "passed": true
+      },
+      {
+        "name": "rep_2013_2023_m10:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_2013_2023_m10:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_2013_2023_m10:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 7035,
+        "actual_N": 7035
+      },
+      {
+        "name": "rep_2013_2023_m10:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 7035,
+        "actual_N": 7035
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:N_input",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:N_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:rc",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:status",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:ll_cluster",
+        "passed": true,
+        "absolute_error": 9.094947017729282e-13
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 13716,
+        "actual_N": 13716
+      },
+      {
+        "name": "rep_extended_2006_2023_m08:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 13716,
+        "actual_N": 13716
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:N_input",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:N_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:rc",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:status",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 7784,
+        "actual_N": 7784
+      },
+      {
+        "name": "rep_extended_2006_2023_m09:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 7784,
+        "actual_N": 7784
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:N_input",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:N_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:rc",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:status",
+        "passed": true
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 13716,
+        "actual_N": 13716
+      },
+      {
+        "name": "rep_extended_2006_2023_m10:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 13716,
+        "actual_N": 13716
+      },
+      {
+        "name": "rep_original_2006_2011_m08:N_input",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:N_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:rc",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:status",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m08:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_original_2006_2011_m08:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_original_2006_2011_m08:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 5736,
+        "actual_N": 5736
+      },
+      {
+        "name": "rep_original_2006_2011_m08:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 5736,
+        "actual_N": 5736
+      },
+      {
+        "name": "rep_original_2006_2011_m09:N_input",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:N_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:rc",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:status",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m09:ll_oim",
+        "passed": true,
+        "absolute_error": 9.094947017729282e-13
+      },
+      {
+        "name": "rep_original_2006_2011_m09:ll_cluster",
+        "passed": true,
+        "absolute_error": 9.094947017729282e-13
+      },
+      {
+        "name": "rep_original_2006_2011_m09:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 3416,
+        "actual_N": 3416
+      },
+      {
+        "name": "rep_original_2006_2011_m09:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 3416,
+        "actual_N": 3416
+      },
+      {
+        "name": "rep_original_2006_2011_m10:N_input",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:N_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:rc",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:status",
+        "passed": true
+      },
+      {
+        "name": "rep_original_2006_2011_m10:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_original_2006_2011_m10:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "rep_original_2006_2011_m10:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 5736,
+        "actual_N": 5736
+      },
+      {
+        "name": "rep_original_2006_2011_m10:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 5736,
+        "actual_N": 5736
+      },
+      {
+        "name": "score_ridge_no_rd_m00:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:rc",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:status",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m00:ll_oim",
+        "passed": true,
+        "absolute_error": 1.1368683772161603e-12
+      },
+      {
+        "name": "score_ridge_no_rd_m00:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_no_rd_m00:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_no_rd_m00:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_no_rd_m08:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:rc",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:status",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m08:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_no_rd_m08:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_no_rd_m08:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_no_rd_m08:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_no_rd_m09:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:rc",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:status",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m09:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_no_rd_m09:ll_cluster",
+        "passed": true,
+        "absolute_error": 1.1368683772161603e-13
+      },
+      {
+        "name": "score_ridge_no_rd_m09:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 1653,
+        "actual_N": 1653
+      },
+      {
+        "name": "score_ridge_no_rd_m09:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 1653,
+        "actual_N": 1653
+      },
+      {
+        "name": "score_ridge_no_rd_m10:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:rc",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:status",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_no_rd_m10:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_no_rd_m10:ll_cluster",
+        "passed": true,
+        "absolute_error": 9.094947017729282e-13
+      },
+      {
+        "name": "score_ridge_no_rd_m10:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_no_rd_m10:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_with_rd_m00:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:rc",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:status",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m00:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_with_rd_m00:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_with_rd_m00:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_with_rd_m00:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_with_rd_m08:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:rc",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:status",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m08:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_with_rd_m08:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_with_rd_m08:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_with_rd_m08:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_with_rd_m09:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:rc",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:status",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m09:ll_oim",
+        "passed": true,
+        "absolute_error": 1.1368683772161603e-13
+      },
+      {
+        "name": "score_ridge_with_rd_m09:ll_cluster",
+        "passed": true,
+        "absolute_error": 1.1368683772161603e-13
+      },
+      {
+        "name": "score_ridge_with_rd_m09:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 1653,
+        "actual_N": 1653
+      },
+      {
+        "name": "score_ridge_with_rd_m09:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 1653,
+        "actual_N": 1653
+      },
+      {
+        "name": "score_ridge_with_rd_m10:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:rc",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:status",
+        "passed": true
+      },
+      {
+        "name": "score_ridge_with_rd_m10:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_with_rd_m10:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_ridge_with_rd_m10:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_ridge_with_rd_m10:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:rc",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:status",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_no_rd_m00:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:rc",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:status",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:ll_oim",
+        "passed": true,
+        "absolute_error": 1.1368683772161603e-12
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:ll_cluster",
+        "passed": true,
+        "absolute_error": 1.1368683772161603e-12
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_no_rd_m08:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:rc",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:status",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:ll_oim",
+        "passed": true,
+        "absolute_error": 1.1368683772161603e-13
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:ll_cluster",
+        "passed": true,
+        "absolute_error": 1.1368683772161603e-13
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 1653,
+        "actual_N": 1653
+      },
+      {
+        "name": "score_xgboost_no_rd_m09:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 1653,
+        "actual_N": 1653
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:rc",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:status",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_no_rd_m10:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:rc",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:status",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_with_rd_m00:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:rc",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:status",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_with_rd_m08:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:rc",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:status",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 1653,
+        "actual_N": 1653
+      },
+      {
+        "name": "score_xgboost_with_rd_m09:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 1653,
+        "actual_N": 1653
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:N_input",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:N_after_pure",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:N_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:N_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:N_clusters",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:converged_oim",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:converged_cluster",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:rc",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:base_sic2",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:base_fyear",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:core_omitted",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:status",
+        "passed": true
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:ll_oim",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:ll_cluster",
+        "passed": true,
+        "absolute_error": 0.0
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:esample_oim:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      },
+      {
+        "name": "score_xgboost_with_rd_m10:esample_cluster:IDs",
+        "passed": true,
+        "expected_N": 2927,
+        "actual_N": 2927
+      }
+    ],
+    "scope": "25models:9annual-B Replication +16Ridge/XGBoost score models",
+    "input_origin": "DTA regenerated from reconstructed data; no frozen DTA used"
+  },
+  "presentation": {
+    "passed": true,
+    "workbook_sha256": "0af268532ad0d86d9e8547e68c38d7eca46c91e25cd2bd5b9c86bd723bf1b642",
+    "own_model_panels": 7,
+    "model_count": 25,
+    "numeric_coefficient_SE_cells": 784,
+    "footer_cells": 250,
+    "all_coefficient_SE_and_stars_match_payload": true,
+    "new_replay_compared": true,
+    "new_replay_core_terms": 392,
+    "panels": [
+      {
+        "sheet": "2 Replication",
+        "panel": "Original window2006\u20132011",
+        "models": [
+          "rep_original_2006_2011_m08",
+          "rep_original_2006_2011_m09",
+          "rep_original_2006_2011_m10"
+        ]
+      },
+      {
+        "sheet": "2 Replication",
+        "panel": "Extended window2006\u20132023",
+        "models": [
+          "rep_extended_2006_2023_m08",
+          "rep_extended_2006_2023_m09",
+          "rep_extended_2006_2023_m10"
+        ]
+      },
+      {
+        "sheet": "2 Replication",
+        "panel": "Additional window2013\u20132023",
+        "models": [
+          "rep_2013_2023_m08",
+          "rep_2013_2023_m09",
+          "rep_2013_2023_m10"
+        ]
+      },
+      {
+        "sheet": "3 No actual RD",
+        "panel": "Xgboost synthetic proxy of CEO risk preference |2013\u20132023",
+        "models": [
+          "score_xgboost_no_rd_m08",
+          "score_xgboost_no_rd_m09",
+          "score_xgboost_no_rd_m10",
+          "score_xgboost_no_rd_m00"
+        ]
+      },
+      {
+        "sheet": "3 No actual RD",
+        "panel": "Ridge synthetic proxy of CEO risk preference |2013\u20132023",
+        "models": [
+          "score_ridge_no_rd_m08",
+          "score_ridge_no_rd_m09",
+          "score_ridge_no_rd_m10",
+          "score_ridge_no_rd_m00"
+        ]
+      },
+      {
+        "sheet": "4 With actual RD",
+        "panel": "Xgboost synthetic proxy of CEO risk preference |2013\u20132023",
+        "models": [
+          "score_xgboost_with_rd_m08",
+          "score_xgboost_with_rd_m09",
+          "score_xgboost_with_rd_m10",
+          "score_xgboost_with_rd_m00"
+        ]
+      },
+      {
+        "sheet": "4 With actual RD",
+        "panel": "Ridge synthetic proxy of CEO risk preference |2013\u20132023",
+        "models": [
+          "score_ridge_with_rd_m08",
+          "score_ridge_with_rd_m09",
+          "score_ridge_with_rd_m10",
+          "score_ridge_with_rd_m00"
+        ]
+      }
+    ],
+    "checks": [
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "inside_debt_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "ln_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "high_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m08",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m09",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_original_2006_2011_m10",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "inside_debt_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "ln_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "high_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m08",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m09",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_extended_2006_2023_m10",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "inside_debt_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "ln_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "high_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m08",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m09",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "rep_2013_2023_m10",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "inside_debt_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "ln_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "high_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m08",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m09",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m10",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_no_rd_m00",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "inside_debt_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "ln_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "high_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m08",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m09",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m10",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_no_rd_m00",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "inside_debt_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "ln_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "high_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m08",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m09",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m10",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_xgboost_with_rd_m00",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "rd_score",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "cash_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "inside_debt_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "ln_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "high_rellev",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "equity_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "vega_k",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "age",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "ln_tenure",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "rd_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "rd_missing",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "capx_at_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "asset_growth",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "mb",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "profitability_m",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "size_pct",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "re_at",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "retvol255",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m08",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m09",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m10",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      },
+      {
+        "model_id": "score_ridge_with_rd_m00",
+        "term": "_cons",
+        "coef_SE_and_stars_agree": true
+      }
+    ],
+    "note": "Paper reference sheet1 and Excel ModelData sheet are not new regressions."
+  },
+  "compatibility": {
+    "requested_version": 18,
+    "delivered_runtime": "19.5",
+    "only_change": "version 19.0 -> version 18.0 in a separate generated do-file",
+    "original_sha256": "5a9835920689a186b249a785831c06f24469edc55e48c33b25a720f15df741b2",
+    "executed_sha256": "41547cb2397e0c1ebafb10271112864714e4eb67ca7c54c56784f112f64f26c7",
+    "acceptance": "Unchanged supplied coefficient, SE, sample, fit and presentation checks must pass."
+  }
+}

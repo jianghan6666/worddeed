@@ -1,0 +1,50 @@
+{
+  "adapter_tests": {
+    "tests": 56,
+    "skipped": 0,
+    "passed": true,
+    "external_inputs": "Freshly downloaded complete Step 3/4 packages and frozen screening toolkit; provider calls are fixtures"
+  },
+  "packaging_tests": {
+    "tests": 11,
+    "skipped": 0,
+    "passed": true
+  },
+  "connected_demo": {
+    "first_run": "passed",
+    "resume": "passed",
+    "scientific_completion": false
+  },
+  "frozen_imports": {
+    "files": 521,
+    "passed": true
+  },
+  "step2_reading_copy": {
+    "frozen_copies": 131,
+    "trials": 12,
+    "selection_handoffs": 24,
+    "passed": true
+  },
+  "step3_step4_reading_copy": {
+    "browsable_files": 139,
+    "archive_files": 334,
+    "selection_linkage": "exact",
+    "passed": true
+  },
+  "separate_results_package": {
+    "browsable_files": 375,
+    "passed": true,
+    "scope": "Unchanged results from merged PR #3"
+  },
+  "log_sha256": {
+    "final-adapter-tests.log": "6080cba10563e81373644024078eeba9dd1f8bad367019198f5d9a25781d07f9",
+    "replication-tests.log": "645d8baa5f4c3a54b6703c2574d46657f6002b8d3eca6bd0fb8c6f2d0f786ae8",
+    "final-demo.log": "9700716061272b020ae18e2caa309938ec10412160a711f803e7fcc9a9fc5e39"
+  },
+  "scope": "Software, input identity and packaging tests; empirical findings are reported separately",
+  "portable_screening_replay": {
+    "passed": true,
+    "analysis_and_handoff_files": 122,
+    "scope": "Frozen calculations with explicit LF JSON serialization and POSIX package-relative path strings; only generation timestamps excluded"
+  }
+}
