@@ -31,7 +31,7 @@ def main():
         return json.loads(path.read_text()) if path.is_file() else {}
     state=read('workflow/state.json');supplementary=read('supplementary/VERIFICATION.json')
     metrics=read('workflow/step3/results/metrics.json')
-    passed=(all(state.get('stages',{}).get(s,{}).get('status')=='complete' for s in ['step1','step2','step3'])
+    passed=(all(state.get('stages',{}).get(s,{}).get('status')=='complete' for s in ['step1','step2','step3','step4_prepare'])
             and metrics.get('adapter_validation',{}).get('reproduction',{}).get('passed',False)
             and supplementary.get('passed',False))
     replacements={str(run):'REPRODUCTION_ROOT',str(ROOT):'REPOSITORY_ROOT',
@@ -54,7 +54,7 @@ def main():
         else:shutil.copyfile(path,target)
         files.append({'path':relative,'bytes':target.stat().st_size,'sha256':digest(target),
                       'original_sha256':original,'portable_paths':digest(target)!=original})
-    report={'passed':bool(passed),'scope':'New Windows fits and saved-record replay; Stata has not run in this job',
+    report={'passed':bool(passed),'scope':'New Windows fits, saved-record replay and full raw-data regression preparation; Stata has not run in this job',
             'repository':os.environ.get('GITHUB_REPOSITORY'),'commit':os.environ.get('GITHUB_SHA'),
             'workflow_run':os.environ.get('GITHUB_RUN_ID'),'workflow_attempt':os.environ.get('GITHUB_RUN_ATTEMPT'),
             'python':sys.version,'platform':sys.platform,'step3_rows':metrics.get('n_firm_years'),

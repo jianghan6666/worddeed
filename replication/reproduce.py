@@ -68,7 +68,7 @@ def main():
     call([sys.executable,ROOT/'step-2-twelve-trial-pilot/verify.py'],logs/'screening-delivery.log')
     call([sys.executable,ROOT/'step-3-4/verify.py'],logs/'prediction-delivery.log')
     if not (out/'screening').exists():
-        call([sys.executable,EVIDENCE/'replay.py','--out',out/'screening'],logs/'screening-replay.log')
+        call([sys.executable,ROOT/'replication/replay_screening.py','--out',out/'screening'],logs/'screening-replay.log')
     call([sys.executable,EVIDENCE/'verify_replay.py','--out',out/'screening'],logs/'screening-verify.log')
     selection = out/'screening/first/handoffs'/TRIAL/'selected_topics.json'
     delivered = out/'inputs/packages/step3_risk_score_collaborator_20261027/data/topic_selection'/f'{TRIAL}.json'

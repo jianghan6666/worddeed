@@ -2,7 +2,7 @@ name: Windows empirical replication
 on:
   push:
     branches: [codex/reviewer-replication-package]
-    paths: ['.github/workflows/windows-replication.yml', '.gitattributes', 'replication/windows_refit.py']
+    paths: ['.github/workflows/windows-replication.yml', '.gitattributes', 'replication/windows_refit.py', 'replication/replay_screening.py']
   workflow_dispatch:
 permissions:
   contents: read
@@ -34,6 +34,8 @@ jobs:
         run: python replication/reproduce.py --downloads .local/downloads --out .local/reproduction --through step3
       - name: Run original saved-model and three-seed checks
         run: python replication/check_supplementary.py --run .local/reproduction
+      - name: Resume the verified fits and rebuild the full regression inputs
+        run: python replication/reproduce.py --downloads .local/downloads --out .local/reproduction --through step4_prepare
       - name: Export results and verification evidence
         if: always()
         run: python replication/windows_refit.py --run .local/reproduction --out reviewer-windows-handoff
