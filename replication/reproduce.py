@@ -83,7 +83,7 @@ def main():
         config['stata_exe'] = str(Path(args.stata).expanduser().resolve())
     write(out/'reproduce.json', config)
     environment = {'python':sys.version, 'packages':{}, 'platform':sys.platform}
-    for name in ['numpy','pandas','scipy','scikit-learn','xgboost','joblib','pyarrow','openpyxl','jsonschema','openai']:
+    for name in ['numpy','pandas','bottleneck','scipy','scikit-learn','xgboost','joblib','pyarrow','openpyxl','jsonschema','openai']:
         try: environment['packages'][name] = importlib.metadata.version(name)
         except importlib.metadata.PackageNotFoundError: environment['packages'][name] = None
     write(out/'ENVIRONMENT.json', environment)

@@ -1,7 +1,8 @@
 name: Windows empirical replication
 on:
-  # Full scientific refits are requested explicitly; documentation pushes do not
-  # retrain models or duplicate the accepted verification run.
+  push:
+    branches: [codex/reviewer-replication-package]
+    paths: ['.github/workflows/windows-replication.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -29,7 +30,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python replication/download.py --out .local/downloads
-      - name: Replay screening and refit the supplied models
+      - name: Restore inputs and replay saved screening
+        run: python replication/reproduce.py --downloads .local/downloads --out .local/reproduction --through step2
+      - name: Check supplied models and transforms before refitting
+        run: python .local/reproduction/inputs/packages/step3_risk_score_collaborator_20261027/code/04_verify.py
+      - name: Refit the supplied models with the complete numerical environment
         run: python replication/reproduce.py --downloads .local/downloads --out .local/reproduction --through step3
       - name: Run original saved-model and three-seed checks
         run: python replication/check_supplementary.py --run .local/reproduction
