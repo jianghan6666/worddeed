@@ -1,8 +1,7 @@
 name: Windows empirical replication
 on:
-  push:
-    branches: [codex/reviewer-replication-package]
-    paths: ['.github/workflows/windows-replication.yml', '.gitattributes', 'replication/windows_refit.py', 'replication/replay_screening.py', 'step-3-4/verify.py']
+  # Full scientific refits are requested explicitly; documentation pushes do not
+  # retrain models or duplicate the accepted verification run.
   workflow_dispatch:
 permissions:
   contents: read

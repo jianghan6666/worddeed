@@ -93,7 +93,7 @@ for r in models:
  c=scorecoef.get(r['model_id']);modeltable.append([r['model_id'],r['N_cluster'],r['N_clusters'],f"{float(c['coef']):.4f}" if c else 'See full table',f"{float(c['se_cluster']):.4f}" if c else '-'])
 
 sections=[
- {'tag':'READING GUIDE','title':'Narrative-Behavior Measurement','paras':[
+ {'tag':'READING GUIDE','title':'AI Microfoundation Proxy','paras':[
  'Full results | CEO speech, R&D prediction and dividend policy | 31 October 2026',
  'This report brings together the existing empirical results for all four steps. It preserves the supplied scientific specification and distinguishes reported findings, archived evidence and unresolved questions. It is a results publication; the companion replication package documents computational reruns.',
  'The central score is text-predicted R&D divided by assets. It is a candidate behavioral proxy. Predictive fit and regression significance alone do not establish that it measures psychological risk preference.'],
@@ -182,12 +182,12 @@ for i,s in enumerate(sections):
  for p in s.get('after',[]):story.append(Paragraph(html.escape(p),styles['body']))
  for label,path in s.get('links',[]):
   story.append(Paragraph('Source: '+html.escape(label)+' - '+html.escape(path),styles['small']))
-SimpleDocTemplate(str(ROOT/'report.pdf'),pagesize=(612,792),rightMargin=66,leftMargin=66,topMargin=58,bottomMargin=48,title='NBM full results: CEO speech, R&D and dividends',author='AI Microfoundation Proxy').build(story,onFirstPage=frame,onLaterPages=frame)
+SimpleDocTemplate(str(ROOT/'report.pdf'),pagesize=(612,792),rightMargin=66,leftMargin=66,topMargin=58,bottomMargin=48,title='AI Microfoundation Proxy full results: CEO speech, R&D and dividends',author='AI Microfoundation Proxy').build(story,onFirstPage=frame,onLaterPages=frame)
 
 def htmltable(rows):
  return '<div class="tablewrap"><table><thead><tr>'+''.join('<th>'+html.escape(str(x))+'</th>' for x in rows[0])+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+html.escape(str(x))+'</td>' for x in row)+'</tr>' for row in rows[1:])+'</tbody></table></div>'
 css='''*{box-sizing:border-box}body{margin:0;background:#f5f4ef;color:#233d45;font:16px/1.65 system-ui,sans-serif}header{background:#183c47;color:white;padding:64px max(6vw,24px)}header p{max-width:760px;color:#d7e5e7}h1{font:normal 50px/1.1 Georgia,serif;max-width:850px;margin:14px 0}h2{font:normal 34px/1.2 Georgia,serif;margin:8px 0 25px}main{max-width:1100px;margin:auto;padding:30px 24px 80px}section{background:white;border:1px solid #dce6e7;border-radius:6px;padding:35px;margin:24px 0}.tag{font:700 12px/1.5 system-ui;letter-spacing:.13em;color:#147d82}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px;margin:20px 0}th{background:#dce9eb;text-align:left}td,th{padding:10px 12px;border-bottom:1px solid #e7eef0}tbody tr:nth-child(even){background:#f6f8f8}a{color:#116f77}nav{display:flex;flex-wrap:wrap;gap:10px}nav a{color:inherit;border:1px solid #78979f;padding:6px 12px;text-decoration:none;border-radius:3px}figure{margin:24px 0}figure img{width:100%;max-width:900px;height:auto}.sources{font-size:13px;border-top:1px solid #e7eef0;padding-top:16px}footer{font-size:13px;color:#60747a}code{font-size:.85em} @media(max-width:600px){h1{font-size:36px}h2{font-size:27px}section{padding:22px}main{padding:16px}}'''
-body='<header><div class="tag" style="color:#98d4d3">FULL RESULTS / REVIEWER EDITION</div><h1>From CEO speech to a behavioral proxy</h1><p>All four steps of the supplied NBM application, with complete tables, firm-year scores and reader-level evidence. Prepared 31 October 2026.</p><nav><a href="report.pdf">Download report PDF</a><a href="step2/explorers/index.html">Inspect all topic judgments</a><a href="MANIFEST.json">File inventory</a><a href="https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/full-results-2026-10-31">Complete results ZIP</a></nav></header><main>'
+body='<header><div class="tag" style="color:#98d4d3">FULL RESULTS / REVIEWER EDITION</div><h1>From CEO speech to a behavioral proxy</h1><p>All four steps of the supplied AI Microfoundation Proxy application, with complete tables, firm-year scores and reader-level evidence. Prepared 31 October 2026.</p><nav><a href="report.pdf">Download report PDF</a><a href="step2/explorers/index.html">Inspect all topic judgments</a><a href="MANIFEST.json">File inventory</a><a href="https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/full-results-2026-10-31">Complete results ZIP</a></nav></header><main>'
 for i,s in enumerate(sections):
  body+=f'<section id="section-{i+1}"><div class="tag">{s["tag"]}</div><h2>{html.escape(s["title"])}</h2>'
  body+=''.join('<p>'+html.escape(p)+'</p>' for p in s['paras'])
@@ -197,7 +197,7 @@ for i,s in enumerate(sections):
  if s.get('links'):body+='<div class="sources">'+ ' &middot; '.join(f'<a href="{path}">{html.escape(label)}</a>' for label,path in s['links'])+'</div>'
  body+='</section>'
 body+='<footer>Original scientific results are preserved. New charts and navigation are presentation layers. This report does not claim an independent empirical rerun.</footer></main>'
-(ROOT/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NBM - Full results</title><style>'+css+'</style>'+body+'</html>')
+(ROOT/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI Microfoundation Proxy - Full results</title><style>'+css+'</style>'+body+'</html>')
 
 # A self-contained, searchable reading page per trial: every field stays inspectable.
 explorers=ROOT/'step2/explorers';explorers.mkdir(exist_ok=True)
@@ -216,5 +216,5 @@ for trial in trials:
 indexrows=[['Trial','Stage A selected','Primary Stage B selected','Read all reasons']]
 for t in trials:indexrows.append([short(t),lookup[t,'initial_descriptor']['selected_N'],lookup[t,'source_review']['selected_N'],t])
 indexbody='<header><div class="tag" style="color:#98d4d3">STEP 2 / ALL TRIALS</div><h1>Inspect every reader judgment</h1><p>Twelve trials. Three readers per trial. Both reading stages. Primary and supplementary results remain separate.</p><nav><a href="../../report.html">Results report</a></nav></header><main><section><p>Each page works offline and contains all original scientific label fields: rationale, confidence reasons, keyword evidence, source quotations, interpretation assessments and reasons for changes. No missing response is filled with a negative vote.</p><ul>'+''.join(f'<li><a href="{t}.html">{short(t)}</a> — Stage A {lookup[t,"initial_descriptor"]["selected_N"]}; primary Stage B {lookup[t,"source_review"]["selected_N"]}</li>' for t in trials)+'</ul><p>For literal attempts, seals and recovery provenance, use <code>reader-evidence/</code> in the complete results ZIP. The browsable JSON record index is <a href="../READER_INDEX.json">here</a>.</p></section></main>'
-(explorers/'index.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>All NBM topic judgments</title><style>'+css+'</style>'+indexbody+'</html>')
+(explorers/'index.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>All AI Microfoundation Proxy topic judgments</title><style>'+css+'</style>'+indexbody+'</html>')
 print('Wrote report.pdf, report.html, 3 figures and 13 topic-reader pages.')

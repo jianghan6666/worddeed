@@ -10,8 +10,8 @@ from unittest.mock import patch
 from agent_system.empirical import screening
 
 
-@unittest.skipUnless(os.environ.get('NBM_SCREENING_TOOLKIT'),
-                     'Set NBM_SCREENING_TOOLKIT to the external frozen toolkit for screening checks')
+@unittest.skipUnless(os.environ.get('AI_MICROFOUNDATION_PROXY_SCREENING_TOOLKIT'),
+                     'Set AI_MICROFOUNDATION_PROXY_SCREENING_TOOLKIT to the external frozen toolkit for screening checks')
 class ScreeningTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -19,7 +19,7 @@ class ScreeningTests(unittest.TestCase):
         self.root = Path(self.tmp.name)
         self.packets = self.root / 'runtime'
         self.out = self.root / 'run'
-        self.toolkit = Path(os.environ['NBM_SCREENING_TOOLKIT']).resolve()
+        self.toolkit = Path(os.environ['AI_MICROFOUNDATION_PROXY_SCREENING_TOOLKIT']).resolve()
         self.tk = screening._load_toolkit(self.toolkit, self.packets)
         self.config = {'step2': {'toolkit': str(self.toolkit), 'packet_root': str(self.packets)}}
         self.calls = []

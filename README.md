@@ -2,21 +2,21 @@
 
 **A workflow for constructing and assessing proxies from what people say and what they do.**
 
-AI Microfoundation Proxy is the user-facing package for **Narrative–Behavior Measurement (NBM)**. It connects narrative evidence, AI-assisted topic screening, behavioral prediction, and downstream analysis. The first application studies CEO risk preference using earnings-call speech and R&D investment. Researchers define the construct and interpret the evidence; the agent coordinates the workflow and calls reusable computational tools.
+AI Microfoundation Proxy connects narrative evidence, AI-assisted topic screening, behavioral prediction, and downstream analysis. The first application studies CEO risk preference using earnings-call speech and R&D investment. Researchers define the construct and interpret the evidence; the agent coordinates the workflow and calls reusable computational tools.
 
 **Reviewer results:** [Full four-step results](RESULTS.md) · [PDF report](results/report.pdf) · [Complete results download](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/full-results-2026-10-31)
 
-[Introduction](docs/index.html) · [Video](docs/video/four-step-agent.mp4) · [Completed example](examples/completed-nbm/README.md) · [Roadmap](ROADMAP.md) · [Workflow guide](WORKFLOW.md) · [Reviewer replication](REPLICATION.md)
+[Introduction](docs/index.html) · [Video](docs/video/four-step-agent.mp4) · [Completed example](examples/ceo-risk-preference/README.md) · [Roadmap](ROADMAP.md) · [Workflow guide](WORKFLOW.md) · [Reviewer replication](REPLICATION.md)
 
 ## What is AI Microfoundation Proxy?
 
-Many organizational theories depend on beliefs, preferences, and judgments that researchers cannot observe directly. Speech offers one source of evidence; choices offer another. NBM makes the connection between them explicit and inspectable.
+Many organizational theories depend on beliefs, preferences, and judgments that researchers cannot observe directly. Speech offers one source of evidence; choices offer another. AI Microfoundation Proxy makes the connection between them explicit and inspectable.
 
 You bring a construct, narrative material, a behavioral outcome, and a study setting. The workflow represents the narrative as topics, screens those topics for relevance, estimates a model linking narrative features to behavior, and passes the resulting scores to downstream analysis. You leave with **selected topics and their reasons, predicted behavioral scores, analysis outputs, and a saved execution record**.
 
 The current empirical method predicts R&D/assets from selected topic features and aggregate sentiment. Its interpretation as CEO risk preference requires evidence beyond predictive fit or regression significance.
 
-[![Watch the NBM walkthrough](docs/video/poster.jpg)](docs/video/four-step-agent.mp4)
+[![Watch the AI Microfoundation Proxy walkthrough](docs/video/poster.jpg)](docs/video/four-step-agent.mp4)
 
 [Watch the video](docs/video/four-step-agent.mp4) · [Read the narration](docs/video/transcript.md) · [English captions](docs/video/four-step-agent.en.vtt). The local introduction below plays the video in the page.
 
@@ -33,22 +33,6 @@ Agents follow explicit workflows and use tools for computation and record keepin
 | **Downstream analysis** | Matches scores to the study panel and prepares and estimates the specified models. | Analysis inputs, tables, and diagnostics. |
 
 The executable system has one coordinator and, for fresh screening, three independent model readers. Topic preparation, proxy estimation, and downstream analysis use Python adapters and scientific programs. The [role guides](agents/coordinator.md) explain these responsibilities.
-
-### Multi-layered architecture
-
-```text
-                       HUMAN RESEARCHER
-                              |
-                         Coordinator
-                              |
-AGENTS      [ Independent screening readers ] <---+
-                              |                  |
-WORKFLOWS   [ Topics / Screen / Predict / Assess ] +--- RESOURCES
-                              |                  |    Construct definition,
-TOOLS       [ Python adapters + study programs ] <+    inputs and model settings
-                              |
-RECORDS     [ Decisions / outputs / saved state ]
-```
 
 ### Four-step workflow
 
@@ -74,7 +58,7 @@ The [workflow guide](WORKFLOW.md) connects these steps to the runtime. The coord
 
 ## Completed example
 
-The [CEO speech, R&D, and dividend-policy example](examples/completed-nbm/README.md) follows a completed empirical application:
+The [CEO speech, R&D, and dividend-policy example](examples/ceo-risk-preference/README.md) follows a completed empirical application:
 
 - **354 topics**, screened in twelve trials with 36 readers.
 - **321 selected topics** used with sentiment to predict R&D/assets.
@@ -105,7 +89,7 @@ For real execution, provide compatible study inputs and scientific packages thro
 Open this repository in your coding-agent workspace:
 
 ```text
-Act as the coordinator for an NBM study. Follow ./WORKFLOW.md.
+Act as the coordinator for an AI Microfoundation Proxy study. Follow ./WORKFLOW.md.
 Read the current configuration and saved handoff first.
 
 Help me state the construct, narrative inputs, behavioral target,
@@ -151,7 +135,8 @@ ai-microfoundation-proxy/
 |-- tools/                    Guide to callable tools
 |-- resources/                Method and input guide
 |-- agent_system/             Connected runtime, adapters, and tests
-|-- examples/completed-nbm/    Worked study and aggregate results
+|-- examples/
+|   `-- ceo-risk-preference/   Worked study and aggregate results
 |-- docs/                     Introduction, video, and narration
 `-- .github/workflows/        Software checks
 ```

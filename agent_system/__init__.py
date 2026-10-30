@@ -1,1 +1,1 @@
-"""Connected NBM workflow and offline demonstration."""
+"""Connected AI Microfoundation Proxy workflow and offline demonstration."""
