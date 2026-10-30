@@ -34,11 +34,11 @@
   "separate_results_package": {
     "browsable_files": 375,
     "passed": true,
-    "scope": "Unchanged results from merged PR #3"
+    "scope": "Unchanged scientific results and owner-requested naming updates from main 95a60b4; all 375 manifest entries verified."
   },
   "log_sha256": {
-    "final-adapter-tests.log": "6080cba10563e81373644024078eeba9dd1f8bad367019198f5d9a25781d07f9",
-    "replication-tests.log": "645d8baa5f4c3a54b6703c2574d46657f6002b8d3eca6bd0fb8c6f2d0f786ae8",
+    "final-adapter-tests.log": "ed7b30871a02078840fd60765512f80fd22e3ec8de20a24c6b8f8871109b8a44",
+    "replication-tests.log": "4f91e8e3fdccb865a69ab402ca8f7cdd34adc9f580934d8adecabe4ca7c10f9d",
     "final-demo.log": "9700716061272b020ae18e2caa309938ec10412160a711f803e7fcc9a9fc5e39"
   },
   "scope": "Software, input identity and packaging tests; empirical findings are reported separately",
@@ -46,5 +46,16 @@
     "passed": true,
     "analysis_and_handoff_files": 122,
     "scope": "Frozen calculations with explicit LF JSON serialization and POSIX package-relative path strings; only generation timestamps excluded"
+  },
+  "current_guide_links": {
+    "passed": true,
+    "files": [
+      "README.md",
+      "REPLICATION.md",
+      "WORKFLOW.md",
+      "ROADMAP.md",
+      "agent_system/empirical/README.md",
+      "replication/verification/README.md"
+    ]
   }
 }

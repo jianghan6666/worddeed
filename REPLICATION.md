@@ -23,6 +23,8 @@ Prerequisites: access to this private repository, authenticated GitHub CLI (`gh`
 
 The supplied XGBoost fits and exact score transformations are platform-sensitive. A newly executed Mac ARM64 refit failed the original comparisons despite identical panel values; its failure is retained in [MACOS_DIAGNOSTICS.json](replication/verification/MACOS_DIAGNOSTICS.json). XGBoost documents differences in random sampling between Windows and other platforms, even with the same seed ([official documentation](https://xgboost.readthedocs.io/en/stable/tutorials/learning_to_rank.html)). Do not loosen tolerances to make a different-platform run pass.
 
+Install the complete maintained requirements, including **Bottleneck 1.3.7**. The supplied requirements omitted this optional pandas reduction backend. Without it, the frozen XGBoost full-sample z-scores fail their original check by about `2e-5`; with it, they match exactly and the unchanged 13-check saved-model verifier passes. [NUMERICAL_BACKEND.json](replication/verification/NUMERICAL_BACKEND.json) records the controlled comparison. This is a verified compatible dependency pin; the historical environment did not record its Bottleneck version.
+
 Run these commands in PowerShell with Python 3.11.7 installed:
 
 ```powershell

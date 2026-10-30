@@ -3,6 +3,7 @@ import sys
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 from replication.package_run import package_run
 from scripts.restore_review_bundle import restore
 
@@ -18,8 +19,11 @@ class PackageTests(unittest.TestCase):
                                                           'stdlib_file':str(Path(sys.base_prefix).resolve()/'lib')}))
             (outputs/'model.bin').write_bytes(bytes(range(256)))
             (outputs/'RUN_MODELS_stata18.log').write_text('private license header')
-            result=package_run(run,root/'export')
+            with patch('replication.package_run.PART_BYTES', 256):
+                result=package_run(run,root/'export')
             self.assertTrue(result['passed'])
+            self.assertGreater(result['parts'], 1)
+            self.assertFalse((root/'export/fresh-reproduction.tar.gz').exists())
             restore(root/'export/fresh-reproduction.manifest.json',root/'restored')
             data=json.loads((root/'restored/workflow/metrics.json').read_text())
             self.assertEqual(data,{'score':0.6128,'file':'REPRODUCTION_ROOT/model',
