@@ -1,6 +1,6 @@
 # Aggregate results and field guide
 
-These three files preserve selected aggregate outputs from the completed NBM application. Screening finished on 21 October 2026; the prediction and dividend-analysis outputs were delivered on 27 October 2026. The files were copied byte-for-byte and given shorter filenames. They contain trial-level counts, model summaries, and regression tables, rather than individual speech, firm-year records, or reader responses.
+These three files preserve selected aggregate outputs from the completed AI Microfoundation Proxy application. Screening finished on 21 October 2026; the prediction and dividend-analysis outputs were delivered on 27 October 2026. The files were copied byte-for-byte and given shorter filenames. They contain trial-level counts, model summaries, and regression tables, rather than individual speech, firm-year records, or reader responses.
 
 ## Screening counts
 

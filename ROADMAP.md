@@ -1,11 +1,11 @@
 # Roadmap
 
-The [completed example](examples/completed-nbm/README.md) provides the empirical foundation. This roadmap identifies the next implementation and research milestones; it is not a schedule or a claim that future work is complete.
+The [completed example](examples/ceo-risk-preference/README.md) provides the empirical foundation. This roadmap identifies the next implementation and research milestones; it is not a schedule or a claim that future work is complete.
 
 ## Completed
 
 - A four-step CEO speech/R&D application: topic representation, twelve-trial relevance screening, grouped Ridge/XGBoost prediction, and downstream dividend-policy analysis.
-- Saved aggregate screening results, prediction metrics, and regression tables in the [worked example](examples/completed-nbm/README.md).
+- Saved aggregate screening results, prediction metrics, and regression tables in the [worked example](examples/ceo-risk-preference/README.md).
 - A connected coordinator with stage adapters, saved state, and resume, demonstrated with invented inputs.
 - User guides, an introduction, and a narrated walkthrough.
 

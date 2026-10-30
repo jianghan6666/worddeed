@@ -1,4 +1,7 @@
 # Preserve the exact bytes of the supplied aggregate result files.
-examples/completed-nbm/results/*.csv -text
-examples/completed-nbm/results/*.json -text
-examples/completed-nbm/results/dividend-results.md -text
+examples/ceo-risk-preference/results/*.csv -text
+examples/ceo-risk-preference/results/*.json -text
+examples/ceo-risk-preference/results/dividend-results.md -text
+
+# Treat rendered documents as binary assets.
+*.pdf binary

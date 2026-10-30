@@ -1,4 +1,4 @@
-# Full results: the four-step NBM application
+# Full results: the four-step AI Microfoundation Proxy application
 
 The completed results are now available as a separate reviewer deliverable.
 

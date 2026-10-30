@@ -1,4 +1,4 @@
-"""Fast adapter checks; original-function checks use NBM_PACKAGES_ROOT if supplied."""
+"""Fast adapter checks; original-function checks use AI_MICROFOUNDATION_PROXY_PACKAGES_ROOT if supplied."""
 import csv
 import json
 import os
@@ -85,10 +85,10 @@ class Step4ContractTests(unittest.TestCase):
                 step4._check_identity(Path("pkg"), Path("scores"), Path("panel"))
 
 
-@unittest.skipUnless(pd is not None and os.environ.get("NBM_PACKAGES_ROOT"), "Set NBM_PACKAGES_ROOT for original-function tests")
+@unittest.skipUnless(pd is not None and os.environ.get("AI_MICROFOUNDATION_PROXY_PACKAGES_ROOT"), "Set AI_MICROFOUNDATION_PROXY_PACKAGES_ROOT for original-function tests")
 class OriginalFunctionTests(unittest.TestCase):
     def test_fresh_estimates_allow_changed_coefficients_but_reject_bad_numerics(self):
-        reference = Path(os.environ["NBM_PACKAGES_ROOT"]) / step4.PACKAGE / "reference/regression"
+        reference = Path(os.environ["AI_MICROFOUNDATION_PROXY_PACKAGES_ROOT"]) / step4.PACKAGE / "reference/regression"
         specs = json.loads((reference / "model_reference.json").read_text())["models"]
         with (reference / "model_summary.csv").open() as stream:
             summaries = {r["model_id"]: r for r in csv.DictReader(stream)}
@@ -117,7 +117,7 @@ class OriginalFunctionTests(unittest.TestCase):
                 check_fresh_estimates(root, reference)
 
     def test_fresh_scores_change_scales_but_keep_original_25_formulas(self):
-        package = Path(os.environ["NBM_PACKAGES_ROOT"]) / step4.PACKAGE
+        package = Path(os.environ["AI_MICROFOUNDATION_PROXY_PACKAGES_ROOT"]) / step4.PACKAGE
         with step4._source_context():
             source = step4._load(package / "code/prepare_models.py")
             random = np.random.default_rng(42)

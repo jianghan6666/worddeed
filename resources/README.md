@@ -1,6 +1,6 @@
 # Research resources
 
-Start with the [completed CEO speech and R&D example](../examples/completed-nbm/README.md). It follows one application through all four stages, reports the delivered findings, and distinguishes them from the runnable fixture. Its [aggregate results and field guide](../examples/completed-nbm/results/README.md) explain the three included evidence files.
+Start with the [completed CEO speech and R&D example](../examples/ceo-risk-preference/README.md). It follows one application through all four stages, reports the delivered findings, and distinguishes them from the runnable fixture. Its [aggregate results and field guide](../examples/ceo-risk-preference/results/README.md) explain the three included evidence files.
 
 | Research task | Guide | Questions to resolve |
 | --- | --- | --- |

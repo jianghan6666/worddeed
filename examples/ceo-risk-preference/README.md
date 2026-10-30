@@ -1,6 +1,6 @@
 # Completed example: CEO speech, R&D prediction, and dividends
 
-**An NBM application from narrative representation to a behavioral proxy and downstream analysis.**
+**An AI Microfoundation Proxy application from narrative representation to a behavioral proxy and downstream analysis.**
 
 This example explains the completed screening study and the empirical results delivered on 27 October 2026. Three small [aggregate result files](results/README.md) let readers inspect the findings. The connected agent is separately demonstrated with invented inputs; it has not rerun this complete empirical study.
 
