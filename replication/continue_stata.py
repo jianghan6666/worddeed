@@ -6,6 +6,7 @@ The Windows files remain byte-identical to the checksummed review export.
 import argparse
 from datetime import datetime, timezone
 import json
+import os
 from pathlib import Path, PurePosixPath
 import shutil
 import sys
@@ -90,6 +91,8 @@ def main():
     parser.add_argument('--out', type=Path, required=True)
     parser.add_argument('--stata', type=Path, required=True)
     parser.add_argument('--stata-version', type=int, choices=[18, 19], default=19)
+    parser.add_argument('--link-handoff', action='store_true',
+                        help='Hard-link immutable handoff files on the same filesystem to avoid a second large copy')
     args = parser.parse_args()
     handoff, packages, out = args.handoff.resolve(), args.packages.resolve(), args.out.resolve()
     evidence = verify_handoff(handoff, packages)
@@ -101,7 +104,10 @@ def main():
     for row in evidence['files']:
         target = windows / row['path']
         target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(handoff / row['path'], target)
+        if args.link_handoff:
+            os.link(handoff / row['path'], target)
+        else:
+            shutil.copyfile(handoff / row['path'], target)
     shutil.copyfile(handoff / 'HANDOFF.json', windows / 'HANDOFF.json')
     verify_handoff(windows, packages)
     config = {'profile': 'reproduce', 'python': sys.executable, 'packages_root': str(packages),
@@ -122,6 +128,8 @@ def main():
     save()
     try:
         result = step4.estimate(config, windows / 'workflow/step4_prepare')
+        # Estimation may add files, but may never change any prepared evidence.
+        verify_handoff(windows, packages)
         report.update(status='complete', result=result,
                       completed_utc=datetime.now(timezone.utc).isoformat())
         report['stages'].update(step4_prepare='complete', step4='complete')
