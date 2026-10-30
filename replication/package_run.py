@@ -27,7 +27,7 @@ def package_run(run, out):
     out.mkdir(parents=True)
     config = json.loads((run/'reproduce.json').read_text())
     replacements = {str(run):'REPRODUCTION_ROOT',supplied_run:'REPRODUCTION_ROOT',str(ROOT):'REPOSITORY_ROOT',
-                    config['python']:'PYTHON_EXECUTABLE'}
+                    config['python']:'PYTHON_EXECUTABLE',str(Path(sys.base_prefix).resolve()):'PYTHON_BASE_ENVIRONMENT'}
     python = Path(config['python'])
     if python.parent.name in {'bin','Scripts'}:
         replacements[str(python.parent.parent)]='ANALYSIS_ENVIRONMENT'
@@ -35,7 +35,7 @@ def package_run(run, out):
         replacements[config['stata_exe']]='STATA_EXECUTABLE'
     replacements=sorted(replacements.items(),key=lambda x:len(x[0]),reverse=True)
     paths = [p for p in run.iterdir() if p.is_file() and p.suffix=='.json']
-    for folder in ['screening','workflow','supplementary','logs','diagnostics']:
+    for folder in ['screening','workflow','supplementary','logs','diagnostics','windows']:
         paths += [p for p in (run/folder).rglob('*') if p.is_file()]
     archive = out/'fresh-reproduction.tar.gz'
     files, omissions = [], []

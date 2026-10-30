@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 # Current access instructions changed; the original import identity stays recorded.
 MAINTAINED_CHANGES = {'step-3-4/README.md': 'Current release routing and connected guide',
+                      'step-3-4/verify.py': 'Use inventory POSIX separators on every host; all hash checks unchanged',
                       'scripts/restore_review_bundle.py': 'Streaming restore with the same inventory checks'}
 
 

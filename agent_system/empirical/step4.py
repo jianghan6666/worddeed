@@ -250,11 +250,12 @@ def estimate(config: dict, out: Path) -> dict:
         raise ValueError("stata_version must be 18 or 19")
     executed = script
     if version == 18:
-        original = script.read_text()
-        if original.count("version 19.0\n") != 1:
+        original = script.read_bytes()
+        declaration = b"version 19.0\r\n" if b"version 19.0\r\n" in original else b"version 19.0\n"
+        if original.count(declaration) != 1:
             raise ValueError("Expected exactly one original Stata version declaration")
         executed = script.with_name("RUN_MODELS_stata18.do")
-        executed.write_text(original.replace("version 19.0\n", "version 18.0\n", 1))
+        executed.write_bytes(original.replace(declaration, declaration.replace(b"19.0", b"18.0"), 1))
         _write(out / "regression/audit/STATA_COMPATIBILITY.json", {
             "requested_version": 18, "delivered_runtime": "19.5",
             "only_change": "version 19.0 -> version 18.0 in a separate generated do-file",

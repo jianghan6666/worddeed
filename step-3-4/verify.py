@@ -25,7 +25,7 @@ def main():
     for path in (root / 'packages').glob('*/[Mm][Aa][Nn][Ii][Ff][Ee][Ss][Tt].json'):
         manifest = json.loads(path.read_text())
         for item in manifest['files']:
-            name = str(path.parent.relative_to(root) / item['path'])
+            name = (path.parent.relative_to(root) / item['path']).as_posix()
             assert rows[name]['export_bytes'] == item['bytes'], name
             assert rows[name]['export_sha256'] == item['sha256'], name
     trial = 'b1-gpt-6-astra-P0-xhigh'

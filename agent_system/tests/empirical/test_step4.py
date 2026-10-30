@@ -84,8 +84,8 @@ class Step4ContractTests(unittest.TestCase):
             out = Path(tmp)
             script = out / "regression/stata/RUN_MODELS.do"
             script.parent.mkdir(parents=True)
-            original = "version 19.0\nlogit payer score\n"
-            script.write_text(original)
+            original = b"version 19.0\r\nlogit payer score\r\n"
+            script.write_bytes(original)
             (out / "CONNECTED_INPUTS.json").write_text('{"profile":"reproduce"}')
             def executed(command, **kwargs):
                 self.assertEqual(command[-1], "RUN_MODELS_stata18.do")
@@ -98,9 +98,9 @@ class Step4ContractTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, "reference mismatch"):
                     step4.estimate({"profile":"reproduce", "stata_exe":sys.executable,
                                     "stata_version":18}, out)
-            self.assertEqual(script.read_text(), original)
-            self.assertEqual(script.with_name("RUN_MODELS_stata18.do").read_text(),
-                             original.replace("version 19.0", "version 18.0"))
+            self.assertEqual(script.read_bytes(), original)
+            self.assertEqual(script.with_name("RUN_MODELS_stata18.do").read_bytes(),
+                             original.replace(b"version 19.0", b"version 18.0"))
             self.assertTrue((out / "regression/audit/STATA_COMPATIBILITY.json").exists())
 
     def test_run_prepares_before_stata_check(self):
