@@ -60,12 +60,21 @@ def verify_handoff(handoff, packages):
         raise ValueError('Supplementary report did not pass')
     state = json.loads((handoff / 'workflow/state.json').read_text(encoding='utf8'))
     indexed = {row['path']: row for row in report['files']}
+    input_hashes = {'REPRODUCTION_ROOT/inputs/' + row['path']: row['export_sha256']
+                    for row in delivery['files']}
+    catalogue = 'step-2-twelve-trial-pilot/inputs/catalogue.json'
+    input_hashes['REPOSITORY_ROOT/' + catalogue] = digest(ROOT / catalogue)
     for stage in ['step1', 'step2', 'step3', 'step4_prepare']:
         record = state['stages'][stage]
         if record['status'] != 'complete':
             raise ValueError('Incomplete workflow record: ' + stage)
         for path, original_hash in record['outputs'].items():
             portable = path.replace('\\', '/')
+            # Saved Step 1 returns validated immutable inputs, not copied outputs.
+            if portable in input_hashes:
+                if original_hash != input_hashes[portable]:
+                    raise ValueError('Workflow input binding changed: ' + portable)
+                continue
             if not portable.startswith('REPRODUCTION_ROOT/'):
                 raise ValueError('Unexpected Windows output path: ' + portable)
             relative = portable.removeprefix('REPRODUCTION_ROOT/')
