@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "built_at_utc": "2026-10-24T20:23:33.899588+00:00",
+  "stage": "regression data construction only",
+  "environment": {
+    "python": "3.11.7 | packaged by Anaconda, Inc. | (main, Dec 15 2023, 18:05:47) [MSC v.1916 64 bit (AMD64)]",
+    "pandas": "2.1.4",
+    "numpy": "1.26.4",
+    "scipy": "1.11.4",
+    "pyarrow": "14.0.2",
+    "stata_file_version": 118
+  },
+  "config": {
+    "original_years": [
+      2006,
+      2011
+    ],
+    "extended_years": [
+      2006,
+      2023
+    ],
+    "new_years": [
+      2012,
+      2023
+    ],
+    "industry_exclusions": [
+      [
+        4900,
+        4999
+      ],
+      [
+        6000,
+        6999
+      ]
+    ],
+    "ccm_linktypes": [
+      "LC",
+      "LU"
+    ],
+    "ccm_linkprim": [
+      "P",
+      "C"
+    ],
+    "share_codes": [
+      10,
+      11
+    ],
+    "exchange_codes": [
+      1,
+      2,
+      3
+    ],
+    "fiscal_end_ceo": true,
+    "duplicate_funda_policy": "exclude_all_ambiguous_gvkey_fyear",
+    "ambiguous_link_policy": "exclude_distinct_permno_conflicts",
+    "industry_source": "sich_only",
+    "winsorization": "none",
+    "size_reference": "eligible_ExecuComp_Compustat_CRSP_universe_before_complete_case",
+    "high_leverage_threshold": 1,
+    "profitability": "ib-dvp+txditc in Compustat USD millions",
+    "tenure": "1+floor((datadate-becameceo).days/365.25)",
+    "rd_missing": "indicator before ratio fill0; no other automatic fill0",
+    "options_count_tolerance_thousands": 0.01,
+    "formula_versions": [
+      "paper_literal_diagnostic",
+      "standard_finance"
+    ],
+    "popsrc_status": "exact_supplement_join_then_filter_D",
+    "regressions": false,
+    "ccm_source": "ccmxpf_lnkhist_postgres_all.csv.gz",
+    "market_requests": "data/interim/market_requests_latest.parquet"
+  },
+  "source_files": [
+    {
+      "path": "data/raw/compustat/funda_datadate_2003-01_2024-06.csv.gz",
+      "bytes": 9513386,
+      "sha256": "885730ce1967bac4a4c79313805730f3d10114b8e35dfadee0d1c9d8d7f45b3f"
+    },
+    {
+      "path": "data/raw/compustat/funda_population_keys_all.csv.gz",
+      "bytes": 3515996,
+      "sha256": "4a88ca650aae23cc8cfdd112b9ea1eb812c73b9d054c80c9bca62eb8c6e1f2c0"
+    },
+    {
+      "path": "data/raw/crsp/ccm_link_history_all.csv.gz",
+      "bytes": 1249975,
+      "sha256": "d08c0887de29af1a1f2381bad13191b0e4ca1b5abdf882f3b35d9dcfe2adb8d1"
+    },
+    {
+      "path": "data/raw/crsp/ccmxpf_lnkhist_postgres_all.csv.gz",
+      "bytes": 1096781,
+      "sha256": "21294af9b68abc6d12e333521743459f3f45509d14547649349e4ef49f5ef905"
+    },
+    {
+      "path": "data/raw/crsp/dsf_all_2005-01-01_2024-06-30.csv.gz",
+      "bytes": 455541176,
+      "sha256": "248b2903269864d287e7649006b14720d1993027be647cf5390d0d9b8d1b7d86"
+    },
+    {
+      "path": "data/raw/crsp/msf_all_2000-12_2024-06.csv.gz",
+      "bytes": 36072102,
+      "sha256": "bb5e4b1af023bc9a11ab0cca444b498c8fd4dbe968a42ff1e6fd9640b7b49dc5"
+    },
+    {
+      "path": "data/raw/execucomp/anncomp_1992_2023_allfields.csv.gz",
+      "bytes": 41476181,
+      "sha256": "724e65e4748724bba9d8673218d9237db89bc2c5436e6f9d5e736e8d6ccbf9ac"
+    },
+    {
+      "path": "data/raw/execucomp/deferredcomp_2006_2023_allfields.csv.gz",
+      "bytes": 4867447,
+      "sha256": "a288fe545ead67e6692301d35c8c402ccebcb067b427fecf141420bdb2d4d561"
+    },
+    {
+      "path": "data/raw/execucomp/outstandingawards_2006_2023_allfields.csv.gz",
+      "bytes": 23530450,
+      "sha256": "c0bca00b66b96de191a6235a7feddc8c02aadb71ad20a051c1b291cd5195b8b9"
+    },
+    {
+      "path": "data/raw/execucomp/pension_2006_2023_allfields.csv.gz",
+      "bytes": 3217706,
+      "sha256": "c3b352f4b285448e6cad3cfc86cdc60ade037ca2d8830186144d257adcac6be7"
+    },
+    {
+      "path": "data/raw/fred/DTB3_2005-01-01_2024-06-30.csv",
+      "bytes": 80562,
+      "sha256": "c75a500df79ed08cd24922a20ba58b564b54abd77629dbbe1fcad99ae1170a86"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/build_regression_data.py",
+      "sha256": "4854f4bc6bbdf33461c30b190ebd5c48cce267bf2077f48e1bdc86f566514e3e"
+    },
+    {
+      "path": "scripts/check_option_portfolios.py",
+      "sha256": "79341bb5dc38e3d5f1cfbd20791018268cfe98f9fed4211d0499d7bc1e7e7b22"
+    },
+    {
+      "path": "scripts/market_inputs.py",
+      "sha256": "9f8e5b5c96f4af75747e5d5d30052923abe94fa2b7574b5016470d98bc42a11d"
+    },
+    {
+      "path": "scripts/option_portfolios.py",
+      "sha256": "81e9b86ef10669006e2851cc10cc29fd548c92f2a889d1b1523313cf0fa620fb"
+    },
+    {
+      "path": "scripts/write_data_docs.py",
+      "sha256": "0d553086760cb7b53f6907cfb96f22bc736d236562cda7229bd8219d1846b2ea"
+    }
+  ],
+  "sample_counts": [
+    {
+      "version": "a",
+      "period": "original_2006_2011",
+      "N_nonlog": 6522,
+      "N_log": 3760,
+      "payers_nonlog": 2978,
+      "nonpayers_nonlog": 3544,
+      "N_ab_common": 5826,
+      "N_ab_log_common": 3495
+    },
+    {
+      "version": "a",
+      "period": "extended_2006_2023",
+      "N_nonlog": 18423,
+      "N_log": 9788,
+      "payers_nonlog": 9377,
+      "nonpayers_nonlog": 9046,
+      "N_ab_common": 13828,
+      "N_ab_log_common": 7903
+    },
+    {
+      "version": "a",
+      "period": "new_2012_2023",
+      "N_nonlog": 11901,
+      "N_log": 6028,
+      "payers_nonlog": 6399,
+      "nonpayers_nonlog": 5502,
+      "N_ab_common": 8002,
+      "N_ab_log_common": 4408
+    },
+    {
+      "version": "b",
+      "period": "original_2006_2011",
+      "N_nonlog": 5826,
+      "N_log": 3495,
+      "payers_nonlog": 2628,
+      "nonpayers_nonlog": 3198,
+      "N_ab_common": 5826,
+      "N_ab_log_common": 3495
+    },
+    {
+      "version": "b",
+      "period": "extended_2006_2023",
+      "N_nonlog": 13828,
+      "N_log": 7903,
+      "payers_nonlog": 6862,
+      "nonpayers_nonlog": 6966,
+      "N_ab_common": 13828,
+      "N_ab_log_common": 7903
+    },
+    {
+      "version": "b",
+      "period": "new_2012_2023",
+      "N_nonlog": 8002,
+      "N_log": 4408,
+      "payers_nonlog": 4234,
+      "nonpayers_nonlog": 3768,
+      "N_ab_common": 8002,
+      "N_ab_log_common": 4408
+    }
+  ],
+  "validation": "audits/panel_validation.json",
+  "source_audit": "metadata/source_audit_20261024.json",
+  "formula_a_warning": "Mechanical diagnostic mixes stock $1-delta and option 1%-delta; stock vega not standard; not confirmed author code.",
+  "regressions_run": false,
+  "documentation_generated_at_utc": "2026-10-24T20:30:50.777Z",
+  "tests": [
+    {
+      "path": "tests/test_market_inputs.py",
+      "sha256": "4820cc2db949366efad8dd81691a0aa20a6989a7121487e0ccc26dfaca6580c0"
+    },
+    {
+      "path": "tests/test_option_portfolios.py",
+      "sha256": "824de74d5a827887f056b21f2f023f038bd78db44a43f49cbf068d22a74b562b"
+    },
+    {
+      "path": "tests/test_panel_contract.py",
+      "sha256": "331816ded32ac0b4d481892da76fd847cd3f3642eefa3470a0230254c30effb5"
+    }
+  ],
+  "final_validation": {
+    "complete_pipeline_exit_code": 0,
+    "unittest_exit_code": 0,
+    "unittest_count": 24,
+    "unittest_log": "reports/final_tests.err",
+    "independent_formula_comparisons": 210,
+    "independent_validation": "audits/panel_independent_validation.json",
+    "stata_readback": "pandas.read_stata, all six exports; no Stata estimation executed",
+    "regressions_run": false,
+    "raw_source_hashes_match_download_ledger": true
+  },
+  "analysis_variables_constructed": true
+}

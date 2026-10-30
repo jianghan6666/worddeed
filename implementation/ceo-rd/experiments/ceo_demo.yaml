@@ -1,0 +1,30 @@
+# controls 中加入 CEO 性别 / 年龄 / 学历（原 robustness_ceo_demo.py）
+# 配置格式说明见 strict_controls.yaml
+
+name: ceo_demo
+targets: [rd_at_fill0, rd_sale_fill0]
+require: [y_lag, ceo_gender, ceo_age, ceo_educ]
+
+control_sets:
+  base:         [log_at, sic2, year]
+  base+ceo:     [log_at, ceo_age, sic2, year, ceo_gender, ceo_educ]
+  sic4:         [log_at, sic4, year]
+  sic4+ceo:     [log_at, ceo_age, sic4, year, ceo_gender, ceo_educ]
+  lag+sic4:     [log_at, y_lag, sic4, year]
+  lag+sic4+ceo: [log_at, y_lag, ceo_age, sic4, year, ceo_gender, ceo_educ]
+
+text_sets:
+  none:   []
+  topics: [topics]
+
+models:
+  ridge: {}
+  xgboost:
+    params: {min_child_weight: 10}
+    grid: {max_depth: [3, 6]}
+
+comparisons:
+  - label: topics | controls
+    text: [none, topics]
+  - label: CEO characteristics
+    control: [[base, base+ceo], [sic4, sic4+ceo], [lag+sic4, lag+sic4+ceo]]

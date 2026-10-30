@@ -1,0 +1,139 @@
+Caliskan & Doukas (2015) Table 4 — 原始数据下载台账（含历史快照）
+更新时间 UTC: 2026-10-24T20:14:01.704Z
+操作者: Codex
+保存根目录: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015
+
+范围说明
+本文件仅记录原始数据提取、原始文件核验及来源核对。下载阶段的“未构建变量/未运行回归”标志只描述下载操作，不代表项目当前阶段。项目已进入回归数据构建；最新构建状态另见 D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/build_manifest.json。
+原始下载内容保持不变；后续派生数据不计入此台账。
+累计保存 11 份原始提取（首批9份 + 补充2份），580161762 bytes（553.3 MiB），各文件原始行数合计 41963941。此合计包含旧/新版CCM及补充键表，不是去重公司年数或回归样本量。
+
+comp_execucomp.anncomp
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/anncomp_1992_2023_allfields.csv.gz
+  覆盖: fiscal years 1992–2023
+  行数: 364196；列数: 107；字节数: 41476181
+  核验: passed
+  SHA256: 724e65e4748724bba9d8673218d9237db89bc2c5436e6f9d5e736e8d6ccbf9ac
+  WRDS任务: 11827426
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/download_metadata.json
+  原始SQL: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/anncomp_1992_2023_allfields.sql
+
+comp_execucomp.outstandingawards
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/outstandingawards_2006_2023_allfields.csv.gz
+  覆盖: fiscal years 2006–2023
+  行数: 1245777；列数: 50；字节数: 23530450
+  核验: passed
+  SHA256: c0bca00b66b96de191a6235a7feddc8c02aadb71ad20a051c1b291cd5195b8b9
+  WRDS任务: 11827427
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/download_metadata.json
+  原始SQL: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/outstandingawards_2006_2023_allfields.sql
+
+comp_execucomp.pension
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/pension_2006_2023_allfields.csv.gz
+  覆盖: fiscal years 2006–2023
+  行数: 109154；列数: 44；字节数: 3217706
+  核验: passed
+  SHA256: c3b352f4b285448e6cad3cfc86cdc60ade037ca2d8830186144d257adcac6be7
+  WRDS任务: 11827430
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/download_metadata.json
+  原始SQL: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/pension_2006_2023_allfields.sql
+
+comp_execucomp.deferredcomp
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/deferredcomp_2006_2023_allfields.csv.gz
+  覆盖: fiscal years 2006–2023
+  行数: 111504；列数: 46；字节数: 4867447
+  核验: passed
+  SHA256: a288fe545ead67e6692301d35c8c402ccebcb067b427fecf141420bdb2d4d561
+  WRDS任务: 11827432
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/download_metadata.json
+  原始SQL: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/execucomp/deferredcomp_2006_2023_allfields.sql
+
+Compustat Fundamentals Annual
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/compustat/funda_datadate_2003-01_2024-06.csv.gz
+  覆盖: 2003-01-31–2024-06-30
+  行数: 200950；列数: 35；字节数: 9513386
+  核验: passed
+  SHA256: 885730ce1967bac4a4c79313805730f3d10114b8e35dfadee0d1c9d8d7f45b3f
+  WRDS任务: 11827424
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/compustat/download_metadata.json
+  原始SQL: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/compustat/funda_datadate_2003-01_2024-06.sql
+
+CCM legacy linking form full history
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/crsp/ccm_link_history_all.csv.gz
+  覆盖: LINKDT 1946-01-01–2025-12-31; original E end-date sentinel retained
+  行数: 110124；列数: 9；字节数: 1249975
+  核验: passed against form result; current-table completeness caveat
+  SHA256: d08c0887de29af1a1f2381bad13191b0e4ca1b5abdf882f3b35d9dcfe2adb8d1
+  WRDS任务: 11827431
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/crsp/ccm_link_history_metadata.json
+
+CRSP Legacy SIZ monthly all securities
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/crsp/msf_all_2000-12_2024-06.csv.gz
+  覆盖: 2000-12-29–2024-06-28
+  行数: 2132669；列数: 15；字节数: 36072102
+  核验: passed
+  SHA256: bb5e4b1af023bc9a11ab0cca444b498c8fd4dbe968a42ff1e6fd9640b7b49dc5
+  WRDS任务: 11827433
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/crsp/stock_download_metadata.json
+
+CRSP Legacy SIZ daily all securities
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/crsp/dsf_all_2005-01-01_2024-06-30.csv.gz
+  覆盖: 2005-01-03–2024-06-28
+  行数: 36618473；列数: 11；字节数: 455541176
+  核验: passed
+  SHA256: 248b2903269864d287e7649006b14720d1993027be647cf5390d0d9b8d1b7d86
+  WRDS任务: 11827435
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/crsp/stock_download_metadata.json
+
+FRED DTB3
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/fred/DTB3_2005-01-01_2024-06-30.csv
+  覆盖: 2005-01-03–2024-06-28
+  行数: 5085；列数: 2；字节数: 80562
+  核验: passed; original missing values retained
+  SHA256: c75a500df79ed08cd24922a20ba58b564b54abd77629dbbe1fcad99ae1170a86
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/fred/DTB3_metadata.json
+
+Compustat full-table population-source supplementary keys
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/compustat/funda_population_keys_all.csv.gz
+  覆盖: 1950-06-30–2026-09-30; fiscal years 1950–2026
+  行数: 942621；列数: 9；字节数: 3515996
+  核验: passed; every existing financial row matched to observed popsrc D on six unique keys
+  SHA256: 4a88ca650aae23cc8cfdd112b9ea1eb812c73b9d054c80c9bca62eb8c6e1f2c0
+  下载时间 UTC: 2026-10-24T20:01:53.541Z
+  WRDS任务: 11827497
+  来源入口: https://wrds-www.wharton.upenn.edu/dynamic-query-form/comp_na_daily_all/funda/
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/metadata/source_audit_20261024.json
+  原始SQL: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/compustat/funda_population_keys_all.sql
+  当前用途: Supplement original financial extract with directly observed population source; original financial values unchanged.
+
+CCM complete current Postgres link history
+  文件: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/crsp/ccmxpf_lnkhist_postgres_all.csv.gz
+  覆盖: LINKDT 1946-01-01–2026-01-30; open linkenddt missing values retained
+  行数: 123388；列数: 8；字节数: 1096781
+  核验: passed; row count matches current dictionary; all normalized legacy rows contained in new extract
+  SHA256: 21294af9b68abc6d12e333521743459f3f45509d14547649349e4ef49f5ef905
+  下载时间 UTC: 2026-10-24T20:02:20.795Z
+  WRDS任务: 11827499
+  来源入口: https://wrds-www.wharton.upenn.edu/dynamic-query-form/crsp_a_ccm/ccmxpf_lnkhist/
+  元数据: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/metadata/source_audit_20261024.json
+  原始SQL: D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/data/raw/crsp/ccmxpf_lnkhist_postgres_all.sql
+  当前用途: Preferred CCM source for current build; legacy 110124-row extract retained as acquisition history.
+
+当前待补/待核验
+- 本下载台账没有未完成的下载或结构核验。两项原来源问题均已解决。
+- 当前CCM构建来源为 ccmxpf_lnkhist_postgres_all.csv.gz；旧ccm_link_history_all.csv.gz仅保留为历史快照。
+
+来源问题与解决证据
+1. CCM：首批旧SAS表单110124行与当前字典123388行不一致。现已通过通用Dynamic Query取得当前Postgres全表123388行及原始SQL；规范化比较显示旧110124行全部包含于新表，新增13264行。旧wrapper为何排除这些行的精确实现原因仍未知，但当前完整原表已取得，不再存在下载缺口。
+2. Compustat POPSRC：首批命名表单未提供该字段。现已补取funda全表942621条键记录，字段均为D，六键无重复；原200950财务记录全部精确匹配D，无遗漏或歧义。D现为实证核实结果，不是推测。
+详细定义、匹配核验、字段单位和哈希：D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/metadata/source_audit_20261024.json。
+
+历史背景
+- 2026-10-24T19:33:02.700Z首批下载时，上述两项尚未解决；当时“当前Postgres全表未取得”“POPSRC未核实”的记录仅属历史状态。
+- 原9份下载的文件、日期和SHA256均保留，未被补充文件覆盖。
+
+可复现依据
+- ExecuComp四表、原财务表及两张补充表均保存WRDS直接下载的SQL。
+- CRSP旧SAS日/月表及旧连接表没有SQL下载链接，保存原查询字段、payload参数、入口和结果URL、任务ID。
+- 所有文件通过完整gzip/CSV读取与行宽检查；WRDS提取行数与结果页一致。原始缺失和日期哨兵均保留。
+- 完整机器可读台账：D:/pc_workspace_local/ceo_risk_taking/replications/caliskan_doukas_2015/download_manifest.json。

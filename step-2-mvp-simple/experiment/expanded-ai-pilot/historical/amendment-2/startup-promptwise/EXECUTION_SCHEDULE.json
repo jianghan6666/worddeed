@@ -1,0 +1,1713 @@
+{
+  "execution_amendment": 2,
+  "scientific_design_revision": 9,
+  "authorization_date": "2026-10-21",
+  "original_plan_merge": "398970d596b9404b1277d5060c460f622ae31818",
+  "models": [
+    "gpt-6.1-sol",
+    "gpt-6-astra"
+  ],
+  "efforts": [
+    "medium",
+    "high",
+    "xhigh"
+  ],
+  "configuration_count": 42,
+  "trial_count": 84,
+  "reader_count": 252,
+  "stage_records": 504,
+  "sequence": "P0–P6; preserve original order within each prompt; ordered admission in capacity-driven batches; trials and prompt groups may overlap without completion barriers",
+  "repeat_note": "block retains original repeat identity; prompt grouping and capacity-dependent overlap can confound comparisons with timing, load and session environment",
+  "original_scientific_schedule_sha256": "b80e312b4e51ffef320bf85c4ad0613b9b44aeb405f608a0fecf6ee68e37d561",
+  "jobs": [
+    {
+      "execution_order": 1,
+      "trial_id": "b1-gpt-6-astra-P0-high",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 9,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 2,
+      "trial_id": "b1-gpt-6.1-sol-P0-medium",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 13,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 3,
+      "trial_id": "b1-gpt-6-astra-P0-xhigh",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 14,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 4,
+      "trial_id": "b1-gpt-6-astra-P0-medium",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 16,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 5,
+      "trial_id": "b1-gpt-6.1-sol-P0-high",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 18,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 6,
+      "trial_id": "b1-gpt-6.1-sol-P0-xhigh",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 19,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 7,
+      "trial_id": "b2-gpt-6.1-sol-P0-high",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 60,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 8,
+      "trial_id": "b2-gpt-6-astra-P0-medium",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 66,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 9,
+      "trial_id": "b2-gpt-6-astra-P0-xhigh",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 72,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 10,
+      "trial_id": "b2-gpt-6.1-sol-P0-medium",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 73,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 11,
+      "trial_id": "b2-gpt-6-astra-P0-high",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 78,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 12,
+      "trial_id": "b2-gpt-6.1-sol-P0-xhigh",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 82,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P0"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 13,
+      "trial_id": "b1-gpt-6-astra-P1-high",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 3,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 14,
+      "trial_id": "b1-gpt-6-astra-P1-medium",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 4,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 15,
+      "trial_id": "b1-gpt-6.1-sol-P1-medium",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 22,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 16,
+      "trial_id": "b1-gpt-6.1-sol-P1-xhigh",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 25,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 17,
+      "trial_id": "b1-gpt-6-astra-P1-xhigh",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 35,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 18,
+      "trial_id": "b1-gpt-6.1-sol-P1-high",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 37,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 19,
+      "trial_id": "b2-gpt-6.1-sol-P1-medium",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 43,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 20,
+      "trial_id": "b2-gpt-6-astra-P1-xhigh",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 49,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 21,
+      "trial_id": "b2-gpt-6.1-sol-P1-high",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 58,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 22,
+      "trial_id": "b2-gpt-6.1-sol-P1-xhigh",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 64,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 23,
+      "trial_id": "b2-gpt-6-astra-P1-medium",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 67,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 24,
+      "trial_id": "b2-gpt-6-astra-P1-high",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P1",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 81,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P1"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 25,
+      "trial_id": "b1-gpt-6-astra-P2-xhigh",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 27,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 26,
+      "trial_id": "b1-gpt-6.1-sol-P2-medium",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 29,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 27,
+      "trial_id": "b1-gpt-6-astra-P2-high",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 31,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 28,
+      "trial_id": "b1-gpt-6.1-sol-P2-xhigh",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 34,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 29,
+      "trial_id": "b1-gpt-6.1-sol-P2-high",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 40,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 30,
+      "trial_id": "b1-gpt-6-astra-P2-medium",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 41,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 31,
+      "trial_id": "b2-gpt-6-astra-P2-xhigh",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 44,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 32,
+      "trial_id": "b2-gpt-6.1-sol-P2-high",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 62,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 33,
+      "trial_id": "b2-gpt-6-astra-P2-high",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 69,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 34,
+      "trial_id": "b2-gpt-6.1-sol-P2-medium",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 77,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 35,
+      "trial_id": "b2-gpt-6.1-sol-P2-xhigh",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 80,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 36,
+      "trial_id": "b2-gpt-6-astra-P2-medium",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P2",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 83,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P2"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 37,
+      "trial_id": "b1-gpt-6-astra-P3-medium",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 1,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 38,
+      "trial_id": "b1-gpt-6.1-sol-P3-medium",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 10,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 39,
+      "trial_id": "b1-gpt-6-astra-P3-xhigh",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 21,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 40,
+      "trial_id": "b1-gpt-6.1-sol-P3-xhigh",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 32,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 41,
+      "trial_id": "b1-gpt-6-astra-P3-high",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 33,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 42,
+      "trial_id": "b1-gpt-6.1-sol-P3-high",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 39,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 43,
+      "trial_id": "b2-gpt-6.1-sol-P3-xhigh",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 46,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 44,
+      "trial_id": "b2-gpt-6.1-sol-P3-high",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 50,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 45,
+      "trial_id": "b2-gpt-6-astra-P3-xhigh",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 52,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 46,
+      "trial_id": "b2-gpt-6.1-sol-P3-medium",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 55,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 47,
+      "trial_id": "b2-gpt-6-astra-P3-high",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 63,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 48,
+      "trial_id": "b2-gpt-6-astra-P3-medium",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P3",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 84,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P3"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 49,
+      "trial_id": "b1-gpt-6.1-sol-P4-xhigh",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 2,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 50,
+      "trial_id": "b1-gpt-6-astra-P4-high",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 6,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 51,
+      "trial_id": "b1-gpt-6-astra-P4-xhigh",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 7,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 52,
+      "trial_id": "b1-gpt-6-astra-P4-medium",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 12,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 53,
+      "trial_id": "b1-gpt-6.1-sol-P4-medium",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 15,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 54,
+      "trial_id": "b1-gpt-6.1-sol-P4-high",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 26,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 55,
+      "trial_id": "b2-gpt-6-astra-P4-medium",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 51,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 56,
+      "trial_id": "b2-gpt-6.1-sol-P4-medium",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 53,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 57,
+      "trial_id": "b2-gpt-6.1-sol-P4-high",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 56,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 58,
+      "trial_id": "b2-gpt-6-astra-P4-xhigh",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 61,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 59,
+      "trial_id": "b2-gpt-6-astra-P4-high",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 68,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 60,
+      "trial_id": "b2-gpt-6.1-sol-P4-xhigh",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P4",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 76,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P4"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 61,
+      "trial_id": "b1-gpt-6.1-sol-P5-medium",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 5,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 62,
+      "trial_id": "b1-gpt-6-astra-P5-xhigh",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 8,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 63,
+      "trial_id": "b1-gpt-6.1-sol-P5-high",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 11,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 64,
+      "trial_id": "b1-gpt-6-astra-P5-medium",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 20,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 65,
+      "trial_id": "b1-gpt-6-astra-P5-high",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 23,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 66,
+      "trial_id": "b1-gpt-6.1-sol-P5-xhigh",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 28,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 67,
+      "trial_id": "b2-gpt-6-astra-P5-high",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 45,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 68,
+      "trial_id": "b2-gpt-6-astra-P5-xhigh",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 47,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 69,
+      "trial_id": "b2-gpt-6.1-sol-P5-medium",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 54,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 70,
+      "trial_id": "b2-gpt-6.1-sol-P5-high",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 70,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 71,
+      "trial_id": "b2-gpt-6.1-sol-P5-xhigh",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 71,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 72,
+      "trial_id": "b2-gpt-6-astra-P5-medium",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P5",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 74,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P5"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 73,
+      "trial_id": "b1-gpt-6-astra-P6-medium",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 17,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 74,
+      "trial_id": "b1-gpt-6.1-sol-P6-xhigh",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 24,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 75,
+      "trial_id": "b1-gpt-6.1-sol-P6-high",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 30,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 76,
+      "trial_id": "b1-gpt-6-astra-P6-xhigh",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 36,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 77,
+      "trial_id": "b1-gpt-6.1-sol-P6-medium",
+      "block": 1,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 38,
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 78,
+      "trial_id": "b1-gpt-6-astra-P6-high",
+      "block": 1,
+      "model": "gpt-6-astra",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 42,
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 79,
+      "trial_id": "b2-gpt-6-astra-P6-xhigh",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 48,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 80,
+      "trial_id": "b2-gpt-6.1-sol-P6-high",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 57,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 81,
+      "trial_id": "b2-gpt-6-astra-P6-medium",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 59,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 82,
+      "trial_id": "b2-gpt-6-astra-P6-high",
+      "block": 2,
+      "model": "gpt-6-astra",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 65,
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 83,
+      "trial_id": "b2-gpt-6.1-sol-P6-xhigh",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 75,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    },
+    {
+      "execution_order": 84,
+      "trial_id": "b2-gpt-6.1-sol-P6-medium",
+      "block": 2,
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P6",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "original_dispatch_order": 79,
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P6"
+      },
+      "dispatch_owner": "current_coordinating_chat"
+    }
+  ],
+  "dispatch_owner": "current_coordinating_chat",
+  "capacity_policy": "maximum sustainable observed native/provider concurrency using available RAM; adapt admissions to memory pressure, swapping and host responsiveness; no artificial time/token/usage caps",
+  "per_trial_barriers": [
+    "all three Stage A attempts sealed or explicitly missing before any Stage B release",
+    "all three reviewed dispositions sealed or explicitly missing before comparison"
+  ],
+  "existing_first_trio": "retain existing chats, frozen inputs and work; do not restart",
+  "historical_execution_schedule_path": "../historical/amendment-1-EXECUTION_SCHEDULE.json",
+  "historical_execution_schedule_sha256": "b8804d04f01225c84d475525404f880a904e3cabf564131a9a51607f37206a23"
+}

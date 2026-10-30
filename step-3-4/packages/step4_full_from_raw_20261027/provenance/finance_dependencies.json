@@ -1,0 +1,60 @@
+{
+  "raw_finance_files": [
+    {
+      "relative_path": "compustat/funda_datadate_2003-01_2024-06.csv.gz",
+      "bytes": 9513386
+    },
+    {
+      "relative_path": "compustat/funda_population_keys_all.csv.gz",
+      "bytes": 3515996
+    },
+    {
+      "relative_path": "execucomp/anncomp_1992_2023_allfields.csv.gz",
+      "bytes": 41476181
+    },
+    {
+      "relative_path": "execucomp/outstandingawards_2006_2023_allfields.csv.gz",
+      "bytes": 23530450
+    },
+    {
+      "relative_path": "execucomp/pension_2006_2023_allfields.csv.gz",
+      "bytes": 3217706
+    },
+    {
+      "relative_path": "execucomp/deferredcomp_2006_2023_allfields.csv.gz",
+      "bytes": 4867447
+    },
+    {
+      "relative_path": "crsp/ccmxpf_lnkhist_postgres_all.csv.gz",
+      "bytes": 1096781
+    },
+    {
+      "relative_path": "crsp/msf_all_2000-12_2024-06.csv.gz",
+      "bytes": 36072102
+    },
+    {
+      "relative_path": "crsp/dsf_all_2005-01-01_2024-06-30.csv.gz",
+      "bytes": 455541176
+    },
+    {
+      "relative_path": "fred/DTB3_2005-01-01_2024-06-30.csv",
+      "bytes": 80562
+    }
+  ],
+  "total_bytes": 578911787,
+  "libraries": [
+    "numpy",
+    "pandas",
+    "scipy",
+    "pyarrow"
+  ],
+  "source_modules": [
+    "build_regression_data.py",
+    "market_inputs.py",
+    "option_portfolios.py"
+  ],
+  "entry": "finance_stage.py",
+  "input_root": "PACKAGE/project/replications/caliskan_doukas_2015/data/raw",
+  "output_root": "RUN_ROOT/project/replications/caliskan_doukas_2015",
+  "default_run_root": "PACKAGE/rerun"
+}

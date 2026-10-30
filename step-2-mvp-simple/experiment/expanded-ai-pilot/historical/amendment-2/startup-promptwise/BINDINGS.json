@@ -1,0 +1,35 @@
+{
+  "scientific_design_revision": 9,
+  "execution_amendment": 2,
+  "source_packet_sha256": "233c2a471a8ec7856de24ce05c2544a220fb712f425a64699d701753b820258f",
+  "scientific_inputs": {
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md": "93358bb60df3b82069885dc624a6c92e52e877dec38faed5d7132bd2e3426756",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md": "91d8af25385ba185ce608c8970ad765e7d596aa793b5bb371142b8421783c1e7",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md": "283bd4bfa38a6313a2ecf2d10413792a8107ea25d50ced5fb3f68f7ee648d2e6",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md": "4acf28622f68ef2f192f8a476885569b22155624ed406dc2b5cdac02cf0a8521",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md": "1e8b312995e62139f1d6de699b0d8ab16376bd48dd8e1320e91976b4f7adebd6",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md": "015a3a81ca5223dc829ef6cce3204eac2afb772f6c1bb07fa7e98090e7bb9ca0",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md": "026d2c1480789a1fd94fbed30f6d053e24c3ed7adea8cbbfc42e12a0b4fe8589",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/READER_OUTPUT_ADDENDUM.md": "72e1588fa112a777ec23d35ae4e3c21fd73e48c88cfd5f40d9511d8a57eeb04d",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/SOURCE_REVIEW_PROMPT.md": "ca09d6641f8c340d5c87249ae37c100d55a4e796e8b45dc6e355f4e6edd6724f"
+  },
+  "package_files": {
+    "DIRECT_DISPATCH.md": "bfecf59bb02773c912825149a0c673b74e120808870473ce03f4490b3fbd0707",
+    "EXECUTION_SCHEDULE.json": "4a0e7f19f50125e242156235730feef27aff09464c56133ffdd09634214b4814",
+    "READER_STAGE_A_WRAPPER.md": "49fbf94c3f9e444ecae39b92635cb90b297b4b0dd29f68f7513b9c8719f0ef25",
+    "READER_STAGE_B_WRAPPER.md": "ef7ed735da4843d1d1280c3c2152f6ea9e49e77ac0e7df6eb9286a833ac69c8f",
+    "README.md": "2d99ef6a208e1f3ee8617d81abd14abb6746b96ad59f090f455352749a2424f8",
+    "TRANSPORT_POLICY.md": "31ee9e9200ec8a3df2ad192907418d38cacefd82080c21ae9d1c5048eaac25d1"
+  },
+  "note": "Private runtime additionally binds actual frozen packets/tools/schemas and actual reader sessions. Amendment 2 changes administrative dispatch only; original frozen schedule remains authoritative for scientific assignment. No internal chat/path metadata is exported.",
+  "original_scientific_schedule": {
+    "path": "step-2-mvp-simple/experiment/expanded-ai-pilot/historical/revision-9-SCHEDULE.json",
+    "sha256": "b80e312b4e51ffef320bf85c4ad0613b9b44aeb405f608a0fecf6ee68e37d561",
+    "role": "unchanged private runtime scientific assignment binding"
+  },
+  "administrative_schedule": {
+    "path": "step-2-mvp-simple/experiment/expanded-ai-pilot/SCHEDULE.json",
+    "sha256": "c015dd45e907efb1a820add8129471ea40687e22885f2b7447e39af2fc5452ad",
+    "role": "amendment 2 direct dispatch; not a replacement for the frozen runtime schedule"
+  }
+}

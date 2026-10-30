@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "stage_requested": "all",
+  "input_raw_root": "D:\\pc_workspace_local\\ceo_risk_taking\\outputs\\01a17125-70eb-72b1-abff-27491f3aec3e\\step4_full_from_raw_20261027\\project\\replications\\caliskan_doukas_2015\\data\\raw",
+  "generated_replication_root": "D:\\pc_workspace_local\\ceo_risk_taking\\outputs\\01a17125-70eb-72b1-abff-27491f3aec3e\\step4_full_from_raw_20261027\\rerun\\project\\replications\\caliskan_doukas_2015",
+  "historical_finance_source_files_unmodified": true,
+  "manifest_only_runtime_adapters": {
+    "str(path.relative_to(ROOT))": "str(Path('data/raw') / path.relative_to(RAW))",
+    "sorted((ROOT/'scripts').glob('*.py'))": "sorted((SOURCE_ROOT/'scripts').glob('*.py'))",
+    "str(p.relative_to(ROOT))": "str(p.relative_to(SOURCE_ROOT))"
+  },
+  "source_build_module_sha256": "4854f4bc6bbdf33461c30b190ebd5c48cce267bf2077f48e1bdc86f566514e3e",
+  "adapted_build_text_sha256": "174af2df8de269eff36feff9029199bfaec660bfb5fd297811c5be6280eefb5c",
+  "configuration_from": "D:\\pc_workspace_local\\ceo_risk_taking\\outputs\\01a17125-70eb-72b1-abff-27491f3aec3e\\step4_full_from_raw_20261027\\project\\replications\\caliskan_doukas_2015\\build_config.json",
+  "original_production_outputs_used_as_inputs": false,
+  "preexisting_market_cache": false,
+  "scope": "Raw financial data reconstruction; annual-B regression branch downstream",
+  "stages": [
+    {
+      "stage": "prepare",
+      "status": "completed",
+      "elapsed_seconds": 15.46799999999348
+    },
+    {
+      "stage": "market",
+      "status": "completed",
+      "elapsed_seconds": 227.3279999999795
+    },
+    {
+      "stage": "valuations",
+      "status": "completed",
+      "elapsed_seconds": 0.25
+    },
+    {
+      "stage": "options",
+      "status": "completed",
+      "elapsed_seconds": 10.578000000037719
+    },
+    {
+      "stage": "finalize",
+      "status": "completed",
+      "elapsed_seconds": 9.905999999959022
+    }
+  ],
+  "regressions_run": false,
+  "scores_retrained": false,
+  "elapsed_seconds": 263.5779999999795
+}

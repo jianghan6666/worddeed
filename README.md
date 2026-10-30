@@ -4,7 +4,7 @@
 
 AI Microfoundation Proxy is the user-facing package for **Narrative–Behavior Measurement (NBM)**. It connects narrative evidence, AI-assisted topic screening, behavioral prediction, and downstream analysis. The first application studies CEO risk preference using earnings-call speech and R&D investment. Researchers define the construct and interpret the evidence; the agent coordinates the workflow and calls reusable computational tools.
 
-[Introduction](docs/index.html) · [Video](docs/video/four-step-agent.mp4) · [Completed example](examples/completed-nbm/README.md) · [Roadmap](ROADMAP.md) · [Workflow guide](WORKFLOW.md)
+[Introduction](docs/index.html) · [Video](docs/video/four-step-agent.mp4) · [Completed example](examples/completed-nbm/README.md) · [Roadmap](ROADMAP.md) · [Workflow guide](WORKFLOW.md) · [Reviewer replication](REPLICATION.md)
 
 ## What is AI Microfoundation Proxy?
 
@@ -154,7 +154,7 @@ ai-microfoundation-proxy/
 `-- .github/workflows/        Software checks
 ```
 
-Keep your study inputs, local configurations, and run outputs in the ignored `.local/` directory. This package contains the user-facing workflow and aggregate example results; datasets and full research records are separate inputs.
+Keep your study inputs, local configurations, and run outputs in the ignored `.local/` directory. This private package also includes the scientific code and complete inventoried evidence through its [reviewer replication release](REPLICATION.md); large datasets and models are restored from release assets.
 
 ## Roadmap
 

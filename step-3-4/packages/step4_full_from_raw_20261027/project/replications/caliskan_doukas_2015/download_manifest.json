@@ -1,0 +1,295 @@
+{
+  "project": "Caliskan and Doukas (2015), Table 4 replication data acquisition",
+  "updated_utc": "2026-10-24T20:14:01.704Z",
+  "operator": "Codex",
+  "stage": "raw acquisition ledger; stage-specific historical scope",
+  "analysis_windows": {
+    "original": [
+      2006,
+      2011
+    ],
+    "extended": [
+      2006,
+      2023
+    ]
+  },
+  "analysis_variables_constructed": false,
+  "regressions_run": false,
+  "raw_values_transformed": false,
+  "datasets": [
+    {
+      "dataset": "comp_execucomp.anncomp",
+      "path": "data/raw/execucomp/anncomp_1992_2023_allfields.csv.gz",
+      "query_id": 11827426,
+      "rows": 364196,
+      "columns": 107,
+      "coverage": "fiscal years 1992–2023",
+      "bytes": 41476181,
+      "sha256": "724e65e4748724bba9d8673218d9237db89bc2c5436e6f9d5e736e8d6ccbf9ac",
+      "validation": "passed",
+      "metadata": "data/raw/execucomp/download_metadata.json",
+      "sql": "data/raw/execucomp/anncomp_1992_2023_allfields.sql"
+    },
+    {
+      "dataset": "comp_execucomp.outstandingawards",
+      "path": "data/raw/execucomp/outstandingawards_2006_2023_allfields.csv.gz",
+      "query_id": 11827427,
+      "rows": 1245777,
+      "columns": 50,
+      "coverage": "fiscal years 2006–2023",
+      "bytes": 23530450,
+      "sha256": "c0bca00b66b96de191a6235a7feddc8c02aadb71ad20a051c1b291cd5195b8b9",
+      "validation": "passed",
+      "metadata": "data/raw/execucomp/download_metadata.json",
+      "sql": "data/raw/execucomp/outstandingawards_2006_2023_allfields.sql"
+    },
+    {
+      "dataset": "comp_execucomp.pension",
+      "path": "data/raw/execucomp/pension_2006_2023_allfields.csv.gz",
+      "query_id": 11827430,
+      "rows": 109154,
+      "columns": 44,
+      "coverage": "fiscal years 2006–2023",
+      "bytes": 3217706,
+      "sha256": "c3b352f4b285448e6cad3cfc86cdc60ade037ca2d8830186144d257adcac6be7",
+      "validation": "passed",
+      "metadata": "data/raw/execucomp/download_metadata.json",
+      "sql": "data/raw/execucomp/pension_2006_2023_allfields.sql"
+    },
+    {
+      "dataset": "comp_execucomp.deferredcomp",
+      "path": "data/raw/execucomp/deferredcomp_2006_2023_allfields.csv.gz",
+      "query_id": 11827432,
+      "rows": 111504,
+      "columns": 46,
+      "coverage": "fiscal years 2006–2023",
+      "bytes": 4867447,
+      "sha256": "a288fe545ead67e6692301d35c8c402ccebcb067b427fecf141420bdb2d4d561",
+      "validation": "passed",
+      "metadata": "data/raw/execucomp/download_metadata.json",
+      "sql": "data/raw/execucomp/deferredcomp_2006_2023_allfields.sql"
+    },
+    {
+      "dataset": "Compustat Fundamentals Annual",
+      "path": "data/raw/compustat/funda_datadate_2003-01_2024-06.csv.gz",
+      "query_id": 11827424,
+      "rows": 200950,
+      "columns": 35,
+      "coverage": "2003-01-31–2024-06-30",
+      "bytes": 9513386,
+      "sha256": "885730ce1967bac4a4c79313805730f3d10114b8e35dfadee0d1c9d8d7f45b3f",
+      "validation": "passed",
+      "metadata": "data/raw/compustat/download_metadata.json",
+      "validation_file": "data/raw/compustat/validation.json",
+      "sql": "data/raw/compustat/funda_datadate_2003-01_2024-06.sql"
+    },
+    {
+      "dataset": "CCM legacy linking form full history",
+      "path": "data/raw/crsp/ccm_link_history_all.csv.gz",
+      "query_id": 11827431,
+      "rows": 110124,
+      "columns": 9,
+      "coverage": "LINKDT 1946-01-01–2025-12-31; original E end-date sentinel retained",
+      "bytes": 1249975,
+      "sha256": "d08c0887de29af1a1f2381bad13191b0e4ca1b5abdf882f3b35d9dcfe2adb8d1",
+      "validation": "passed against form result; current-table completeness caveat",
+      "metadata": "data/raw/crsp/ccm_link_history_metadata.json"
+    },
+    {
+      "dataset": "CRSP Legacy SIZ monthly all securities",
+      "path": "data/raw/crsp/msf_all_2000-12_2024-06.csv.gz",
+      "query_id": 11827433,
+      "rows": 2132669,
+      "columns": 15,
+      "coverage": "2000-12-29–2024-06-28",
+      "bytes": 36072102,
+      "sha256": "bb5e4b1af023bc9a11ab0cca444b498c8fd4dbe968a42ff1e6fd9640b7b49dc5",
+      "validation": "passed",
+      "metadata": "data/raw/crsp/stock_download_metadata.json",
+      "validation_file": "data/raw/crsp/msf_validation.json"
+    },
+    {
+      "dataset": "CRSP Legacy SIZ daily all securities",
+      "path": "data/raw/crsp/dsf_all_2005-01-01_2024-06-30.csv.gz",
+      "query_id": 11827435,
+      "rows": 36618473,
+      "columns": 11,
+      "coverage": "2005-01-03–2024-06-28",
+      "bytes": 455541176,
+      "sha256": "248b2903269864d287e7649006b14720d1993027be647cf5390d0d9b8d1b7d86",
+      "validation": "passed",
+      "metadata": "data/raw/crsp/stock_download_metadata.json",
+      "validation_file": "data/raw/crsp/dsf_validation.json"
+    },
+    {
+      "dataset": "FRED DTB3",
+      "path": "data/raw/fred/DTB3_2005-01-01_2024-06-30.csv",
+      "rows": 5085,
+      "columns": 2,
+      "coverage": "2005-01-03–2024-06-28",
+      "bytes": 80562,
+      "sha256": "c75a500df79ed08cd24922a20ba58b564b54abd77629dbbe1fcad99ae1170a86",
+      "validation": "passed; original missing values retained",
+      "metadata": "data/raw/fred/DTB3_metadata.json"
+    },
+    {
+      "dataset": "Compustat full-table population-source supplementary keys",
+      "path": "data/raw/compustat/funda_population_keys_all.csv.gz",
+      "query_id": 11827497,
+      "rows": 942621,
+      "columns": 9,
+      "coverage": "1950-06-30–2026-09-30; fiscal years 1950–2026",
+      "bytes": 3515996,
+      "sha256": "4a88ca650aae23cc8cfdd112b9ea1eb812c73b9d054c80c9bca62eb8c6e1f2c0",
+      "downloaded_at_utc": "2026-10-24T20:01:53.541Z",
+      "download_timestamp_basis": "Browser-downloaded file modification timestamp",
+      "validation": "passed; every existing financial row matched to observed popsrc D on six unique keys",
+      "metadata": "metadata/source_audit_20261024.json",
+      "sql": "data/raw/compustat/funda_population_keys_all.sql",
+      "source_url": "https://wrds-www.wharton.upenn.edu/dynamic-query-form/comp_na_daily_all/funda/",
+      "query_url": "https://wrds-www.wharton.upenn.edu/query-manager/query/11827497/",
+      "source_table": "comp_na_daily_all.funda",
+      "extraction_scope": "All available rows; only 9 raw key fields; WHERE 1=1; no date or population filter.",
+      "role": "Supplement original financial extract with directly observed population source; original financial values unchanged."
+    },
+    {
+      "dataset": "CCM complete current Postgres link history",
+      "path": "data/raw/crsp/ccmxpf_lnkhist_postgres_all.csv.gz",
+      "query_id": 11827499,
+      "rows": 123388,
+      "columns": 8,
+      "coverage": "LINKDT 1946-01-01–2026-01-30; open linkenddt missing values retained",
+      "bytes": 1096781,
+      "sha256": "21294af9b68abc6d12e333521743459f3f45509d14547649349e4ef49f5ef905",
+      "downloaded_at_utc": "2026-10-24T20:02:20.795Z",
+      "download_timestamp_basis": "Browser-downloaded file modification timestamp",
+      "validation": "passed; row count matches current dictionary; all normalized legacy rows contained in new extract",
+      "metadata": "metadata/source_audit_20261024.json",
+      "sql": "data/raw/crsp/ccmxpf_lnkhist_postgres_all.sql",
+      "source_url": "https://wrds-www.wharton.upenn.edu/dynamic-query-form/crsp_a_ccm/ccmxpf_lnkhist/",
+      "query_url": "https://wrds-www.wharton.upenn.edu/query-manager/query/11827499/",
+      "source_table": "crsp_a_ccm.ccmxpf_lnkhist",
+      "extraction_scope": "All fields; linkdt between 1946-01-01 and 2026-01-30; no linktype, linkprim or company restrictions.",
+      "role": "Preferred CCM source for current build; legacy 110124-row extract retained as acquisition history."
+    }
+  ],
+  "downloaded_dataset_count": 11,
+  "total_data_bytes": 580161762,
+  "total_raw_rows": 41963941,
+  "pending_downloads": [],
+  "pending_validation": [],
+  "source_questions": [
+    {
+      "dataset": "CCM",
+      "status": "resolved",
+      "issue": "The legacy SAS form snapshot differed from the current Postgres dictionary.",
+      "resolution": "Downloaded and validated all 123388 current Postgres rows via Dynamic Query, with original SQL. The old normalized 110124 rows are all present in the new table. Current build should use the new extract.",
+      "resolved_utc": "2026-10-24T20:04:20.354Z",
+      "evidence": [
+        "data/raw/crsp/ccmxpf_lnkhist_postgres_all.csv.gz",
+        "data/raw/crsp/ccmxpf_lnkhist_postgres_all.sql",
+        "metadata/source_audit_20261024.json"
+      ],
+      "remaining_acquisition_block": false,
+      "history": [
+        {
+          "recorded_utc": "2026-10-24T19:33:02.700Z",
+          "dataset": "CCM",
+          "issue": "Legacy full linking-form result has 110124 rows; linked current Postgres dictionary reports 123388. Both source counts recorded, cause not established. Current Postgres full-table export not acquired.",
+          "impact": "Do not claim this legacy form extract equals the entire current Postgres linking table; verify before final replication sample."
+        }
+      ]
+    },
+    {
+      "dataset": "Compustat",
+      "status": "resolved",
+      "issue": "The original named annual-form extract did not contain popsrc or filter on it.",
+      "resolution": "Downloaded 942621 current funda key records including popsrc. All values are D; all original 200950 financial rows matched to D using six unique source keys.",
+      "resolved_utc": "2026-10-24T20:04:20.354Z",
+      "evidence": [
+        "data/raw/compustat/funda_population_keys_all.csv.gz",
+        "data/raw/compustat/funda_population_keys_all.sql",
+        "metadata/source_audit_20261024.json"
+      ],
+      "remaining_acquisition_block": false,
+      "history": [
+        {
+          "recorded_utc": "2026-10-24T19:33:02.700Z",
+          "dataset": "Compustat",
+          "issue": "Actual saved query has no popsrc predicate and downloaded CSV lacks popsrc.",
+          "impact": "Do not assert popsrc=D. Verify this source schema/sample convention before analysis; acquisition kept original rows."
+        }
+      ]
+    }
+  ],
+  "scope_note": "This ledger records original and supplementary raw downloads and structural/source audits. Acquisition did not construct analysis variables or run regressions. The project has since entered regression-data construction; consult build_manifest.json for its current state. Original raw files remain unchanged.",
+  "pending_or_conditional_followups": [
+    {
+      "item": "Current Postgres CCM export / legacy-form version reconciliation",
+      "status": "resolved",
+      "resolved_utc": "2026-10-24T20:04:20.354Z",
+      "details": "Complete current Postgres table acquired and verified; use ccmxpf file path recorded below.",
+      "evidence": "data/raw/crsp/ccmxpf_lnkhist_postgres_all.csv.gz",
+      "history": [
+        {
+          "recorded_utc": "2026-10-24T19:33:02.700Z",
+          "item": "Current Postgres CCM export / legacy-form version reconciliation",
+          "status": "not acquired; legacy full-form file retained and validated",
+          "details": "Current dictionary 123388 rows versus form result 110124; exact difference not established. Data Preview offers first1000 rows only, not accepted as full export."
+        }
+      ]
+    },
+    {
+      "item": "Compustat popsrc",
+      "status": "resolved",
+      "resolved_utc": "2026-10-24T20:04:20.354Z",
+      "details": "POPSRC supplement acquired and exact-key matched; D is verified for every original financial record.",
+      "evidence": "data/raw/compustat/funda_population_keys_all.csv.gz",
+      "history": [
+        {
+          "recorded_utc": "2026-10-24T19:33:02.700Z",
+          "item": "Compustat popsrc",
+          "status": "not exposed in selected UI fields or saved SQL",
+          "details": "Verify the source population convention or obtain this field before applying the planned D filter in analysis."
+        }
+      ]
+    }
+  ],
+  "state_flags_scope": "analysis_variables_constructed=false, regressions_run=false and raw_values_transformed=false describe acquisition operations in this ledger only. They do not represent the current overall project or build stage.",
+  "current_project_state_reference": "build_manifest.json",
+  "preferred_sources": {
+    "financial_values": "data/raw/compustat/funda_datadate_2003-01_2024-06.csv.gz",
+    "financial_population": "data/raw/compustat/funda_population_keys_all.csv.gz",
+    "ccm_current_build": "data/raw/crsp/ccmxpf_lnkhist_postgres_all.csv.gz",
+    "ccm_historical_snapshot_only": "data/raw/crsp/ccm_link_history_all.csv.gz"
+  },
+  "acquisition_history": [
+    {
+      "recorded_utc": "2026-10-24T19:33:02.700Z",
+      "stage": "initial raw acquisition",
+      "data_extract_count": 9,
+      "total_data_bytes": 575548985,
+      "total_raw_rows": 40897932,
+      "state_flags_at_acquisition": {
+        "analysis_variables_constructed": false,
+        "regressions_run": false,
+        "raw_values_transformed": false
+      },
+      "note": "Original nine source entries, dates and hashes preserved; then-open source questions are retained under each resolved question history."
+    },
+    {
+      "recorded_utc": "2026-10-24T20:14:01.704Z",
+      "stage": "supplementary source reconciliation",
+      "added_queries": [
+        11827497,
+        11827499
+      ],
+      "source_questions_resolved": [
+        "CCM current Postgres completeness",
+        "Compustat population source"
+      ],
+      "source_audit": "metadata/source_audit_20261024.json"
+    }
+  ],
+  "count_note": "Counts sum raw extracts, including both legacy/current CCM snapshots and supplementary population keys; not unique research observations or regression sample size."
+}

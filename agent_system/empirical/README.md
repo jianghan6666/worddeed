@@ -1,6 +1,6 @@
 # Connected four-step workflow
 
-One coordinator connects topic inputs, independent relevance screening, proxy estimation and downstream analysis through saved artifacts. Start with the offline demo to inspect these handoffs. Empirical execution uses separately supplied compatible research packages and inputs.
+One coordinator connects topic inputs, independent relevance screening, proxy estimation and downstream analysis through saved artifacts. Start with the offline demo to inspect these handoffs. The [reviewer replication guide](../../REPLICATION.md) downloads the complete compatible study packages from this private repository.
 
 ## Run the self-contained demo
 
@@ -36,9 +36,9 @@ Empirical data, fitted models, source packets and the original screening toolkit
 2. Place or reference your authorized inputs locally. Copy [reproduce.example.json](reproduce.example.json) or [fresh.example.json](fresh.example.json) into `.local/` and edit every input/runtime path. Paths resolve relative to the configuration file. The examples assume the copied configuration lives in `.local/`.
 3. Set explicit `catalogue` and, for reproduction, `selection` paths. The selection must match the catalogue's identity and partition all 354 topics. `packages_root` must contain both named stage packages.
 4. For fresh screening, set `step2.toolkit` to the compatible Python toolkit and `step2.packet_root` to the complete frozen packet directory containing `PACKET_MANIFEST.json`, `packets/` and `schemas/`. The adapter checks required files before model calls. Use your trusted study toolkit; it is executable code.
-5. Configure `python` to the analysis interpreter. Stata estimation uses the version-19 do-file; the supplied results used Stata 19.5. Set `stata_exe` when estimation is ready.
+5. Configure `python` to the analysis interpreter. Stata estimation uses the version-19 do-file; the supplied results used Stata 19.5. Set `stata_exe` when estimation is ready. Explicit `stata_version: 18` uses a separate do-file with only its version declaration changed, retains the original, and requires the same numerical checks.
 
-The saved-density mode is the default. Optional `step1.mode=infer` requires a compatible `ceo_rd` topic package and its dependencies installed in the configured analysis environment, plus the matching model and corpus. This submission does not include that optional package or its model assets.
+The saved-density mode is the default. Optional `step1.mode=infer` requires a compatible `ceo_rd` topic package and its dependencies installed in the configured analysis environment, plus the matching model and corpus. The implementation is included under `implementation/ceo-rd`; its model and source assets are in the optional source/model release archive. That route needs the separately documented topic dependencies and is not part of saved-representation replay.
 
 From the repository root, after configuration:
 

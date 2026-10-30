@@ -1,0 +1,60 @@
+{
+  "original_years": [
+    2006,
+    2011
+  ],
+  "extended_years": [
+    2006,
+    2023
+  ],
+  "new_years": [
+    2012,
+    2023
+  ],
+  "industry_exclusions": [
+    [
+      4900,
+      4999
+    ],
+    [
+      6000,
+      6999
+    ]
+  ],
+  "ccm_linktypes": [
+    "LC",
+    "LU"
+  ],
+  "ccm_linkprim": [
+    "P",
+    "C"
+  ],
+  "share_codes": [
+    10,
+    11
+  ],
+  "exchange_codes": [
+    1,
+    2,
+    3
+  ],
+  "fiscal_end_ceo": true,
+  "duplicate_funda_policy": "exclude_all_ambiguous_gvkey_fyear",
+  "ambiguous_link_policy": "exclude_distinct_permno_conflicts",
+  "industry_source": "sich_only",
+  "winsorization": "none",
+  "size_reference": "eligible_ExecuComp_Compustat_CRSP_universe_before_complete_case",
+  "high_leverage_threshold": 1,
+  "profitability": "ib-dvp+txditc in Compustat USD millions",
+  "tenure": "1+floor((datadate-becameceo).days/365.25)",
+  "rd_missing": "indicator before ratio fill0; no other automatic fill0",
+  "options_count_tolerance_thousands": 0.01,
+  "formula_versions": [
+    "paper_literal_diagnostic",
+    "standard_finance"
+  ],
+  "popsrc_status": "exact_supplement_join_then_filter_D",
+  "regressions": false,
+  "ccm_source": "ccmxpf_lnkhist_postgres_all.csv.gz",
+  "market_requests": "data/interim/market_requests_latest.parquet"
+}

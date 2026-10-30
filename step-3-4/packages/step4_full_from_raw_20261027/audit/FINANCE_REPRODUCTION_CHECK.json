@@ -1,0 +1,2882 @@
+{
+  "status": "passed",
+  "reference_only_used_after_rebuild": true,
+  "files_checked": 8,
+  "checks": [
+    {
+      "file": "data/processed/panel_master_audit.parquet",
+      "key": "event_id",
+      "reference_rows": 35151,
+      "rebuilt_rows": 35151,
+      "reference_columns": 196,
+      "rebuilt_columns": 196,
+      "columns": [
+        {
+          "column": "fyear",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "gvkey",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "execid",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "exec_fullname",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "becameceo",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "co_per_rol",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "joined_co",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "leftofc",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "age",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "bonus",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ceoann",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "defer_balance_tot",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "opt_unex_exer_num",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "opt_unex_unexer_num",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_value_tot",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "salary",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "shrown_excl_opts",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "stock_unvest_num",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "anncomp_row_id",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "annual_ceo_count",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "costat",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "curcd",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "datafmt",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "indfmt",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "consol",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "tic",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "datadate",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "conm",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "cusip",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "cik",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "exchg",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "fyr",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "fic",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sic",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "at",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ceq",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "lt",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pstk",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pstkl",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pstkrv",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "re",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "seq",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "txditc",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dvp",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ib",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "txdi",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "xrd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "capx",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "csho",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dvpsx_c",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dvpsx_f",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "prcc_f",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sich",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "popsrc",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "market_equity_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "shareholder_equity_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "preferred_equity_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "book_equity_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "mb",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "profitability_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "profitability_txdi_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rd_missing",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rd_at_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "capx_at_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "re_at",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "firm_leverage",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dvy",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "payer",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dvy_lag1",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dvy_date_lag1",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "dvy_lag2",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dvy_date_lag2",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "dvy_lag3",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dvy_date_lag3",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "lag_at",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "lag_at_date",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "asset_growth",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dividend_history_complete",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "d",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "funda_merge",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "funda_key_ambiguous",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ceo_start_after_fye",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ceo_left_by_fye",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ceo_at_fye_candidate",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "active_ceo_count",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "selected_ceo",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "event_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "valuation_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sic2",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_funda",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_industry",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_positive_assets_me",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "tenure_years",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ln_tenure",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ccm_n_distinct_permno",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "permno",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_ccm_unique",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rf_date",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "rf_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rf_gap_days",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "r",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "S",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sigma60",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_month_returns",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_month_prices",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sigma60_complete",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sigma60_price_start_month",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sigma60_return_start_month",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sigma60_end_month",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sigma60_failure",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "retvol255",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_daily_returns",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_market_days",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "retvol255_complete",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "retvol255_window_start",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "retvol255_window_end",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "last_trade_date",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "last_market_date_le_fye",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "last_shrcd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "last_exchcd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "market_history_age_days",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "retvol255_failure",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "n_option_tranches",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_valid_tranches",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "exer_quantity_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "unexer_quantity_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "unearned_quantity_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "option_value_partial_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "option_delta_partial_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "option_vega_partial_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_award_identity_mismatch",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_award_identity_missing",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_missing_award_number",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_negative_award_quantity",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_duplicate_award_key",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_award_category_missing",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "exer_quantity_difference_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "unexer_quantity_difference_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "annual_counts_disclosed",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "annual_counts_reconciled",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "zero_options_explicit",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "portfolio_complete",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "portfolio_reason",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "option_value_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "option_delta_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "option_vega_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "stock_shares_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "stock_shares_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "equity_a_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "equity_b_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "delta_a_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "delta_b_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "vega_a_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "vega_b_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dv_ratio_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dv_ratio_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "cash_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "inside_debt_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_total_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_rows",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_values_present",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_duplicate_ids",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_difference_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_reconciled",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_total_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_rows",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_values_present",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_duplicate_ids",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_difference_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_reconciled",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_current_security",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_common_us_listing",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_base_eligible",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "size_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "size_ref_n",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "payer_calendar",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rellev_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ln_rellev_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "high_rellev_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "high_appendix_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rellev_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ln_rellev_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "high_rellev_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "high_appendix_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_controls_complete",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_cash_debt_complete",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_measures_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_log_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_measures_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_log_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_ab",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_ab_log",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "period_original",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "period_new",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        }
+      ],
+      "unique_keys": true,
+      "key_values_exact": true,
+      "column_order_exact": true,
+      "shape_exact": true,
+      "passed": true
+    },
+    {
+      "file": "data/processed/table4_b_original_2006_2011.parquet",
+      "key": "event_id",
+      "reference_rows": 5826,
+      "rebuilt_rows": 5826,
+      "reference_columns": 45,
+      "rebuilt_columns": 45,
+      "columns": [
+        {
+          "column": "gvkey",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "fyear",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "datadate",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "permno",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "execid",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "co_per_rol",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "event_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "valuation_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "conm",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "exec_fullname",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sich",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sic2",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "formula_version",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "payer",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "cash_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "inside_debt_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ln_rellev",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "high_rellev",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "delta_vega",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "equity_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "vega_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rellev",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "age",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ln_tenure",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rd_at_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rd_missing",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "capx_at_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "asset_growth",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "mb",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "profitability_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "size_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "re_at",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "retvol255",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_log",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_ab",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_ab_log",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "period_original",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "period_new",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sigma60",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "d",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "r",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "size_ref_n",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "high_appendix",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "profitability_txdi_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "payer_calendar",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        }
+      ],
+      "unique_keys": true,
+      "key_values_exact": true,
+      "column_order_exact": true,
+      "shape_exact": true,
+      "passed": true
+    },
+    {
+      "file": "data/processed/table4_b_extended_2006_2023.parquet",
+      "key": "event_id",
+      "reference_rows": 13828,
+      "rebuilt_rows": 13828,
+      "reference_columns": 45,
+      "rebuilt_columns": 45,
+      "columns": [
+        {
+          "column": "gvkey",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "fyear",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "datadate",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "permno",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "execid",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "co_per_rol",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "event_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "valuation_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "conm",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "exec_fullname",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sich",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sic2",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "formula_version",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "payer",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "cash_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "inside_debt_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ln_rellev",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "high_rellev",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "delta_vega",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "equity_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "vega_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rellev",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "age",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ln_tenure",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rd_at_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rd_missing",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "capx_at_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "asset_growth",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "mb",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "profitability_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "size_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "re_at",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "retvol255",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_log",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_ab",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_ab_log",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "period_original",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "period_new",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sigma60",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "d",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "r",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "size_ref_n",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "high_appendix",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "profitability_txdi_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "payer_calendar",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        }
+      ],
+      "unique_keys": true,
+      "key_values_exact": true,
+      "column_order_exact": true,
+      "shape_exact": true,
+      "passed": true
+    },
+    {
+      "file": "data/processed/table4_b_new_2012_2023.parquet",
+      "key": "event_id",
+      "reference_rows": 8002,
+      "rebuilt_rows": 8002,
+      "reference_columns": 45,
+      "rebuilt_columns": 45,
+      "columns": [
+        {
+          "column": "gvkey",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "fyear",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "datadate",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "permno",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "execid",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "co_per_rol",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "event_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "valuation_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "conm",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "exec_fullname",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sich",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sic2",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "formula_version",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "payer",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "cash_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "inside_debt_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ln_rellev",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "high_rellev",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "delta_vega",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "equity_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "vega_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rellev",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "age",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ln_tenure",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rd_at_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "rd_missing",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "capx_at_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "asset_growth",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "mb",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "profitability_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "size_pct",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "re_at",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "retvol255",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_log",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_ab",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_ab_log",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "period_original",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "period_new",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sigma60",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "d",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "r",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "size_ref_n",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "high_appendix",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "profitability_txdi_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "payer_calendar",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        }
+      ],
+      "unique_keys": true,
+      "key_values_exact": true,
+      "column_order_exact": true,
+      "shape_exact": true,
+      "passed": true
+    },
+    {
+      "file": "data/interim/market_inputs.parquet",
+      "key": "event_id",
+      "reference_rows": 33454,
+      "rebuilt_rows": 33454,
+      "reference_columns": 25,
+      "rebuilt_columns": 25,
+      "columns": [
+        {
+          "column": "event_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "gvkey",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "fyear",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "datadate",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "permno",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sigma60",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_month_returns",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_month_prices",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sigma60_complete",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sigma60_price_start_month",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sigma60_return_start_month",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sigma60_end_month",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sigma60_failure",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "retvol255",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_daily_returns",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_market_days",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "retvol255_complete",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "retvol255_window_start",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "retvol255_window_end",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "last_trade_date",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "last_market_date_le_fye",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "last_shrcd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "last_exchcd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "market_history_age_days",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "retvol255_failure",
+          "value_exact": true,
+          "passed": true
+        }
+      ],
+      "unique_keys": true,
+      "key_values_exact": true,
+      "column_order_exact": true,
+      "shape_exact": true,
+      "passed": true
+    },
+    {
+      "file": "data/interim/option_portfolios.parquet",
+      "key": "valuation_id",
+      "reference_rows": 35151,
+      "rebuilt_rows": 35151,
+      "reference_columns": 67,
+      "rebuilt_columns": 67,
+      "columns": [
+        {
+          "column": "valuation_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "event_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "gvkey",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "fyear",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "execid",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "co_per_rol",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "datadate",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "S",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sigma60",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "d",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "r",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "salary",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "bonus",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "shrown_excl_opts",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "stock_unvest_num",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "defer_balance_tot",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_value_tot",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "opt_unex_exer_num",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "opt_unex_unexer_num",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_option_tranches",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_valid_tranches",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "exer_quantity_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "unexer_quantity_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "unearned_quantity_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "option_value_partial_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "option_delta_partial_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "option_vega_partial_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_award_identity_mismatch",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_award_identity_missing",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_missing_award_number",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_negative_award_quantity",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_duplicate_award_key",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "any_award_category_missing",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "exer_quantity_difference_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "unexer_quantity_difference_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "annual_counts_disclosed",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "annual_counts_reconciled",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "zero_options_explicit",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "portfolio_complete",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "portfolio_reason",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "option_value_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "option_delta_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "option_vega_usd",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "stock_shares_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "stock_shares_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "equity_a_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "equity_b_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "delta_a_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "delta_b_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "vega_a_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "vega_b_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dv_ratio_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "dv_ratio_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "cash_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "inside_debt_m",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_total_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_rows",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_values_present",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_duplicate_ids",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_difference_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "pension_detail_reconciled",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_total_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_rows",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_values_present",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_duplicate_ids",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_difference_k",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "deferred_detail_reconciled",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        }
+      ],
+      "unique_keys": true,
+      "key_values_exact": true,
+      "column_order_exact": true,
+      "shape_exact": true,
+      "passed": true
+    },
+    {
+      "file": "audits/ceo_selection_audit.parquet",
+      "key": "anncomp_row_id",
+      "reference_rows": 38591,
+      "rebuilt_rows": 38591,
+      "reference_columns": 16,
+      "rebuilt_columns": 16,
+      "columns": [
+        {
+          "column": "anncomp_row_id",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "gvkey",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "fyear",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "execid",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "co_per_rol",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "exec_fullname",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "ceoann",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "datadate",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "becameceo",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "leftofc",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "annual_ceo_count",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "active_ceo_count",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ceo_start_after_fye",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "ceo_left_by_fye",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "selected_ceo",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "funda_key_ambiguous",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        }
+      ],
+      "unique_keys": true,
+      "key_values_exact": true,
+      "column_order_exact": true,
+      "shape_exact": true,
+      "passed": true
+    },
+    {
+      "file": "audits/sample_selection_audit.parquet",
+      "key": "event_id",
+      "reference_rows": 35151,
+      "rebuilt_rows": 35151,
+      "reference_columns": 36,
+      "rebuilt_columns": 36,
+      "columns": [
+        {
+          "column": "gvkey",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "fyear",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "datadate",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "permno",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "execid",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "co_per_rol",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "event_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "valuation_id",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "conm",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "exec_fullname",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "sich",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sic2",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_funda",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_industry",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_positive_assets_me",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_ccm_unique",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_common_us_listing",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_controls_complete",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_cash_debt_complete",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "portfolio_complete",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_measures_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "flag_measures_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_log_a",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_log_b",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_ab",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sample_ab_log",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "first_exclusion_a",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "first_exclusion_b",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "portfolio_reason",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "n_option_tranches",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "n_valid_tranches",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "zero_options_explicit",
+          "numeric_exact": true,
+          "maximum_scaled_error": 0.0,
+          "passed": true
+        },
+        {
+          "column": "sigma60_failure",
+          "value_exact": true,
+          "passed": true
+        },
+        {
+          "column": "retvol255_failure",
+          "value_exact": true,
+          "passed": true
+        }
+      ],
+      "unique_keys": true,
+      "key_values_exact": true,
+      "column_order_exact": true,
+      "shape_exact": true,
+      "passed": true
+    }
+  ],
+  "numeric_tolerance": "abs(actual-reference)/max(1,abs(reference)) <= 1e-12",
+  "all_numeric_columns_exact": true,
+  "all_company_year_ids_and_sample_flags_compared": true
+}

@@ -1,0 +1,77 @@
+--- original
++++ package
+@@ -1,18 +1,21 @@
++# Portable package adaptation: only I/O roots, source-column projection and annual-B output scope changed.
+ """Precisely audit and match existing R&D scores. No estimation or new predictions."""
+ from pathlib import Path
+ import argparse, hashlib, json, re, unicodedata
+ from datetime import datetime, timezone
+ import numpy as np
+ import pandas as pd
+-ROOT=Path(__file__).resolve().parents[3]
+-REP=Path(__file__).resolve().parents[1]
++import os
++ROOT=Path(os.environ['FULLRAW_INPUT_ROOT']).resolve()
++REP=Path(os.environ['FULLRAW_OUTPUT_ROOT']).resolve()/'replications/caliskan_doukas_2015'
++INPUT_REP=ROOT/'replications/caliskan_doukas_2015'
+ SCORE=ROOT/'data/panel/risk_scores.parquet'
+ PANEL=ROOT/'data/panel/ceo_firm_year_panel.parquet'
+ CMAP=ROOT/'data/panel/component_map.parquet'
+-TRANS=ROOT/'data/replication_sample/transcripts_is_ceo.pickle'
+-ANN=REP/'data/raw/execucomp/anncomp_1992_2023_allfields.csv.gz'
++TRANS=ROOT/'data/replication_sample/transcript_identity.pickle.gz'
++ANN=INPUT_REP/'data/raw/execucomp/anncomp_1992_2023_allfields.csv.gz'
+ MASTER=REP/'data/processed/panel_master_audit.parquet'
+-FUNDA=REP/'data/raw/compustat/funda_datadate_2003-01_2024-06.csv.gz'
++FUNDA=INPUT_REP/'data/raw/compustat/funda_datadate_2003-01_2024-06.csv.gz'
+ def sha(p):
+  h=hashlib.sha256()
+  with open(p,'rb') as f:
+@@ -30,18 +33,15 @@
+  df.to_parquet(p.with_suffix('.parquet'),index=False)
+  csv(df,p.with_suffix('.csv'))
+ def main():
+- ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,default=REP/'data/matched/rd_scores_20261025');args=ap.parse_args();out=args.out.resolve()
++ ap=argparse.ArgumentParser();ap.add_argument('--out',type=Path,default=REP/'data/matched/local');args=ap.parse_args();out=args.out.resolve()
+  if out.exists():raise FileExistsError('Existing output is never overwritten; select new --out: '+str(out))
+- for d in ['', 'audit','annual','pceo']:(out/d).mkdir(parents=True,exist_ok=True)
++ for d in ['', 'audit','annual']:(out/d).mkdir(parents=True,exist_ok=True)
+  score=pd.read_parquet(SCORE)
+  panel=pd.read_parquet(PANEL,columns=['panel_id','gvkey','year','ceo_id','ceo_name','companyid','tic','datadate','fold','split_group','n_components','n_transcripts','total_words'])
+  master=pd.read_parquet(MASTER)
+- annual=sorted((REP/'data/processed').glob('table4_*.parquet'))
+- pceo=sorted((REP/'results/table4_pceo_20261024/input/data/processed').glob('table4_*.parquet'))
+- assert len(annual)==len(pceo)==6
+- protected=[SCORE,PANEL,CMAP,TRANS,ANN,MASTER,FUNDA,ROOT/'data/panel/risk_scores.json',ROOT/'scripts/risk_score.py',ROOT/'agents_coop/claude.md',*annual,*pceo]
+- for branch in ['table4_20261024','table4_pceo_20261024']:
+-  protected+=list((REP/'results'/branch).rglob('*.csv'))+list((REP/'results'/branch).glob('*manifest.json'))
++ annual=sorted((REP/'data/processed').glob('table4_b_*.parquet'))
++ assert len(annual)==3, 'Expected three annual-B periods from raw reconstruction'
++ protected=[SCORE,PANEL,CMAP,TRANS,ANN,MASTER,FUNDA,*annual]
+  protected=sorted(set(protected));before={str(f):sha(f) for f in protected}
+  assert score.panel_id.is_unique and not score.duplicated(['gvkey','year']).any()
+  assert not master.duplicated(['gvkey','fyear']).any()
+@@ -156,7 +156,7 @@
+  def summarize(df,branch,version,period):
+   counts.append(dict(branch=branch,version=version,period=period,input_n=len(df),source_year_overlap_n=int(df.fyear.between(2013,2023).sum()),key_candidate_n=int(df.score_key_match.sum()),entity_matched_n=int(df.score_entity_match.sum()),company_name_support_in_entity_n=int((df.score_entity_match&df.score_company_name_support).sum()),fiscal_compatible_n=int(df.score_fiscal_compatible.sum()),strict_equal_period_n=int(df.score_strict_period_match.sum()),entity_speech_after_fye_n=int((df.score_entity_match&df.score_speech_after_fye).sum()),entity_speech_before_start_n=int((df.score_entity_match&df.score_speech_before_fiscal_start).sum())))
+  summarize(j,'master','all','2006_2023')
+- for branch,files in [('annual',annual),('pceo',pceo)]:
++ for branch,files in [('annual',annual)]:
+   for src in files:
+    df=pd.read_parquet(src);z=df.merge(payload,on=['gvkey','fyear'],how='left',validate='1:1',indicator='payload_join');assert z.payload_join.eq('both').all();z=z.drop(columns='payload_join')
+    pd.testing.assert_frame_equal(z[df.columns].reset_index(drop=True),df.reset_index(drop=True))
+@@ -173,11 +173,11 @@
+  csv(p[~p.score_panel_id.isin(j.score_panel_id.dropna().astype(int))],out/'audit/source_rows_without_target.csv')
+  conflict=ceolinks[ceolinks.map(len)>1].rename('execids').reset_index();conflict.execids=conflict.execids.map(json.dumps);csv(conflict,out/'audit/source_ceo_id_conflicts.csv')
+  after={str(f):sha(f) for f in protected};assert before==after,'Protected source/result/Claude file changed during run'
+- validation=dict(all_protected_sha256_unchanged=True,protected_file_count=len(before),source_rows=len(score),mapped_components=len(mapped),source_key_equality=True,one_to_one_target=True,all_original_fields_exact=True,oof_transform_values_exact=True,no_regressions_or_retraining=True,no_ticker_or_ceo_year_only_join=True,no_official_vendor_crosswalk_downloaded=True,source_claude_sha256=after[str(ROOT/'agents_coop/claude.md')])
++ validation=dict(all_protected_sha256_unchanged=True,protected_file_count=len(before),source_rows=len(score),mapped_components=len(mapped),source_key_equality=True,one_to_one_target=True,all_original_fields_exact=True,oof_transform_values_exact=True,no_regressions_or_retraining=True,no_ticker_or_ceo_year_only_join=True,local_stage_does_not_apply_official_crosswalk=True)
+  (out/'audit/validation.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2),encoding='utf-8')
+- manifest=dict(created_utc=datetime.now(timezone.utc).isoformat(),operator='Codex',scope='matching_only_no_regression',output_root=str(out),source_sha256=before,source_score_columns=sc,oof_columns=oof,source_year_definition='speech calendar year deliberately equated to Compustat fyear label in source design',target_unit='unique gvkey+fyear plus selected annual/FYE ExecuComp CEO; PCEO adds frozen filter',entity_policy='exact gvkey/fyear and datadate; unique inherited source execid (or global singleton ceo_id bridge); selected execid equal; first-initial/surname support; no source ceo/person/company conflicts; one companyid',period_policy='No shifting or reaggregation. Entity score columns preserve source label convention. strict_ columns additionally require actual previous fiscal end+1=Jan1 and fiscal end=Dec31 of speech year, all observed components inside FY, no known CEO tenure date conflict',provenance_limit='Inherited execid creation procedure and official vendor links unavailable; locally supported identity, not independently vendor certified. No name-only matches.',output_tables=enriched,coverage=counts,validation=validation)
++ manifest=dict(created_utc=datetime.now(timezone.utc).isoformat(),operator='Codex',scope='matching_only_no_regression',output_root=str(out),source_sha256=before,source_score_columns=sc,oof_columns=oof,source_year_definition='speech calendar year deliberately equated to Compustat fyear label in source design',target_unit='unique gvkey+fyear plus selected annual/FYE ExecuComp CEO; annual-B only, no PCEO filter',entity_policy='exact gvkey/fyear and datadate; unique inherited source execid (or global singleton ceo_id bridge); selected execid equal; first-initial/surname support; no source ceo/person/company conflicts; one companyid',period_policy='No shifting or reaggregation. Entity score columns preserve source label convention. strict_ columns additionally require actual previous fiscal end+1=Jan1 and fiscal end=Dec31 of speech year, all observed components inside FY, no known CEO tenure date conflict',provenance_limit='Inherited execid creation procedure and official vendor links unavailable; locally supported identity, not independently vendor certified. No name-only matches.',output_tables=enriched,coverage=counts,validation=validation)
+  (out/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf-8')
+- report=['# R&D score 匹配报告','','日期：2026-10-24（America/New_York；输出目录日期为UTC）。操作者：Codex。本步仅匹配，没有回归、重训或新分数推断。','','## 单位与分数','','源为公司×讲话自然年（2013–2023），选择发言词数最多的讲话者；目标为公司财政年及所选年度/FYE CEO。不能为2006–2011原期提供现有分数，也不跨公司搬用CEO分数。','risk_score_ridge、risk_score_xgboost及clip0/pct/z为原交叉拟合值；百分位和z保留全源29,506行的尺度。candidate_*保留源值，包括_full供审计；_full不作为后续主回归指标。','','## 标记','','- score_key_match：同公司/年份标签候选，不足以证明CEO相同。','- score_entity_match：本地实体证据通过，risk_score_*仅在这些行填值；必须同时查时间口径。','- score_fiscal_compatible：所有构成分数的实际讲话日期在目标实际财年内，且无已知任职日期冲突；年度窗口仍可能不同。','- score_strict_period_match：再要求源自然年与实际财年区间完全相等，strict_risk_score_*只在这些行填值。','- 任职开始/离职日期缺失各有标记；不触发已知冲突不等于证明全年连续任职。','','## 覆盖（输入行数，不是回归实际N）','',pd.DataFrame(counts).to_string(index=False),'','## 核验和局限','','1. 逐条核对1,420,208条component，orig_idx到orig_row一对一；源CEO、年份、component数、transcript数和词数一致。','2. 不用ticker连接、不用CEO-year单独连接、不做模糊姓名补配；同一人员ID混入不同人或同一分数混入多家公司时隔离。','3. 源execid为原始pickle携带字段，其创建程序和官方vendor桥未取得，因此实体匹配是本地证据支持，不称官方独立认证。公司名辅助检查保留；不能把子公司名称机械当发行人ID。','4. 已查官方WRDS说明：WRDS_GVKEY连接companyid/gvkey；本次CDP读取两次超时、原生App授权超时，未能取已登录连接表。需后续独立复核官方公司与People Link桥。','5. 没有静默平移年份或重聚合源分数；非同窗口行保留。要构造真正财年分数须另做方法决定和重聚合/交叉拟合，不在本步执行。','6. 分数是用R&D监督训练的预测指标；匹配不证明其独立识别CEO风险偏好。','','## 文件入口','','- master_with_rd_scores.*：保留全部35,151目标行；master_entity_matched.*和master_strict_period_matched.*为两种明确子集。','- annual/、pceo/各6张原Table4表的新增列版本，所有原字段和行数精确保留。','- coverage_summary.csv、coverage_by_year.csv：覆盖统计。','- audit/all_target_rows.*：逐行证据；rejected_or_unresolved_candidates.csv、entity_matched_period_review.csv、no_score_candidates.csv、source_rows_without_target.csv为待核清单。','- audit/source_score_identity.*与source_ceo_id_conflicts.csv：源歧义。','- audit/validation.json、manifest.json、output_manifest.json：规则、源和产物SHA、核验。','','用法：读master_with_rd_scores.parquet，最保守子样本筛score_strict_period_match，使用strict_risk_score_ridge/strict_risk_score_xgboost。若沿用源自然年=财年标签设计，可筛score_entity_match并使用risk_score_*，但须明确其时间定义，不能称为财年内全部讲话重构分数。','']
++ report=['# Local source-identity matching replay','','This is the first matching stage. It reconstructs inherited-ID, name, company and period guards from the frozen score-source records. It does not certify official identity; the following official stage applies the supplied raw WRDS company and person bridges.','','All 1,775,355 raw identity rows are retained before global conflict detection. component_map then selects 1,420,208 actual score components. Frozen OOF scores are never retrained or relabeled.','','Only the three annual-B period tables are enriched. No PCEO or A branch is run.','','## Coverage','',pd.DataFrame(counts).to_string(index=False),'','## Reproduction','','From the package directory run: python code/matching_stage.py --stage all. The raw financial/CEO reconstruction must be completed first.','Source data and hashes are listed in manifest.json; per-row guards and unresolved candidates are under audit/.','']
+  (out/'MATCH_REPORT.md').write_text('\n'.join(report),encoding='utf-8')
+  outputs=[f for f in out.rglob('*') if f.is_file() and f.name not in {'output_manifest.json','READY.txt'}]
+  (out/'output_manifest.json').write_text(json.dumps([dict(path=str(f.relative_to(out)),bytes=f.stat().st_size,sha256=sha(f)) for f in outputs],ensure_ascii=False,indent=2),encoding='utf-8')

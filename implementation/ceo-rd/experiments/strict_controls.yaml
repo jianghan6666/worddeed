@@ -1,0 +1,39 @@
+# 更严格的 controls 下 topics 是否仍有增量（原 robustness_controls.py）
+#
+# 配置格式：
+#   targets       目标变量：rd_at_fill0 / rd_at / rd_sale_fill0 / rd_sale（fill0 = xrd 缺失视为 0）
+#   require       样本限定：这些变量非缺失（y_lag = 上一年 R&D ratio）
+#   control_sets  控制变量组合；text_sets 文本特征组合。每个 control set x text set 的组合都会运行，
+#                 特征 = 两者变量之和（都为空的组合跳过）
+#   可用变量      numeric: log_at, y_lag, ceo_age, sentiment
+#                 categorical: sic2, sic3, sic4, year, ceo_gender, ceo_educ
+#                 topics（354 维 topic，CLR 变换）
+#   models        ridge / xgboost / mlp / random_forest；可用 params 覆盖默认参数，grid 覆盖调参网格
+#   comparisons   计算 R² 增量的比较：
+#                 text: [from, to]       在每个 control set 内比较两个 text set
+#                 control: [from, to]    在每个 text set 内比较两个 control set（可以给多组）
+
+name: strict_controls
+targets: [rd_at_fill0, rd_sale_fill0]
+require: [y_lag]
+
+control_sets:
+  base:     [log_at, sic2, year]
+  sic3:     [log_at, sic3, year]
+  sic4:     [log_at, sic4, year]
+  lag:      [log_at, y_lag, sic2, year]
+  lag+sic4: [log_at, y_lag, sic4, year]
+
+text_sets:
+  none:   []
+  topics: [topics]
+
+models:
+  ridge: {}
+  xgboost:
+    params: {min_child_weight: 10}
+    grid: {max_depth: [3, 6]}
+
+comparisons:
+  - label: topics | controls
+    text: [none, topics]

@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "table": "local source identity",
+      "rows": 29506,
+      "reference_columns_checked": 55,
+      "extra_generated_columns": [],
+      "all_IDs_exact": true,
+      "nonnumeric_exact": true,
+      "numeric_exact": true,
+      "max_scaled_numeric_error": 0.0
+    },
+    {
+      "table": "official source identity",
+      "rows": 29506,
+      "reference_columns_checked": 81,
+      "extra_generated_columns": [],
+      "all_IDs_exact": true,
+      "nonnumeric_exact": true,
+      "numeric_exact": true,
+      "max_scaled_numeric_error": 0.0
+    },
+    {
+      "table": "full master official flags",
+      "rows": 35151,
+      "reference_columns_checked": 348,
+      "extra_generated_columns": [],
+      "all_IDs_exact": true,
+      "nonnumeric_exact": true,
+      "numeric_exact": true,
+      "max_scaled_numeric_error": 0.0
+    },
+    {
+      "table": "annualB official matches",
+      "rows": 13828,
+      "reference_columns_checked": 192,
+      "extra_generated_columns": [],
+      "all_IDs_exact": true,
+      "nonnumeric_exact": true,
+      "numeric_exact": true,
+      "max_scaled_numeric_error": 0.0
+    }
+  ],
+  "annual_B_2013_2023_rows": 7086,
+  "strict_2013_2023_rows": 2967,
+  "company_firms": 600,
+  "CEOs": 771,
+  "original_scores_retrained": false,
+  "reference_frames_used_for_construction": false
+}

@@ -1,0 +1,22 @@
+# 复制为 configs/paths.yaml 并按本机数据位置修改（configs/paths.yaml 不进版本控制）。
+# 相对路径以运行命令时的工作目录（项目根目录）为基准。
+
+# Capital IQ transcript component 级数据（不含文本），index 须为 0..N-1，与 topic 矩阵逐行对齐
+transcripts: data/t_combined_nodup_13-23_compNameOK_retainedNoEmpty_namesANDcomps_removed_w_scores_5years_ticker_sentiment_title_demos_NoText.pickle
+
+# component 级 topic density（N x 354），npz 内的数组名为 topics_key
+topics: data/topic_density/13-23_354Tpoics/topic_distr_Full_wNoIdeoLabel.npz
+topics_key: topic_distr
+
+# Compustat Fundamentals Annual
+compustat: data/ceo_and_firm/compustat_fundamentals_annual_2010-2025.csv
+
+# Topic modeling：训练与推断用的文本（含 componenttext_masked 与 averageDem 两列；行顺序与 transcripts 一致）
+corpus: data/t_combined_nodup_13-23_compNameOK_retainedNoEmpty_namesANDcomps_removed_w_scores_sentiment.pickle
+
+# 训练好的 BERTopic 模型目录
+models_dir: models
+
+# 输出位置
+panel_dir: data/panel
+results_dir: results

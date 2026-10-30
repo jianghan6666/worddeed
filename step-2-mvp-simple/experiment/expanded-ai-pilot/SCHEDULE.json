@@ -1,0 +1,522 @@
+{
+  "status": "ratified_twelve_trial_study_complete",
+  "design": "PLAN.md",
+  "topic_count": 354,
+  "configuration_count": 6,
+  "ensemble_trial_count": 12,
+  "reader_session_count": 36,
+  "planned_topic_judgments": 25488,
+  "randomization": "Historical order was filtered from revision 8 using seed 20261020. Amendment 1 grouped P0–P6 with original order within each prompt. Amendment 2 preserves that admission order while allowing capacity-driven overlap; no outcome-informed ordering.",
+  "randomization_seed": 20261020,
+  "catalogue_path": "step-2-mvp/topic-screening-v2/deliverables/2026-10-19/catalogue.json",
+  "input_sha256": {
+    "step-2-mvp/topic-screening-v2/deliverables/2026-10-19/catalogue.json": "3b5043ff0d62f0f9825e15d9c69417d65de8548b7bed81a19b6953dcefefe018",
+    "step-2-mvp-simple/prompt.md": "caad9652e031fd7a85b8a4b334021b242839d28cccd94dc7f93b1c5eda71a031",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/MODEL_ROSTER.json": "ec796461746b93c10b642c1b91f519537a2bbdc34b1b1bcfd3142371bb469bb2",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md": "93358bb60df3b82069885dc624a6c92e52e877dec38faed5d7132bd2e3426756",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P1-role.md": "91d8af25385ba185ce608c8970ad765e7d596aa793b5bb371142b8421783c1e7",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P2-criteria.md": "283bd4bfa38a6313a2ecf2d10413792a8107ea25d50ced5fb3f68f7ee648d2e6",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P3-reflection.md": "4acf28622f68ef2f192f8a476885569b22155624ed406dc2b5cdac02cf0a8521",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P5-tree.md": "015a3a81ca5223dc829ef6cce3204eac2afb772f6c1bb07fa7e98090e7bb9ca0",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P6-examples.md": "026d2c1480789a1fd94fbed30f6d053e24c3ed7adea8cbbfc42e12a0b4fe8589",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/PLAN.md": "ba53e6b4519b949ea44acf8ac0119bb88e54a6d7d9bc0a9f26ac63c4ff885200",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P4-repeat.md": "1e8b312995e62139f1d6de699b0d8ab16376bd48dd8e1320e91976b4f7adebd6",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/READER_OUTPUT_ADDENDUM.md": "72e1588fa112a777ec23d35ae4e3c21fd73e48c88cfd5f40d9511d8a57eeb04d",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/SOURCE_REVIEW_PROMPT.md": "ca09d6641f8c340d5c87249ae37c100d55a4e796e8b45dc6e355f4e6edd6724f"
+  },
+  "jobs": [
+    {
+      "dispatch_order": 1,
+      "block": 1,
+      "trial_id": "b1-gpt-6-astra-P0-high",
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b1-gpt-6-astra-P0-high",
+      "original_dispatch_order": 9,
+      "execution_order": 1,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 2,
+      "block": 1,
+      "trial_id": "b1-gpt-6.1-sol-P0-medium",
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b1-gpt-6.1-sol-P0-medium",
+      "original_dispatch_order": 13,
+      "execution_order": 2,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 3,
+      "block": 1,
+      "trial_id": "b1-gpt-6-astra-P0-xhigh",
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b1-gpt-6-astra-P0-xhigh",
+      "original_dispatch_order": 14,
+      "execution_order": 3,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 4,
+      "block": 1,
+      "trial_id": "b1-gpt-6-astra-P0-medium",
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b1-gpt-6-astra-P0-medium",
+      "original_dispatch_order": 16,
+      "execution_order": 4,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-02",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 5,
+      "block": 1,
+      "trial_id": "b1-gpt-6.1-sol-P0-high",
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b1-gpt-6.1-sol-P0-high",
+      "original_dispatch_order": 18,
+      "execution_order": 5,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 6,
+      "block": 1,
+      "trial_id": "b1-gpt-6.1-sol-P0-xhigh",
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b1-gpt-6.1-sol-P0-xhigh",
+      "original_dispatch_order": 19,
+      "execution_order": 6,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-01",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 7,
+      "block": 2,
+      "trial_id": "b2-gpt-6.1-sol-P0-high",
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b2-gpt-6.1-sol-P0-high",
+      "original_dispatch_order": 60,
+      "execution_order": 7,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 8,
+      "block": 2,
+      "trial_id": "b2-gpt-6-astra-P0-medium",
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b2-gpt-6-astra-P0-medium",
+      "original_dispatch_order": 66,
+      "execution_order": 8,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 9,
+      "block": 2,
+      "trial_id": "b2-gpt-6-astra-P0-xhigh",
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b2-gpt-6-astra-P0-xhigh",
+      "original_dispatch_order": 72,
+      "execution_order": 9,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 10,
+      "block": 2,
+      "trial_id": "b2-gpt-6.1-sol-P0-medium",
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "medium",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b2-gpt-6.1-sol-P0-medium",
+      "original_dispatch_order": 73,
+      "execution_order": 10,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 11,
+      "block": 2,
+      "trial_id": "b2-gpt-6-astra-P0-high",
+      "model": "gpt-6-astra",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "high",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b2-gpt-6-astra-P0-high",
+      "original_dispatch_order": 78,
+      "execution_order": 11,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-04",
+        "prompt_owner": "CMD-P0"
+      }
+    },
+    {
+      "dispatch_order": 12,
+      "block": 2,
+      "trial_id": "b2-gpt-6.1-sol-P0-xhigh",
+      "model": "gpt-6.1-sol",
+      "prompt_id": "P0",
+      "prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md",
+      "effort": "xhigh",
+      "reader_slots": [
+        "A",
+        "B",
+        "C"
+      ],
+      "out": ".local/step2-expanded-ai-pilot-v9/b2-gpt-6.1-sol-P0-xhigh",
+      "original_dispatch_order": 82,
+      "execution_order": 12,
+      "dispatch_owner": "current_coordinating_chat",
+      "historical_coordination": {
+        "model_block_owner": "CMD-03",
+        "prompt_owner": "CMD-P0"
+      }
+    }
+  ],
+  "design_revision": 9,
+  "efforts": [
+    "medium",
+    "high",
+    "xhigh"
+  ],
+  "previous_supersessions": [
+    {
+      "design_revision": 1,
+      "status": "unexecuted_high_only_design",
+      "commit": "555d1917059076297e1c6e55bd1e8e1e0fb15e5f",
+      "schedule_sha256": "1ed1afc9fb85b8e9babad667d1cefafb1fc5271731d5ff6524dcd49c7f53b4fb",
+      "pull_request": "https://github.com/joyzhzh/narrative-behavior-measurement/pull/11"
+    },
+    {
+      "design_revision": 2,
+      "status": "unexecuted_cli_oriented_design",
+      "commit": "c6b304745d2cee781431330078ebef84c9bc52c6",
+      "schedule_sha256": "b06082a00d973b0c659250e8deaee624531e7dd2f7c688709ac697743396e077",
+      "pull_request": "https://github.com/joyzhzh/narrative-behavior-measurement/pull/12"
+    },
+    {
+      "design_revision": 3,
+      "status": "local_uncommitted_planning_only_design",
+      "schedule_sha256": "6741d7f9dbdcde5cccd1d8bf9f1cc2e55ef06f246d1f825e778e9d32fb6ec24a",
+      "commit": null,
+      "archive": "planning-revision-3 snapshot retained with the private 2026-10-20 source inspection"
+    },
+    {
+      "design_revision": 4,
+      "status": "local_uncommitted_inspection_only_passage_design",
+      "schedule_sha256": "68116f788bc98b27d8381d57cd26aeaf964b47b91d963cb8a08bb75c6af0edae",
+      "commit": null,
+      "archive": "planning-revision-4 snapshot retained with the private 2026-10-20 source inspection"
+    },
+    {
+      "design_revision": 5,
+      "status": "local_uncommitted_two_stage_plan_before_stage_based_wording",
+      "schedule_sha256": "5d55f840574820bd1477b8dc569b0e64f1eea68c3c8d05cc05eb6c53aab91c71",
+      "commit": null,
+      "archive": "planning-revision-5 snapshot retained with the private 2026-10-20 source inspection"
+    },
+    {
+      "design_revision": 6,
+      "status": "unexecuted_seven_model_two_stage_plan",
+      "schedule_sha256": "2df0cbbed2b56583f97cd56ac8175b6b1f5c128f12123e26d94aafff808472cf",
+      "commit": "fa0cff37c2c9aae060eca37284e51c1cd9c590e4",
+      "pull_request": "https://github.com/joyzhzh/narrative-behavior-measurement/pull/13"
+    }
+  ],
+  "execution": {
+    "authorized": false,
+    "authorization_date": "2026-10-21",
+    "authorization": "Collection complete; scope ratification authorizes private plan/results integration, not further reader dispatch.",
+    "seat_type": "visible_standalone_native_chat",
+    "reader_context": "fresh_chat_per_assignment_same_chat_through_A_and_all_18_B_pages",
+    "dispatch_owner": "current_coordinating_chat",
+    "execution_schedule_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/startup-promptwise/EXECUTION_SCHEDULE.json",
+    "seat_plan_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/SEAT_PLAN.md",
+    "launch_sequence": [],
+    "concurrency": "historical capacity-driven overlap; all 36 readers are finished",
+    "cross_trial_completion_barrier": false,
+    "cross_prompt_completion_barrier": false,
+    "cross_block_completion_barrier": false,
+    "per_trial_barriers": [
+      "all three Stage A attempts sealed or explicitly missing before any Stage B release",
+      "all three reviewed dispositions sealed or explicitly missing before comparison"
+    ],
+    "readiness": "prepared_runtime_and_relevant_preflight_evidence_retained_no_new_readiness_campaign",
+    "final_independent_qa": "closed_without_final_QA_PASS",
+    "source_packet_status": "frozen_scientific_bytes_unchanged",
+    "cli_execution": "not_the_study_procedure",
+    "runtime_root": ".local/step2-expanded-ai-pilot-v9/",
+    "existing_first_trio": "retain existing chats, frozen inputs and work; do not restart",
+    "status": "completed_no_new_admissions"
+  },
+  "implementation_reference_sha256": {
+    "step-2-mvp-simple/run.py": "bf89abc228f5156983d43df7705741fe34ce3cc1e74033e79dc8fa70e82c28b3",
+    "step-2-mvp-simple/engine.py": "ad7e4d89203d4f7736bdbad7a709d7e28e2dbd9c7c5b5d049e13afd41d3ca2ec",
+    "step-2-mvp/topic-screening-v2/topic_screening/core.py": "f092fc672a938ddbd16368d34460cf697e3f31ab63b9c3cae0c9b827a97bb21d"
+  },
+  "implementation_reference_note": "Existing one-stage import/aggregation and CLI code retained as historical references; these hashes do not establish support for the planned two-stage standalone workflow.",
+  "reader_packet": {
+    "initial_descriptor": [
+      "frozen P0 template",
+      "initial confidence/output addendum",
+      "compatible initial schema",
+      "complete ordered topic_id/name/keywords catalogue",
+      "frozen administrative assignment and storage instructions"
+    ],
+    "source_review": [
+      "common source-review prompt",
+      "own sealed initial response or explicit missing-attempt record",
+      "same frozen source passages and necessary attribution metadata",
+      "compatible reviewed schema"
+    ],
+    "peer_evidence_allowed": false,
+    "source_passages_in_initial_context": false,
+    "source_passages_in_review_context": true,
+    "source_inspection_report_in_reader_context": false,
+    "release_rule": "all three initial attempts sealed or explicitly missing before source release; all reviews sealed before peer comparison",
+    "note": "Revision 9 preserves frozen scientific prompt/schema/packet bytes and common same-chat Stage B pages; adapt only administrative schedule/runtime bindings."
+  },
+  "planning_reference_sha256": {
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/OUTPUT_CONTRACT.md": "e3b110971142b4eac02b9cb85d2aa993eb5c267f9e9adf0b624fea6229c4c1b8",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/SOURCE_TRACE_INSPECTION.md": "f025b3f6883fdd763e536cabd571683efaf4eb7363a6b6c32ebfffc119b58257",
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/SEAT_PLAN.md": "75df835f3747c65cd734b3c9e0fd118c87f984e3c59c12cca7706bc34a606fa9"
+  },
+  "planned_topic_judgments_per_stage": 12744,
+  "planned_reader_stage_responses": 72,
+  "count_note": "Ratified after collection: 12 paired two-stage trials, 36 independent reader chats, 72 logical stage records. Counts are not independent topic experiments or exact call counts.",
+  "study_stages": [
+    {
+      "id": "initial_descriptor",
+      "order": 1,
+      "template_scope": "P0 only",
+      "common_addendum_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/READER_OUTPUT_ADDENDUM.md",
+      "evidence": "topic names and ranked keywords only",
+      "seal_before_source_release": true
+    },
+    {
+      "id": "source_review",
+      "order": 2,
+      "common_prompt_path": "step-2-mvp-simple/experiment/expanded-ai-pilot/SOURCE_REVIEW_PROMPT.md",
+      "evidence": "same descriptors plus three frozen saved representative passages per topic and source attribution",
+      "reader_context": "continue_same_reader_chat_same_model_and_effort",
+      "seal_before_peer_comparison": true
+    }
+  ],
+  "majority": {
+    "final_stage": "source_review",
+    "rule": "two_matching_resolved_labels_out_of_three",
+    "confidence_weighted": false,
+    "initial_majority": "preserve_separately_for_paired_comparison",
+    "fallback_to_initial_label": false,
+    "combine_stages_as_votes": false
+  },
+  "source_packet": {
+    "status": "frozen_revision_8_scientific_packet_retained",
+    "sha256": "233c2a471a8ec7856de24ce05c2544a220fb712f425a64699d701753b820258f",
+    "regular_topics": 354,
+    "representative_entries": 1062,
+    "passages_per_topic": 3,
+    "order": "saved representative order within fixed topic order",
+    "same_for_all_conditions": true,
+    "exposure_stage": "source_review",
+    "reader_evidence_excludes": [
+      "peer outputs",
+      "historical pilot labels",
+      "behavior and R&D outcomes",
+      "topic weights and counts",
+      "outside semantic evidence"
+    ],
+    "attribution_note": "Retained masked text; supplied CEO attribution and all duplicate source matches must remain visible. No silent CEO-only filtering or density-based resampling.",
+    "paging": {
+      "starting_topics_per_page": 20,
+      "starting_page_count": 18,
+      "last_page_topics": 14,
+      "same_reader_chat": true,
+      "status": "revision_8_frozen_layout_retained",
+      "source_word_count": 613137,
+      "source_character_count": 3787284,
+      "page_source_word_range": [
+        24119,
+        44205
+      ],
+      "largest_page_source_characters": 271769
+    }
+  },
+  "wording_revision": "protocol_revision_9_unchanged_post_collection_scope_amendment_3",
+  "prompt_strategy_source": {
+    "url": "https://doi.org/10.1002/smj.70023",
+    "locator": "Table 3, printed p.711 / saved PDF p.13; section 3.3",
+    "scope": "Task-specific adaptations of the seven families, not a replication of the published experiment; no human-reference evaluation."
+  },
+  "prompt_strategies": [
+    {
+      "id": "P0",
+      "family": "Zero-shot",
+      "path": "step-2-mvp-simple/experiment/expanded-ai-pilot/prompts/P0-direct.md"
+    }
+  ],
+  "superseded_schedules": [
+    {
+      "design_revision": 8,
+      "status": "superseded_before_any_study_reader_created",
+      "schedule_sha256": "c3caefee47cc6baa15f24c5f30a54d971028e0fd7849cb66d24fb8df6aa6e2c0",
+      "commit": "109aa35837efcd4da9360b5e823f5d75e1006672",
+      "pull_request": "https://github.com/joyzhzh/narrative-behavior-measurement/pull/16"
+    }
+  ],
+  "execution_amendment": 3,
+  "original_scientific_schedule": {
+    "path": "historical/revision-9-SCHEDULE.json",
+    "sha256": "b80e312b4e51ffef320bf85c4ad0613b9b44aeb405f608a0fecf6ee68e37d561",
+    "binding": "Unchanged historical collection binding; ratified scope is the 12-job subset in this file."
+  },
+  "administrative_reference_sha256": {
+    "step-2-mvp-simple/experiment/expanded-ai-pilot/startup-promptwise/EXECUTION_SCHEDULE.json": "8d56ea0c5113de862a6d0837abe6c192ddf41e30dddb1665e42c1cdb667a8a58"
+  },
+  "historical_design_supersession": {
+    "design_revision": 7,
+    "schedule_sha256": "3d101250a463b3e23298d4e8ab7b334537a89fa94fdfd5bed359fb9d53f4c473",
+    "preserved_in": "https://github.com/joyzhzh/narrative-behavior-measurement/pull/15",
+    "reason": "Ratified standalone hierarchy, context paging and execution authorization; same 252 trial assignments and random order."
+  },
+  "supersedes": {
+    "execution_amendment": 2,
+    "path": "historical/amendment-2/SCHEDULE.json",
+    "sha256": "c015dd45e907efb1a820add8129471ea40687e22885f2b7447e39af2fc5452ad",
+    "reason": "Human ratified the completed 12-trial P0 cohort; remaining 72 never-admitted trials are superseded."
+  },
+  "ratification": {
+    "date": "2026-10-21",
+    "authority": "Direct human instruction after completion of the admitted cohort",
+    "instruction": "now edit the plan, the 12 trial plan should be our ratified plan. and then push and merge the results.",
+    "timing": "post_collection_scope_amendment_not_prospective_preregistration",
+    "scope": "2 models × P0 × 3 efforts × 2 repeats = 12 trials; 36 original readers",
+    "historical_extension": {
+      "trials": 72,
+      "status": "never_admitted_superseded_not_pending"
+    },
+    "new_reader_creation_allowed": false,
+    "scientific_protocol_revision": 9,
+    "scope_amendment": 3,
+    "prior_admission_hold_utc": "2026-10-21T02:33:32.417251+00:00",
+    "collection_complete_utc": "2026-10-21T07:34:42.906972+00:00",
+    "note": "Cost concerns prompted the admission hold during collection. The human ratified the resulting cohort after completion and seeing its results; do not present the reduced scope as chosen before collection."
+  }
+}

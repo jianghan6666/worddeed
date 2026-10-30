@@ -1,0 +1,94 @@
+{
+  "downloaded_utc": "2026-10-25T04:47:52.162Z",
+  "operator": "Codex",
+  "purpose": "Official ID verification only; no regression or score retraining",
+  "files": [
+    {
+      "path": "people_link_execucomp_boardex_all.csv.gz",
+      "query_id": 11828366,
+      "query_url": "https://wrds-www.wharton.upenn.edu/query-manager/query/11828366/",
+      "source_url": "https://wrds-www.wharton.upenn.edu/pages/get-data/linking-suite-wrds/wrds-people-link/",
+      "rows": 44373,
+      "fields": [
+        "execid",
+        "exec_lname",
+        "exec_fname",
+        "exec_mname",
+        "exec_fullname",
+        "directorid",
+        "directorname",
+        "forename1",
+        "forename2",
+        "forename3",
+        "forename4",
+        "usualname",
+        "surname",
+        "suffixtitle",
+        "score",
+        "matchStyle"
+      ],
+      "filters": "Pair Execucomp Executives + BoardEx Directors; search entire database (method3); all query outputs; csv/gz",
+      "sql": "SAS wrapper provides no SQL link",
+      "quality_description": "Official variable descriptions: score 1 highest quality, 13 lowest; matchStyle retained verbatim",
+      "bytes": 1391569,
+      "sha256": "7b6dea24b22d69a61cab8fd0786395f8f290de5940c0b042b0b5acc052a88d51"
+    },
+    {
+      "path": "ciq_wrds_gvkey_all.csv.gz",
+      "query_id": 11828375,
+      "query_url": "https://wrds-www.wharton.upenn.edu/query-manager/query/11828375/",
+      "source_url": "https://wrds-www.wharton.upenn.edu/dynamic-query-form/ciq_common/wrds_gvkey/",
+      "dictionary_url": "https://wrds-www.wharton.upenn.edu/data-dictionary/ciq_common/wrds_gvkey/",
+      "rows": 145303,
+      "fields": [
+        "companyid",
+        "gvkey",
+        "companyname",
+        "startdate",
+        "enddate",
+        "primaryflag"
+      ],
+      "filters": "Entire table, all6fields, no date/company/conditional restriction; CSV gzip. Rowcount exactly equals dictionary145303.",
+      "sql_download_url": "https://wrds-www.wharton.upenn.edu/query-manager/query-document/29372381/",
+      "sql_download_status": "Original SQL acquired after delayed browser download; saved as ciq_wrds_gvkey_all.sql",
+      "bytes": 2778877,
+      "sha256": "b92023d16d189927c8ee564d30a1e40695c21d1022255d4ea2ec9477ef9a7018",
+      "sql_path": "ciq_wrds_gvkey_all.sql",
+      "sql_sha256": "2e05b210a948154457d9551d3d6ac6640048f193455dfe422d20b0357b43debb"
+    }
+  ],
+  "unavailable": [
+    {
+      "query_id": 11828367,
+      "pair": "ExecuComp-CIQ People Intelligence",
+      "method": "entire database, CSV gzip",
+      "outcome": "Success with No Results Found / no output file",
+      "url": "https://wrds-www.wharton.upenn.edu/query-manager/query/11828367/"
+    },
+    {
+      "product": "ciq_transcripts",
+      "url": "https://wrds-www.wharton.upenn.edu/data-dictionary/ciq_transcripts/",
+      "outcome": "Logged-in page explicitly says institution has no access"
+    },
+    {
+      "product": "ciq_pplintel",
+      "url": "https://wrds-www.wharton.upenn.edu/data-dictionary/ciq_pplintel/",
+      "outcome": "Logged-in page explicitly says institution has no access"
+    }
+  ],
+  "namespace": {
+    "transcriptpersonid": "CIQ transcript speaker ID; never equated numerically to CIQ personid",
+    "proid": "Unique professional identifier: a person associated with a company/educational institution, not a person ID",
+    "proid_documentation": "https://wrds-www.wharton.upenn.edu/data-dictionary/ciq_transcripts/ciqtranscriptperson/proid/",
+    "required_bridge": {
+      "table": "ciq_pplintel.ciqprofessional",
+      "fields": [
+        "proid",
+        "personid",
+        "companyid"
+      ],
+      "dictionary": "https://wrds-www.wharton.upenn.edu/data-dictionary/ciq_pplintel/ciqprofessional/"
+    },
+    "bridge_downloaded": false
+  }
+}

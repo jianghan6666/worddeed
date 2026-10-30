@@ -1,0 +1,1375 @@
+{
+  "account_switch_pause": {
+    "instruction_interval_minutes": 23.796905250000002,
+    "interpretation": "Interval between coordinator pause and resume authority records, not an exact account authentication or per-reader inactivity duration.",
+    "resume_authority_utc": "2026-10-21T05:53:26.043530+00:00",
+    "start_utc": "2026-10-21T05:29:38.229215+00:00"
+  },
+  "billing": "Native token counters do not establish charges, subscription allowance consumption or currency cost. Account switch is recorded separately.",
+  "by_model_effort": [
+    {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 424626560,
+      "effort": "high",
+      "input_tokens": 443159844,
+      "model": "gpt-6-astra",
+      "output_tokens": 1934724,
+      "reasoning_output_tokens": 89434,
+      "total_tokens": 445094568
+    },
+    {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 408222848,
+      "effort": "medium",
+      "input_tokens": 426215076,
+      "model": "gpt-6-astra",
+      "output_tokens": 1464130,
+      "reasoning_output_tokens": 38746,
+      "total_tokens": 427679206
+    },
+    {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 464919936,
+      "effort": "xhigh",
+      "input_tokens": 485161517,
+      "model": "gpt-6-astra",
+      "output_tokens": 2579934,
+      "reasoning_output_tokens": 282060,
+      "total_tokens": 487741451
+    },
+    {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 651631232,
+      "effort": "high",
+      "input_tokens": 668882778,
+      "model": "gpt-6.1-sol",
+      "output_tokens": 2000792,
+      "reasoning_output_tokens": 173160,
+      "total_tokens": 670883570
+    },
+    {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 598433408,
+      "effort": "medium",
+      "input_tokens": 614935914,
+      "model": "gpt-6.1-sol",
+      "output_tokens": 1407260,
+      "reasoning_output_tokens": 59710,
+      "total_tokens": 616343174
+    },
+    {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 633074560,
+      "effort": "xhigh",
+      "input_tokens": 652772965,
+      "model": "gpt-6.1-sol",
+      "output_tokens": 2347495,
+      "reasoning_output_tokens": 385558,
+      "total_tokens": 655120460
+    }
+  ],
+  "cached_input_fraction": 0.9665101002294808,
+  "combined_observed_totals": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 3322013696,
+    "input_tokens": 3434367675,
+    "output_tokens": 12214074,
+    "reasoning_output_tokens": 1181116,
+    "total_tokens": 3446581749
+  },
+  "combined_scope": "36 reader sessions plus current coordinator snapshot; not total project usage or billed cost.",
+  "compaction_scope": "Native compacted records, counted once per session. Distinct from reader-reported reloads and coordinator continuation counts; not a token-cost attribution.",
+  "coordinator_snapshot": {
+    "first_usage_timestamp": "2026-10-21T00:42:21.902Z",
+    "last_usage_timestamp": "2026-10-21T07:34:48.894Z",
+    "native_compaction_records": 9,
+    "scope": "Whole current coordinator chat through this snapshot; coordinator work continues after the snapshot. Excludes former coordinator/CMD/support chats and the earlier pilot.",
+    "source": {
+      "recorded_utc": "2026-10-21T06:30:40.030432+00:00",
+      "scope": "Current direct coordinator chat, separate from36readers; whole-chat cumulative token metadata, not billing. Snapshot after cohort reporting will still exclude future turns. Prior coordinator/CMD/support and earlier pilot not included.",
+      "session_path": "[private-local-path]",
+      "thread_id": "coordinator"
+    },
+    "totals": {
+      "cache_write_input_tokens": 0,
+      "cached_input_tokens": 141105152,
+      "input_tokens": 143239581,
+      "output_tokens": 479739,
+      "reasoning_output_tokens": 152448,
+      "total_tokens": 143719320
+    }
+  },
+  "derived_uncached_input_tokens": 110219550,
+  "method": "Latest cumulative token counter per unique session; repeated events are not summed. Cached input is a subset of input. Reasoning output is not added again to total.",
+  "native_compaction_records": 316,
+  "reader_cohort_wall_clock": {
+    "elapsed_hours": 8.130293611111112,
+    "first_usage_utc": "2026-10-20T23:25:58.816Z",
+    "interpretation": "Wall-clock span of observed reader usage; includes overlaps, waiting and the human account-switch pause. Not summed active compute time.",
+    "last_usage_utc": "2026-10-21T07:33:47.873Z"
+  },
+  "readers": [
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:13:52.588Z",
+        "2026-10-21T01:33:15.737Z",
+        "2026-10-21T01:53:50.160Z",
+        "2026-10-21T02:18:58.511Z",
+        "2026-10-21T02:42:39.114Z",
+        "2026-10-21T03:09:19.165Z",
+        "2026-10-21T03:39:11.753Z",
+        "2026-10-21T04:05:13.269Z",
+        "2026-10-21T04:19:47.367Z",
+        "2026-10-21T04:41:04.490Z",
+        "2026-10-21T04:54:59.591Z",
+        "2026-10-21T05:25:56.162Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-20T23:25:58.816Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 78076544,
+        "input_tokens": 81004566,
+        "output_tokens": 300286,
+        "reasoning_output_tokens": 15283,
+        "total_tokens": 81304852
+      },
+      "last_usage_timestamp": "2026-10-21T05:30:42.392Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 12,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6-astra-P0-high/A",
+      "trial_id": "b1-gpt-6-astra-P0-high",
+      "unchanged_counter_events": 12,
+      "usage_events": 585
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:05:39.152Z",
+        "2026-10-21T01:29:55.141Z",
+        "2026-10-21T01:54:15.417Z",
+        "2026-10-21T02:19:36.289Z",
+        "2026-10-21T02:38:00.402Z",
+        "2026-10-21T03:08:47.918Z",
+        "2026-10-21T03:34:06.216Z",
+        "2026-10-21T04:04:10.302Z",
+        "2026-10-21T04:26:08.663Z",
+        "2026-10-21T04:40:46.686Z",
+        "2026-10-21T04:56:56.425Z",
+        "2026-10-21T05:09:08.627Z",
+        "2026-10-21T05:58:06.740Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-20T23:26:16.714Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 73620096,
+        "input_tokens": 77013210,
+        "output_tokens": 355187,
+        "reasoning_output_tokens": 17368,
+        "total_tokens": 77368397
+      },
+      "last_usage_timestamp": "2026-10-21T06:05:04.718Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 13,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6-astra-P0-high/B",
+      "trial_id": "b1-gpt-6-astra-P0-high",
+      "unchanged_counter_events": 13,
+      "usage_events": 572
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:05:34.292Z",
+        "2026-10-21T01:32:51.220Z",
+        "2026-10-21T01:58:32.256Z",
+        "2026-10-21T02:13:04.237Z",
+        "2026-10-21T02:30:59.671Z",
+        "2026-10-21T02:48:46.975Z",
+        "2026-10-21T03:10:12.329Z",
+        "2026-10-21T03:39:20.454Z",
+        "2026-10-21T03:54:42.900Z",
+        "2026-10-21T04:08:52.671Z",
+        "2026-10-21T04:40:11.470Z",
+        "2026-10-21T05:03:42.044Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-20T23:26:33.286Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 66803072,
+        "input_tokens": 69729857,
+        "output_tokens": 308401,
+        "reasoning_output_tokens": 17971,
+        "total_tokens": 70038258
+      },
+      "last_usage_timestamp": "2026-10-21T05:08:52.939Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 12,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6-astra-P0-high/C",
+      "trial_id": "b1-gpt-6-astra-P0-high",
+      "unchanged_counter_events": 12,
+      "usage_events": 520
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:33:35.924Z",
+        "2026-10-21T02:22:37.782Z",
+        "2026-10-21T03:02:17.756Z",
+        "2026-10-21T03:48:41.798Z",
+        "2026-10-21T04:24:14.217Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T00:55:12.819Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 98976000,
+        "input_tokens": 101667240,
+        "output_tokens": 236104,
+        "reasoning_output_tokens": 10932,
+        "total_tokens": 101903344
+      },
+      "last_usage_timestamp": "2026-10-21T04:27:34.146Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6.1-sol-P0-medium/A",
+      "trial_id": "b1-gpt-6.1-sol-P0-medium",
+      "unchanged_counter_events": 5,
+      "usage_events": 440
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:34:34.504Z",
+        "2026-10-21T02:10:55.705Z",
+        "2026-10-21T02:43:18.365Z",
+        "2026-10-21T03:28:53.782Z",
+        "2026-10-21T04:18:18.889Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T00:55:28.087Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 97659648,
+        "input_tokens": 100136017,
+        "output_tokens": 209566,
+        "reasoning_output_tokens": 11658,
+        "total_tokens": 100345583
+      },
+      "last_usage_timestamp": "2026-10-21T04:22:34.874Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6.1-sol-P0-medium/B",
+      "trial_id": "b1-gpt-6.1-sol-P0-medium",
+      "unchanged_counter_events": 6,
+      "usage_events": 440
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:33:46.133Z",
+        "2026-10-21T02:14:13.899Z",
+        "2026-10-21T02:47:27.256Z",
+        "2026-10-21T03:19:52.931Z",
+        "2026-10-21T03:50:07.342Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T00:55:43.528Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 102964224,
+        "input_tokens": 105874476,
+        "output_tokens": 243964,
+        "reasoning_output_tokens": 9546,
+        "total_tokens": 106118440
+      },
+      "last_usage_timestamp": "2026-10-21T04:11:01.164Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6.1-sol-P0-medium/C",
+      "trial_id": "b1-gpt-6.1-sol-P0-medium",
+      "unchanged_counter_events": 5,
+      "usage_events": 465
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:37:11.826Z",
+        "2026-10-21T02:07:48.694Z",
+        "2026-10-21T02:34:22.683Z",
+        "2026-10-21T02:51:05.217Z",
+        "2026-10-21T03:17:21.622Z",
+        "2026-10-21T03:38:48.327Z",
+        "2026-10-21T04:06:27.680Z",
+        "2026-10-21T04:30:51.767Z",
+        "2026-10-21T04:41:30.974Z",
+        "2026-10-21T04:58:43.365Z",
+        "2026-10-21T05:11:20.173Z",
+        "2026-10-21T05:59:04.310Z",
+        "2026-10-21T06:20:41.940Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T00:56:06.345Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 72704512,
+        "input_tokens": 75970089,
+        "output_tokens": 398900,
+        "reasoning_output_tokens": 55331,
+        "total_tokens": 76368989
+      },
+      "last_usage_timestamp": "2026-10-21T06:28:37.625Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 13,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6-astra-P0-xhigh/A",
+      "trial_id": "b1-gpt-6-astra-P0-xhigh",
+      "unchanged_counter_events": 14,
+      "usage_events": 563
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:37:08.499Z",
+        "2026-10-21T02:07:16.597Z",
+        "2026-10-21T02:34:42.763Z",
+        "2026-10-21T02:51:44.316Z",
+        "2026-10-21T03:19:04.424Z",
+        "2026-10-21T03:42:13.568Z",
+        "2026-10-21T04:18:24.910Z",
+        "2026-10-21T04:50:18.128Z",
+        "2026-10-21T05:07:03.599Z",
+        "2026-10-21T05:27:14.718Z",
+        "2026-10-21T06:09:17.526Z",
+        "2026-10-21T06:37:32.601Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T00:56:16.055Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 75248128,
+        "input_tokens": 78241970,
+        "output_tokens": 433215,
+        "reasoning_output_tokens": 43166,
+        "total_tokens": 78675185
+      },
+      "last_usage_timestamp": "2026-10-21T06:47:52.527Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 12,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6-astra-P0-xhigh/B",
+      "trial_id": "b1-gpt-6-astra-P0-xhigh",
+      "unchanged_counter_events": 14,
+      "usage_events": 569
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:36:50.071Z",
+        "2026-10-21T02:02:19.979Z",
+        "2026-10-21T02:28:04.779Z",
+        "2026-10-21T02:51:06.318Z",
+        "2026-10-21T03:18:32.272Z",
+        "2026-10-21T03:39:23.964Z",
+        "2026-10-21T04:03:42.848Z",
+        "2026-10-21T04:25:14.931Z",
+        "2026-10-21T04:41:15.998Z",
+        "2026-10-21T04:58:46.614Z",
+        "2026-10-21T05:11:35.393Z",
+        "2026-10-21T05:57:42.845Z",
+        "2026-10-21T06:20:34.996Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T00:56:31.862Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 69778560,
+        "input_tokens": 72995727,
+        "output_tokens": 401922,
+        "reasoning_output_tokens": 39497,
+        "total_tokens": 73397649
+      },
+      "last_usage_timestamp": "2026-10-21T06:29:08.921Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 13,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6-astra-P0-xhigh/C",
+      "trial_id": "b1-gpt-6-astra-P0-xhigh",
+      "unchanged_counter_events": 14,
+      "usage_events": 548
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:25:32.390Z",
+        "2026-10-21T01:48:09.888Z",
+        "2026-10-21T02:07:26.722Z",
+        "2026-10-21T02:21:22.855Z",
+        "2026-10-21T02:42:38.869Z",
+        "2026-10-21T03:09:27.857Z",
+        "2026-10-21T03:40:11.044Z",
+        "2026-10-21T03:55:22.377Z",
+        "2026-10-21T04:12:22.422Z",
+        "2026-10-21T04:45:13.164Z",
+        "2026-10-21T04:56:12.090Z",
+        "2026-10-21T05:26:25.636Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T00:56:47.287Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 68835840,
+        "input_tokens": 71766153,
+        "output_tokens": 249475,
+        "reasoning_output_tokens": 5628,
+        "total_tokens": 72015628
+      },
+      "last_usage_timestamp": "2026-10-21T05:31:22.869Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 12,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6-astra-P0-medium/A",
+      "trial_id": "b1-gpt-6-astra-P0-medium",
+      "unchanged_counter_events": 12,
+      "usage_events": 541
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:25:41.004Z",
+        "2026-10-21T01:58:36.386Z",
+        "2026-10-21T02:21:56.365Z",
+        "2026-10-21T02:37:25.180Z",
+        "2026-10-21T02:51:15.188Z",
+        "2026-10-21T03:31:33.591Z",
+        "2026-10-21T04:07:20.890Z",
+        "2026-10-21T04:19:52.831Z",
+        "2026-10-21T04:57:19.238Z",
+        "2026-10-21T05:06:15.842Z",
+        "2026-10-21T05:26:07.199Z",
+        "2026-10-21T06:08:31.613Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T00:57:03.588Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 67487104,
+        "input_tokens": 70671574,
+        "output_tokens": 255586,
+        "reasoning_output_tokens": 7207,
+        "total_tokens": 70927160
+      },
+      "last_usage_timestamp": "2026-10-21T06:13:18.391Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 12,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6-astra-P0-medium/B",
+      "trial_id": "b1-gpt-6-astra-P0-medium",
+      "unchanged_counter_events": 15,
+      "usage_events": 534
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:25:20.484Z",
+        "2026-10-21T01:59:04.600Z",
+        "2026-10-21T02:19:24.389Z",
+        "2026-10-21T02:31:57.763Z",
+        "2026-10-21T03:01:43.742Z",
+        "2026-10-21T03:28:27.243Z",
+        "2026-10-21T03:50:49.867Z",
+        "2026-10-21T04:07:30.699Z",
+        "2026-10-21T04:40:09.635Z",
+        "2026-10-21T04:47:17.946Z",
+        "2026-10-21T05:25:59.782Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T00:57:19.247Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 66253696,
+        "input_tokens": 68849957,
+        "output_tokens": 210894,
+        "reasoning_output_tokens": 6918,
+        "total_tokens": 69060851
+      },
+      "last_usage_timestamp": "2026-10-21T05:32:36.590Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 11,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6-astra-P0-medium/C",
+      "trial_id": "b1-gpt-6-astra-P0-medium",
+      "unchanged_counter_events": 11,
+      "usage_events": 514
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:43:02.968Z",
+        "2026-10-21T02:23:43.927Z",
+        "2026-10-21T03:11:21.886Z",
+        "2026-10-21T03:56:01.912Z",
+        "2026-10-21T04:40:22.378Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-21T00:58:40.713Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 105634560,
+        "input_tokens": 108517940,
+        "output_tokens": 340989,
+        "reasoning_output_tokens": 29609,
+        "total_tokens": 108858929
+      },
+      "last_usage_timestamp": "2026-10-21T05:07:43.982Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6.1-sol-P0-high/A",
+      "trial_id": "b1-gpt-6.1-sol-P0-high",
+      "unchanged_counter_events": 6,
+      "usage_events": 471
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:49:26.838Z",
+        "2026-10-21T02:33:29.960Z",
+        "2026-10-21T03:30:05.467Z",
+        "2026-10-21T04:21:37.202Z",
+        "2026-10-21T05:04:01.130Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-21T00:58:57.700Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 106814976,
+        "input_tokens": 109804225,
+        "output_tokens": 351356,
+        "reasoning_output_tokens": 32125,
+        "total_tokens": 110155581
+      },
+      "last_usage_timestamp": "2026-10-21T06:02:56.370Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6.1-sol-P0-high/B",
+      "trial_id": "b1-gpt-6.1-sol-P0-high",
+      "unchanged_counter_events": 7,
+      "usage_events": 476
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:49:11.247Z",
+        "2026-10-21T02:33:53.610Z",
+        "2026-10-21T03:29:58.692Z",
+        "2026-10-21T04:08:17.871Z",
+        "2026-10-21T04:48:05.135Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-21T00:59:16.409Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 103825152,
+        "input_tokens": 106715178,
+        "output_tokens": 326345,
+        "reasoning_output_tokens": 24417,
+        "total_tokens": 107041523
+      },
+      "last_usage_timestamp": "2026-10-21T05:31:12.013Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6.1-sol-P0-high/C",
+      "trial_id": "b1-gpt-6.1-sol-P0-high",
+      "unchanged_counter_events": 6,
+      "usage_events": 463
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T02:10:21.585Z",
+        "2026-10-21T03:10:23.124Z",
+        "2026-10-21T04:08:00.776Z",
+        "2026-10-21T04:50:02.878Z",
+        "2026-10-21T05:58:49.561Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T00:59:30.524Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 97984256,
+        "input_tokens": 102157284,
+        "output_tokens": 383262,
+        "reasoning_output_tokens": 53088,
+        "total_tokens": 102540546
+      },
+      "last_usage_timestamp": "2026-10-21T06:24:39.174Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6.1-sol-P0-xhigh/A",
+      "trial_id": "b1-gpt-6.1-sol-P0-xhigh",
+      "unchanged_counter_events": 6,
+      "usage_events": 445
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:56:22.818Z",
+        "2026-10-21T02:37:20.763Z",
+        "2026-10-21T04:24:01.306Z",
+        "2026-10-21T05:00:08.645Z",
+        "2026-10-21T06:09:21.299Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T00:59:48.475Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 105816960,
+        "input_tokens": 109084491,
+        "output_tokens": 384923,
+        "reasoning_output_tokens": 52866,
+        "total_tokens": 109469414
+      },
+      "last_usage_timestamp": "2026-10-21T06:39:59.689Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6.1-sol-P0-xhigh/B",
+      "trial_id": "b1-gpt-6.1-sol-P0-xhigh",
+      "unchanged_counter_events": 7,
+      "usage_events": 475
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T02:08:15.896Z",
+        "2026-10-21T03:02:20.623Z",
+        "2026-10-21T03:52:05.557Z",
+        "2026-10-21T04:42:55.643Z",
+        "2026-10-21T05:27:54.812Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T01:00:04.658Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 101444480,
+        "input_tokens": 104297991,
+        "output_tokens": 370737,
+        "reasoning_output_tokens": 68887,
+        "total_tokens": 104668728
+      },
+      "last_usage_timestamp": "2026-10-21T06:22:55.727Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b1-gpt-6.1-sol-P0-xhigh/C",
+      "trial_id": "b1-gpt-6.1-sol-P0-xhigh",
+      "unchanged_counter_events": 5,
+      "usage_events": 452
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T02:08:35.906Z",
+        "2026-10-21T03:02:31.645Z",
+        "2026-10-21T03:52:06.296Z",
+        "2026-10-21T04:42:39.083Z",
+        "2026-10-21T05:28:44.228Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-21T01:00:21.784Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 117213056,
+        "input_tokens": 119853495,
+        "output_tokens": 348983,
+        "reasoning_output_tokens": 36115,
+        "total_tokens": 120202478
+      },
+      "last_usage_timestamp": "2026-10-21T06:22:41.722Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6.1-sol-P0-high/A",
+      "trial_id": "b2-gpt-6.1-sol-P0-high",
+      "unchanged_counter_events": 5,
+      "usage_events": 513
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:56:29.567Z",
+        "2026-10-21T02:33:22.081Z",
+        "2026-10-21T03:30:14.844Z",
+        "2026-10-21T04:08:40.964Z",
+        "2026-10-21T05:04:38.764Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-21T01:00:38.764Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 101687552,
+        "input_tokens": 104589771,
+        "output_tokens": 297851,
+        "reasoning_output_tokens": 19282,
+        "total_tokens": 104887622
+      },
+      "last_usage_timestamp": "2026-10-21T06:01:06.856Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6.1-sol-P0-high/B",
+      "trial_id": "b2-gpt-6.1-sol-P0-high",
+      "unchanged_counter_events": 6,
+      "usage_events": 456
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T02:11:24.485Z",
+        "2026-10-21T03:02:36.034Z",
+        "2026-10-21T04:04:26.652Z",
+        "2026-10-21T04:52:48.678Z",
+        "2026-10-21T05:57:23.524Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-21T01:00:53.913Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 116455936,
+        "input_tokens": 119402169,
+        "output_tokens": 335268,
+        "reasoning_output_tokens": 31612,
+        "total_tokens": 119737437
+      },
+      "last_usage_timestamp": "2026-10-21T06:23:21.500Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6.1-sol-P0-high/C",
+      "trial_id": "b2-gpt-6.1-sol-P0-high",
+      "unchanged_counter_events": 5,
+      "usage_events": 511
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:38:36.024Z",
+        "2026-10-21T02:08:38.998Z",
+        "2026-10-21T02:35:26.934Z",
+        "2026-10-21T03:02:58.309Z",
+        "2026-10-21T03:18:39.011Z",
+        "2026-10-21T03:42:49.429Z",
+        "2026-10-21T04:12:36.324Z",
+        "2026-10-21T04:25:59.990Z",
+        "2026-10-21T04:44:50.486Z",
+        "2026-10-21T04:56:13.489Z",
+        "2026-10-21T05:08:42.377Z",
+        "2026-10-21T05:58:15.001Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T01:01:10.491Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 67991040,
+        "input_tokens": 71161820,
+        "output_tokens": 255086,
+        "reasoning_output_tokens": 6300,
+        "total_tokens": 71416906
+      },
+      "last_usage_timestamp": "2026-10-21T06:03:09.650Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 12,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6-astra-P0-medium/A",
+      "trial_id": "b2-gpt-6-astra-P0-medium",
+      "unchanged_counter_events": 14,
+      "usage_events": 534
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:38:38.556Z",
+        "2026-10-21T02:08:43.039Z",
+        "2026-10-21T02:31:38.522Z",
+        "2026-10-21T02:44:57.620Z",
+        "2026-10-21T03:12:35.488Z",
+        "2026-10-21T03:42:52.100Z",
+        "2026-10-21T04:12:39.153Z",
+        "2026-10-21T04:26:36.476Z",
+        "2026-10-21T04:44:06.579Z",
+        "2026-10-21T04:55:14.790Z",
+        "2026-10-21T05:05:47.832Z",
+        "2026-10-21T06:09:02.858Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T01:01:27.821Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 69912576,
+        "input_tokens": 72898707,
+        "output_tokens": 251481,
+        "reasoning_output_tokens": 6918,
+        "total_tokens": 73150188
+      },
+      "last_usage_timestamp": "2026-10-21T06:14:19.804Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 12,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6-astra-P0-medium/B",
+      "trial_id": "b2-gpt-6-astra-P0-medium",
+      "unchanged_counter_events": 13,
+      "usage_events": 546
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:39:01.905Z",
+        "2026-10-21T02:08:59.142Z",
+        "2026-10-21T02:31:48.042Z",
+        "2026-10-21T02:44:09.041Z",
+        "2026-10-21T03:02:11.207Z",
+        "2026-10-21T03:29:47.124Z",
+        "2026-10-21T03:54:14.501Z",
+        "2026-10-21T04:08:21.907Z",
+        "2026-10-21T04:42:14.028Z",
+        "2026-10-21T04:52:29.722Z",
+        "2026-10-21T05:04:41.057Z",
+        "2026-10-21T05:57:42.914Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T01:01:46.454Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 67742592,
+        "input_tokens": 70866865,
+        "output_tokens": 241608,
+        "reasoning_output_tokens": 5775,
+        "total_tokens": 71108473
+      },
+      "last_usage_timestamp": "2026-10-21T06:03:25.087Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 12,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6-astra-P0-medium/C",
+      "trial_id": "b2-gpt-6-astra-P0-medium",
+      "unchanged_counter_events": 12,
+      "usage_events": 534
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:44:01.646Z",
+        "2026-10-21T02:18:23.826Z",
+        "2026-10-21T02:51:01.411Z",
+        "2026-10-21T03:25:11.157Z",
+        "2026-10-21T03:35:55.250Z",
+        "2026-10-21T03:55:26.067Z",
+        "2026-10-21T04:14:34.169Z",
+        "2026-10-21T04:41:59.653Z",
+        "2026-10-21T05:06:59.809Z",
+        "2026-10-21T06:00:51.418Z",
+        "2026-10-21T06:19:32.293Z",
+        "2026-10-21T06:34:18.368Z",
+        "2026-10-21T06:48:04.360Z",
+        "2026-10-21T07:14:46.258Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T01:05:12.470Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 74293120,
+        "input_tokens": 77703895,
+        "output_tokens": 423507,
+        "reasoning_output_tokens": 50256,
+        "total_tokens": 78127402
+      },
+      "last_usage_timestamp": "2026-10-21T07:26:48.368Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 14,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6-astra-P0-xhigh/A",
+      "trial_id": "b2-gpt-6-astra-P0-xhigh",
+      "unchanged_counter_events": 16,
+      "usage_events": 581
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:44:27.633Z",
+        "2026-10-21T02:17:10.401Z",
+        "2026-10-21T02:42:17.820Z",
+        "2026-10-21T03:12:54.943Z",
+        "2026-10-21T03:39:04.726Z",
+        "2026-10-21T03:54:06.138Z",
+        "2026-10-21T04:13:31.623Z",
+        "2026-10-21T04:48:36.721Z",
+        "2026-10-21T05:10:22.061Z",
+        "2026-10-21T06:04:03.580Z",
+        "2026-10-21T06:13:42.060Z",
+        "2026-10-21T06:27:55.082Z",
+        "2026-10-21T06:43:11.331Z",
+        "2026-10-21T06:57:58.275Z",
+        "2026-10-21T07:20:55.440Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T01:05:30.609Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 79715200,
+        "input_tokens": 83515428,
+        "output_tokens": 462745,
+        "reasoning_output_tokens": 48049,
+        "total_tokens": 83978173
+      },
+      "last_usage_timestamp": "2026-10-21T07:33:47.873Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 15,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6-astra-P0-xhigh/B",
+      "trial_id": "b2-gpt-6-astra-P0-xhigh",
+      "unchanged_counter_events": 18,
+      "usage_events": 633
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:44:30.470Z",
+        "2026-10-21T02:16:53.238Z",
+        "2026-10-21T02:39:47.796Z",
+        "2026-10-21T03:19:10.659Z",
+        "2026-10-21T03:35:52.159Z",
+        "2026-10-21T03:56:55.986Z",
+        "2026-10-21T04:19:00.609Z",
+        "2026-10-21T04:56:39.787Z",
+        "2026-10-21T05:18:33.123Z",
+        "2026-10-21T06:02:08.468Z",
+        "2026-10-21T06:20:50.764Z",
+        "2026-10-21T06:36:49.866Z",
+        "2026-10-21T06:52:03.620Z",
+        "2026-10-21T07:15:37.810Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T01:05:56.342Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 93180416,
+        "input_tokens": 96734408,
+        "output_tokens": 459645,
+        "reasoning_output_tokens": 45761,
+        "total_tokens": 97194053
+      },
+      "last_usage_timestamp": "2026-10-21T07:27:08.526Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 14,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6-astra-P0-xhigh/C",
+      "trial_id": "b2-gpt-6-astra-P0-xhigh",
+      "unchanged_counter_events": 18,
+      "usage_events": 708
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:59:58.532Z",
+        "2026-10-21T02:50:26.037Z",
+        "2026-10-21T03:44:09.436Z",
+        "2026-10-21T04:42:04.482Z",
+        "2026-10-21T05:58:25.956Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T01:06:34.616Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 97847552,
+        "input_tokens": 100717420,
+        "output_tokens": 240925,
+        "reasoning_output_tokens": 8557,
+        "total_tokens": 100958345
+      },
+      "last_usage_timestamp": "2026-10-21T06:03:16.841Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6.1-sol-P0-medium/A",
+      "trial_id": "b2-gpt-6.1-sol-P0-medium",
+      "unchanged_counter_events": 5,
+      "usage_events": 443
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:59:57.674Z",
+        "2026-10-21T02:45:08.045Z",
+        "2026-10-21T03:41:41.927Z",
+        "2026-10-21T04:42:10.444Z",
+        "2026-10-21T05:58:21.994Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T01:06:57.941Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 99816192,
+        "input_tokens": 102420481,
+        "output_tokens": 246157,
+        "reasoning_output_tokens": 9607,
+        "total_tokens": 102666638
+      },
+      "last_usage_timestamp": "2026-10-21T06:03:25.359Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6.1-sol-P0-medium/B",
+      "trial_id": "b2-gpt-6.1-sol-P0-medium",
+      "unchanged_counter_events": 6,
+      "usage_events": 445
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T02:00:11.177Z",
+        "2026-10-21T02:45:26.579Z",
+        "2026-10-21T03:41:43.929Z",
+        "2026-10-21T04:42:32.691Z",
+        "2026-10-21T05:58:35.853Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "medium",
+      "first_usage_timestamp": "2026-10-21T01:07:12.523Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 101169792,
+        "input_tokens": 104120280,
+        "output_tokens": 230544,
+        "reasoning_output_tokens": 9410,
+        "total_tokens": 104350824
+      },
+      "last_usage_timestamp": "2026-10-21T06:03:09.107Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6.1-sol-P0-medium/C",
+      "trial_id": "b2-gpt-6.1-sol-P0-medium",
+      "unchanged_counter_events": 6,
+      "usage_events": 453
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:45:25.341Z",
+        "2026-10-21T02:12:05.877Z",
+        "2026-10-21T02:35:55.624Z",
+        "2026-10-21T03:03:31.199Z",
+        "2026-10-21T03:31:50.811Z",
+        "2026-10-21T04:07:53.856Z",
+        "2026-10-21T04:43:37.033Z",
+        "2026-10-21T05:00:02.517Z",
+        "2026-10-21T05:15:18.097Z",
+        "2026-10-21T06:01:00.269Z",
+        "2026-10-21T06:13:20.188Z",
+        "2026-10-21T06:33:23.670Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-21T01:07:54.834Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 65533952,
+        "input_tokens": 68456301,
+        "output_tokens": 315591,
+        "reasoning_output_tokens": 11233,
+        "total_tokens": 68771892
+      },
+      "last_usage_timestamp": "2026-10-21T06:39:37.723Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 12,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6-astra-P0-high/A",
+      "trial_id": "b2-gpt-6-astra-P0-high",
+      "unchanged_counter_events": 12,
+      "usage_events": 512
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:45:08.988Z",
+        "2026-10-21T02:12:06.320Z",
+        "2026-10-21T02:36:30.484Z",
+        "2026-10-21T03:03:35.267Z",
+        "2026-10-21T03:31:29.663Z",
+        "2026-10-21T04:08:18.543Z",
+        "2026-10-21T04:43:55.225Z",
+        "2026-10-21T04:57:38.410Z",
+        "2026-10-21T05:08:54.791Z",
+        "2026-10-21T05:30:22.906Z",
+        "2026-10-21T06:03:19.031Z",
+        "2026-10-21T06:20:59.198Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-21T01:08:22.471Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 68294656,
+        "input_tokens": 71276468,
+        "output_tokens": 313345,
+        "reasoning_output_tokens": 12869,
+        "total_tokens": 71589813
+      },
+      "last_usage_timestamp": "2026-10-21T06:26:49.849Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 12,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6-astra-P0-high/B",
+      "trial_id": "b2-gpt-6-astra-P0-high",
+      "unchanged_counter_events": 12,
+      "usage_events": 525
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T01:45:29.184Z",
+        "2026-10-21T02:17:21.537Z",
+        "2026-10-21T02:37:57.332Z",
+        "2026-10-21T03:18:38.494Z",
+        "2026-10-21T03:53:05.512Z",
+        "2026-10-21T04:13:47.381Z",
+        "2026-10-21T04:43:43.151Z",
+        "2026-10-21T05:03:40.734Z",
+        "2026-10-21T05:12:56.859Z",
+        "2026-10-21T06:00:14.287Z",
+        "2026-10-21T06:14:07.587Z",
+        "2026-10-21T06:26:40.940Z",
+        "2026-10-21T06:45:15.462Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "high",
+      "first_usage_timestamp": "2026-10-21T01:08:40.488Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 72298240,
+        "input_tokens": 75679442,
+        "output_tokens": 341914,
+        "reasoning_output_tokens": 14710,
+        "total_tokens": 76021356
+      },
+      "last_usage_timestamp": "2026-10-21T06:53:14.910Z",
+      "model_requested": "gpt-6-astra",
+      "native_compaction_records": 13,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6-astra-P0-high/C",
+      "trial_id": "b2-gpt-6-astra-P0-high",
+      "unchanged_counter_events": 14,
+      "usage_events": 569
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T02:12:45.545Z",
+        "2026-10-21T03:04:07.528Z",
+        "2026-10-21T04:05:26.987Z",
+        "2026-10-21T04:58:45.743Z",
+        "2026-10-21T05:59:57.563Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T01:09:20.620Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 104092416,
+        "input_tokens": 107664714,
+        "output_tokens": 400929,
+        "reasoning_output_tokens": 68745,
+        "total_tokens": 108065643
+      },
+      "last_usage_timestamp": "2026-10-21T06:26:35.493Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "A",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6.1-sol-P0-xhigh/A",
+      "trial_id": "b2-gpt-6.1-sol-P0-xhigh",
+      "unchanged_counter_events": 5,
+      "usage_events": 460
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T02:09:25.745Z",
+        "2026-10-21T03:03:50.055Z",
+        "2026-10-21T03:44:11.889Z",
+        "2026-10-21T04:44:33.467Z",
+        "2026-10-21T05:29:51.045Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T01:09:46.168Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 111842944,
+        "input_tokens": 114469437,
+        "output_tokens": 400083,
+        "reasoning_output_tokens": 72970,
+        "total_tokens": 114869520
+      },
+      "last_usage_timestamp": "2026-10-21T06:23:55.909Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "B",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6.1-sol-P0-xhigh/B",
+      "trial_id": "b2-gpt-6.1-sol-P0-xhigh",
+      "unchanged_counter_events": 6,
+      "usage_events": 489
+    },
+    {
+      "compaction_timestamps": [
+        "2026-10-21T02:09:47.737Z",
+        "2026-10-21T03:04:59.990Z",
+        "2026-10-21T04:04:27.274Z",
+        "2026-10-21T04:58:56.438Z",
+        "2026-10-21T06:11:25.666Z"
+      ],
+      "counter_decreases": [],
+      "effort_requested": "xhigh",
+      "first_usage_timestamp": "2026-10-21T01:10:08.378Z",
+      "last_cumulative_usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 111893504,
+        "input_tokens": 115099048,
+        "output_tokens": 407561,
+        "reasoning_output_tokens": 69002,
+        "total_tokens": 115506609
+      },
+      "last_usage_timestamp": "2026-10-21T06:53:13.411Z",
+      "model_requested": "gpt-6.1-sol",
+      "native_compaction_records": 5,
+      "reader_id": "C",
+      "source_files": [
+        "[private-local-path]"
+      ],
+      "thread_id": "b2-gpt-6.1-sol-P0-xhigh/C",
+      "trial_id": "b2-gpt-6.1-sol-P0-xhigh",
+      "unchanged_counter_events": 6,
+      "usage_events": 486
+    }
+  ],
+  "scope": "36 admitted reader chats only; excludes coordinator, former CMD/support chats and earlier pilot.",
+  "snapshot_utc": "2026-10-21T07:34:50.759199+00:00",
+  "totals": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 3180908544,
+    "input_tokens": 3291128094,
+    "output_tokens": 11734335,
+    "reasoning_output_tokens": 1028668,
+    "total_tokens": 3302862429
+  }
+}

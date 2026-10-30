@@ -1,0 +1,19 @@
+flowchart TB
+  D["Fixed catalogue: 354 topics<br/>ID, name, 15 keywords + codebook"]
+  S["Frozen source packet<br/>3 passages per topic; 1,062 entries<br/>withheld until initial barrier"]
+  D --> A1["Reader 1: Stage A<br/>full descriptor classification"]
+  D --> A2["Reader 2: Stage A<br/>full descriptor classification"]
+  D --> A3["Reader 3: Stage A<br/>full descriptor classification"]
+  A1 --> G["Barrier: all three initial attempts sealed<br/>or explicitly recorded as missing"]
+  A2 --> G
+  A3 --> G
+  G --> R["Coordinator releases same ordered source pages<br/>Each reader receives only its own sealed A judgments"]
+  S --> R
+  R --> B1["Reader 1: Stage B, same chat<br/>18 pages; all 354 topics"]
+  R --> B2["Reader 2: Stage B, same chat<br/>18 pages; all 354 topics"]
+  R --> B3["Reader 3: Stage B, same chat<br/>18 pages; all 354 topics"]
+  B1 --> V["Seal reviewed attempts; deterministic assembly<br/>Unweighted 2-of-3 Stage B vote per topic"]
+  B2 --> V
+  B3 --> V
+  V --> O["One trial-specific handoff<br/>Relevant / irrelevant / unresolved IDs<br/>Votes, reasons, confidence, evidence and revisions"]
+  O --> N["Substantive review, then Step 3<br/>Density-sentiment scoring and validation remain downstream"]

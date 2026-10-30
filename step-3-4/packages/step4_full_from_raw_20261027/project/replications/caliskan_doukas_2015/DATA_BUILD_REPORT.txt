@@ -1,0 +1,61 @@
+Caliskan & Doukas (2015) Table 4 — 回归数据构建报告
+
+当前交付：按公开论文和本次明确裁定构建的候选回归表。尚未恢复作者原样本，尚未运行任何回归。
+A 是原文字面诊断，不能将其混合量纲delta/vega解释为标准经济敏感度；B 为一致金融公式对照。两者均不是已获得作者程序后的精确代码复刻。
+
+一、主要输出与样本数
+original_2006_2011
+  A: 非对数列N=6,522; 对数列3/9 N=3,760; payer=2,978; A/B同样本N=5,826
+  B: 非对数列N=5,826; 对数列3/9 N=3,495; payer=2,628; A/B同样本N=5,826
+extended_2006_2023
+  A: 非对数列N=18,423; 对数列3/9 N=9,788; payer=9,377; A/B同样本N=13,828
+  B: 非对数列N=13,828; 对数列3/9 N=7,903; payer=6,862; A/B同样本N=13,828
+new_2012_2023
+  A: 非对数列N=11,901; 对数列3/9 N=6,028; payer=6,399; A/B同样本N=8,002
+  B: 非对数列N=8,002; 对数列3/9 N=4,408; payer=4,234; A/B同样本N=8,002
+
+各版本均有 .dta (Stata118 UTF-8)、.parquet、.csv 三种格式，位于data/processed。
+完整原期/扩期/新增期文件名列在reports/export_checks.csv。sample_log用于第3/9列；其他8列使用该版本数据表全部行。
+A/B比较用sample_ab；对数模型比较用sample_ab_log；按gvkey+fyear配对。
+A多出的观测主要来自明确零期权组合：规范版stock vega=0使比率未定义，不能补零或加epsilon。分解见reports/version_sample_differences.csv。
+panel_master_audit.parquet保留35151个已选择CEO firm-year及全部未入样本原因标记。
+变量字典：reports/variable_dictionary.csv / .json。模型列定义仅为table4_model_columns.json，未执行估计。
+
+二、样本尚未对齐原文
+论文2006-2011非对数N=2117、对数N=834；当前A6522/3760、B5826/3495，不能声称样本已复原。
+论文年度目标246/377/393/401/376/324与实际逐年差异见reports/original_sample_comparison.csv。
+论文未提供完整样本ID/筛选流。没有为了匹配N、符号或显著性新增样本限制，也没有估计系数。
+
+三、冻结规则与来源
+- 主样本：2006-2023财政年；原始2012-2023单列。严格用年度CEO flag加已知财年末任职日期，排除无法唯一确定的CEO。
+- CEOANN官方定义是财年all or most期间CEO，原始becameceo/leftofc与历史年度flag存在不一致。严格财年末规则为研究者裁定，不是论文已证实实现。
+- 原始年度CEO行38591；财年末开始日期晚于fye行1147；离任日期不晚于fye行2147。这些是可能重叠的原始行标记，不应相加当作互斥损耗。
+- CEO候选与日期冲突完整保存在audits/ceo_selection_audit.parquet；新一轮若改变规则需新版本重建。
+- Compustat INDL/STD/C/USD，保留active/inactive；补取POPSRC全源942621行，原财务200950行全部精确匹配D。
+- 改用当前完整Postgres CCM123388行；旧110124快照保留。对本次33454个市场请求，两版CCM结果逐行等价。
+- LC/LU、P/C、有效日期，distinct PERMNO冲突不任取；当期普通股10/11、主要交易所1/2/3。历史SIC排金融6000-6999、公用事业4900-4999。
+- 仅对R&D缺失补0并带indicator；其他必需数值缺失不自动补0。零inside-debt保留非对数样本；自然对数只在严格正值定义。
+- Size在基础合格公司全集、完整案例筛选之前按财政年计算，严格小于和同值处理固定。
+- 所有金额/数量先核供应商千单位再转换。逐类期权数量对账容差0.01千股；unearned独立计入组合，不加进annual unexer对账。
+- 无正期权明细仅在年度两类明确0时认定zero-options；positive annual却缺明细不能当0。养老金/递延明细仅核对，不填补年度总额。
+- 股票A=common+unvested，B=common；期权按全部有效tranche计算，不限10笔。T精确日数/365.25。
+- A股票delta=N*1、股票vega=N*0.01，机械保留论文矛盾；B股票delta=N*S*0.01、vega=0。
+- 原文盈利用TXDITC却称收入表税项，主口径保留打印mnemonic及百万尺度，另保留TXDI诊断。high_rellev>1为主，附录字面阈值另列。
+- 不缩尾、标准化、取对数替代或为了回归结果调整定义。
+
+四、市场窗口和验证
+- sigma60=60完整月的复权价格log变化sd*sqrt12，排除财年末当月，需61个连续价格。财年末BSM的S和X保持同一未复权基准。
+- retvol255=前255个真实全市场交易日RETX样本sd*100；窗口内每一天必须有效，不取更早日补足，不年化。
+- 全源有18个仅SAS事件记录、全市场没有有效RETX的非交易日期。剔除证据在audits/market/excluded_event_only_dates.csv，最终交易日历4905日。
+- RETX非数值/非有限或<-1的缺失码不作经济收益；合法0收益保留。
+- 无前视利率/资产滞后/窗口，主键唯一、共同样本、自然对数定义域、缺失处理与Stata回读已核验；详见audits/panel_validation.json和独立验证报告。
+- 原始数据哈希与脚本哈希在build_manifest.json。原始下载文件未覆盖；数据和派生缓存由本子项目.gitignore排除。
+- 独立210项原始公式抽查通过。期权表PRCCF与Compustat S的价格对齐审计中，只有3个极低价组合超过1%相对差，绝对差$0.0003-0.0005；保留主S，不据此改样本。
+- 当前数据为本次下载快照，不能假定与作者2015年的数据库版本完全相同。
+
+五、复跑
+在本目录用 C:/Softwares/anaconda3/python.exe scripts/build_regression_data.py --stage all
+分阶段：--stage prepare / valuations / finalize；市场和期权模块也有独立CLI。
+全流程仅构建数据。配置中研究裁定是冻结spec；不支持的改动会报错，避免修改配置却被硬编码静默忽略。
+文档更新：C:/Softwares/anaconda3/python.exe scripts/write_data_docs.py
+测试：C:/Softwares/anaconda3/python.exe -m unittest discover -s tests -v

@@ -1,0 +1,227 @@
+[
+  {
+    "variable":"gvkey",
+    "unit_or_type":"identifier",
+    "definition":"Compustat company key, string retaining six digits"
+  },
+  {
+    "variable":"fyear",
+    "unit_or_type":"fiscal year",
+    "definition":"ExecuComp fiscal year matched to Compustat fyear; current-year controls"
+  },
+  {
+    "variable":"datadate",
+    "unit_or_type":"date",
+    "definition":"Compustat fiscal-end data date; Stata %td"
+  },
+  {
+    "variable":"permno",
+    "unit_or_type":"identifier",
+    "definition":"Unique date-valid CCM LC\/LU, P\/C security; no ticker matching"
+  },
+  {
+    "variable":"execid",
+    "unit_or_type":"identifier",
+    "definition":"ExecuComp executive identifier"
+  },
+  {
+    "variable":"co_per_rol",
+    "unit_or_type":"identifier",
+    "definition":"ExecuComp executive\/company role identifier"
+  },
+  {
+    "variable":"event_id",
+    "unit_or_type":"identifier",
+    "definition":"gvkey:fyear, unique firm-year event"
+  },
+  {
+    "variable":"valuation_id",
+    "unit_or_type":"identifier",
+    "definition":"event_id:execid, unique CEO portfolio valuation"
+  },
+  {
+    "variable":"conm",
+    "unit_or_type":"text",
+    "definition":"Compustat company name"
+  },
+  {
+    "variable":"exec_fullname",
+    "unit_or_type":"text",
+    "definition":"ExecuComp executive name"
+  },
+  {
+    "variable":"sich",
+    "unit_or_type":"industry code",
+    "definition":"Historical Compustat SIC; missing historical SIC is excluded, not replaced by current SIC"
+  },
+  {
+    "variable":"sic2",
+    "unit_or_type":"industry code",
+    "definition":"floor(sich\/100), categorical two-digit industry"
+  },
+  {
+    "variable":"formula_version",
+    "unit_or_type":"text",
+    "definition":"A_paper_literal_diagnostic or B_standard_finance; A is not standard economic delta\/vega"
+  },
+  {
+    "variable":"payer",
+    "unit_or_type":"0\/1",
+    "definition":"1(dvpsx_f>0); missing fiscal dividend per share is not zero"
+  },
+  {
+    "variable":"cash_m",
+    "unit_or_type":"USD millions",
+    "definition":"(SALARY+BONUS)\/1000; original amounts thousands; no missing imputation"
+  },
+  {
+    "variable":"inside_debt_m",
+    "unit_or_type":"USD millions",
+    "definition":"(DEFER_BALANCE_TOT+PENSION_VALUE_TOT)\/1000; both annual inputs required; detail tables audit only"
+  },
+  {
+    "variable":"equity_m",
+    "unit_or_type":"USD millions",
+    "definition":"A: (common+unvested actual shares)*S+BSM options; B: common actual shares*S+BSM options; divide USD by 1e6"
+  },
+  {
+    "variable":"vega_k",
+    "unit_or_type":"USD thousands per 1pp volatility",
+    "definition":"A adds actual stock shares*0.01 to option vega; B stock vega=0; divide total USD by 1000"
+  },
+  {
+    "variable":"delta_vega",
+    "unit_or_type":"ratio",
+    "definition":"A: stock $1 delta plus option 1%-price delta \/ nonstandard stock-plus-option vega, diagnostic only. B: coherent total 1%-price delta \/ option 1pp-volatility vega. Zero vega -> missing, no epsilon"
+  },
+  {
+    "variable":"rellev",
+    "unit_or_type":"ratio",
+    "definition":"(inside_debt_m\/equity_m)\/(LT\/(PRCC_F*CSHO)); requires positive equity and firm leverage, nonnegative inside debt"
+  },
+  {
+    "variable":"ln_rellev",
+    "unit_or_type":"natural log",
+    "definition":"ln(rellev), only rellev>0; no log1p or zero-debt fill"
+  },
+  {
+    "variable":"high_rellev",
+    "unit_or_type":"0\/1",
+    "definition":"1(rellev>1), body-text threshold; missing leverage stays missing"
+  },
+  {
+    "variable":"age",
+    "unit_or_type":"years",
+    "definition":"Annual ExecuComp AGE, not present-age header PAGE"
+  },
+  {
+    "variable":"ln_tenure",
+    "unit_or_type":"natural log years",
+    "definition":"ln(1+floor((datadate-becameceo).days\/365.25)); header-date limitation documented"
+  },
+  {
+    "variable":"rd_at_pct",
+    "unit_or_type":"percentage points",
+    "definition":"100*XRD\/AT; original missing XRD ->0 only with rd_missing indicator"
+  },
+  {
+    "variable":"rd_missing",
+    "unit_or_type":"0\/1",
+    "definition":"Original XRD missing before the specific R&D ratio fill0"
+  },
+  {
+    "variable":"capx_at_pct",
+    "unit_or_type":"percentage points",
+    "definition":"100*CAPX\/AT; missing CAPX is not zero"
+  },
+  {
+    "variable":"asset_growth",
+    "unit_or_type":"ratio",
+    "definition":"(AT_t-AT_t-1)\/AT_t-1, strictly consecutive fyear and prior datadate; not multiplied by100"
+  },
+  {
+    "variable":"mb",
+    "unit_or_type":"ratio",
+    "definition":"(PRCC_F*CSHO)\/book equity; finite negative book equity retained, zero denominator missing"
+  },
+  {
+    "variable":"profitability_m",
+    "unit_or_type":"USD millions",
+    "definition":"IB-DVP+TXDITC, literal printed mnemonic; original paper thousand label conflicts with text scale"
+  },
+  {
+    "variable":"size_pct",
+    "unit_or_type":"percentile 0-100",
+    "definition":"100*count(reference market equity strictly smaller)\/N within fiscal year; reference is base-eligible CEO-company-CRSP firms before complete-case filters"
+  },
+  {
+    "variable":"re_at",
+    "unit_or_type":"ratio",
+    "definition":"RE\/AT, not multiplied by100"
+  },
+  {
+    "variable":"retvol255",
+    "unit_or_type":"daily percentage points",
+    "definition":"100*sample sd(RETX), ddof1, prior255 true market dates strictly before datadate, all255 valid, not annualized"
+  },
+  {
+    "variable":"sample_log",
+    "unit_or_type":"0\/1",
+    "definition":"Additional positive-relative-leverage mask for Table4 columns3\/9; other8 columns use all rows in each version dataset"
+  },
+  {
+    "variable":"sample_ab",
+    "unit_or_type":"0\/1",
+    "definition":"Intersection of complete A\/B nonlog samples; pair by gvkey,fyear for measurement comparisons"
+  },
+  {
+    "variable":"sample_ab_log",
+    "unit_or_type":"0\/1",
+    "definition":"Intersection of A\/B log-leverage samples"
+  },
+  {
+    "variable":"period_original",
+    "unit_or_type":"0\/1",
+    "definition":"Fiscal years2006-2011"
+  },
+  {
+    "variable":"period_new",
+    "unit_or_type":"0\/1",
+    "definition":"Fiscal years2012-2023"
+  },
+  {
+    "variable":"sigma60",
+    "unit_or_type":"annualized decimal SD",
+    "definition":"Sample sd of60 consecutive split-adjusted monthly log price changes times sqrt12; prior complete month is endpoint; requires61 consecutive prices"
+  },
+  {
+    "variable":"d",
+    "unit_or_type":"continuous annual rate",
+    "definition":"ln(1+mean(DVPSX_F\/PRCC_F in fiscal years t-3,t-2,t-1)); all3 years required"
+  },
+  {
+    "variable":"r",
+    "unit_or_type":"continuous annual rate",
+    "definition":"ln(1+DTB3\/100), last nonmissing rate on\/before fiscal-end date"
+  },
+  {
+    "variable":"size_ref_n",
+    "unit_or_type":"firms",
+    "definition":"Number of base-eligible firm-years used to calculate the annual size percentile"
+  },
+  {
+    "variable":"high_appendix",
+    "unit_or_type":"0\/1 diagnostic",
+    "definition":"1(rellev>firm_leverage), literal alternative appendix threshold; not the primary high_rellev"
+  },
+  {
+    "variable":"profitability_txdi_m",
+    "unit_or_type":"USD millions diagnostic",
+    "definition":"IB-DVP+TXDI, alternative matching the appendix verbal income-statement tax description"
+  },
+  {
+    "variable":"payer_calendar",
+    "unit_or_type":"0\/1 diagnostic",
+    "definition":"1(DVPSX_C>0); not primary payer"
+  }
+]

@@ -1,0 +1,81 @@
+# Reviewer replication package
+
+This private package contains the available code, data, models, saved judgments and evidence for all four stages of the CEO speech/R&D study. Large files are in the [reviewer replication release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-30). No access to the former development repository is needed for the commands below.
+
+The executable replay starts from the **saved topic representation and saved reader records**. It recomputes the twelve-trial screening analyses, rebuilds firm-year predictors, refits Ridge and XGBoost, and sends the new cross-fitted scores into raw-data reconstruction and all 25 downstream Stata regressions. It does not call AI readers again, fit a new BERTopic model, or regenerate upstream sentiment. Those would be new analyses, not recovery of the historical judgments.
+
+## Contents and boundaries
+
+| Stage | Code and review material in Git | Large release evidence | Reproduction boundary |
+| --- | --- | --- | --- |
+| 1. Narrative representation | [Topic implementation](implementation/ceo-rd/README.md), [original model specifications](implementation/ceo-rd/topic_models/bertopic_ideo_13-23_relaxed.yaml), [catalogue](step-2-twelve-trial-pilot/inputs/catalogue.json) | Source/model bundle: 61 files including original code/notebooks, processed speech, CEO metadata, historical density matrix, BERTopic model and topic descriptions | Saved density shape, catalogue identity and delivered ordering are bound to the run. Historical density files lack embedded original row/column fingerprints; byte integrity cannot retroactively prove their original alignment. |
+| 2. Relevance screening | [Twelve-trial report](step-2-twelve-trial-pilot/README.md), [protocols](step-2-twelve-trial-pilot/protocol/README.md), [replay code](step-2-mvp-simple/experiment/expanded-ai-pilot/results-2026-10-21/replay.py) | 3,840 evidence files: source packets, saved records, seals, frozen analysis runtime and detailed transitions | Offline recalculation of primary and supplementary results separately. Preserve the primary unresolved majority and all missing reader rows. Full native chat histories were not part of the reviewed export. |
+| 3. Behavioral prediction | [Supplied method and code](step-3-4/packages/step3_risk_score_collaborator_20261027/README.md), [connected adapter](agent_system/empirical/step3.py) | Components, density matrix, Compustat input, saved fits and scores, seed robustness results | Rebuild 29,506 firm-years; refit grouped five-fold Ridge/XGBoost with the delivered settings and 321-topic selection. |
+| 4. Downstream assessment | [Full package](step-3-4/packages/step4_full_from_raw_20261027/README.md), [compact route](step-3-4/packages/step4_rd_score_collaborator_20261027/README.md), [adapter](agent_system/empirical/step4.py) | Raw financial/market/compensation data, identity links, model inputs, coefficients, tables and audit outputs | Full route rebuilds the analysis data and runs 25 regressions (9 annual-behavior + 16 score models). The compact package is a separate frozen-input route. |
+
+All 334 files in the three supplied Step 3/4 packages are inventoried in [DELIVERY.json](step-3-4/DELIVERY.json). The [Step 2 inventory](step-2-mvp-simple/experiment/expanded-ai-pilot/results-2026-10-21/BUNDLE.json) and [source/model inventory](replication/manifests/source-ceo-rd.manifest.json) bind every release member. [IMPORT.json](replication/IMPORT.json) records the imported Git files and their original hashes. The supplied scientific package files remain unchanged from the reviewed export. Original supplied manifests are retained, including the recorded stale Step 3 README entry. The export redacts one personal path and refreshes the affected manifests; numerical files are unchanged.
+
+Historical imported guides may mention the development repository, earlier plans or local paths. They document their original context. Use this guide and the release in this repository for current access and execution.
+
+## Fresh checkout and core reproduction
+
+Prerequisites: access to this private repository, authenticated GitHub CLI (`gh`), Python **3.11.7**, and a Stata installation for estimation. The exact Python dependencies are in [requirements.txt](agent_system/empirical/requirements.txt). The core download is approximately 1.18 GB; restored inputs, evidence and generated models need additional working space. The original source/model bundle is separate so routine replay does not duplicate its 9.2 GB expanded corpus.
+
+```sh
+gh repo clone joyzhzh/ai-microfoundation-proxy
+cd ai-microfoundation-proxy
+python3.11 -m venv .venv
+.venv/bin/python -m pip install -r agent_system/empirical/requirements.txt
+.venv/bin/python replication/download.py --out .local/downloads
+.venv/bin/python replication/reproduce.py \
+  --downloads .local/downloads --out .local/reproduction \
+  --stata /path/to/stata
+```
+
+Use the executable path for your installation (for example `stata-mp`), not the application bundle directory. Supplied historical regressions used **Stata 19.5** and declare `version 19.0`. An explicit `--stata-version 18` creates a separate do-file changing only that declaration; the original do-file remains intact and the same numerical acceptance checks still apply. It is never selected silently.
+
+Without Stata, add `--through step4_prepare` to build all regression inputs. Later rerun the same command with `--stata` and the same output directory to finish estimation. Set the intended `--stata-version` consistently from the first run. Successful completed stages are hash-checked and reused on resume. Interrupted scientific output remains available for inspection; a failed fit may require a new run directory rather than overwriting partial work.
+
+The driver verifies compressed and expanded inputs, restores Step 2 evidence beside its frozen replay code, recomputes both analysis variants, checks that the primary `b1-gpt-6-astra-P0-xhigh` handoff is byte-identical to the Step 3 input, and invokes the connected stages. That selection is 321 relevant, 33 irrelevant and zero unresolved; its SHA-256 is `be14a1f557fbb28a9f4702af15ec49d9fb0ea7534e7701fd5cc301872d4461e9`.
+
+Inspect these outputs:
+
+- `REPRODUCTION.json`, `ENVIRONMENT.json`, `RESTORE.json`: run scope, completion and environment.
+- `screening/first/` and `screening/recovered/`: newly recalculated screening analyses and all trial handoffs.
+- `workflow/state.json` and `workflow/events.jsonl`: stage bindings, artifacts and resumable execution record.
+- Stage 3 validation and Stage 4 audit/QA reports under `workflow/`: numerical comparison with supplied results.
+- `logs/`: detailed local execution logs. Stata launcher headers may contain local license information; keep raw logs local.
+
+The driver preserves the supplied model grids, folds, seeds and computational settings. The Step 3 code uses its original 16-worker setting. No resource cap or scientific shortcut is introduced by the replication wrapper.
+
+## Full source/model download or streaming verification
+
+To retain all original source/model files as well as the core assets:
+
+```sh
+.venv/bin/python replication/download.py --out .local/downloads --source
+.venv/bin/python scripts/restore_review_bundle.py \
+  .local/downloads/source-ceo-rd.manifest.json --out .local/source
+```
+
+This adds approximately 2.9 GB compressed and 9.2 GB expanded. The three original source archive parts were repartitioned into 64 MiB transport parts; the concatenated archive hash and every member hash are unchanged. Extraction streams directly from the parts without creating an extra assembled archive. The original code, model files and corpus are preserved for inspection and authorized upstream work; availability is distinct from a claim of newly repeated topic training.
+
+When storage cannot hold the expanded source, verify a fresh download of **every member** without extracting:
+
+```sh
+.venv/bin/python replication/verify_source.py --out .local/source-verification.json
+```
+
+This downloads each part into a new temporary directory, checks each part, the full archive, and every expanded file, then removes only those temporary downloads. The receipt records the complete check. For an already downloaded archive, `scripts/restore_review_bundle.py MANIFEST --verify-only` verifies it without extraction.
+
+## Additional supplied analyses
+
+The release retains Step 3 saved-model/portable-model checks and all seed robustness evidence. After the connected run, use the restored Step 3 package's `code/04_verify.py` for its original saved-model checks and `code/03_seed_robustness.py` for the original additional-seed analysis. Run these from that package root with the pinned environment; use explicit output paths and preserve its original inputs. The connected core run and any separately executed robustness checks are distinguished in the verification record.
+
+The compact Step 4 package provides a separate 16-model frozen-input replay. It is included for review but is not a substitute for the connected full raw-data route. Its README supplies its original execution commands.
+
+## Verification record and interpretation
+
+New verification evidence is retained under [replication/verification](replication/verification/). Supplied historical reports, newly executed empirical checks, and fixture-based software tests are distinct. Predictive fit, screening agreement and downstream associations do not by themselves establish psychological construct validity, causal effects or superiority over another measurement approach.
+
+The repository and release remain private. Source-specific data access conditions continue to apply; this package grants no new license or redistribution rights.

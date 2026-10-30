@@ -1,6 +1,6 @@
 # Start and resume an NBM study
 
-Start with the [completed example](examples/completed-nbm/README.md) to see the method and outputs. Use the [runtime guide](agent_system/empirical/README.md) for executable commands.
+Start with the [completed example](examples/completed-nbm/README.md) to see the method and outputs. Use the [reviewer replication guide](REPLICATION.md) to reproduce the supplied study, or the [runtime guide](agent_system/empirical/README.md) for configuration and other compatible inputs.
 
 ## Read the current state
 

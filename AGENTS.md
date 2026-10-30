@@ -1,8 +1,8 @@
 # Working on AI Microfoundation Proxy
 
-This is the minimal user-facing NBM package. Preserve its four-step method and use WORKFLOW.md and agent_system/empirical/README.md as the current guides.
+This is the reviewer replication package for NBM. Preserve its four-step method and use REPLICATION.md, WORKFLOW.md and agent_system/empirical/README.md as the current guides.
 
-Keep this repository focused on the runnable tools, user documentation, completed aggregate example, roadmap, and final presentation. Do not import private literature, research notes, proposals, coauthor handoffs, source passages, person/firm-level datasets, operational logs, or their Git history. New study inputs and run outputs belong under ignored .local/.
+The owner's 30 October 2026 instruction authorizes the complete existing four-step results, scientific evidence, code, data and model packages in this private repository, including release assets, a fresh-download reproduction, push and merge. This supersedes the earlier minimal-package exclusions. Keep large datasets, source passages and models in the private release with inventories and tested restore commands. Preserve supplied scientific bytes and distinguish historical checks from newly executed checks. Do not import unrelated literature, proposals, meeting recordings/transcripts, credentials or personal administrative information. New run outputs belong under ignored .local/; retain concise reproduction reports in replication/verification/.
 
 Researchers determine constructs, scientific settings, and interpretation. Keep supplied empirical results, newly executed results, and fixtures distinct. Preserve reader independence, missingness, minority judgments, input identities, folds, and resumable outputs.
 

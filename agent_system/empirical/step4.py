@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from contextlib import contextmanager
 import importlib.util
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -187,7 +188,7 @@ def prepare(config: dict, out: Path, scores: Path, panel: Path) -> dict:
 
 
 def estimate(config: dict, out: Path) -> dict:
-    """Estimate an existing preparation. Never substitutes or downgrades Stata."""
+    """Estimate a preparation; an explicit version-18 compatibility run is recorded."""
     package, out = _package(config), Path(out).resolve()
     available = artifacts(out)
     script = out / "regression/stata/RUN_MODELS.do"
@@ -199,14 +200,30 @@ def estimate(config: dict, out: Path) -> dict:
     value = config.get("stata_exe")
     executable = (shutil.which(str(value)) or str(Path(value).expanduser())) if value else None
     if not executable or not Path(executable).is_file():
-        raise NeedsStataError("Step 4 inputs are prepared. Set stata_exe to Stata 19.5 (delivered runtime); the original do-file requires version 19.0. Stata 18 is not substituted.", available)
+        raise NeedsStataError("Step 4 inputs are prepared. Set stata_exe to a compatible Stata executable. Delivered results used Stata 19.5; version 18 requires explicit stata_version=18.", available)
+    version = config.get("stata_version", 19)
+    if version not in (18, 19):
+        raise ValueError("stata_version must be 18 or 19")
+    executed = script
+    if version == 18:
+        original = script.read_text()
+        if original.count("version 19.0\n") != 1:
+            raise ValueError("Expected exactly one original Stata version declaration")
+        executed = script.with_name("RUN_MODELS_stata18.do")
+        executed.write_text(original.replace("version 19.0\n", "version 18.0\n", 1))
+        _write(out / "regression/audit/STATA_COMPATIBILITY.json", {
+            "requested_version": 18, "delivered_runtime": "19.5",
+            "only_change": "version 19.0 -> version 18.0 in a separate generated do-file",
+            "original_sha256": hashlib.sha256(script.read_bytes()).hexdigest(),
+            "executed_sha256": hashlib.sha256(executed.read_bytes()).hexdigest(),
+            "acceptance": "Unchanged supplied coefficient, SE, sample, fit and presentation checks must pass."})
     # Remove only the completion marker so failed reruns cannot pass on stale output.
     (script.parent / "run_finished.txt").unlink(missing_ok=True)
-    command = [executable, "/e" if os.name == "nt" else "-b", "do", script.name]
+    command = [executable, "/e" if os.name == "nt" else "-b", "do", executed.name]
     with (script.parent / "launcher.log").open("w") as log:
         result = subprocess.run(command, cwd=script.parent, stdout=log, stderr=subprocess.STDOUT)
     if result.returncode or not (script.parent / "run_finished.txt").is_file():
-        raise NeedsStataError("Stata estimation did not complete. The unchanged script requires Stata >=19.0; delivered results used 19.5. Inspect regression/stata/launcher.log and regression.log.", artifacts(out))
+        raise NeedsStataError("Stata estimation did not complete. Inspect regression/stata/launcher.log and regression.log; delivered results used Stata 19.5.", artifacts(out))
     with _source_context():
         reg, ref = out / "regression", package / "reference/regression"
         if config.get("profile", "reproduce") == "reproduce":

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ceo-rd"
+version = "0.1.0"
+description = "用 CEO 讲话 topic 预测公司 R&D 强度：面板构建、实验框架与结果报告"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "scikit-learn>=1.2",
+    "xgboost>=1.7",
+    "pyarrow>=12",
+    "pyyaml>=6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+# BERTopic 训练 / 推断（ceo-rd topics ...）；需要较多算力，不必在每台机器上安装
+topics = [
+    "bertopic==0.16.4",  # 训练现有模型时的版本
+    "sentence-transformers>=2.2",
+    "umap-learn>=0.5",
+    "hdbscan>=0.8.33",
+    "openpyxl>=3.1",
+]
+
+[project.scripts]
+ceo-rd = "ceo_rd.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore:is_sparse is deprecated:DeprecationWarning"]

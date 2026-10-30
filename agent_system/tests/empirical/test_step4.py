@@ -55,6 +55,30 @@ class Step4ContractTests(unittest.TestCase):
             self.assertEqual(error.exception.artifacts["dofile"], str(script.resolve()))
             self.assertEqual(script.read_text(), "version 19.0\n")
 
+    def test_explicit_stata18_preserves_original_and_checks_results(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp)
+            script = out / "regression/stata/RUN_MODELS.do"
+            script.parent.mkdir(parents=True)
+            original = "version 19.0\nlogit payer score\n"
+            script.write_text(original)
+            (out / "CONNECTED_INPUTS.json").write_text('{"profile":"reproduce"}')
+            def executed(command, **kwargs):
+                self.assertEqual(command[-1], "RUN_MODELS_stata18.do")
+                (script.parent / "run_finished.txt").write_text("done")
+                return SimpleNamespace(returncode=0)
+            with patch.object(step4, "_package", return_value=Path("/package")), \
+                 patch.object(step4.subprocess, "run", side_effect=executed), \
+                 patch.object(step4, "_load", side_effect=lambda path: path), \
+                 patch.object(step4, "_main", side_effect=ValueError("reference mismatch")):
+                with self.assertRaisesRegex(ValueError, "reference mismatch"):
+                    step4.estimate({"profile":"reproduce", "stata_exe":sys.executable,
+                                    "stata_version":18}, out)
+            self.assertEqual(script.read_text(), original)
+            self.assertEqual(script.with_name("RUN_MODELS_stata18.do").read_text(),
+                             original.replace("version 19.0", "version 18.0"))
+            self.assertTrue((out / "regression/audit/STATA_COMPATIBILITY.json").exists())
+
     def test_run_prepares_before_stata_check(self):
         with patch.object(step4, "prepare") as prepare, patch.object(step4, "estimate", side_effect=step4.NeedsStataError("needed", {})):
             with self.assertRaises(step4.NeedsStataError):
