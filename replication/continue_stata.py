@@ -5,6 +5,7 @@ The Windows files remain byte-identical to the checksummed review export.
 """
 import argparse
 from datetime import datetime, timezone
+import importlib.metadata
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -113,6 +114,13 @@ def main():
     config = {'profile': 'reproduce', 'python': sys.executable, 'packages_root': str(packages),
               'stata_exe': str(args.stata.resolve()), 'stata_version': args.stata_version}
     (out / 'reproduce.json').write_text(json.dumps(config, indent=2) + '\n')
+    local_packages = {}
+    for name in ['numpy', 'pandas', 'bottleneck', 'scipy', 'scikit-learn',
+                 'xgboost', 'joblib', 'pyarrow', 'openpyxl', 'jsonschema', 'openai']:
+        try:
+            local_packages[name] = importlib.metadata.version(name)
+        except importlib.metadata.PackageNotFoundError:
+            local_packages[name] = None
     report = {'status': 'running', 'scope': 'Connected split-runtime reproduction: Windows Steps 1–3 and raw-data Step 4 preparation, local Stata estimation',
               'windows_commit': evidence['commit'], 'windows_workflow_run': evidence['workflow_run'],
               'windows_workflow_attempt': evidence['workflow_attempt'],
@@ -121,6 +129,8 @@ def main():
               'topic_training': 'Saved representation replay; no new BERTopic fitting or sentiment generation.',
               'new_step3_scores_used': True, 'supplementary_passed': True,
               'stata_version_requested': args.stata_version, 'local_python': sys.version,
+              'local_packages': local_packages,
+              'stata_executable_sha256': digest(args.stata.resolve()),
               'local_platform': sys.platform, 'stages': {s: 'complete' for s in ['step1', 'step2', 'step3', 'step4_prepare']}}
     destination = out / 'REPRODUCTION.json'
     def save():
