@@ -145,7 +145,7 @@ Keep your study inputs, local configurations, and run outputs in the ignored `.l
 
 ## Roadmap
 
-The [roadmap](ROADMAP.md) builds on the completed example: run the full empirical chain through the connected agent, strengthen input and screening evidence, assess construct interpretation, and prepare a second application. Each milestone identifies what evidence would establish completion.
+The full empirical chain has now passed a [fresh-download connected reproduction](REPLICATION.md), including new prediction fits and downstream Stata estimation. The remaining [roadmap](ROADMAP.md) strengthens input and screening evidence, assesses construct interpretation, and prepares a second application. Each milestone identifies what evidence would establish completion.
 
 ## Design principles
 

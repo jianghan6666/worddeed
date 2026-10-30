@@ -1,6 +1,6 @@
 # Reviewer replication package
 
-This private package contains the available code, data, models, saved judgments and evidence for all four stages of the CEO speech/R&D study. Large files are in the [reviewer replication release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-30). No access to the former development repository is needed for the commands below.
+This private package contains the available code, data, models, saved judgments and evidence for all four stages of the CEO speech/R&D study. The [verified replication release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-31) contains the current code and newly executed outputs. Large historical inputs are frozen in the separate [input release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-30); that earlier tag's code snapshot is superseded by the verified release. No access to the former development repository is needed for the commands below.
 
 The executable replay starts from the **saved topic representation and saved reader records**. It recomputes the twelve-trial screening analyses, rebuilds firm-year predictors, refits Ridge and XGBoost, and sends the new cross-fitted scores into raw-data reconstruction and all 25 downstream Stata regressions. It does not call AI readers again, fit a new BERTopic model, or regenerate upstream sentiment. Those would be new analyses, not recovery of the historical judgments.
 
@@ -85,6 +85,25 @@ gh run download RUN_ID --repo joyzhzh/ai-microfoundation-proxy \
 ```
 
 Use `.venv/Scripts/python.exe` on Windows. Omit `--stata-version 18` for Stata 19. The continuation rechecks every restored input and exported handoff file, verifies completed-stage output lineage, then estimates the Windows-prepared model inputs. It records a split-runtime run explicitly; it does not rewrite the Windows workflow state or pass off frozen scores as new fits. Failed evidence remains available, and a failed handoff cannot be continued. [STATA18_REFERENCE_CHECK.json](replication/verification/STATA18_REFERENCE_CHECK.json) separately records the successful 25-model Stata 18 compatibility test from frozen reference tables.
+
+## Completed verification and downloadable outputs
+
+The [connected verification record](replication/verification/CONNECTED_REPRODUCTION.json) documents a successful fresh Windows run and local Stata 18 continuation. It replayed 122 screening analysis/handoff files, rebuilt the 29,506-row panel exactly, refitted both models, passed the original three-seed checks, rebuilt the financial and matching data, and estimated all 25 downstream models. All eight XGBoost score columns match the reference exactly; Ridge passes the original tolerances. Financial reconstruction passes its original `1e-12` comparison, without claiming every numeric value is bitwise identical. All 410 regression checks and the coefficient/SE, sample and presentation checks pass at their unchanged thresholds. Completed prediction stages were hash-checked and reused when advancing to regression preparation.
+
+The accepted Windows run is [41107621004, attempt 2](https://github.com/joyzhzh/ai-microfoundation-proxy/actions/runs/41107621004). Its 428 exported files were verified before and after Stata estimation. The completion report identifies both code commits, Python dependencies, the Stata executable hash and the explicit version-18 compatibility change. Earlier failed and cancelled attempts are retained separately in the [verification index](replication/verification/README.md).
+
+To inspect the newly executed outputs without fitting again:
+
+```sh
+gh release download reviewer-replication-2026-10-31 \
+  --repo joyzhzh/ai-microfoundation-proxy \
+  --pattern 'fresh-reproduction.tar.gz.part*' --dir .local/verified-run
+cp replication/manifests/fresh-reproduction.manifest.json .local/verified-run/
+.venv/bin/python scripts/restore_review_bundle.py \
+  .local/verified-run/fresh-reproduction.manifest.json --out .local/verified-run-expanded
+```
+
+Use `.venv/Scripts/python.exe` on Windows. The checked-in manifest is the checksum trust anchor. Add `--verify-only` instead of `--out ...` to verify every archive member without extracting. The [fresh-download receipt](replication/verification/FINAL_OUTPUT_DOWNLOAD.json) records the independent download check. The export preserves scientific binaries, replaces local paths with portable labels, and omits raw Stata license headers. It is a review copy; start a fresh reproduction to execute again.
 
 ## Full source/model download or streaming verification
 

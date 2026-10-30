@@ -7,13 +7,14 @@ The [completed example](examples/ceo-risk-preference/README.md) provides the emp
 - A four-step CEO speech/R&D application: topic representation, twelve-trial relevance screening, grouped Ridge/XGBoost prediction, and downstream dividend-policy analysis.
 - Saved aggregate screening results, prediction metrics, and regression tables in the [worked example](examples/ceo-risk-preference/README.md).
 - A connected coordinator with stage adapters, saved state, and resume, demonstrated with invented inputs.
+- A [fresh-download connected empirical reproduction](replication/verification/CONNECTED_REPRODUCTION.json): saved screening replay, new Ridge/XGBoost fits, three-seed checks, raw-data reconstruction and all 25 Stata models.
 - User guides, an introduction, and a narrated walkthrough.
 
-## 1. Execute the complete example through the agent
+## 1. Execute the complete example through the agent — completed
 
-Run the connected workflow with authorized empirical inputs and compatible Python and Stata environments. Refit the prediction model, pass its new scores to the downstream stage, and compare declared outputs with the saved references.
+The connected workflow ran from freshly downloaded inputs on Windows with Python 3.11.7, then continued the verified regression inputs in Stata 18. New prediction scores fed the full raw-data route. The original prediction, seed, finance, matching, regression and presentation checks passed.
 
-**Done when:** a complete run preserves input identities, environment versions, stage outputs, diagnostics, comparison results, and a tested resume path. The offline fixture does not satisfy this milestone.
+**Completion evidence:** [REPLICATION.md](REPLICATION.md) links the code, input inventories, downloadable outputs, environment records and new verification. The run preserved input identities and original scientific settings, and reused completed fits after hash checks. The saved-representation boundary and historical alignment limits remain explicit.
 
 ## 2. Strengthen input and screening evidence
 
