@@ -34,22 +34,6 @@ Agents follow explicit workflows and use tools for computation and record keepin
 
 The executable system has one coordinator and, for fresh screening, three independent model readers. Topic preparation, proxy estimation, and downstream analysis use Python adapters and scientific programs. The [role guides](agents/coordinator.md) explain these responsibilities.
 
-### Multi-layered architecture
-
-```text
-                       HUMAN RESEARCHER
-                              |
-                         Coordinator
-                              |
-AGENTS      [ Independent screening readers ] <---+
-                              |                  |
-WORKFLOWS   [ Topics / Screen / Predict / Assess ] +--- RESOURCES
-                              |                  |    Construct definition,
-TOOLS       [ Python adapters + study programs ] <+    inputs and model settings
-                              |
-RECORDS     [ Decisions / outputs / saved state ]
-```
-
 ### Four-step workflow
 
 1. **Represent the narrative.** Bind the topic catalogue and density inputs to the study's observations. Preserve the topic ordering and input identities.
