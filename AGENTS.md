@@ -1,6 +1,6 @@
 # Working on AI Microfoundation Proxy
 
-This is the minimal user-facing NBM package. Preserve its four-step method and use WORKFLOW.md and agent_system/empirical/README.md as the current guides.
+Use **AI Microfoundation Proxy** as the project name and `ai-microfoundation-proxy` as the repository slug. This is the minimal user-facing package. Preserve its four-step method and use WORKFLOW.md and agent_system/empirical/README.md as the current guides.
 
 Keep this repository focused on the runnable tools, user documentation, completed aggregate example, roadmap, and final presentation. Do not import private literature, research notes, proposals, coauthor handoffs, source passages, person/firm-level datasets, operational logs, or their Git history. New study inputs and run outputs belong under ignored .local/.
 

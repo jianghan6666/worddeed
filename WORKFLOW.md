@@ -1,6 +1,6 @@
-# Start and resume an NBM study
+# Start and resume an AI Microfoundation Proxy study
 
-Start with the [completed example](examples/completed-nbm/README.md) to see the method and outputs. Use the [runtime guide](agent_system/empirical/README.md) for executable commands.
+Start with the [completed example](examples/ceo-risk-preference/README.md) to see the method and outputs. Use the [runtime guide](agent_system/empirical/README.md) for executable commands.
 
 ## Read the current state
 

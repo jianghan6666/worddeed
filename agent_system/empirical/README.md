@@ -72,4 +72,4 @@ After installing analysis dependencies, run the wider adapter suite:
 python3 -m unittest discover -s agent_system/tests -v
 ```
 
-Most adapter tests fabricate inputs and mock scientific execution. The full screening checks need `NBM_SCREENING_TOOLKIT` pointing to the compatible external toolkit; they create invented packets and make no live calls. Two original-function checks need `NBM_PACKAGES_ROOT` pointing to authorized complete packages. Those external checks are explicitly skipped when their inputs are absent. Passing software tests is distinct from empirical reproduction.
+Most adapter tests fabricate inputs and mock scientific execution. The full screening checks need `AI_MICROFOUNDATION_PROXY_SCREENING_TOOLKIT` pointing to the compatible external toolkit; they create invented packets and make no live calls. Two original-function checks need `AI_MICROFOUNDATION_PROXY_PACKAGES_ROOT` pointing to authorized complete packages. Those external checks are explicitly skipped when their inputs are absent. Passing software tests is distinct from empirical reproduction.

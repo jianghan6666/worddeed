@@ -1,4 +1,4 @@
-# Connected NBM runtime
+# Connected AI Microfoundation Proxy runtime
 
 Start with the [four-step runtime guide](empirical/README.md). It documents the self-contained offline demo, saved state and resume, tests, and configuration for external empirical inputs.
 

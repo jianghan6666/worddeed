@@ -12,4 +12,4 @@ Run three independent initial readings of the complete catalogue. Seal all three
 
 Selected and excluded topic IDs, unresolved cases, all judgments and reasons, and minority votes.
 
-Use the [runtime guide](../agent_system/empirical/README.md) for commands. The [completed example](../examples/completed-nbm/README.md) illustrates the delivered method; the [roadmap](../ROADMAP.md) identifies further assessment.
+Use the [runtime guide](../agent_system/empirical/README.md) for commands. The [completed example](../examples/ceo-risk-preference/README.md) illustrates the delivered method; the [roadmap](../ROADMAP.md) identifies further assessment.
