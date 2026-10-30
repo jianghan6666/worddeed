@@ -8,6 +8,24 @@ from replication.download import download, REPO
 
 
 class DownloadTests(unittest.TestCase):
+    def test_slow_connection_retries_a_new_url_and_preserves_full_file(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);urls=[]
+            listing={'assets':[{'name':'asset','apiUrl':f'https://api.github.com/repos/{REPO}/releases/assets/1'}]}
+            def fetched(cmd,**kwargs):
+                urls.append(cmd[-1])
+                path=Path(cmd[cmd.index('--output')+1])
+                if len(urls)==1:
+                    path.write_bytes(b'incomplete')
+                    raise subprocess.CalledProcessError(28,cmd)
+                path.write_bytes(b'complete')
+            with patch('replication.download.subprocess.check_output',side_effect=[json.dumps(listing),'fixture-token']), \
+                 patch('replication.download.subprocess.run',side_effect=fetched):
+                download('gh','asset',root,'curl',True)
+            self.assertEqual(len(urls),2)
+            self.assertNotEqual(urls[0],urls[1])
+            self.assertEqual((root/'asset').read_bytes(),b'complete')
+
     def test_interrupted_transfer_does_not_leave_final_asset(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)

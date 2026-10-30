@@ -22,7 +22,7 @@ def digest(path):
     return h.hexdigest()
 
 
-def download(gh, name, directory, transport='gh'):
+def download(gh, name, directory, transport='gh', refresh_slow=False):
     directory = Path(directory)
     if (directory/name).exists():
         return
@@ -34,15 +34,24 @@ def download(gh, name, directory, transport='gh'):
             url = next(x['apiUrl'] for x in listing['assets'] if x['name'] == name)
             if not url.startswith(f'https://api.github.com/repos/{REPO}/releases/assets/'):
                 raise ValueError('Unexpected private asset API URL')
-            # Request a fresh signed redirect rather than reusing an intermediary's
-            # stale cached asset response. Identity still comes from frozen hashes.
-            url += '?download=1&fresh=' + str(time.time_ns())
             credential = subprocess.check_output([gh, 'auth', 'token'], text=True).strip()
             # Credentials travel on stdin, never in argv, files or printed logs.
             config = f'header = "Authorization: Bearer {credential}"\nheader = "Accept: application/octet-stream"\n'
-            subprocess.run(['curl', '--http1.1', '--fail', '--silent', '--show-error',
-                            '--location', '--config', '-', '--output', str(Path(tmp)/name), url],
-                           input=config, text=True, check=True)
+            while True:
+                # A new signed redirect can recover a slow CDN connection. This
+                # optional transfer retry never changes scientific worker settings.
+                fresh_url = url + '?download=1&fresh=' + str(time.time_ns())
+                command = ['curl', '--http1.1', '--fail', '--silent', '--show-error',
+                           '--location', '--config', '-', '--output', str(Path(tmp)/name)]
+                if refresh_slow:
+                    command += ['--speed-limit', '262144', '--speed-time', '15']
+                try:
+                    subprocess.run([*command, fresh_url], input=config, text=True, check=True)
+                    break
+                except subprocess.CalledProcessError as exc:
+                    if not refresh_slow or exc.returncode != 28:
+                        raise
+                    print('Refreshing slow asset connection: '+name, flush=True)
         else:
             subprocess.run([gh, 'release', 'download', TAG, '--repo', REPO, '--pattern', name,
                             '--dir', tmp], check=True)
@@ -54,6 +63,8 @@ def main():
     p.add_argument('--out', type=Path, required=True)
     p.add_argument('--transport', choices=['gh','curl'], default='gh',
                    help='curl uses authenticated HTTP/1.1 when the default transfer route is unreliable')
+    p.add_argument('--refresh-slow', action='store_true',
+                   help='For curl only: retry a fresh URL after 15 seconds below 256 KiB/s; no scientific setting changes')
     p.add_argument('--source', action='store_true', help='Also download the original 9.2 GB source/model archive (2.9 GB compressed)')
     args = p.parse_args()
     gh = shutil.which('gh')
@@ -72,7 +83,7 @@ def main():
     def fetch(item):
         i, name = item
         print(f'{i}/{len(names)} {name}', flush=True)
-        download(gh, name, args.out, args.transport)
+        download(gh, name, args.out, args.transport, args.refresh_slow)
         spec = next((x for x in specs if x['name'] == name), None)
         if spec and (digest(args.out/name) != spec['sha256'] or
                      ('bytes' in spec and (args.out/name).stat().st_size != spec['bytes'])):
