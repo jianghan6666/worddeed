@@ -1,6 +1,6 @@
 # Research resources
 
-Start with the [completed CEO speech and R&D example](../examples/ceo-risk-preference/README.md). It follows one application through all four stages, reports the delivered findings, and distinguishes them from the runnable fixture. Its [aggregate results and field guide](../examples/ceo-risk-preference/results/README.md) explain the three included evidence files.
+Start with the [completed CEO speech and R&D example](../../examples/ceo-risk-preference/README.md). It follows one application through all four stages, reports the delivered findings, and distinguishes them from the runnable fixture. Its [aggregate results and field guide](../../examples/ceo-risk-preference/results/README.md) explain the three included evidence files.
 
 | Research task | Guide | Questions to resolve |
 | --- | --- | --- |
@@ -11,4 +11,4 @@ Start with the [completed CEO speech and R&D example](../examples/ceo-risk-prefe
 
 For a new application, record the construct definition, unit, period, narrative sources, behavioral target, intended use, and assessment criteria before execution. A CEO-risk specification does not automatically transfer to another construct.
 
-The [workflow guide](../WORKFLOW.md) covers execution and handoff. The [roadmap](../ROADMAP.md) identifies further reproduction, provenance, validation, and reuse work. The included evidence is a compact illustration of completed findings; it does not replace the study inputs needed for a full empirical run.
+The [workflow guide](../WORKFLOW.md) covers execution and handoff. The [roadmap](../ROADMAP.md) identifies further reproduction, provenance, validation, and reuse work. The [full results](../../RESULTS.md) provide the complete findings; the [replication guide](../../REPLICATION.md) supplies access to the inventoried study inputs and execution instructions.

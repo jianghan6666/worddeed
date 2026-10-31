@@ -16,7 +16,7 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from replication.download import REPO, TAG, digest, download
-from scripts.restore_review_bundle import restore
+from replication.restore import restore
 
 
 def main():

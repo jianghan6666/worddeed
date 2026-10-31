@@ -1,0 +1,82 @@
+{
+  "purpose": "Resolve historical repository paths after the study layout reorganization; archive-member paths and scientific identities are unchanged.",
+  "previous_layout_commit": "930e6bd777d810322e1096b2bf6b84ee3fed9d4d",
+  "moves": [
+    {
+      "from": "agents",
+      "to": "docs/agents"
+    },
+    {
+      "from": "workflows",
+      "to": "docs/workflows"
+    },
+    {
+      "from": "tools",
+      "to": "docs/tools"
+    },
+    {
+      "from": "resources",
+      "to": "docs/resources"
+    },
+    {
+      "from": "WORKFLOW.md",
+      "to": "docs/WORKFLOW.md"
+    },
+    {
+      "from": "ROADMAP.md",
+      "to": "docs/ROADMAP.md"
+    },
+    {
+      "from": "implementation/ceo-rd",
+      "to": "study/representation"
+    },
+    {
+      "from": "step-2-mvp-simple/experiment/expanded-ai-pilot",
+      "to": "study/screening/experiment"
+    },
+    {
+      "from": "step-2-mvp-simple/experiment/comparison-2026-10-19",
+      "to": "study/screening/history/comparison-2026-10-19"
+    },
+    {
+      "from": "step-2-twelve-trial-pilot",
+      "to": "study/screening/review"
+    },
+    {
+      "from": "step-3-4/packages/step3_risk_score_collaborator_20261027",
+      "to": "study/prediction"
+    },
+    {
+      "from": "step-3-4/packages/step4_full_from_raw_20261027",
+      "to": "study/assessment/full"
+    },
+    {
+      "from": "step-3-4/packages/step4_rd_score_collaborator_20261027",
+      "to": "study/assessment/score-models"
+    },
+    {
+      "from": "step-3-4/source-manifests",
+      "to": "replication/manifests/empirical-delivery/source-manifests"
+    },
+    {
+      "from": "step-3-4/DELIVERY.json",
+      "to": "replication/manifests/empirical-delivery/DELIVERY.json"
+    },
+    {
+      "from": "step-3-4/INTAKE_CHECKS.json",
+      "to": "replication/manifests/empirical-delivery/INTAKE_CHECKS.json"
+    },
+    {
+      "from": "step-3-4/README.md",
+      "to": "replication/manifests/empirical-delivery/README.md"
+    },
+    {
+      "from": "step-3-4/verify.py",
+      "to": "replication/verify_delivery.py"
+    },
+    {
+      "from": "scripts/restore_review_bundle.py",
+      "to": "replication/restore.py"
+    }
+  ]
+}

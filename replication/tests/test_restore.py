@@ -7,7 +7,7 @@ import tarfile
 import tempfile
 import unittest
 
-from scripts.restore_review_bundle import restore
+from replication.restore import restore
 
 
 class RestoreTests(unittest.TestCase):

@@ -71,8 +71,8 @@ def main():
     if not gh:
         p.error('Install GitHub CLI and sign in with access to this private repository')
     args.out.mkdir(parents=True, exist_ok=True)
-    delivery = json.loads((ROOT/'step-3-4/DELIVERY.json').read_text())
-    evidence = json.loads((ROOT/'step-2-mvp-simple/experiment/expanded-ai-pilot/results-2026-10-21/BUNDLE.json').read_text())
+    delivery = json.loads((ROOT/'replication/manifests/empirical-delivery/DELIVERY.json').read_text())
+    evidence = json.loads((ROOT/'study/screening/experiment/results-2026-10-21/BUNDLE.json').read_text())
     specs = list(delivery['parts'])
     specs.append({'name':'step2-twelve-evidence-2026-10-21.tar.gz', 'sha256':evidence['sha256']})
     if args.source:
@@ -92,7 +92,7 @@ def main():
     with ThreadPoolExecutor(max_workers=4) as pool:
         list(pool.map(fetch, enumerate(names, 1)))
     # The checked-in manifests are the trust anchor, not a mutable downloaded manifest.
-    expected = ROOT/'step-3-4/DELIVERY.json'
+    expected = ROOT/'replication/manifests/empirical-delivery/DELIVERY.json'
     if (args.out/'DELIVERY.json').read_bytes() != expected.read_bytes():
         raise ValueError('Downloaded DELIVERY.json differs from the checked-in inventory')
     if args.source:

@@ -6,7 +6,7 @@ AI Microfoundation Proxy connects narrative evidence, AI-assisted topic screenin
 
 **Reviewer results:** [Full four-step results](RESULTS.md) · [PDF report](results/report.pdf) · [Complete results download](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/full-results-2026-10-31)
 
-[Introduction](docs/index.html) · [Video](docs/video/four-step-agent.mp4) · [Completed example](examples/ceo-risk-preference/README.md) · [Roadmap](ROADMAP.md) · [Workflow guide](WORKFLOW.md) · [Reviewer replication](REPLICATION.md)
+[Introduction](docs/index.html) · [Video](docs/video/four-step-agent.mp4) · [Completed example](examples/ceo-risk-preference/README.md) · [Roadmap](docs/ROADMAP.md) · [Workflow guide](docs/WORKFLOW.md) · [Reviewer replication](REPLICATION.md)
 
 ## What is AI Microfoundation Proxy?
 
@@ -32,7 +32,7 @@ Agents follow explicit workflows and use tools for computation and record keepin
 | **Proxy estimation** | Fits the specified grouped prediction models. | Scores, folds, models, and fit diagnostics. |
 | **Downstream analysis** | Matches scores to the study panel and prepares and estimates the specified models. | Analysis inputs, tables, and diagnostics. |
 
-The executable system has one coordinator and, for fresh screening, three independent model readers. Topic preparation, proxy estimation, and downstream analysis use Python adapters and scientific programs. The [role guides](agents/coordinator.md) explain these responsibilities.
+The executable system has one coordinator and, for fresh screening, three independent model readers. Topic preparation, proxy estimation, and downstream analysis use Python adapters and scientific programs. The [role guides](docs/agents/coordinator.md) explain these responsibilities.
 
 ### Four-step workflow
 
@@ -54,7 +54,7 @@ Narrative evidence → Topics → Relevance screening
                        Researcher interpretation
 ```
 
-The [workflow guide](WORKFLOW.md) connects these steps to the runtime. The coordinator's tools are `get_status`, `run_stage`, `read_result`, and `finish`; saved artifacts determine whether a stage is complete.
+The [workflow guide](docs/WORKFLOW.md) connects these steps to the runtime. The coordinator's tools are `get_status`, `run_stage`, `read_result`, and `finish`; saved artifacts determine whether a stage is complete.
 
 ## Completed example
 
@@ -89,7 +89,7 @@ For real execution, provide compatible study inputs and scientific packages thro
 Open this repository in your coding-agent workspace:
 
 ```text
-Act as the coordinator for an AI Microfoundation Proxy study. Follow ./WORKFLOW.md.
+Act as the coordinator for an AI Microfoundation Proxy study. Follow ./docs/WORKFLOW.md.
 Read the current configuration and saved handoff first.
 
 Help me state the construct, narrative inputs, behavioral target,
@@ -124,28 +124,34 @@ Open [the local introduction](http://127.0.0.1:8765/) to explore the method and 
 
 ## Repository layout
 
+Start with [full results](RESULTS.md) to inspect the study or [replication](REPLICATION.md) to reproduce it. The repository has six main folders; the scientific materials follow the four stages inside `study/`.
+
 ```text
 ai-microfoundation-proxy/
 |-- README.md                 Introduction and setup
 |-- AGENTS.md                 Instructions for coding agents
-|-- WORKFLOW.md               Start and resume a study
-|-- ROADMAP.md                Completed work and next milestones
-|-- agents/                   Roles and responsibilities
-|-- workflows/                Four-step research protocols
-|-- tools/                    Guide to callable tools
-|-- resources/                Method and input guide
-|-- agent_system/             Connected runtime, adapters, and tests
-|-- examples/
-|   `-- ceo-risk-preference/   Worked study and aggregate results
-|-- docs/                     Introduction, video, and narration
-`-- .github/workflows/        Software checks
+|-- RESULTS.md                Full-results entry point
+|-- REPLICATION.md            Verified reproduction instructions
+|-- agent_system/             Coordinator, stage adapters, contracts, and tests
+|-- docs/                     Workflow, roles, protocols, roadmap, and introduction
+|-- examples/                 Concise worked application and aggregate findings
+|-- study/                    Original scientific methods, code, and reading copies
+|   |-- representation/       Topic implementation and model specifications
+|   |-- screening/            Twelve-trial review, experiment, and history
+|   |-- prediction/           Panel construction and Ridge/XGBoost package
+|   `-- assessment/           Full analysis and compact score-model route
+|-- results/                  Full report, reader browsers, scores, and tables
+|-- replication/              Download/restore tools, manifests, and verification
+|-- .github/workflows/        Software, results, and Windows reproduction checks
+|-- .gitattributes            Preserve inventoried file bytes across platforms
+`-- .gitignore                Exclude local inputs, runs, and environment files
 ```
 
-Keep your study inputs, local configurations, and run outputs in the ignored `.local/` directory. This private package also includes the scientific code and complete inventoried evidence through its [reviewer replication release](REPLICATION.md); large datasets and models are restored from release assets.
+The [repository guide](docs/REPOSITORY.md) explains each folder and maps the former delivery paths to their current locations. Keep new study inputs, local configurations, restored packages, and run outputs in ignored `.local/`. Large datasets, models, and complete evidence archives are downloaded from the private releases through [REPLICATION.md](REPLICATION.md).
 
 ## Roadmap
 
-The full empirical chain has now passed a [fresh-download connected reproduction](REPLICATION.md), including new prediction fits and downstream Stata estimation. The remaining [roadmap](ROADMAP.md) strengthens input and screening evidence, assesses construct interpretation, and prepares a second application. Each milestone identifies what evidence would establish completion.
+The full empirical chain has now passed a [fresh-download connected reproduction](REPLICATION.md), including new prediction fits and downstream Stata estimation. The remaining [roadmap](docs/ROADMAP.md) strengthens input and screening evidence, assesses construct interpretation, and prepares a second application. Each milestone identifies what evidence would establish completion.
 
 ## Design principles
 
