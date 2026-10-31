@@ -28,47 +28,47 @@
     },
     {
       "from": "implementation/ceo-rd",
-      "to": "study/representation"
+      "to": "applications/ceo-risk-preference/study/representation"
     },
     {
       "from": "step-2-mvp-simple/experiment/expanded-ai-pilot",
-      "to": "study/screening/experiment"
+      "to": "applications/ceo-risk-preference/study/screening/experiment"
     },
     {
       "from": "step-2-mvp-simple/experiment/comparison-2026-10-19",
-      "to": "study/screening/history/comparison-2026-10-19"
+      "to": "applications/ceo-risk-preference/study/screening/history/comparison-2026-10-19"
     },
     {
       "from": "step-2-twelve-trial-pilot",
-      "to": "study/screening/review"
+      "to": "applications/ceo-risk-preference/study/screening/review"
     },
     {
       "from": "step-3-4/packages/step3_risk_score_collaborator_20261027",
-      "to": "study/prediction"
+      "to": "applications/ceo-risk-preference/study/prediction"
     },
     {
       "from": "step-3-4/packages/step4_full_from_raw_20261027",
-      "to": "study/assessment/full"
+      "to": "applications/ceo-risk-preference/study/assessment/full"
     },
     {
       "from": "step-3-4/packages/step4_rd_score_collaborator_20261027",
-      "to": "study/assessment/score-models"
+      "to": "applications/ceo-risk-preference/study/assessment/score-models"
     },
     {
       "from": "step-3-4/source-manifests",
-      "to": "replication/manifests/empirical-delivery/source-manifests"
+      "to": "applications/ceo-risk-preference/replication/manifests/empirical-delivery/source-manifests"
     },
     {
       "from": "step-3-4/DELIVERY.json",
-      "to": "replication/manifests/empirical-delivery/DELIVERY.json"
+      "to": "applications/ceo-risk-preference/replication/manifests/empirical-delivery/DELIVERY.json"
     },
     {
       "from": "step-3-4/INTAKE_CHECKS.json",
-      "to": "replication/manifests/empirical-delivery/INTAKE_CHECKS.json"
+      "to": "applications/ceo-risk-preference/replication/manifests/empirical-delivery/INTAKE_CHECKS.json"
     },
     {
       "from": "step-3-4/README.md",
-      "to": "replication/manifests/empirical-delivery/README.md"
+      "to": "applications/ceo-risk-preference/replication/manifests/empirical-delivery/README.md"
     },
     {
       "from": "step-3-4/verify.py",
@@ -77,6 +77,48 @@
     {
       "from": "scripts/restore_review_bundle.py",
       "to": "replication/restore.py"
+    },
+    {
+      "from": "examples/ceo-risk-preference/README.md",
+      "to": "applications/ceo-risk-preference/README.md"
+    },
+    {
+      "from": "examples/ceo-risk-preference/results",
+      "to": "applications/ceo-risk-preference/summary"
+    },
+    {
+      "from": "study",
+      "to": "applications/ceo-risk-preference/study"
+    },
+    {
+      "from": "results",
+      "to": "applications/ceo-risk-preference/results"
+    },
+    {
+      "from": "replication/manifests",
+      "to": "applications/ceo-risk-preference/replication/manifests"
+    },
+    {
+      "from": "replication/verification",
+      "to": "applications/ceo-risk-preference/replication/verification"
+    },
+    {
+      "from": "replication/IMPORT.json",
+      "to": "applications/ceo-risk-preference/replication/IMPORT.json"
+    },
+    {
+      "from": "replication/INVENTORY.json",
+      "to": "applications/ceo-risk-preference/replication/INVENTORY.json"
+    },
+    {
+      "from": "examples/ceo-risk-preference",
+      "to": "applications/ceo-risk-preference"
+    }
+  ],
+  "layout_revisions": [
+    {
+      "commit": "c486dfc5520c8cefbaf42dfbcc4710a86eebcf04",
+      "change": "Scope the CEO materials under a named application."
     }
   ]
 }

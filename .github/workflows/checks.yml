@@ -23,9 +23,9 @@ jobs:
         run: |
           python -m unittest discover -s replication/tests -v
           python replication/verify.py
-          python study/screening/review/verify.py
+          python applications/ceo-risk-preference/study/screening/review/verify.py
           python replication/verify_delivery.py
-          python results/verify.py
+          python applications/ceo-risk-preference/results/verify.py
       - name: Run fixture and resume
         run: |
           python -S -m agent_system.empirical.demo --out .local/demo

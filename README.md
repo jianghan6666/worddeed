@@ -1,12 +1,12 @@
 # AI Microfoundation Proxy
 
-**A workflow for constructing and assessing proxies from what people say and what they do.**
+**A research framework for constructing and assessing proxies from what people say and what they do.**
 
-AI Microfoundation Proxy connects narrative evidence, AI-assisted topic screening, behavioral prediction, and downstream analysis. The first application studies CEO risk preference using earnings-call speech and R&D investment. Researchers define the construct and interpret the evidence; the agent coordinates the workflow and calls reusable computational tools.
+AI Microfoundation Proxy connects narrative evidence, AI-assisted relevance screening, behavioral prediction, and downstream assessment. It provides a shared research workflow and agent orchestration for applications with different constructs, narratives, behavioral targets, and settings. Researchers define the scientific claim and interpret the evidence; agents coordinate the work and call computational tools.
 
-**Reviewer results:** [Full four-step results](RESULTS.md) · [PDF report](results/report.pdf) · [Complete results download](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/full-results-2026-10-31)
+**Start here:** [Workflow](docs/WORKFLOW.md) · [Applications](applications/README.md) · [Develop an application](docs/NEW_APPLICATION.md) · [Results](RESULTS.md) · [Replication](REPLICATION.md)
 
-**[Project website](https://astounding-entremet-7d220b.netlify.app/)** · [Video](https://astounding-entremet-7d220b.netlify.app/#film) · [Completed example](examples/ceo-risk-preference/README.md) · [Roadmap](docs/ROADMAP.md) · [Workflow guide](docs/WORKFLOW.md) · [Reviewer replication](REPLICATION.md)
+**[Project website](https://astounding-entremet-7d220b.netlify.app/)** · [Video](https://astounding-entremet-7d220b.netlify.app/#film) · [Roadmap](docs/ROADMAP.md)
 
 ## What is AI Microfoundation Proxy?
 
@@ -14,7 +14,7 @@ Many organizational theories depend on beliefs, preferences, and judgments that 
 
 You bring a construct, narrative material, a behavioral outcome, and a study setting. The workflow represents the narrative as topics, screens those topics for relevance, estimates a model linking narrative features to behavior, and passes the resulting scores to downstream analysis. You leave with **selected topics and their reasons, predicted behavioral scores, analysis outputs, and a saved execution record**.
 
-The current empirical method predicts R&D/assets from selected topic features and aggregate sentiment. Its interpretation as CEO risk preference requires evidence beyond predictive fit or regression significance.
+Each application supplies its own scientific specification and validation criteria. The first completed application studies CEO risk preference; its R&D target and financial-data assumptions belong to that case. The current numerical adapters implement that application, while broader adapter reuse and a second empirical application remain development work.
 
 [![Watch the AI Microfoundation Proxy walkthrough](docs/video/poster.jpg)](https://astounding-entremet-7d220b.netlify.app/#film)
 
@@ -38,7 +38,7 @@ The executable system has one coordinator and, for fresh screening, three indepe
 
 1. **Represent the narrative.** Bind the topic catalogue and density inputs to the study's observations. Preserve the topic ordering and input identities.
 2. **Screen for relevance.** Three readers evaluate the complete catalogue independently. Seal all initial responses before releasing source passages; continue each reader's own history. Export a two-of-three vote with every reason and minority judgment.
-3. **Estimate the proxy.** Use selected topic features and aggregate sentiment to predict the behavioral target. The current study uses grouped five-fold Ridge and XGBoost models for R&D/assets.
+3. **Estimate the proxy.** Fit the application's specified narrative-to-behavior model, with explicit target handling, validation splits, and score definitions.
 4. **Assess the proxy.** Match scores to downstream observations, estimate the specified models, and examine what the results support and what remains unresolved.
 
 ```text
@@ -56,16 +56,18 @@ Narrative evidence → Topics → Relevance screening
 
 The [workflow guide](docs/WORKFLOW.md) connects these steps to the runtime. The coordinator's tools are `get_status`, `run_stage`, `read_result`, and `finish`; saved artifacts determine whether a stage is complete.
 
-## Completed example
+## Applications
 
-The [CEO speech, R&D, and dividend-policy example](examples/ceo-risk-preference/README.md) follows a completed empirical application:
+The [application collection](applications/README.md) keeps each research case's walkthrough, scientific materials, results and replication evidence together. The first completed case is [CEO risk preference](applications/ceo-risk-preference/README.md), using earnings-call speech, R&D investment and dividend decisions:
 
 - **354 topics**, screened in twelve trials with 36 readers.
 - **321 selected topics** used with sentiment to predict R&D/assets.
 - Scores for **29,506 firm-years**, with cross-fitted R² of **0.5351 for Ridge** and **0.6128 for XGBoost**.
-- A downstream dividend-policy analysis with **16 score specifications**.
+- A downstream analysis with **25 specifications**, including 16 score models.
 
-The example includes aggregate results and an explanation of the method and its limits. The runnable demo below uses invented inputs to demonstrate the connected agent; it does not rerun the empirical study.
+Read its [full results](applications/ceo-risk-preference/RESULTS.md) and [verified replication](applications/ceo-risk-preference/REPLICATION.md). Its interpretation as psychological risk preference remains a research question. Future applications will sit alongside this case with their own scientific specifications and evidence.
+
+The offline demo below uses invented inputs to demonstrate coordination and resume. To develop a new empirical case, use the [application guide](docs/NEW_APPLICATION.md) and [research template](applications/_template/README.md); compatible stage adapters must be implemented explicitly.
 
 ## Quick start
 
@@ -90,7 +92,8 @@ Open this repository in your coding-agent workspace:
 
 ```text
 Act as the coordinator for an AI Microfoundation Proxy study. Follow ./docs/WORKFLOW.md.
-Read the current configuration and saved handoff first.
+Identify the application and read its research specification, current configuration,
+and saved handoff first.
 
 Help me state the construct, narrative inputs, behavioral target,
 observation unit, period, and intended interpretation. Coordinate topic
@@ -126,34 +129,38 @@ Open [the local introduction](http://127.0.0.1:8765/). `Ctrl+C` stops the server
 
 ## Repository layout
 
-Start with [full results](RESULTS.md) to inspect the study or [replication](REPLICATION.md) to reproduce it. The repository has six main folders; the scientific materials follow the four stages inside `study/`.
+Shared infrastructure stays at the root; application-specific research and deliverables live under `applications/<application-name>/`.
 
 ```text
 ai-microfoundation-proxy/
-|-- README.md                 Introduction and setup
+|-- README.md                 Framework overview and setup
 |-- AGENTS.md                 Instructions for coding agents
-|-- RESULTS.md                Full-results entry point
-|-- REPLICATION.md            Verified reproduction instructions
-|-- agent_system/             Coordinator, stage adapters, contracts, and tests
-|-- docs/                     Workflow, roles, protocols, roadmap, and introduction
-|-- examples/                 Concise worked application and aggregate findings
-|-- study/                    Original scientific methods, code, and reading copies
-|   |-- representation/       Topic implementation and model specifications
-|   |-- screening/            Twelve-trial review, experiment, and history
-|   |-- prediction/           Panel construction and Ridge/XGBoost package
-|   `-- assessment/           Full analysis and compact score-model route
-|-- results/                  Full report, reader browsers, scores, and tables
-|-- replication/              Download/restore tools, manifests, and verification
-|-- .github/workflows/        Software, results, and Windows reproduction checks
-|-- .gitattributes            Preserve inventoried file bytes across platforms
-`-- .gitignore                Exclude local inputs, runs, and environment files
+|-- RESULTS.md                Index of application results
+|-- REPLICATION.md            Index of application reproduction packages
+|-- agent_system/             Runtime, contracts, current adapters, and tests
+|-- docs/                     Shared workflow, roles, protocols, and extension guide
+|-- applications/
+|   |-- README.md             Application collection
+|   |-- _template/            Research and implementation planning template
+|   `-- ceo-risk-preference/   First complete application
+|       |-- README.md         Research question and walkthrough
+|       |-- study/            Representation, screening, prediction, assessment
+|       |-- summary/          Selected aggregate findings
+|       |-- results/          Complete reports, scores, tables, and reader evidence
+|       |-- replication/      Application inventories and verification receipts
+|       |-- RESULTS.md        Results guide
+|       `-- REPLICATION.md    Exact reproduction instructions
+|-- replication/              Archive utilities and current reproduction drivers
+|-- .github/workflows/        Software, results, and empirical verification checks
+|-- .gitattributes            Preserve inventoried bytes across platforms
+`-- .gitignore                Exclude local inputs, runs, and environments
 ```
 
-The [repository guide](docs/REPOSITORY.md) explains each folder and maps the former delivery paths to their current locations. Keep new study inputs, local configurations, restored packages, and run outputs in ignored `.local/`. Large datasets, models, and complete evidence archives are downloaded from the private releases through [REPLICATION.md](REPLICATION.md).
+The [repository guide](docs/REPOSITORY.md) explains the framework/application boundary and historical paths. Use ignored `.local/<application-name>/` for new inputs and runs. Each application's replication guide provides access to its authorized large datasets, models and complete evidence archives.
 
 ## Roadmap
 
-The full empirical chain has now passed a [fresh-download connected reproduction](REPLICATION.md), including new prediction fits and downstream Stata estimation. The remaining [roadmap](docs/ROADMAP.md) strengthens input and screening evidence, assesses construct interpretation, and prepares a second application. Each milestone identifies what evidence would establish completion.
+The CEO application has passed a [fresh-download connected reproduction](applications/ceo-risk-preference/REPLICATION.md). The [roadmap](docs/ROADMAP.md) develops reusable application interfaces, a second empirical case, stronger input and screening evidence, and construct validation. Each milestone identifies the evidence needed for completion.
 
 ## Design principles
 
@@ -171,4 +178,4 @@ Run the self-contained tests with Python 3.11+:
 python3 -m unittest agent_system.tests.empirical.test_demo agent_system.tests.empirical.test_coordinator agent_system.tests.empirical.test_workflow agent_system.tests.empirical.test_external_inputs -v
 ```
 
-The example reports supplied empirical results; software checks do not establish construct validity. Source-specific terms apply to any study inputs you provide. No open-source license is granted by this repository at present.
+Application results distinguish supplied findings from newly executed verification; software checks do not establish construct validity. Source-specific terms apply to any study inputs you provide. No open-source license is granted by this repository at present.

@@ -2,8 +2,18 @@
 
 **An AI Microfoundation Proxy application from narrative representation to a behavioral proxy and downstream analysis.**
 
-This example explains the completed screening study and the empirical results delivered on 27 October 2026. Three small [aggregate result files](results/README.md) let readers inspect the findings. The connected agent is separately demonstrated with invented inputs; it has not rerun this complete empirical study.
+This is the first completed application of the broader [AI Microfoundation Proxy framework](../../README.md). It studies CEO speech, R&D prediction and dividend decisions using its own data, model choices and interpretation limits.
 
+The original results are preserved, and a [fresh-download connected reproduction](REPLICATION.md) has passed new prediction fits and all 25 downstream models. The offline agent demo is separate and uses invented inputs.
+
+| Explore this application | Start here |
+| --- | --- |
+| Scientific methods and source packages | [study/](study/README.md) |
+| Selected aggregate findings | [summary/](summary/README.md) |
+| Complete reports, scores, workbooks and reader evidence | [RESULTS.md](RESULTS.md) |
+| Inputs, executable reproduction and new verification | [REPLICATION.md](REPLICATION.md) |
+
+Other applications belong beside this folder in [applications/](../README.md), with their own scientific specifications.
 ## Research question
 
 Can CEO speech support a candidate proxy for risk-taking, and is that proxy associated with firms' dividend decisions?
@@ -24,7 +34,7 @@ The resulting input panel contains **29,506 firm-years, 4,517 firms, and 6,933 C
 
 The completed pilot contains **12 trials and 36 readers**: two requested model families, three effort settings, and two repetitions per configuration. Every reader first evaluates all 354 topic descriptors independently. Initial attempts are sealed or explicitly recorded as missing before passages are released. The protocol then continues each reader's own history through source review without peer judgments. A two-of-three Stage B majority determines topic selection; initial labels remain a separate comparison.
 
-The [screening counts](results/screening-counts.csv) preserve both stages and incomplete voting coverage. Initial descriptor readings selected **66–87 topics** per trial; source review selected **313–321**. The primary results retain one unresolved majority. This broadening shows sensitivity to the reading procedure; it is not an accuracy estimate.
+The [screening counts](summary/screening-counts.csv) preserve both stages and incomplete voting coverage. Initial descriptor readings selected **66–87 topics** per trial; source review selected **313–321**. The primary results retain one unresolved majority. This broadening shows sensitivity to the reading procedure; it is not an accuracy estimate.
 
 The delivered prediction analysis uses primary trial `b1-gpt-6-astra-P0-xhigh`, repetition 1: **321 selected, 33 excluded, and zero unresolved topics**. This identifies the input actually used. The pilot did not establish that this classifier was superior to the alternatives. Its twelve-trial scope was ratified after collection.
 
@@ -43,7 +53,7 @@ Scores are provided for all 29,506 firm-years. The target is available for 29,19
 | Correlation with target | 0.7315 | 0.7829 |
 | Selected tuning value | α = 1,000 | Max depth = 6 |
 
-The [machine-readable metrics](results/prediction-metrics.json) include per-fold settings and counts. Evaluation uses target-available rows and the delivered full-model winsorization convention. Full-sample fitted scores also exist, but downstream analysis uses out-of-fold scores. The prediction features contain no industry, size, or year controls. This method differs from the earlier proposed scalar narrative measure N followed by `f(N, controls)`.
+The [machine-readable metrics](summary/prediction-metrics.json) include per-fold settings and counts. Evaluation uses target-available rows and the delivered full-model winsorization convention. Full-sample fitted scores also exist, but downstream analysis uses out-of-fold scores. The prediction features contain no industry, size, or year controls. This method differs from the earlier proposed scalar narrative measure N followed by `f(N, controls)`.
 
 [Proxy workflow](../../docs/workflows/03-build-proxy.md)
 
@@ -68,7 +78,7 @@ One representative specification, column (8), gives:
 
 These are conditional log-odds coefficients. The controlled XGBoost coefficient implies an odds ratio of approximately 0.867 for a one-percentage-point increase in the score, holding included variables fixed. It does not represent a 13-percentage-point change in dividend probability or a causal effect.
 
-Read [all 16 result tables and estimation notes](results/dividend-results.md). They are the score-model subset of a larger 25-specification delivered study.
+Read [all 16 result tables and estimation notes](summary/dividend-results.md). They are the score-model subset of a larger 25-specification delivered study.
 
 [Assessment workflow](../../docs/workflows/04-assess-proxy.md)
 
@@ -94,4 +104,4 @@ python3 -m agent_system.empirical.demo --out .local/example-fixture --resume
 
 Inspect `summary.json`, `workflow/state.json`, and `workflow/events.jsonl` inside that output directory. The fixture uses three invented topics and two invented rows to exercise coordinator dispatch, stage handoffs, persistence, and resume. It makes no live model calls and performs no empirical training or Stata estimation.
 
-The aggregate files document the delivered findings; they are not sufficient to reproduce the underlying empirical estimates. See the [workflow guide](../../docs/WORKFLOW.md) for the executable interfaces and required study inputs.
+The summary files provide a quick reading view. Use [REPLICATION.md](REPLICATION.md) for the complete inputs, pinned environment and empirical execution commands; use the shared [workflow guide](../../docs/WORKFLOW.md) for coordination and handoffs.

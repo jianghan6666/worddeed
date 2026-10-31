@@ -1,38 +1,38 @@
 # Repository guide
 
-The repository is organized by purpose, with the study materials following the four scientific stages.
+AI Microfoundation Proxy is a research framework with an application collection. Shared infrastructure and scientific applications have separate homes.
 
-| Folder | What belongs here |
+| Location | Purpose |
 | --- | --- |
-| [agent_system/](../agent_system/README.md) | Executable coordinator, stage adapters, contracts and runtime tests. The Python module name stays stable for existing commands. |
-| [docs/](README.md) | Workflow, roles, protocols, reference guides, roadmap and the local introduction/video. |
-| [examples/](../examples/ceo-risk-preference/README.md) | Concise worked application and aggregate findings. |
-| [study/](../study/README.md) | Original scientific methods and code, organized as representation, screening, prediction and assessment. |
-| [results/](../results/README.md) | Full reviewer report, figures, searchable judgments, scores, workbooks and tables. |
-| [replication/](../replication/README.md) | Download/restore/reproduction tools, inventories, tests and newly executed verification evidence. |
+| [agent_system/](../agent_system/README.md) | Coordinator contracts, provider handling, stage execution, state and tests. The current empirical adapters implement the CEO case. |
+| [docs/](README.md) | Shared workflow, roles, protocols, roadmap, introduction and guidance for developing another application. |
+| [applications/](../applications/README.md) | Named applications, each with its own research specification, scientific material, findings and reproduction evidence. |
+| [replication/](../replication/README.md) | Archive utilities and maintained execution drivers; current empirical drivers target the CEO application. |
 
-[RESULTS.md](../RESULTS.md) and [REPLICATION.md](../REPLICATION.md) are the two reviewer entry points at the repository root. New local inputs, restored packages and runs belong in ignored `.local/`. Large historical inputs and complete output archives are distributed through the linked private releases.
+The root [results](../RESULTS.md) and [replication](../REPLICATION.md) indexes direct reviewers to each application's deliverables. The first complete case lives in [applications/ceo-risk-preference/](../applications/ceo-risk-preference/README.md):
 
-## Historical paths and frozen packages
+```text
+README.md          Research question and four-step walkthrough
+study/             Representation, screening, prediction and assessment packages
+summary/           Selected aggregate findings for quick reading
+results/           Complete reports, judgments, scores, tables and workbooks
+replication/       Application inventories and executed verification receipts
+RESULTS.md         Results guide and full archive download
+REPLICATION.md     Environment, input downloads and exact execution commands
+```
 
-The earlier repository exposed delivery and experiment names as top-level folders. Those materials now have one home per stage:
+The scientific choices inside that folder belong to the CEO case. The framework's broader purpose is described in the [workflow](WORKFLOW.md) and [new-application guide](NEW_APPLICATION.md). New cases belong beside the CEO folder; an [application template](../applications/_template/README.md) identifies the required research and implementation decisions. It is a planning template, not another executable empirical study.
 
-| Former location | Current location |
-| --- | --- |
-| `implementation/ceo-rd/` | `study/representation/` |
-| `step-2-twelve-trial-pilot/` | `study/screening/review/` |
-| `step-2-mvp-simple/experiment/expanded-ai-pilot/` | `study/screening/experiment/` |
-| `step-2-mvp-simple/experiment/comparison-2026-10-19/` | `study/screening/history/comparison-2026-10-19/` |
-| `step-3-4/packages/step3_risk_score_collaborator_20261027/` | `study/prediction/` |
-| `step-3-4/packages/step4_full_from_raw_20261027/` | `study/assessment/full/` |
-| `step-3-4/packages/step4_rd_score_collaborator_20261027/` | `study/assessment/score-models/` |
-| `step-3-4/DELIVERY.json` and source manifests | `replication/manifests/empirical-delivery/` |
-| `scripts/restore_review_bundle.py` | `replication/restore.py` |
+## Current implementation boundary
 
-[paths.json](../replication/paths.json) records the complete mapping, including moved documentation. The identity verifiers resolve old repository paths through this map. The catalogue binding in previously exported Windows handoffs remains accepted after verifying the same file hash.
+Reusable orchestration is implemented, and the CEO application has a verified connected empirical reproduction. The existing numerical adapters and empirical drivers contain CEO-specific package names, data fields, models and downstream formulas. Another application requires compatible adapters and its own scientific checks. A general application plug-in interface remains roadmap work.
 
-Frozen archive members, supplied scientific package contents and historical verification receipts retain their original names and hashes. Their paths describe the archived layout at the time of execution. Restoring an archive under `.local/` therefore still produces its original `packages/...` structure; the runtime uses that restored structure. Historical source documents may refer to those paths or the former repository layout. Follow the current [replication guide](../REPLICATION.md) for commands.
+Keep new inputs, restored packages and run outputs under ignored `.local/<application-name>/`. Each application documents access to its large datasets and models through inventoried private releases.
 
-Repository reorganization does not change empirical settings, labels, scores or estimates. Earlier release tags remain fixed so the completed reproduction can still be inspected at its recorded code revision.
+## Historical paths and frozen artifacts
 
-Existing local runs can contain absolute paths into their original checkout. Resume those runs with that checkout, or start a new run directory with this layout. Portable exported Windows handoffs support both historical and current catalogue paths after checking the same file identity.
+[replication/paths.json](../replication/paths.json) maps the former root `study/`, `results/`, `examples/ceo-risk-preference/`, Step 2 and Step 3/4 delivery paths to the current application. The identity verifiers resolve historical source paths without rewriting scientific records. Previously exported Windows handoffs can use either former catalogue path or the current application path after checking the same file hash.
+
+Frozen archives retain their original member names and hashes. A downloaded results ZIP still contains `results/`; restored empirical inputs still contain `packages/...`. Historical receipts and source documents describe the layout at their recorded execution. Use the selected application's current replication guide for commands in a new checkout. Prior release tags remain fixed.
+
+Existing local runs can contain absolute paths into their original checkout. Resume them with that checkout, or start a new run directory with the current layout. The application move does not change scientific settings, labels, scores or estimates.

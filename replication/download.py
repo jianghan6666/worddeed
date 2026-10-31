@@ -71,12 +71,12 @@ def main():
     if not gh:
         p.error('Install GitHub CLI and sign in with access to this private repository')
     args.out.mkdir(parents=True, exist_ok=True)
-    delivery = json.loads((ROOT/'replication/manifests/empirical-delivery/DELIVERY.json').read_text())
-    evidence = json.loads((ROOT/'study/screening/experiment/results-2026-10-21/BUNDLE.json').read_text())
+    delivery = json.loads((ROOT/'applications/ceo-risk-preference/replication/manifests/empirical-delivery/DELIVERY.json').read_text())
+    evidence = json.loads((ROOT/'applications/ceo-risk-preference/study/screening/experiment/results-2026-10-21/BUNDLE.json').read_text())
     specs = list(delivery['parts'])
     specs.append({'name':'step2-twelve-evidence-2026-10-21.tar.gz', 'sha256':evidence['sha256']})
     if args.source:
-        specs += json.loads((ROOT/'replication/manifests/source-ceo-rd.manifest.json').read_text())['parts']
+        specs += json.loads((ROOT/'applications/ceo-risk-preference/replication/manifests/source-ceo-rd.manifest.json').read_text())['parts']
     names = [x['name'] for x in specs] + ['DELIVERY.json']
     if args.source:
         names.append('source-ceo-rd.manifest.json')
@@ -92,11 +92,11 @@ def main():
     with ThreadPoolExecutor(max_workers=4) as pool:
         list(pool.map(fetch, enumerate(names, 1)))
     # The checked-in manifests are the trust anchor, not a mutable downloaded manifest.
-    expected = ROOT/'replication/manifests/empirical-delivery/DELIVERY.json'
+    expected = ROOT/'applications/ceo-risk-preference/replication/manifests/empirical-delivery/DELIVERY.json'
     if (args.out/'DELIVERY.json').read_bytes() != expected.read_bytes():
         raise ValueError('Downloaded DELIVERY.json differs from the checked-in inventory')
     if args.source:
-        expected = ROOT/'replication/manifests/source-ceo-rd.manifest.json'
+        expected = ROOT/'applications/ceo-risk-preference/replication/manifests/source-ceo-rd.manifest.json'
         if (args.out/expected.name).read_bytes() != expected.read_bytes():
             raise ValueError('Downloaded source manifest differs from the checked-in inventory')
     print('Downloaded assets and verified compressed hashes. Reproduction verifies all archive members.')

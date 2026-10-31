@@ -4,6 +4,7 @@ This directory holds concise verification evidence produced for the reviewer rep
 
 | Executed check | Evidence and scope |
 | --- | --- |
+| Framework and application separation | [APPLICATION_SCOPE_CHECK.json](APPLICATION_SCOPE_CHECK.json): scoped CEO paths, unchanged results and archive identities, three historical/current catalogue bindings, screening replay and runtime/tooling checks passed. |
 | Repository reorganization | [LAYOUT_CHECK.json](LAYOUT_CHECK.json): relocated-file identities, current guide links, old/current handoff bindings, all 56 adapter tests, 14 packaging tests, and 122 replayed screening outputs passed. This is a layout/routing check, not another empirical refit. |
 | Accepted connected empirical reproduction | [CONNECTED_REPRODUCTION.json](CONNECTED_REPRODUCTION.json): saved screening replay, exact rebuilt panel, new Ridge/XGBoost fits, original three-seed checks, full raw-data reconstruction, all 25 Stata models, 410 regression checks and presentation checks passed. |
 | Fresh new-output download | [FINAL_OUTPUT_DOWNLOAD.json](FINAL_OUTPUT_DOWNLOAD.json): nine archive parts and all 596 expanded output files verified against the [checked-in manifest](../manifests/fresh-reproduction.manifest.json). |
