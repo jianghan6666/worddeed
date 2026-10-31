@@ -19,15 +19,18 @@ Historical imported guides may mention the development repository, earlier plans
 
 ## Fresh checkout and core reproduction
 
+For source ZIP instructions, lightweight integrity checks, a standalone Step 2 replay and an overview of all four boundaries, start with the [reviewer guide](../../docs/REVIEWER_GUIDE.md). A Git checkout is not required by the reproduction scripts.
+
 Prerequisites: access to this private repository, authenticated GitHub CLI (`gh`), **Windows x64 with Python 3.11.7** for the historical numerical pipeline, and a Stata installation for estimation. The exact Python dependencies are in [requirements.txt](../../agent_system/empirical/requirements.txt). The core download is approximately 1.18 GB; restored inputs, evidence and generated models need additional working space. The original source/model bundle is separate so routine replay does not duplicate its 9.2 GB expanded corpus.
 
-The supplied XGBoost fits and exact score transformations are platform-sensitive. A newly executed Mac ARM64 refit failed the original comparisons despite identical panel values; its failure is retained in [MACOS_DIAGNOSTICS.json](replication/verification/MACOS_DIAGNOSTICS.json). XGBoost documents differences in random sampling between Windows and other platforms, even with the same seed ([official documentation](https://xgboost.readthedocs.io/en/stable/tutorials/learning_to_rank.html)). Do not loosen tolerances to make a different-platform run pass.
+The supplied XGBoost fits and exact score transformations are platform-sensitive. A newly executed Mac ARM64 refit failed the original comparisons despite identical panel values; its failure is retained in [MACOS_DIAGNOSTICS.json](replication/verification/MACOS_DIAGNOSTICS.json). This is an observed compatibility limit of this package; the diagnostic does not isolate every underlying platform difference. Do not loosen tolerances to make a different-platform run pass.
 
 Install the complete maintained requirements, including **Bottleneck 1.3.7**. The supplied requirements omitted this optional pandas reduction backend. Without it, the frozen XGBoost full-sample z-scores fail their original check by about `2e-5`; with it, they match exactly and the unchanged 13-check saved-model verifier passes. [NUMERICAL_BACKEND.json](replication/verification/NUMERICAL_BACKEND.json) records the controlled comparison. This is a verified compatible dependency pin; the historical environment did not record its Bottleneck version.
 
-Run these commands in PowerShell with Python 3.11.7 installed:
+Run these commands in PowerShell with Python 3.11.7 installed. If you already extracted the source ZIP, skip the clone and `cd` into that extracted repository instead. Confirm that `py -3.11 --version` prints **3.11.7**; the launcher may otherwise select another installed 3.11 patch version:
 
 ```powershell
+gh auth login
 gh repo clone joyzhzh/ai-microfoundation-proxy
 cd ai-microfoundation-proxy
 py -3.11 --version
@@ -49,7 +52,7 @@ export DYLD_LIBRARY_PATH=/Applications/Stata/StataMP.app/Contents/Frameworks
 
 Use that example only when the library exists at that installation path; otherwise provide your compatible OpenMP installation. The verification record includes the exact library hash. No native runtime binary is redistributed in this package.
 
-Use the executable path for your installation (for example `stata-mp`), not the application bundle directory. Supplied historical regressions used **Stata 19.5** and declare `version 19.0`. An explicit `--stata-version 18` creates a separate do-file changing only that declaration; the original do-file remains intact and the same numerical acceptance checks still apply. It is never selected silently.
+Use the executable file path for your installation, or a command such as `stata-mp` available on PATH, not the application bundle directory. The driver validates a supplied executable before restoring inputs or fitting models. Supplied historical regressions used **Stata 19.5** and declare `version 19.0`. An explicit `--stata-version 18` creates a separate do-file changing only that declaration; the original do-file remains intact and the same numerical acceptance checks still apply. It is never selected silently.
 
 Without Stata, add `--through step4_prepare` to build all regression inputs. Later rerun the same command with `--stata` and the same output directory to finish estimation. Set the intended `--stata-version` consistently from the first run. Successful completed stages are hash-checked and reused on resume. Interrupted scientific output remains available for inspection; a failed fit may require a new run directory rather than overwriting partial work.
 
@@ -66,6 +69,8 @@ Inspect these outputs:
 The driver preserves the supplied model grids, folds, seeds and computational settings. The Step 3 code uses its original 16-worker setting. No resource cap or scientific shortcut is introduced by the replication wrapper.
 
 ### Windows preparation and local Stata continuation
+
+Repository writers can start a new Windows run with `gh workflow run windows-replication.yml --repo joyzhzh/ai-microfoundation-proxy --ref main`, then use `gh run list --workflow windows-replication.yml --repo joyzhzh/ai-microfoundation-proxy` to identify and watch its run. Read-only reviewers can use the local Windows commands above. Actions artifacts expire; the verified-output release below remains the durable review copy.
 
 The [Windows verification workflow](../../.github/workflows/windows-replication.yml) fresh-downloads the private inputs, replays all screening analyses, refits both models, runs the supplied saved-model and three-seed checks, resumes completed fits without refitting, and rebuilds the financial data and 25 Stata model inputs. It uses a read-only token. Git preserves inventoried bytes on Windows; the replay wrapper specifies only UTF-8/LF JSON serialization and portable path separators. Frozen scientific code and output comparisons remain unchanged.
 

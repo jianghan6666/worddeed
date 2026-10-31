@@ -2,6 +2,8 @@
 
 Complete transcript · 9 minutes 50 seconds · synthetic Kokoro narration.
 
+**Historical walkthrough:** this narration describes the 28 October assembly. The later [reviewer package](../REVIEWER_GUIDE.md) includes completed prediction refits and all 25 downstream models; the spoken script and video remain unchanged.
+
 No empirical stages were run during video production. The three-topic example is an offline fixture. Captions are burned into the MP4; the VTT is optional.
 
 Source: assembled implementation at commit `029541eefdc4d32f8e72e58d3618f62b9cf5aeec`. Chapter starts come from measured sentence audio and are rounded to 24 fps.

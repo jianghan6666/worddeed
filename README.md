@@ -4,6 +4,8 @@
 
 AI Microfoundation Proxy connects narrative evidence, AI-assisted relevance screening, behavioral prediction, and downstream assessment. It provides a shared research workflow and agent orchestration for applications with different constructs, narratives, behavioral targets, and settings. Researchers define the scientific claim and interpret the evidence; agents coordinate the work and call computational tools.
 
+**Reviewing this repository?** Start with the [reviewer guide](docs/REVIEWER_GUIDE.md) for results, fresh ZIP checks and the exact four-step reproduction boundary.
+
 **Start here:** [Workflow](docs/WORKFLOW.md) · [Applications](applications/README.md) · [Develop an application](docs/NEW_APPLICATION.md) · [Results](RESULTS.md) · [Replication](REPLICATION.md)
 
 **[Project website](https://astounding-entremet-7d220b.netlify.app/)** · [Video](https://astounding-entremet-7d220b.netlify.app/#film) · [Roadmap](docs/ROADMAP.md)
@@ -17,6 +19,8 @@ You bring a construct, narrative material, a behavioral outcome, and a study set
 Each application supplies its own scientific specification and validation criteria. The first completed application studies CEO risk preference; its R&D target and financial-data assumptions belong to that case. The current numerical adapters implement that application, while broader adapter reuse and a second empirical application remain development work.
 
 [![Watch the AI Microfoundation Proxy walkthrough](docs/video/poster.jpg)](https://astounding-entremet-7d220b.netlify.app/#film)
+
+The video records the earlier assembly and fixture demonstration. The [current replication evidence](applications/ceo-risk-preference/replication/verification/README.md) additionally covers completed empirical refits and estimation.
 
 [Watch the video on the website](https://astounding-entremet-7d220b.netlify.app/#film) · [Download MP4](docs/video/four-step-agent.mp4) · [Read the narration](docs/video/transcript.md) · [English captions](docs/video/four-step-agent.en.vtt).
 

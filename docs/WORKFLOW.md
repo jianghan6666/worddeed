@@ -40,6 +40,6 @@ python3 -m agent_system.empirical.demo --out .local/demo
 python3 -m agent_system.empirical.demo --out .local/demo --resume
 ```
 
-Use the [runtime guide](../agent_system/empirical/README.md) for real-study setup. Check actual outputs before claiming completion. Preserve failed and interrupted attempts. Keep credentials in the environment.
+Use the [CEO replication guide](../applications/ceo-risk-preference/REPLICATION.md) for the automated download and empirical run, or the [runtime guide](../agent_system/empirical/README.md) for manual configuration and adaptation. Check actual outputs before claiming completion. Preserve failed and interrupted attempts. Keep credentials in the environment.
 
 Save a concise handoff alongside the run: configuration and input versions, completed stages and artifact paths, unresolved decisions, failures, and the next command. The [roadmap](ROADMAP.md) identifies further implementation and assessment milestones.

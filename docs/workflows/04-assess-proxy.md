@@ -2,7 +2,7 @@
 
 ## Inputs
 
-Score file, financial/identity records, and downstream analysis specifications.
+Score file, observation/identity records, and downstream analysis specifications. The CEO application uses financial records and dividend outcomes; other applications define their own assessment data and outcomes.
 
 ## Procedure
 

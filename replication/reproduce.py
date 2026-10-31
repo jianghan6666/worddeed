@@ -12,6 +12,7 @@ from datetime import datetime, timezone
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from replication.restore import restore
+from replication.executables import resolve_executable
 
 EVIDENCE = ROOT/'applications/ceo-risk-preference/study/screening/experiment/results-2026-10-21'
 TRIAL = 'b1-gpt-6-astra-P0-xhigh'
@@ -46,6 +47,7 @@ def main():
     p.add_argument('--stata-version', type=int, choices=[18,19], default=19)
     p.add_argument('--through', choices=['step1','step2','step3','step4_prepare','step4'], default='step4')
     args = p.parse_args()
+    stata = resolve_executable(args.stata) if args.stata else None
     out, downloads = args.out.resolve(), args.downloads.resolve()
     out.mkdir(parents=True, exist_ok=True)
     logs = out/'logs'; logs.mkdir(exist_ok=True)
@@ -79,8 +81,8 @@ def main():
               'catalogue':str(ROOT/'applications/ceo-risk-preference/study/screening/review/inputs/catalogue.json'),
               'selection':str(selection), 'step1':{'mode':'saved'},
               'stata_version':args.stata_version}
-    if args.stata:
-        config['stata_exe'] = str(Path(args.stata).expanduser().resolve())
+    if stata:
+        config['stata_exe'] = stata
     write(out/'reproduce.json', config)
     environment = {'python':sys.version, 'packages':{}, 'platform':sys.platform}
     for name in ['numpy','pandas','bottleneck','scipy','scikit-learn','xgboost','joblib','pyarrow','openpyxl','jsonschema','openai']:

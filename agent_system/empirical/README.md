@@ -30,7 +30,7 @@ Fresh screening keeps three independent reader histories. All three initial desc
 
 ## Configure an empirical run
 
-Empirical data, fitted models, source packets and the original screening toolkit are supplied separately under their access conditions. They are not required for the demo. Use compatible packages with their original inventories and internal structure.
+For the completed CEO case, use the [reviewer replication guide](../../applications/ceo-risk-preference/REPLICATION.md): it downloads data, fitted models, source packets and the screening toolkit from this repository’s private releases and constructs the configuration automatically. The exact refit uses Windows x64 and Python 3.11.7. These assets are not required for the demo. The manual configuration below is for inspecting or adapting the runtime; retain the packages’ inventories and internal structure.
 
 1. Create the compatible **Python 3.11.7** analysis environment and install [requirements.txt](requirements.txt). The fixed versions match the delivered Step 3 models; the external full Step 4 package also documents its environment.
 2. Place or reference your authorized inputs locally. Copy [reproduce.example.json](reproduce.example.json) or [fresh.example.json](fresh.example.json) into `.local/` and edit every input/runtime path. Paths resolve relative to the configuration file. The examples assume the copied configuration lives in `.local/`.
