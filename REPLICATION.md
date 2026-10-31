@@ -1,6 +1,6 @@
 # Reviewer replication package
 
-This private package contains the available code, data, models, saved judgments and evidence for all four stages of the CEO speech/R&D study. The [verified replication release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-31) contains the current code and newly executed outputs. Large historical inputs are frozen in the separate [input release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-30); that earlier tag's code snapshot is superseded by the verified release. No access to the former development repository is needed for the commands below.
+This private package contains the available code, data, models, saved judgments and evidence for all four stages of the CEO speech/R&D study. The [verified replication release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-31) records the accepted code revision and newly executed outputs. This checkout uses the reorganized paths below; the [repository guide](docs/REPOSITORY.md) maps the earlier layout. Large historical inputs are frozen in the separate [input release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-30); that earlier tag's code snapshot is superseded by the verified release. No access to the former development repository is needed for the commands below.
 
 The executable replay starts from the **saved topic representation and saved reader records**. It recomputes the twelve-trial screening analyses, rebuilds firm-year predictors, refits Ridge and XGBoost, and sends the new cross-fitted scores into raw-data reconstruction and all 25 downstream Stata regressions. It does not call AI readers again, fit a new BERTopic model, or regenerate upstream sentiment. Those would be new analyses, not recovery of the historical judgments.
 
@@ -8,12 +8,12 @@ The executable replay starts from the **saved topic representation and saved rea
 
 | Stage | Code and review material in Git | Large release evidence | Reproduction boundary |
 | --- | --- | --- | --- |
-| 1. Narrative representation | [Topic implementation](implementation/ceo-rd/README.md), [original model specifications](implementation/ceo-rd/topic_models/bertopic_ideo_13-23_relaxed.yaml), [catalogue](step-2-twelve-trial-pilot/inputs/catalogue.json) | Source/model bundle: 61 files including original code/notebooks, processed speech, CEO metadata, historical density matrix, BERTopic model and topic descriptions | Saved density shape, catalogue identity and delivered ordering are bound to the run. Historical density files lack embedded original row/column fingerprints; byte integrity cannot retroactively prove their original alignment. |
-| 2. Relevance screening | [Twelve-trial report](step-2-twelve-trial-pilot/README.md), [protocols](step-2-twelve-trial-pilot/protocol/README.md), [replay code](step-2-mvp-simple/experiment/expanded-ai-pilot/results-2026-10-21/replay.py) | 3,840 evidence files: source packets, saved records, seals, frozen analysis runtime and detailed transitions | Offline recalculation of primary and supplementary results separately. Preserve the primary unresolved majority and all missing reader rows. Full native chat histories were not part of the reviewed export. |
-| 3. Behavioral prediction | [Supplied method and code](step-3-4/packages/step3_risk_score_collaborator_20261027/README.md), [connected adapter](agent_system/empirical/step3.py) | Components, density matrix, Compustat input, saved fits and scores, seed robustness results | Rebuild 29,506 firm-years; refit grouped five-fold Ridge/XGBoost with the delivered settings and 321-topic selection. |
-| 4. Downstream assessment | [Full package](step-3-4/packages/step4_full_from_raw_20261027/README.md), [compact route](step-3-4/packages/step4_rd_score_collaborator_20261027/README.md), [adapter](agent_system/empirical/step4.py) | Raw financial/market/compensation data, identity links, model inputs, coefficients, tables and audit outputs | Full route rebuilds the analysis data and runs 25 regressions (9 annual-behavior + 16 score models). The compact package is a separate frozen-input route. |
+| 1. Narrative representation | [Topic implementation](study/representation/README.md), [original model specifications](study/representation/topic_models/bertopic_ideo_13-23_relaxed.yaml), [catalogue](study/screening/review/inputs/catalogue.json) | Source/model bundle: 61 files including original code/notebooks, processed speech, CEO metadata, historical density matrix, BERTopic model and topic descriptions | Saved density shape, catalogue identity and delivered ordering are bound to the run. Historical density files lack embedded original row/column fingerprints; byte integrity cannot retroactively prove their original alignment. |
+| 2. Relevance screening | [Twelve-trial report](study/screening/review/README.md), [protocols](study/screening/review/protocol/README.md), [replay code](study/screening/experiment/results-2026-10-21/replay.py) | 3,840 evidence files: source packets, saved records, seals, frozen analysis runtime and detailed transitions | Offline recalculation of primary and supplementary results separately. Preserve the primary unresolved majority and all missing reader rows. Full native chat histories were not part of the reviewed export. |
+| 3. Behavioral prediction | [Supplied method and code](study/prediction/README.md), [connected adapter](agent_system/empirical/step3.py) | Components, density matrix, Compustat input, saved fits and scores, seed robustness results | Rebuild 29,506 firm-years; refit grouped five-fold Ridge/XGBoost with the delivered settings and 321-topic selection. |
+| 4. Downstream assessment | [Full package](study/assessment/full/README.md), [compact route](study/assessment/score-models/README.md), [adapter](agent_system/empirical/step4.py) | Raw financial/market/compensation data, identity links, model inputs, coefficients, tables and audit outputs | Full route rebuilds the analysis data and runs 25 regressions (9 annual-behavior + 16 score models). The compact package is a separate frozen-input route. |
 
-The [complete bundle inventory](replication/INVENTORY.json) covers 4,235 frozen archive members (4.05 GB compressed; 10.68 GB expanded, including intentional overlaps). All 334 files in the three supplied Step 3/4 packages are inventoried in [DELIVERY.json](step-3-4/DELIVERY.json). The [Step 2 inventory](step-2-mvp-simple/experiment/expanded-ai-pilot/results-2026-10-21/BUNDLE.json) and [source/model inventory](replication/manifests/source-ceo-rd.manifest.json) bind every release member. [IMPORT.json](replication/IMPORT.json) records the imported Git files and their original hashes. The supplied scientific package files remain unchanged from the reviewed export. Original supplied manifests are retained, including the recorded stale Step 3 README entry. The export redacts one personal path and refreshes the affected manifests; numerical files are unchanged.
+The [complete bundle inventory](replication/INVENTORY.json) covers 4,235 frozen archive members (4.05 GB compressed; 10.68 GB expanded, including intentional overlaps). All 334 files in the three supplied Step 3/4 packages are inventoried in [DELIVERY.json](replication/manifests/empirical-delivery/DELIVERY.json). The [Step 2 inventory](study/screening/experiment/results-2026-10-21/BUNDLE.json) and [source/model inventory](replication/manifests/source-ceo-rd.manifest.json) bind every release member. [IMPORT.json](replication/IMPORT.json) records the imported Git files and their original hashes. The supplied scientific package files remain unchanged from the reviewed export. Original supplied manifests are retained, including the recorded stale Step 3 README entry. The export redacts one personal path and refreshes the affected manifests; numerical files are unchanged.
 
 Historical imported guides may mention the development repository, earlier plans or local paths. They document their original context. Use this guide and the release in this repository for current access and execution.
 
@@ -73,7 +73,7 @@ The workflow exports `reviewer-windows-handoff` with a file-by-file inventory, o
 
 ```sh
 .venv/bin/python replication/download.py --out .local/downloads
-.venv/bin/python scripts/restore_review_bundle.py \
+.venv/bin/python replication/restore.py \
   .local/downloads/DELIVERY.json --out .local/reproduction/inputs
 gh run download RUN_ID --repo joyzhzh/ai-microfoundation-proxy \
   --name reviewer-windows-handoff --dir .local/windows-handoff
@@ -99,7 +99,7 @@ gh release download reviewer-replication-2026-10-31 \
   --repo joyzhzh/ai-microfoundation-proxy \
   --pattern 'fresh-reproduction.tar.gz.part*' --dir .local/verified-run
 cp replication/manifests/fresh-reproduction.manifest.json .local/verified-run/
-.venv/bin/python scripts/restore_review_bundle.py \
+.venv/bin/python replication/restore.py \
   .local/verified-run/fresh-reproduction.manifest.json --out .local/verified-run-expanded
 ```
 
@@ -111,7 +111,7 @@ To retain all original source/model files as well as the core assets (the exampl
 
 ```sh
 .venv/bin/python replication/download.py --out .local/downloads --source
-.venv/bin/python scripts/restore_review_bundle.py \
+.venv/bin/python replication/restore.py \
   .local/downloads/source-ceo-rd.manifest.json --out .local/source
 ```
 
@@ -123,7 +123,7 @@ When storage cannot hold the expanded source, verify a fresh download of **every
 .venv/bin/python replication/verify_source.py --out .local/source-verification.json
 ```
 
-This downloads each part into a new temporary directory, checks each part, the full archive, and every expanded file, then removes only those temporary downloads. The receipt records the complete check. For an already downloaded archive, `scripts/restore_review_bundle.py MANIFEST --verify-only` verifies it without extraction.
+This downloads each part into a new temporary directory, checks each part, the full archive, and every expanded file, then removes only those temporary downloads. The receipt records the complete check. For an already downloaded archive, `replication/restore.py MANIFEST --verify-only` verifies it without extraction.
 
 ## Additional supplied analyses
 
@@ -139,6 +139,6 @@ The compact Step 4 package provides a separate 16-model frozen-input replay. It 
 
 ## Verification record and interpretation
 
-New verification evidence is retained under [replication/verification](replication/verification/). Supplied historical reports, newly executed empirical checks, and fixture-based software tests are distinct. Predictive fit, screening agreement and downstream associations do not by themselves establish psychological construct validity, causal effects or superiority over another measurement approach.
+New verification evidence is retained under [replication/verification](replication/verification). Supplied historical reports, newly executed empirical checks, and fixture-based software tests are distinct. Predictive fit, screening agreement and downstream associations do not by themselves establish psychological construct validity, causal effects or superiority over another measurement approach.
 
 The repository and release remain private. Source-specific data access conditions continue to apply; this package grants no new license or redistribution rights.

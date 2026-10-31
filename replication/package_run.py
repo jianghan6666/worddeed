@@ -11,7 +11,7 @@ import tarfile
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from replication.download import digest
-from scripts.restore_review_bundle import restore
+from replication.restore import restore
 
 TEXT = {'.json','.jsonl','.log','.txt','.csv','.tsv','.md','.html','.do'}
 LICENSE_LOGS = {'launcher.log','run_models.log','run_models_stata18.log'}

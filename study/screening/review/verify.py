@@ -4,21 +4,24 @@ import csv
 import hashlib
 import json
 import re
+import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parent
+ROOT = HERE.parents[2]
+sys.path.insert(0, str(ROOT))
+from replication.paths import repository_path
 
 
 def main():
     manifest = json.loads((HERE / 'MANIFEST.json').read_text())
     index = json.loads((HERE / 'TRIAL_INDEX.json').read_text())
-    package = ROOT / index['evidence_package_root_repository_relative']
+    package = repository_path(index['evidence_package_root_repository_relative'])
     bundle = json.loads((package / 'BUNDLE.json').read_text())
     bundle_hashes = {item['path']: item['sha256'] for item in bundle['files']}
     for item in manifest['copies']:
         destination = HERE / item['path']
-        original = ROOT / item['source_repository_relative']
+        original = repository_path(item['source_repository_relative'])
         payload = destination.read_bytes()
         assert hashlib.sha256(payload).hexdigest() == item['sha256'], destination
         if original.exists():

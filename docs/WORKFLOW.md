@@ -1,6 +1,6 @@
 # Start and resume an AI Microfoundation Proxy study
 
-Start with the [completed example](examples/ceo-risk-preference/README.md) to see the method and outputs. Use the [reviewer replication guide](REPLICATION.md) to reproduce the supplied study, or the [runtime guide](agent_system/empirical/README.md) for configuration and other compatible inputs.
+Start with the [completed example](../examples/ceo-risk-preference/README.md) to see the method and outputs. Use the [reviewer replication guide](../REPLICATION.md) to reproduce the supplied study, or the [runtime guide](../agent_system/empirical/README.md) for configuration and other compatible inputs.
 
 ## Read the current state
 
@@ -27,7 +27,7 @@ The coordinator owns dispatch and the integrated record. Readers author their ju
 | Empirical reproduction | Execute the current method using a saved selection | Compatible external study packages, catalogue, selection, dependencies, and Stata for estimation |
 | Fresh screening | Obtain a new triad and propagate its selection | The above plus complete source packets, compatible screening toolkit, and model access |
 
-Real execution uses explicit local paths. The repository does not supply empirical datasets or full reader evidence. The adapters target the demonstrated CEO/R&D study; extending the method to another setting requires explicit configuration and implementation work.
+Real execution uses explicit local paths. Complete empirical inputs and reader evidence are available in the private releases; the [replication guide](../REPLICATION.md) downloads and verifies them. The adapters target the demonstrated CEO/R&D study; extending the method to another setting requires explicit configuration and implementation work.
 
 ## Run and hand off
 
@@ -38,6 +38,6 @@ python3 -m agent_system.empirical.demo --out .local/demo
 python3 -m agent_system.empirical.demo --out .local/demo --resume
 ```
 
-Use the [runtime guide](agent_system/empirical/README.md) for real-study setup. Check actual outputs before claiming completion. Preserve failed and interrupted attempts. Keep credentials in the environment.
+Use the [runtime guide](../agent_system/empirical/README.md) for real-study setup. Check actual outputs before claiming completion. Preserve failed and interrupted attempts. Keep credentials in the environment.
 
 Save a concise handoff alongside the run: configuration and input versions, completed stages and artifact paths, unresolved decisions, failures, and the next command. The [roadmap](ROADMAP.md) identifies further implementation and assessment milestones.

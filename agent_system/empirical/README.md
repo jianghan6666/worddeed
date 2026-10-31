@@ -38,7 +38,7 @@ Empirical data, fitted models, source packets and the original screening toolkit
 4. For fresh screening, set `step2.toolkit` to the compatible Python toolkit and `step2.packet_root` to the complete frozen packet directory containing `PACKET_MANIFEST.json`, `packets/` and `schemas/`. The adapter checks required files before model calls. Use your trusted study toolkit; it is executable code.
 5. Configure `python` to the analysis interpreter. Stata estimation uses the version-19 do-file; the supplied results used Stata 19.5. Set `stata_exe` when estimation is ready. Explicit `stata_version: 18` uses a separate do-file with only its version declaration changed, retains the original, and requires the same numerical checks.
 
-The saved-density mode is the default. Optional `step1.mode=infer` requires a compatible `ceo_rd` topic package and its dependencies installed in the configured analysis environment, plus the matching model and corpus. The implementation is included under `implementation/ceo-rd`; its model and source assets are in the optional source/model release archive. That route needs the separately documented topic dependencies and is not part of saved-representation replay.
+The saved-density mode is the default. Optional `step1.mode=infer` requires a compatible `ceo_rd` topic package and its dependencies installed in the configured analysis environment, plus the matching model and corpus. The implementation is included under `study/representation`; its model and source assets are in the optional source/model release archive. That route needs the separately documented topic dependencies and is not part of saved-representation replay.
 
 From the repository root, after configuration:
 

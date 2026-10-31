@@ -12,4 +12,4 @@ Check matching and observation keys, then prepare the specified models. Estimati
 
 Matched model inputs, estimation records, tables, diagnostics, and researcher interpretation.
 
-Use the [runtime guide](../agent_system/empirical/README.md) for commands. The [completed example](../examples/ceo-risk-preference/README.md) illustrates the delivered method; the [roadmap](../ROADMAP.md) identifies further assessment.
+Use the [runtime guide](../../agent_system/empirical/README.md) for commands. The [completed example](../../examples/ceo-risk-preference/README.md) illustrates the delivered method; the [roadmap](../ROADMAP.md) identifies further assessment.

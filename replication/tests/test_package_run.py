@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 from replication.package_run import package_run
-from scripts.restore_review_bundle import restore
+from replication.restore import restore
 
 
 class PackageTests(unittest.TestCase):

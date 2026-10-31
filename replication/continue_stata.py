@@ -15,7 +15,19 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from replication.download import digest
+from replication.paths import repository_path
 from agent_system.empirical import step4
+
+
+def verify_catalogue_binding(portable, expected_hash):
+    """Accept the current or historical name only for the same frozen catalogue."""
+    prefix = 'REPOSITORY_ROOT/'
+    if not portable.startswith(prefix):
+        raise ValueError('Unexpected repository input binding: ' + portable)
+    path = repository_path(portable.removeprefix(prefix))
+    catalogue = ROOT / 'study/screening/review/inputs/catalogue.json'
+    if path != catalogue or digest(path) != expected_hash:
+        raise ValueError('Workflow catalogue binding changed: ' + portable)
 
 
 def verify_handoff(handoff, packages):
@@ -40,7 +52,7 @@ def verify_handoff(handoff, packages):
                           ('step4_full_from_raw_20261027', 'manifest.json')]:
         if digest(packages / package / name) != report.get('package_manifests', {}).get(package):
             raise ValueError('Local input inventory differs from Windows run: ' + package)
-    delivery = json.loads((ROOT / 'step-3-4/DELIVERY.json').read_text(encoding='utf8'))
+    delivery = json.loads((ROOT / 'replication/manifests/empirical-delivery/DELIVERY.json').read_text(encoding='utf8'))
     for row in delivery['files']:
         path = packages.parent / row['path']
         if path.stat().st_size != row['export_bytes'] or digest(path) != row['export_sha256']:
@@ -64,14 +76,15 @@ def verify_handoff(handoff, packages):
     indexed = {row['path']: row for row in report['files']}
     input_hashes = {'REPRODUCTION_ROOT/inputs/' + row['path']: row['export_sha256']
                     for row in delivery['files']}
-    catalogue = 'step-2-twelve-trial-pilot/inputs/catalogue.json'
-    input_hashes['REPOSITORY_ROOT/' + catalogue] = digest(ROOT / catalogue)
     for stage in ['step1', 'step2', 'step3', 'step4_prepare']:
         record = state['stages'][stage]
         if record['status'] != 'complete':
             raise ValueError('Incomplete workflow record: ' + stage)
         for path, original_hash in record['outputs'].items():
             portable = path.replace('\\', '/')
+            if portable.startswith('REPOSITORY_ROOT/'):
+                verify_catalogue_binding(portable, original_hash)
+                continue
             # Saved Step 1 returns validated immutable inputs, not copied outputs.
             if portable in input_hashes:
                 if original_hash != input_hashes[portable]:

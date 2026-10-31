@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 import sys
 
-HERE = Path(__file__).resolve().parents[1] / 'step-2-mvp-simple/experiment/expanded-ai-pilot/results-2026-10-21'
+HERE = Path(__file__).resolve().parents[1] / 'study/screening/experiment/results-2026-10-21'
 
 
 def main():

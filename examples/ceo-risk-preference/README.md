@@ -18,7 +18,7 @@ The supplied study starts with 1,775,355 CEO-tagged speech components and an exi
 
 The resulting input panel contains **29,506 firm-years, 4,517 firms, and 6,933 CEOs**, covering 2013–2023. Screening determines which topic columns enter prediction. The original density matrix lacks embedded row identities and model/column fingerprints, so its historical ordering remains delivery-declared.
 
-[Topic workflow](../../workflows/01-topics.md)
+[Topic workflow](../../docs/workflows/01-topics.md)
 
 ## 2. Select relevant topics
 
@@ -28,7 +28,7 @@ The [screening counts](results/screening-counts.csv) preserve both stages and in
 
 The delivered prediction analysis uses primary trial `b1-gpt-6-astra-P0-xhigh`, repetition 1: **321 selected, 33 excluded, and zero unresolved topics**. This identifies the input actually used. The pilot did not establish that this classifier was superior to the alternatives. Its twelve-trial scope was ratified after collection.
 
-[Screening workflow](../../workflows/02-screen-topics.md)
+[Screening workflow](../../docs/workflows/02-screen-topics.md)
 
 ## 3. Predict the behavioral outcome
 
@@ -45,7 +45,7 @@ Scores are provided for all 29,506 firm-years. The target is available for 29,19
 
 The [machine-readable metrics](results/prediction-metrics.json) include per-fold settings and counts. Evaluation uses target-available rows and the delivered full-model winsorization convention. Full-sample fitted scores also exist, but downstream analysis uses out-of-fold scores. The prediction features contain no industry, size, or year controls. This method differs from the earlier proposed scalar narrative measure N followed by `f(N, controls)`.
 
-[Proxy workflow](../../workflows/03-build-proxy.md)
+[Proxy workflow](../../docs/workflows/03-build-proxy.md)
 
 ## 4. Assess the proxy in dividend decisions
 
@@ -70,7 +70,7 @@ These are conditional log-odds coefficients. The controlled XGBoost coefficient 
 
 Read [all 16 result tables and estimation notes](results/dividend-results.md). They are the score-model subset of a larger 25-specification delivered study.
 
-[Assessment workflow](../../workflows/04-assess-proxy.md)
+[Assessment workflow](../../docs/workflows/04-assess-proxy.md)
 
 ## What remains open
 
@@ -81,7 +81,7 @@ The study connects a recorded topic-selection procedure, grouped text-based pred
 - **Screening:** No human-reference accuracy study or superior classifier was established.
 - **Inference:** Matching selects a subset. Clustered standard errors condition on the frozen first-stage score and do not propagate retraining uncertainty. Related specifications are not independent replications.
 
-The [roadmap](../../ROADMAP.md) develops these questions into next steps.
+The [roadmap](../../docs/ROADMAP.md) develops these questions into next steps.
 
 ## Try the connected workflow
 
@@ -94,4 +94,4 @@ python3 -m agent_system.empirical.demo --out .local/example-fixture --resume
 
 Inspect `summary.json`, `workflow/state.json`, and `workflow/events.jsonl` inside that output directory. The fixture uses three invented topics and two invented rows to exercise coordinator dispatch, stage handoffs, persistence, and resume. It makes no live model calls and performs no empirical training or Stata estimation.
 
-The aggregate files document the delivered findings; they are not sufficient to reproduce the underlying empirical estimates. See the [workflow guide](../../WORKFLOW.md) for the executable interfaces and required study inputs.
+The aggregate files document the delivered findings; they are not sufficient to reproduce the underlying empirical estimates. See the [workflow guide](../../docs/WORKFLOW.md) for the executable interfaces and required study inputs.
