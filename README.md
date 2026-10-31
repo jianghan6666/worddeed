@@ -64,6 +64,15 @@ The [workflow guide](docs/WORKFLOW.md) connects these steps to the runtime. The 
 
 The [application collection](applications/README.md) keeps each research case's walkthrough, scientific materials, results and replication evidence together. The first completed case is [CEO risk preference](applications/ceo-risk-preference/README.md), using earnings-call speech, R&D investment and dividend decisions:
 
+```mermaid
+flowchart TD
+    A["CEO earnings-call speech"] --> B["1. Represent narratives<br/>354-topic representation"]
+    B --> C["2. Screen for risk relevance<br/>Independent readers → 321 selected topics"]
+    C --> D["3. Predict R&D/assets<br/>Selected topic features + sentiment → Ridge / XGBoost scores"]
+    D --> E["4. Assess the proxy<br/>Scores → dividend-payment models"]
+    E --> F["Researcher interpretation<br/>Does the score reflect CEO risk preference?"]
+```
+
 - **354 topics**, screened in twelve trials with 36 readers.
 - **321 selected topics** used with sentiment to predict R&D/assets.
 - Scores for **29,506 firm-years**, with cross-fitted R² of **0.5351 for Ridge** and **0.6128 for XGBoost**.
