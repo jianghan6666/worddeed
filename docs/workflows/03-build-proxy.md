@@ -6,7 +6,7 @@ Selected topics, narrative features, behavioral target, observation keys, and ex
 
 ## Procedure
 
-The current study uses selected topic features plus aggregate sentiment to predict R&D/assets with Ridge and XGBoost. Preserve the specified firm–CEO groups, five folds, training-only transformations, tuning rules, and target handling. Keep out-of-fold and full-sample scores distinct.
+Specify the application’s behavioral target, features, model family and validation design. The current CEO application uses selected topic features plus aggregate sentiment to predict R&D/assets with Ridge and XGBoost. Preserve the specified firm–CEO groups, five folds, training-only transformations, tuning rules, and target handling. Keep out-of-fold and full-sample scores distinct.
 
 ## Output
 

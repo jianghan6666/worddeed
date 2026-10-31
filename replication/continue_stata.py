@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from replication.download import digest
 from replication.paths import repository_path
+from replication.executables import resolve_executable
 from agent_system.empirical import step4
 
 
@@ -103,11 +104,12 @@ def main():
     parser.add_argument('--handoff', type=Path, required=True)
     parser.add_argument('--packages', type=Path, required=True)
     parser.add_argument('--out', type=Path, required=True)
-    parser.add_argument('--stata', type=Path, required=True)
+    parser.add_argument('--stata', required=True)
     parser.add_argument('--stata-version', type=int, choices=[18, 19], default=19)
     parser.add_argument('--link-handoff', action='store_true',
                         help='Hard-link immutable handoff files on the same filesystem to avoid a second large copy')
     args = parser.parse_args()
+    stata = resolve_executable(args.stata)
     handoff, packages, out = args.handoff.resolve(), args.packages.resolve(), args.out.resolve()
     evidence = verify_handoff(handoff, packages)
     if out.exists():
@@ -125,7 +127,7 @@ def main():
     shutil.copyfile(handoff / 'HANDOFF.json', windows / 'HANDOFF.json')
     verify_handoff(windows, packages)
     config = {'profile': 'reproduce', 'python': sys.executable, 'packages_root': str(packages),
-              'stata_exe': str(args.stata.resolve()), 'stata_version': args.stata_version}
+              'stata_exe': stata, 'stata_version': args.stata_version}
     (out / 'reproduce.json').write_text(json.dumps(config, indent=2) + '\n')
     local_packages = {}
     for name in ['numpy', 'pandas', 'bottleneck', 'scipy', 'scikit-learn',
@@ -143,7 +145,7 @@ def main():
               'new_step3_scores_used': True, 'supplementary_passed': True,
               'stata_version_requested': args.stata_version, 'local_python': sys.version,
               'local_packages': local_packages,
-              'stata_executable_sha256': digest(args.stata.resolve()),
+              'stata_executable_sha256': digest(Path(stata)),
               'local_platform': sys.platform, 'stages': {s: 'complete' for s in ['step1', 'step2', 'step3', 'step4_prepare']}}
     destination = out / 'REPRODUCTION.json'
     def save():

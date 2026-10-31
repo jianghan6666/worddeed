@@ -1,4 +1,4 @@
-# Completed example: CEO speech, R&D prediction, and dividends
+# CEO risk preference: speech, R&D prediction, and dividends
 
 **An AI Microfoundation Proxy application from narrative representation to a behavioral proxy and downstream analysis.**
 
@@ -8,6 +8,7 @@ The original results are preserved, and a [fresh-download connected reproduction
 
 | Explore this application | Start here |
 | --- | --- |
+| First-time reviewer route | [Fresh download, results and reproduction](../../docs/REVIEWER_GUIDE.md) |
 | Scientific methods and source packages | [study/](study/README.md) |
 | Selected aggregate findings | [summary/](summary/README.md) |
 | Complete reports, scores, workbooks and reader evidence | [RESULTS.md](RESULTS.md) |
