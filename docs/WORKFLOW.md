@@ -1,6 +1,8 @@
 # Start and resume an AI Microfoundation Proxy study
 
-Start with the [completed example](../examples/ceo-risk-preference/README.md) to see the method and outputs. Use the [reviewer replication guide](../REPLICATION.md) to reproduce the supplied study, or the [runtime guide](../agent_system/empirical/README.md) for configuration and other compatible inputs.
+Identify the application and its scientific specification first. For a new case, follow [Adding an application](NEW_APPLICATION.md).
+
+Start with the [completed example](../applications/ceo-risk-preference/README.md) to see the method and outputs. Use the [reviewer replication guide](../applications/ceo-risk-preference/REPLICATION.md) to reproduce the supplied study, or the [runtime guide](../agent_system/empirical/README.md) for configuration and other compatible inputs.
 
 ## Read the current state
 
@@ -27,7 +29,7 @@ The coordinator owns dispatch and the integrated record. Readers author their ju
 | Empirical reproduction | Execute the current method using a saved selection | Compatible external study packages, catalogue, selection, dependencies, and Stata for estimation |
 | Fresh screening | Obtain a new triad and propagate its selection | The above plus complete source packets, compatible screening toolkit, and model access |
 
-Real execution uses explicit local paths. Complete empirical inputs and reader evidence are available in the private releases; the [replication guide](../REPLICATION.md) downloads and verifies them. The adapters target the demonstrated CEO/R&D study; extending the method to another setting requires explicit configuration and implementation work.
+Real execution uses explicit local paths. Complete empirical inputs and reader evidence are available in the private releases; the [replication guide](../applications/ceo-risk-preference/REPLICATION.md) downloads and verifies them. The adapters target the demonstrated CEO/R&D study; extending the method to another setting requires explicit configuration and implementation work.
 
 ## Run and hand off
 

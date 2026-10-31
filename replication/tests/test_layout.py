@@ -8,12 +8,12 @@ from replication.paths import ROOT, repository_path
 
 class HistoricalBindingTests(unittest.TestCase):
     def setUp(self):
-        self.current = 'study/screening/review/inputs/catalogue.json'
+        self.current = 'applications/ceo-risk-preference/study/screening/review/inputs/catalogue.json'
         self.historical = 'step-2-twelve-trial-pilot/inputs/catalogue.json'
         self.digest = hashlib.sha256((ROOT / self.current).read_bytes()).hexdigest()
 
     def test_old_and_current_handoffs_bind_the_same_catalogue(self):
-        for name in [self.historical, self.current]:
+        for name in [self.historical, 'study/screening/review/inputs/catalogue.json', self.current]:
             with self.subTest(name=name):
                 self.assertEqual(repository_path(name), ROOT / self.current)
                 verify_catalogue_binding('REPOSITORY_ROOT/' + name, self.digest)
@@ -25,7 +25,7 @@ class HistoricalBindingTests(unittest.TestCase):
                 verify_catalogue_binding('REPOSITORY_ROOT/' + name, digest)
 
     def test_historical_binding_cannot_escape_the_repository(self):
-        for name in ['../catalogue.json', '/catalogue.json', 'study/../catalogue.json']:
+        for name in ['../catalogue.json', '/catalogue.json', 'applications/ceo-risk-preference/study/../catalogue.json']:
             with self.subTest(name=name), self.assertRaisesRegex(ValueError, 'relative POSIX'):
                 verify_catalogue_binding('REPOSITORY_ROOT/' + name, self.digest)
 

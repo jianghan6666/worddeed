@@ -15,7 +15,7 @@ MAINTAINED_CHANGES = {'step-3-4/README.md': 'Current release routing and connect
 
 
 def main():
-    inventory = json.loads((ROOT/'replication/IMPORT.json').read_text())
+    inventory = json.loads((ROOT/'applications/ceo-risk-preference/replication/IMPORT.json').read_text())
     changed = []
     for item in inventory['files']:
         path = repository_path(item['path'])

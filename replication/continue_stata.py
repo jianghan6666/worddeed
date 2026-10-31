@@ -25,7 +25,7 @@ def verify_catalogue_binding(portable, expected_hash):
     if not portable.startswith(prefix):
         raise ValueError('Unexpected repository input binding: ' + portable)
     path = repository_path(portable.removeprefix(prefix))
-    catalogue = ROOT / 'study/screening/review/inputs/catalogue.json'
+    catalogue = ROOT / 'applications/ceo-risk-preference/study/screening/review/inputs/catalogue.json'
     if path != catalogue or digest(path) != expected_hash:
         raise ValueError('Workflow catalogue binding changed: ' + portable)
 
@@ -52,7 +52,7 @@ def verify_handoff(handoff, packages):
                           ('step4_full_from_raw_20261027', 'manifest.json')]:
         if digest(packages / package / name) != report.get('package_manifests', {}).get(package):
             raise ValueError('Local input inventory differs from Windows run: ' + package)
-    delivery = json.loads((ROOT / 'replication/manifests/empirical-delivery/DELIVERY.json').read_text(encoding='utf8'))
+    delivery = json.loads((ROOT / 'applications/ceo-risk-preference/replication/manifests/empirical-delivery/DELIVERY.json').read_text(encoding='utf8'))
     for row in delivery['files']:
         path = packages.parent / row['path']
         if path.stat().st_size != row['export_bytes'] or digest(path) != row['export_sha256']:

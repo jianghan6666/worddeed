@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parents[2]
+ROOT = next(parent for parent in HERE.parents if (parent / 'replication/paths.json').is_file())
 sys.path.insert(0, str(ROOT))
 from replication.paths import repository_path
 

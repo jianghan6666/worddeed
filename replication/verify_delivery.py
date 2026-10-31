@@ -40,8 +40,8 @@ def main():
             assert rows[name]['export_bytes'] == item['bytes'], name
             assert rows[name]['export_sha256'] == item['sha256'], name
     trial = 'b1-gpt-6-astra-P0-xhigh'
-    selected = ROOT / 'study/prediction/data/topic_selection' / (trial + '.json')
-    source = ROOT / 'study/screening/review/results/primary/handoffs' / trial / 'selected_topics.json'
+    selected = ROOT / 'applications/ceo-risk-preference/study/prediction/data/topic_selection' / (trial + '.json')
+    source = ROOT / 'applications/ceo-risk-preference/study/screening/review/results/primary/handoffs' / trial / 'selected_topics.json'
     assert selected.read_bytes() == source.read_bytes(), 'Step 2 selection mismatch'
     selection = json.loads(selected.read_text())
     assert (len(selection['final']['relevant']), len(selection['final']['irrelevant']), len(selection['final']['unresolved'])) == (321, 33, 0)

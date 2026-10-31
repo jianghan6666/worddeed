@@ -29,7 +29,7 @@ def main():
     gh = shutil.which('gh')
     if not gh:
         parser.error('Install GitHub CLI and sign in with private repository access')
-    manifest = ROOT/'replication/manifests/source-ceo-rd.manifest.json'
+    manifest = ROOT/'applications/ceo-risk-preference/replication/manifests/source-ceo-rd.manifest.json'
     spec = json.loads(manifest.read_text())
     assets = []
     with tempfile.TemporaryDirectory(prefix='nbm-source-verify-', dir=args.temp_parent) as tmp, \

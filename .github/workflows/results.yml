@@ -1,10 +1,10 @@
 name: Results package checks
 on:
   pull_request:
-    paths: ['results/**', 'RESULTS.md', '.github/workflows/results.yml']
+    paths: ['applications/ceo-risk-preference/results/**', 'RESULTS.md', 'applications/ceo-risk-preference/RESULTS.md', '.github/workflows/results.yml']
   push:
     branches: [main]
-    paths: ['results/**', 'RESULTS.md', '.github/workflows/results.yml']
+    paths: ['applications/ceo-risk-preference/results/**', 'RESULTS.md', 'applications/ceo-risk-preference/RESULTS.md', '.github/workflows/results.yml']
 permissions:
   contents: read
 jobs:
@@ -17,4 +17,4 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.11'
-      - run: python results/verify.py
+      - run: python applications/ceo-risk-preference/results/verify.py

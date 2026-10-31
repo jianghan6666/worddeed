@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from replication.restore import restore
 
-EVIDENCE = ROOT/'study/screening/experiment/results-2026-10-21'
+EVIDENCE = ROOT/'applications/ceo-risk-preference/study/screening/experiment/results-2026-10-21'
 TRIAL = 'b1-gpt-6-astra-P0-xhigh'
 
 
@@ -49,7 +49,7 @@ def main():
     out, downloads = args.out.resolve(), args.downloads.resolve()
     out.mkdir(parents=True, exist_ok=True)
     logs = out/'logs'; logs.mkdir(exist_ok=True)
-    manifest = ROOT/'replication/manifests/empirical-delivery/DELIVERY.json'
+    manifest = ROOT/'applications/ceo-risk-preference/replication/manifests/empirical-delivery/DELIVERY.json'
     if (downloads/'DELIVERY.json').read_bytes() != manifest.read_bytes():
         raise ValueError('Download manifest differs from the checked-in frozen inventory')
     stamp = out/'RESTORE.json'
@@ -65,7 +65,7 @@ def main():
             if f.stat().st_size != row['export_bytes'] or digest(f) != row['export_sha256']:
                 raise ValueError('Restored input changed: '+row['path'])
     call([sys.executable,EVIDENCE/'restore.py','--archive',downloads/'step2-twelve-evidence-2026-10-21.tar.gz'],logs/'screening-restore.log')
-    call([sys.executable,ROOT/'study/screening/review/verify.py'],logs/'screening-delivery.log')
+    call([sys.executable,ROOT/'applications/ceo-risk-preference/study/screening/review/verify.py'],logs/'screening-delivery.log')
     call([sys.executable,ROOT/'replication/verify_delivery.py'],logs/'prediction-delivery.log')
     if not (out/'screening').exists():
         call([sys.executable,ROOT/'replication/replay_screening.py','--out',out/'screening'],logs/'screening-replay.log')
@@ -76,7 +76,7 @@ def main():
         raise ValueError('Replayed Step 2 handoff differs from the Step 3 selection')
     config = {'profile':'reproduce', 'python':sys.executable,
               'packages_root':str(out/'inputs/packages'),
-              'catalogue':str(ROOT/'study/screening/review/inputs/catalogue.json'),
+              'catalogue':str(ROOT/'applications/ceo-risk-preference/study/screening/review/inputs/catalogue.json'),
               'selection':str(selection), 'step1':{'mode':'saved'},
               'stata_version':args.stata_version}
     if args.stata:

@@ -1,5 +1,7 @@
-# Connected AI Microfoundation Proxy runtime
+# AI Microfoundation Proxy runtime
 
-Start with the [four-step runtime guide](empirical/README.md). It documents the self-contained offline demo, saved state and resume, tests, and configuration for external empirical inputs.
+The runtime connects coordinator decisions, computational stages and saved evidence. Start with the [runtime guide](empirical/README.md) for the offline demo, state/resume, tests and current empirical execution.
 
-`contracts.py`, `providers.py` and `runtime.py` supply the coordinator's argument checks, optional Responses API connection and reply validation. Numerical stage adapters live in `empirical/`; research data and historical workspaces are not included.
+`contracts.py`, `providers.py` and `runtime.py` provide argument checks, provider handling and reply validation. `empirical/` contains the connected workflow and its current stage adapters. The coordinator, handoff and persistence patterns are reusable; the numerical adapters implement the CEO/R&D application and retain its specific input contracts and scientific programs.
+
+The [CEO application](../applications/ceo-risk-preference/README.md) owns the scientific materials, full results and replication evidence. Developing another application requires explicit scientific choices and compatible adapters, as described in [Adding an application](../docs/NEW_APPLICATION.md). A general application plug-in interface is not yet implemented.

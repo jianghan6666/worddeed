@@ -12,4 +12,4 @@ Bind the ordered topics to the study observations. Reuse compatible saved densit
 
 Catalogue and density locations, identities, ordering checks, and limitations.
 
-Use the [runtime guide](../../agent_system/empirical/README.md) for commands. The [completed example](../../examples/ceo-risk-preference/README.md) illustrates the delivered method; the [roadmap](../ROADMAP.md) identifies further assessment.
+Use the [runtime guide](../../agent_system/empirical/README.md) for commands. The [completed example](../../applications/ceo-risk-preference/README.md) illustrates the delivered method; the [roadmap](../ROADMAP.md) identifies further assessment.
