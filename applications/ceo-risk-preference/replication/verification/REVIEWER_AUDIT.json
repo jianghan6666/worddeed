@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "date": "2026-10-31",
+  "scope": "Reviewer navigation, current documentation, source ZIP integrity and offline screening replay; no new empirical prediction refit or Stata estimation in this audit.",
+  "source_download": {
+    "source": "GitHub source ZIP",
+    "commit": "fc9e61fc3e1efe0b3e3698f00fede86048ae1d5a",
+    "archive_sha256": "eff1bbaf1cfd439262340919a5d0bf57f806f6bc71f1459811afec6539d1e120",
+    "archive_bytes": 65287085,
+    "git_directory_present": false,
+    "files": 1020
+  },
+  "artifact_verifiers": {
+    "replication/verify.py": {
+      "exit_code": 0,
+      "output": "{\n  \"passed\": true,\n  \"imported_files\": 521,\n  \"maintained_changes\": [\n    {\n      \"path\": \"replication/restore.py\",\n      \"historical_path\": \"scripts/restore_review_bundle.py\",\n      \"reason\": \"Streaming restore with the same inventory checks\"\n    },\n    {\n      \"path\": \"applications/ceo-risk-preference/study/screening/review/verify.py\",\n      \"historical_path\": \"step-2-twelve-trial-pilot/verify.py\",\n      \"reason\": \"Resolve historical source paths through the repository path map\"\n    },\n    {\n      \"path\": \"applications/ceo-risk-preference/replication/manifests/empirical-delivery/README.md\",\n      \"historical_path\": \"step-3-4/README.md\",\n      \"reason\": \"Current release routing and connected guide\"\n    },\n    {\n      \"path\": \"replication/verify_delivery.py\",\n      \"historical_path\": \"step-3-4/verify.py\",\n      \"reason\": \"Resolve relocated reading copies; archive identities and checks unchanged\"\n    }\n  ]\n}"
+    },
+    "replication/verify_delivery.py": {
+      "exit_code": 0,
+      "output": "Verified 139 browsable files, 334 inventoried archive files, export manifest consistency and exact Step 2 linkage."
+    },
+    "applications/ceo-risk-preference/study/screening/review/verify.py": {
+      "exit_code": 0,
+      "output": "Verified 131 frozen copies, 12 trials, 24 selections, 354 topics per selection and two exact memo prompts. Totals: {'primary': {'relevant': 3795, 'irrelevant': 452, 'unresolved': 1}, 'supplementary': {'relevant': 3796, 'irrelevant': 452, 'unresolved': 0}}"
+    },
+    "applications/ceo-risk-preference/results/verify.py": {
+      "exit_code": 0,
+      "output": "{\n  \"passed\": true,\n  \"browsable_files_verified\": 375,\n  \"additional_evidence_files_verified\": 0,\n  \"topics\": 354,\n  \"trials\": 12,\n  \"indexed_reader_positions\": 144,\n  \"distinct_reader_records\": 95,\n  \"handoffs\": 24,\n  \"firm_year_scores\": 29506,\n  \"score_columns\": 16,\n  \"model_specifications\": 25,\n  \"coefficient_rows\": 1799,\n  \"scope\": \"Identity and packaging checks; no new empirical estimation.\"\n}"
+    }
+  },
+  "packaging_tests": {
+    "passed": 18,
+    "skipped": 0,
+    "includes": "PATH/explicit-path Stata resolution and early rejection before creating outputs"
+  },
+  "runtime_tests": {
+    "passed": 23,
+    "skipped": 0,
+    "scope": "Demo, coordinator, workflow and external-input tests; software fixtures only"
+  },
+  "demo_and_resume": "passed in extracted source ZIP without Git metadata",
+  "screening": {
+    "fresh_release_download": true,
+    "archive_sha256": "edddd3adf79f93be90a3480ee3dfae607989393f289f2ea72f550d4e6622292d",
+    "members_verified": 3840,
+    "analysis_and_handoff_files_reproduced": 122,
+    "comparison": "Exact except generation timestamps; primary and supplementary kept separate",
+    "local_diagnostic": "Initial restore/replay exhausted local disk. Removed only agent-created duplicate review files and partial outputs; resumed verified restore and ran a clean replay successfully. The freshly downloaded archive matched the existing preserved archive and was hard-linked after comparison to release duplicate storage."
+  },
+  "release_assets": {
+    "manifest_bound_assets": 70,
+    "available": true,
+    "bytes_and_github_sha256_metadata_match": true,
+    "scope": "Asset presence and GitHub digest metadata; this audit freshly transferred source ZIP and screening archive. Full core/source/output download checks are separately recorded in earlier receipts."
+  },
+  "current_guide_links_checked": 335,
+  "reviewer_guide_local_anchors_checked": 14,
+  "readme_matches_tracked_root": true,
+  "results_tree_unchanged": "4734813be114a12c01745ef4b340f53d85a06535",
+  "browser_review": "Local introduction visually inspected; framework and CEO application boundary and current replication status visible. Historical video explicitly identified.",
+  "accepted_empirical_evidence": "CONNECTED_REPRODUCTION.json records the previous successful Windows refit and Stata continuation. This audit does not claim another empirical fit."
+}

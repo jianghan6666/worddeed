@@ -29,7 +29,7 @@ python3 applications/ceo-risk-preference/study/screening/review/verify.py
 python3 applications/ceo-risk-preference/results/verify.py
 ```
 
-Each command must exit successfully; the JSON reports have `passed: true`. They check 521 imported source identities, the supplied package inventory and handoff, screening review copies, and 375 result files. These are integrity checks, not a new scientific fit. For an optional orchestration demonstration, follow the [offline demo](../agent_system/empirical/README.md#run-the-self-contained-demo).
+Each command must exit successfully. The source and results verifiers report `passed: true`; the delivery and screening verifiers print their successful checks. They check 521 imported source identities, the supplied package inventory and handoff, screening review copies, and 375 result files. These are integrity checks, not a new scientific fit. For an optional orchestration demonstration, follow the [offline demo](../agent_system/empirical/README.md#run-the-self-contained-demo).
 
 ## What can be reproduced at each step?
 
@@ -44,7 +44,7 @@ The accepted [connected verification](../applications/ceo-risk-preference/replic
 
 ## Choose the execution route
 
-- **Replay Step 2 on any supported desktop:** the following commands download about 52 MB and restore about 239 MB of reader evidence, then recalculate and compare the saved analyses. They require authenticated `gh` and Python 3.11+, but no numerical packages or model calls. Use a new output directory.
+- **Replay Step 2 on any supported desktop:** the following commands download about 52 MB and restore about 239 MB of reader evidence, then recalculate and compare the saved analyses. They require authenticated `gh` and Python 3.11+, but no numerical packages or model calls. Allow at least 1 GB of free working space for this review route, including extracted files and replay outputs. Use a new output directory.
 
 ```sh
 gh release download reviewer-replication-2026-10-30 --repo joyzhzh/ai-microfoundation-proxy --pattern step2-twelve-evidence-2026-10-21.tar.gz --dir .local/downloads
