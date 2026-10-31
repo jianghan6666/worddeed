@@ -6,7 +6,7 @@ AI Microfoundation Proxy connects narrative evidence, AI-assisted topic screenin
 
 **Reviewer results:** [Full four-step results](RESULTS.md) · [PDF report](results/report.pdf) · [Complete results download](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/full-results-2026-10-31)
 
-[Introduction](docs/index.html) · [Video](docs/video/four-step-agent.mp4) · [Completed example](examples/ceo-risk-preference/README.md) · [Roadmap](ROADMAP.md) · [Workflow guide](WORKFLOW.md) · [Reviewer replication](REPLICATION.md)
+**[Project website](https://astounding-entremet-7d220b.netlify.app/)** · [Video](https://astounding-entremet-7d220b.netlify.app/#film) · [Completed example](examples/ceo-risk-preference/README.md) · [Roadmap](ROADMAP.md) · [Workflow guide](WORKFLOW.md) · [Reviewer replication](REPLICATION.md)
 
 ## What is AI Microfoundation Proxy?
 
@@ -16,9 +16,9 @@ You bring a construct, narrative material, a behavioral outcome, and a study set
 
 The current empirical method predicts R&D/assets from selected topic features and aggregate sentiment. Its interpretation as CEO risk preference requires evidence beyond predictive fit or regression significance.
 
-[![Watch the AI Microfoundation Proxy walkthrough](docs/video/poster.jpg)](docs/video/four-step-agent.mp4)
+[![Watch the AI Microfoundation Proxy walkthrough](docs/video/poster.jpg)](https://astounding-entremet-7d220b.netlify.app/#film)
 
-[Watch the video](docs/video/four-step-agent.mp4) · [Read the narration](docs/video/transcript.md) · [English captions](docs/video/four-step-agent.en.vtt). The local introduction below plays the video in the page.
+[Watch the video on the website](https://astounding-entremet-7d220b.netlify.app/#film) · [Download MP4](docs/video/four-step-agent.mp4) · [Read the narration](docs/video/transcript.md) · [English captions](docs/video/four-step-agent.en.vtt).
 
 ## How it works
 
@@ -105,11 +105,13 @@ Save new inputs and execution records under .local/.
 
 ### Open the introduction
 
+Visit the [live project website](https://astounding-entremet-7d220b.netlify.app/) to explore the method and play the video. To run it locally:
+
 ```sh
 python3 -m http.server 8765 --bind 127.0.0.1 --directory docs
 ```
 
-Open [the local introduction](http://127.0.0.1:8765/) to explore the method and play the video. `Ctrl+C` stops the server. GitHub displays `docs/index.html` as source.
+Open [the local introduction](http://127.0.0.1:8765/). `Ctrl+C` stops the server.
 
 ## Example prompts
 
