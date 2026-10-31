@@ -16,7 +16,17 @@ Many organizational theories depend on beliefs, preferences, and judgments that 
 
 You bring a construct, narrative material, a behavioral outcome, and a study setting. The workflow represents the narrative as topics, screens those topics for relevance, estimates a model linking narrative features to behavior, and passes the resulting scores to downstream analysis. You leave with **selected topics and their reasons, predicted behavioral scores, analysis outputs, and a saved execution record**.
 
-Each application supplies its own scientific specification and validation criteria. The first completed application studies CEO risk preference; its R&D target and financial-data assumptions belong to that case. The current numerical adapters implement that application, while broader adapter reuse and a second empirical application remain development work.
+Each application supplies its own scientific specification and validation criteria. The first completed application studies CEO risk preference; its R&D target and financial-data assumptions belong to that case. The coordinator, saved state and resume logic are shared and reusable now. The numerical adapters implement the CEO case, and a second empirical application is roadmap work.
+
+### Terms used here
+
+- **Construct**: the unobserved quality a study is about, such as a CEO's risk preference.
+- **Proxy**: an observable score that stands in for the construct. Here it is a number predicted from speech.
+- **Microfoundation**: an individual-level belief, preference or judgment that an organizational theory rests on. The project name says that the proxies are built for quantities of this kind.
+- **Narrative**: the spoken or written material, such as earnings-call speech.
+- **Topic**: a theme that a topic model finds in the narrative. Each observation has a density for each topic.
+- **Reader**: a language-model session that judges whether a topic is relevant to the construct. Readers work independently, and their reasons and dissents are kept.
+- **Screening**: the readers' pass over the full topic catalogue that selects the relevant topics.
 
 [![Watch the AI Microfoundation Proxy walkthrough](docs/video/poster.jpg)](https://astounding-entremet-7d220b.netlify.app/#film)
 
@@ -36,7 +46,7 @@ Agents follow explicit workflows and use tools for computation and record keepin
 | **Proxy estimation** | Fits the specified grouped prediction models. | Scores, folds, models, and fit diagnostics. |
 | **Downstream analysis** | Matches scores to the study panel and prepares and estimates the specified models. | Analysis inputs, tables, and diagnostics. |
 
-The executable system has one coordinator and, for fresh screening, three independent model readers. Topic preparation, proxy estimation, and downstream analysis use Python adapters and scientific programs. The [role guides](docs/agents/coordinator.md) explain these responsibilities.
+The executable system has one coordinator and, for fresh screening, three independent readers. Each reader is a separate language-model session with its own history, and no reader sees another's judgments. Topic preparation, proxy estimation, and downstream analysis use Python adapters and scientific programs. The [role guides](docs/agents/coordinator.md) explain these responsibilities.
 
 ### Four-step workflow
 
@@ -73,14 +83,14 @@ flowchart TD
     E --> F["Researcher interpretation<br/>Does the score reflect CEO risk preference?"]
 ```
 
-- **354 topics**, screened in twelve trials with 36 readers.
+- **354 topics**, screened in twelve trials. Each trial used three independent language-model readers, 36 reader sessions in all, across two model families, three effort settings and two repetitions.
 - **321 selected topics** used with sentiment to predict R&D/assets.
 - Scores for **29,506 firm-years**, with cross-fitted R² of **0.5351 for Ridge** and **0.6128 for XGBoost**.
 - A downstream analysis with **25 specifications**, including 16 score models.
 
 Read its [full results](applications/ceo-risk-preference/RESULTS.md) and [verified replication](applications/ceo-risk-preference/REPLICATION.md). Its interpretation as psychological risk preference remains a research question. Future applications will sit alongside this case with their own scientific specifications and evidence.
 
-The offline demo below uses invented inputs to demonstrate coordination and resume. To develop a new empirical case, use the [application guide](docs/NEW_APPLICATION.md) and [research template](applications/_template/README.md); compatible stage adapters must be implemented explicitly.
+The offline demo below uses invented inputs to demonstrate coordination and resume. To develop a new empirical case, use the [application guide](docs/NEW_APPLICATION.md) and [research template](applications/_template/README.md).
 
 ## Quick start
 

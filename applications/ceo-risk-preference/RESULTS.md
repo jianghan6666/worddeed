@@ -28,6 +28,8 @@ gh release download full-results-2026-10-31 \
   --dir results-download
 ```
 
+The `nbm` prefix in the asset names is the project's former name, Narrative-Behavior Measurement. Release assets are frozen, so they were not renamed.
+
 The frozen results ZIP keeps its original internal layout. Verify its SHA-256 sidecar, unzip it, and open `results/report.html` or `results/report.pdf` inside the extracted package. The topic browsers work offline. From that extracted package root, run:
 
 ```sh
