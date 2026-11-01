@@ -29,6 +29,12 @@ Reusable orchestration is implemented, and the CEO application has a verified co
 
 Keep new inputs, restored packages and run outputs under ignored `.local/<application-name>/`. Each application documents access to its large datasets and models through inventoried private releases.
 
+## Reading copies and languages
+
+Some files exist in two places on purpose. The application's `study/` tree holds each supplied scientific package in the layout its own code and historical hashes expect. The `results/` tree is the reviewer presentation and carries copies of the reports, tables and audit files it needs. Where the same file appears in both, the copies are byte-identical. For example, the Step 2 analysis tables sit under both `study/screening/review/results/` and `results/step2/analyses/`, and the Step 4 historical audit files sit under both `study/assessment/full/audit/` and `results/step4/full/audit/`. The `results/` copies are inventoried and checked by `results/verify.py`; the `study/` copies are the supplied originals. Read either; edit neither.
+
+The supplied Step 3 and Step 4 packages under `study/` were written in Chinese by the original collaboration, including their READMEs, method notes, data dictionaries and raw-data download ledgers. They are kept verbatim as scientific records. The English application README, results guide and replication guide summarize what they contain. Windows paths inside the ledgers refer to the machine that executed the original run, not to this checkout.
+
 ## Historical paths and frozen artifacts
 
 [replication/paths.json](../replication/paths.json) maps the former root `study/`, `results/`, `examples/ceo-risk-preference/`, Step 2 and Step 3/4 delivery paths to the current application. The identity verifiers resolve historical source paths without rewriting scientific records. Previously exported Windows handoffs can use either former catalogue path or the current application path after checking the same file hash.
