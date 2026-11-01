@@ -21,8 +21,8 @@ Each application supplies its own scientific specification and validation criter
 ### Terms used here
 
 - **Construct**: the unobserved quality a study is about, such as a CEO's risk preference.
-- **Proxy**: an observable score that stands in for the construct. Here it is a number predicted from speech.
-- **Microfoundation**: an individual-level belief, preference or judgment that an organizational theory rests on. The project name says that the proxies are built for quantities of this kind.
+- **Proxy**: an observable measure used to study a latent construct. WordDeed’s synthesized proxy is the fitted value from predicting a behavioral measure using narrative evidence.
+- **Microfoundation**: an individual-level belief, preference or judgment that an organizational theory rests on.
 - **Narrative**: the spoken or written material, such as earnings-call speech.
 - **Topic**: a theme that a topic model finds in the narrative. Each observation has a density for each topic.
 - **Reader**: a language-model session that judges whether a topic is relevant to the construct. Readers work independently, and their reasons and dissents are kept.
