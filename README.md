@@ -1,8 +1,8 @@
-# AI Microfoundation Proxy
+# WordDeed
 
-**A research framework for constructing and assessing proxies from what people say and what they do.**
+**Match Words with Deeds: An AI-Empowered Proxy Framework for Organizational Microfoundations**
 
-AI Microfoundation Proxy connects narrative evidence, AI-assisted relevance screening, behavioral prediction, and downstream assessment. It provides a shared research workflow and agent orchestration for applications with different constructs, narratives, behavioral targets, and settings. Researchers define the scientific claim and interpret the evidence; agents coordinate the work and call computational tools.
+WordDeed uses what firms say to predict what they do. Researchers can use it to build and assess a proxy for a latent trait, such as CEO risk preference, from evidence in corporate narratives and observed behavior. It provides a shared research workflow and agent orchestration for applications with different constructs, narratives, behavioral targets, and settings. Researchers define the scientific claim and interpret the evidence; agents coordinate the work and call computational tools.
 
 **Reviewing this repository?** Start with the [reviewer guide](docs/REVIEWER_GUIDE.md) for results, fresh ZIP checks and the exact four-step reproduction boundary.
 
@@ -10,15 +10,15 @@ AI Microfoundation Proxy connects narrative evidence, AI-assisted relevance scre
 
 **[Project website](https://astounding-entremet-7d220b.netlify.app/)** · [Video](https://astounding-entremet-7d220b.netlify.app/#film) · [Roadmap](docs/ROADMAP.md)
 
-## What is AI Microfoundation Proxy?
+## What is WordDeed?
 
-Many organizational theories depend on beliefs, preferences, and judgments that researchers cannot observe directly. Speech offers one source of evidence; choices offer another. AI Microfoundation Proxy makes the connection between them explicit and inspectable.
+Many organizational theories depend on beliefs, preferences, and judgments that researchers cannot observe directly. Speech offers one source of evidence; choices offer another. WordDeed makes the connection between them explicit and inspectable.
 
 You bring a construct, narrative material, a behavioral outcome, and a study setting. The workflow represents the narrative as topics, screens those topics for relevance, estimates a model linking narrative features to behavior, and passes the resulting scores to downstream analysis. You leave with **selected topics and their reasons, predicted behavioral scores, analysis outputs, and a saved execution record**.
 
 Each application supplies its own scientific specification and validation criteria. The first completed application studies CEO risk preference; its R&D target and financial-data assumptions belong to that case. The current numerical adapters implement that application, while broader adapter reuse and a second empirical application remain development work.
 
-[![Watch the AI Microfoundation Proxy walkthrough](docs/video/poster.jpg)](https://astounding-entremet-7d220b.netlify.app/#film)
+[![Watch the WordDeed walkthrough](docs/video/poster.jpg)](https://astounding-entremet-7d220b.netlify.app/#film)
 
 The video records the earlier assembly and fixture demonstration. The [current replication evidence](applications/ceo-risk-preference/replication/verification/README.md) additionally covers completed empirical refits and estimation.
 
@@ -89,8 +89,8 @@ The offline demo below uses invented inputs to demonstrate coordination and resu
 Use **Python 3.11 or newer**. The offline demo needs only the standard library.
 
 ```sh
-git clone https://github.com/joyzhzh/ai-microfoundation-proxy.git
-cd ai-microfoundation-proxy
+git clone https://github.com/jianghan6666/worddeed.git
+cd worddeed
 python3 -m agent_system.empirical.demo --out .local/demo
 python3 -m agent_system.empirical.demo --out .local/demo --resume
 ```
@@ -104,7 +104,7 @@ For real execution, provide compatible study inputs and scientific packages thro
 Open this repository in your coding-agent workspace:
 
 ```text
-Act as the coordinator for an AI Microfoundation Proxy study. Follow ./docs/WORKFLOW.md.
+Act as the coordinator for a WordDeed study. Follow ./docs/WORKFLOW.md.
 Identify the application and read its research specification, current configuration,
 and saved handoff first.
 
@@ -145,7 +145,7 @@ Open [the local introduction](http://127.0.0.1:8765/). `Ctrl+C` stops the server
 Shared infrastructure stays at the root; application-specific research and deliverables live under `applications/<application-name>/`.
 
 ```text
-ai-microfoundation-proxy/
+worddeed/
 |-- README.md                 Framework overview and setup
 |-- AGENTS.md                 Instructions for coding agents
 |-- RESULTS.md                Index of application results

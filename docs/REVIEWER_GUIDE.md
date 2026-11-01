@@ -4,9 +4,9 @@ AI Microfoundation Proxy is a framework for connecting narratives, relevance jud
 
 ## Read the findings
 
-Open the CEO application's [full results guide](../applications/ceo-risk-preference/RESULTS.md), [PDF report](../applications/ceo-risk-preference/results/report.pdf), and [file guide](../applications/ceo-risk-preference/results/README.md). They lead to all four stages, including the 354-topic catalogue, twelve screening trials, 29,506 firm-year scores and 25 downstream models. The [full results ZIP](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/full-results-2026-10-31) adds the literal reader evidence. Download and open HTML reports and topic browsers locally; GitHub displays their source.
+Open the CEO application's [full results guide](../applications/ceo-risk-preference/RESULTS.md), [PDF report](../applications/ceo-risk-preference/results/report.pdf), and [file guide](../applications/ceo-risk-preference/results/README.md). They lead to all four stages, including the 354-topic catalogue, twelve screening trials, 29,506 firm-year scores and 25 downstream models. The [full results ZIP](https://github.com/jianghan6666/worddeed/releases/tag/full-results-2026-10-31) adds the literal reader evidence. Download and open HTML reports and topic browsers locally; GitHub displays their source.
 
-The [replication package](../applications/ceo-risk-preference/REPLICATION.md) is a separate deliverable: data, model assets, saved judgments, executable code, environments and newly executed verification. Its [verified-output release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-31) lets you inspect the new run without fitting again.
+The [replication package](../applications/ceo-risk-preference/REPLICATION.md) is a separate deliverable: data, model assets, saved judgments, executable code, environments and newly executed verification. Its [verified-output release](https://github.com/jianghan6666/worddeed/releases/tag/reviewer-replication-2026-10-31) lets you inspect the new run without fitting again.
 
 ## Get a fresh copy and check it
 
@@ -14,8 +14,8 @@ This repository and its release assets are private. The owner must grant your Gi
 
 ```sh
 gh auth login
-gh repo clone joyzhzh/ai-microfoundation-proxy
-cd ai-microfoundation-proxy
+gh repo clone jianghan6666/worddeed
+cd worddeed
 ```
 
 For a ZIP, open a terminal in the extracted folder containing `README.md`, `agent_system/` and `applications/`. The verification and reproduction scripts do not require `.git`. A source ZIP or clone includes the reading copies and full browsable results; large empirical inputs are downloaded separately from the private releases. Keep the downloaded folder writable because screening restore adds inventoried evidence beside its replay code.
@@ -47,7 +47,7 @@ The accepted [connected verification](../applications/ceo-risk-preference/replic
 - **Replay Step 2 on any supported desktop:** the following commands download about 52 MB and restore about 239 MB of reader evidence, then recalculate and compare the saved analyses. They require authenticated `gh` and Python 3.11+, but no numerical packages or model calls. Allow at least 1 GB of free working space for this review route, including extracted files and replay outputs. Use a new output directory.
 
 ```sh
-gh release download reviewer-replication-2026-10-30 --repo joyzhzh/ai-microfoundation-proxy --pattern step2-twelve-evidence-2026-10-21.tar.gz --dir .local/downloads
+gh release download reviewer-replication-2026-10-30 --repo jianghan6666/worddeed --pattern step2-twelve-evidence-2026-10-21.tar.gz --dir .local/downloads
 python3 applications/ceo-risk-preference/study/screening/experiment/results-2026-10-21/restore.py --archive .local/downloads/step2-twelve-evidence-2026-10-21.tar.gz
 python3 replication/replay_screening.py --out .local/screening-review
 python3 applications/ceo-risk-preference/study/screening/experiment/results-2026-10-21/verify_replay.py --out .local/screening-review

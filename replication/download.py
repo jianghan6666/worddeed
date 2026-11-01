@@ -10,7 +10,7 @@ import tempfile
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
-REPO = 'joyzhzh/ai-microfoundation-proxy'
+REPO = 'jianghan6666/worddeed'
 TAG = 'reviewer-replication-2026-10-30'
 
 

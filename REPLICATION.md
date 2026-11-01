@@ -4,7 +4,7 @@ Reproduction requirements are application-specific: data access, environments, s
 
 | Application | Instructions and evidence | Verified outputs |
 | --- | --- | --- |
-| [CEO risk preference](applications/ceo-risk-preference/README.md) | [Complete replication guide](applications/ceo-risk-preference/REPLICATION.md) | [Verified release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-31) |
+| [CEO risk preference](applications/ceo-risk-preference/README.md) | [Complete replication guide](applications/ceo-risk-preference/REPLICATION.md) | [Verified release](https://github.com/jianghan6666/worddeed/releases/tag/reviewer-replication-2026-10-31) |
 
 Start with the [reviewer guide](docs/REVIEWER_GUIDE.md) for a fresh ZIP or clone, lightweight checks and a step-by-step account of what is replayed and what is newly fitted.
 

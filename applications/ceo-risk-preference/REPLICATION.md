@@ -1,6 +1,6 @@
 # Reviewer replication package
 
-This private package contains the available code, data, models, saved judgments and evidence for all four stages of the CEO speech/R&D study. The [verified replication release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-31) records the accepted code revision and newly executed outputs. This checkout uses the reorganized paths below; the [repository guide](../../docs/REPOSITORY.md) maps the earlier layout. Large historical inputs are frozen in the separate [input release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-30); that earlier tag's code snapshot is superseded by the verified release. No access to the former development repository is needed for the commands below.
+This private package contains the available code, data, models, saved judgments and evidence for all four stages of the CEO speech/R&D study. The [verified replication release](https://github.com/jianghan6666/worddeed/releases/tag/reviewer-replication-2026-10-31) records the accepted code revision and newly executed outputs. This checkout uses the reorganized paths below; the [repository guide](../../docs/REPOSITORY.md) maps the earlier layout. Large historical inputs are frozen in the separate [input release](https://github.com/jianghan6666/worddeed/releases/tag/reviewer-replication-2026-10-30); that earlier tag's code snapshot is superseded by the verified release. No access to the former development repository is needed for the commands below.
 
 The executable replay starts from the **saved topic representation and saved reader records**. It recomputes the twelve-trial screening analyses, rebuilds firm-year predictors, refits Ridge and XGBoost, and sends the new cross-fitted scores into raw-data reconstruction and all 25 downstream Stata regressions. It does not call AI readers again, fit a new BERTopic model, or regenerate upstream sentiment. Those would be new analyses, not recovery of the historical judgments.
 
@@ -31,8 +31,8 @@ Run these commands in PowerShell with Python 3.11.7 installed. If you already ex
 
 ```powershell
 gh auth login
-gh repo clone joyzhzh/ai-microfoundation-proxy
-cd ai-microfoundation-proxy
+gh repo clone jianghan6666/worddeed
+cd worddeed
 py -3.11 --version
 py -3.11 -m venv .venv
 .venv\Scripts\python.exe -m pip install -r agent_system/empirical/requirements.txt
@@ -70,7 +70,7 @@ The driver preserves the supplied model grids, folds, seeds and computational se
 
 ### Windows preparation and local Stata continuation
 
-Repository writers can start a new Windows run with `gh workflow run windows-replication.yml --repo joyzhzh/ai-microfoundation-proxy --ref main`, then use `gh run list --workflow windows-replication.yml --repo joyzhzh/ai-microfoundation-proxy` to identify and watch its run. Read-only reviewers can use the local Windows commands above. Actions artifacts expire; the verified-output release below remains the durable review copy.
+Repository writers can start a new Windows run with `gh workflow run windows-replication.yml --repo jianghan6666/worddeed --ref main`, then use `gh run list --workflow windows-replication.yml --repo jianghan6666/worddeed` to identify and watch its run. Read-only reviewers can use the local Windows commands above. Actions artifacts expire; the verified-output release below remains the durable review copy.
 
 The [Windows verification workflow](../../.github/workflows/windows-replication.yml) fresh-downloads the private inputs, replays all screening analyses, refits both models, runs the supplied saved-model and three-seed checks, resumes completed fits without refitting, and rebuilds the financial data and 25 Stata model inputs. It uses a read-only token. Git preserves inventoried bytes on Windows; the replay wrapper specifies only UTF-8/LF JSON serialization and portable path separators. Frozen scientific code and output comparisons remain unchanged.
 
@@ -80,7 +80,7 @@ The workflow exports `reviewer-windows-handoff` with a file-by-file inventory, o
 .venv/bin/python replication/download.py --out .local/downloads
 .venv/bin/python replication/restore.py \
   .local/downloads/DELIVERY.json --out .local/reproduction/inputs
-gh run download RUN_ID --repo joyzhzh/ai-microfoundation-proxy \
+gh run download RUN_ID --repo jianghan6666/worddeed \
   --name reviewer-windows-handoff --dir .local/windows-handoff
 .venv/bin/python replication/continue_stata.py \
   --handoff .local/windows-handoff \
@@ -95,13 +95,13 @@ Use `.venv/Scripts/python.exe` on Windows. Omit `--stata-version 18` for Stata 1
 
 The [connected verification record](replication/verification/CONNECTED_REPRODUCTION.json) documents a successful fresh Windows run and local Stata 18 continuation. It replayed 122 screening analysis/handoff files, rebuilt the 29,506-row panel exactly, refitted both models, passed the original three-seed checks, rebuilt the financial and matching data, and estimated all 25 downstream models. All eight XGBoost score columns match the reference exactly; Ridge passes the original tolerances. Financial reconstruction passes its original `1e-12` comparison, without claiming every numeric value is bitwise identical. All 410 regression checks and the coefficient/SE, sample and presentation checks pass at their unchanged thresholds. Completed prediction stages were hash-checked and reused when advancing to regression preparation.
 
-The accepted Windows run is [41107621004, attempt 2](https://github.com/joyzhzh/ai-microfoundation-proxy/actions/runs/41107621004). Its 428 exported files were verified before and after Stata estimation. The completion report identifies both code commits, Python dependencies, the Stata executable hash and the explicit version-18 compatibility change. Earlier failed and cancelled attempts are retained separately in the [verification index](replication/verification/README.md).
+The accepted Windows run is [41107621004, attempt 2](https://github.com/jianghan6666/worddeed/actions/runs/41107621004). Its 428 exported files were verified before and after Stata estimation. The completion report identifies both code commits, Python dependencies, the Stata executable hash and the explicit version-18 compatibility change. Earlier failed and cancelled attempts are retained separately in the [verification index](replication/verification/README.md).
 
 To inspect the newly executed outputs without fitting again:
 
 ```sh
 gh release download reviewer-replication-2026-10-31 \
-  --repo joyzhzh/ai-microfoundation-proxy \
+  --repo jianghan6666/worddeed \
   --pattern 'fresh-reproduction.tar.gz.part*' --dir .local/verified-run
 cp applications/ceo-risk-preference/replication/manifests/fresh-reproduction.manifest.json .local/verified-run/
 .venv/bin/python replication/restore.py \

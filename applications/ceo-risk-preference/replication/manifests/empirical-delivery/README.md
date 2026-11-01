@@ -1,6 +1,6 @@
 # Step 3 and Step 4 collaboration delivery
 
-Received on 28 October 2026; source packages dated 27 October. This folder integrates the supplied code, methods, models, data and results into the permanently private project. Code and reports are browsable below. The complete packages, including large inputs and models, are in the [private release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/reviewer-replication-2026-10-30).
+Received on 28 October 2026; source packages dated 27 October. This folder integrates the supplied code, methods, models, data and results into the permanently private project. Code and reports are browsable below. The complete packages, including large inputs and models, are in the [private release](https://github.com/jianghan6666/worddeed/releases/tag/reviewer-replication-2026-10-30).
 
 | Package | Delivered scope | Start here |
 |---|---|---|
@@ -28,7 +28,7 @@ From the repository root, with access to this private repository:
 
 ```sh
 gh release download reviewer-replication-2026-10-30 \
-  --repo joyzhzh/ai-microfoundation-proxy \
+  --repo jianghan6666/worddeed \
   --pattern 'step3-step4-2026-10-28.tar.gz.part*' --pattern 'DELIVERY.json' \
   --dir .local/step3-step4-download
 python replication/restore.py .local/step3-step4-download/DELIVERY.json \

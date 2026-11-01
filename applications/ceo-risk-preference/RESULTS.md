@@ -4,7 +4,7 @@ The completed results are now available as a separate reviewer deliverable.
 
 - **Read:** [nine-page PDF report](results/report.pdf), or download/open the [HTML report](results/report.html).
 - **Inspect judgments:** [searchable topic-by-topic readers](results/step2/explorers/index.html), covering all twelve trials, both stages, primary and supplementary results. Download/open the HTML pages locally; GitHub displays HTML source.
-- **Download everything:** [full results release](https://github.com/joyzhzh/ai-microfoundation-proxy/releases/tag/full-results-2026-10-31). The ZIP includes the browsable results plus all literal reader evidence, seals, recoveries and provenance.
+- **Download everything:** [full results release](https://github.com/jianghan6666/worddeed/releases/tag/full-results-2026-10-31). The ZIP includes the browsable results plus all literal reader evidence, seals, recoveries and provenance.
 - **Navigate the original outputs:** [complete file guide](results/README.md).
 
 | Step | Full results included |
@@ -22,7 +22,7 @@ With access to this private repository:
 
 ```sh
 gh release download full-results-2026-10-31 \
-  --repo joyzhzh/ai-microfoundation-proxy \
+  --repo jianghan6666/worddeed \
   --pattern 'nbm-full-results-2026-10-31.zip' \
   --pattern 'nbm-full-results-2026-10-31.zip.sha256' \
   --dir results-download
