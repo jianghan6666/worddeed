@@ -1,114 +1,197 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Microfoundation Proxy · Research workflow</title>
-<meta name="description" content="An academic overview of the assembled four-step research workflow, its independent topic readers, predictive models, score handoffs, and offline demonstration.">
-<meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#faf9f5">
-<link rel="preload" href="fonts/InstrumentSans.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="preload" href="fonts/Gloock-Regular.ttf" as="font" type="font/ttf" crossorigin>
-<link rel="stylesheet" href="styles.css">
-<script src="site.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Match Words with Deeds · WordDeed</title>
+  <meta name="description" content="Can executive speech and corporate decisions reveal a hidden trait? Explore a four-step measurement framework, the CEO risk-preference study, and its research film.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f6f4ec">
+  <link rel="preload" href="fonts/InstrumentSans.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/Gloock-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="bar">
-  <div class="wrap bar-inner">
-    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">AI</span><span>AI Microfoundation<br>Proxy</span></a>
-    <nav class="nav" aria-label="Sections"><a href="#question">Question</a><a href="#workflow">Workflow</a><a href="#system">System</a><a href="#demo">Demo</a><a href="#film">Video</a><a href="#evidence">Evidence</a></nav>
-    <span class="header-status">Framework + applications<br><time datetime="2026-10-31">31 October 2026</time></span>
+<header class="masthead" id="top">
+  <div class="wrap masthead-inner">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true"><rect width="40" height="40" rx="4" fill="#193f40"/><path d="M7 11h9l8 9h9M7 29h9l8-9" fill="none" stroke="#e8b785" stroke-width="2.5"/><path d="M7 20h26" fill="none" stroke="#a4d9c7" stroke-width="2.5"/></svg>
+      <span>WordDeed</span>
+    </a>
+    <nav class="main-nav" aria-label="On this page">
+      <a href="#workflow">Framework</a><a href="#case">CEO study</a><a href="#evidence">Evidence</a><a href="#film">Film</a><a href="#review">Review</a>
+    </nav>
   </div>
 </header>
-<main id="main">
-<section class="intro wrap" id="top" aria-labelledby="page-title">
-  <p class="eyebrow">AI Microfoundation Proxy / Research workflow</p>
-  <div class="intro-grid">
-    <div><h1 id="page-title">From narrative evidence <br>to behavioral proxies.</h1><p class="lead">A research framework connects narrative representation, relevance screening, behavioral prediction and assessment through a resumable workflow. CEO risk preference is the first complete application, using speech and R&amp;D investment. Other applications define their own constructs, targets and scientific methods.</p></div>
-    <aside class="scope"><p class="tag">Current scope</p><h2>One framework. A complete first case.</h2><p>The CEO application has full results and verified reproduction from saved topics and reader judgments through new prediction fits and all 25 downstream models. Current numerical adapters implement this case; broader application interfaces remain development work.</p><a href="https://github.com/jianghan6666/worddeed/blob/main/docs/REVIEWER_GUIDE.md">Start the reviewer guide <span aria-hidden="true">↓</span></a></aside>
-  </div>
-  <ol class="route" aria-label="Four-stage overview">
-    <li><span>01</span><b>Topic representation</b><small>Catalogue + observation identities</small></li>
-    <li><span>02</span><b>Relevance screening</b><small>Three independent readers</small></li>
-    <li><span>03</span><b>Behavioral prediction</b><small>Narratives → behavioral target</small></li>
-    <li><span>04</span><b>Matching &amp; estimation</b><small>Scores → application assessment</small></li>
-  </ol>
-  <div class="intro-links"><a class="text-link" href="#workflow">Read the method <span aria-hidden="true">↓</span></a><a class="text-link" href="#film">Watch the narrated walkthrough <span aria-hidden="true">↗</span></a></div>
-</section>
-
-<section class="section" id="question" aria-labelledby="question-title"><div class="wrap">
-  <header class="section-label"><span>01 / Research question</span><span>Prediction and measurement</span></header>
-  <div class="section-heading"><h2 id="question-title">What does the prediction measure?</h2><div><p class="lead">Language expresses a perspective. Behavior records a choice. Both also reflect circumstances.</p><p>We study their relationship while keeping the measurement claim open. A model trained to predict R&amp;D/assets may capture risk preference, industry, opportunity, disclosure practices, or a mixture of these. Predictive performance alone cannot resolve that interpretation.</p></div></div>
-  <div class="three-columns witnesses">
-    <article><span class="tag blue">Narrative inputs</span><h3>Managerial speech</h3><p>Selected topic features and aggregate sentiment summarize the supplied speech data.</p></article>
-    <article><span class="tag red">Behavioral target</span><h3>R&amp;D / assets</h3><p>Observed investment supplies the supervised learning target; it is not an independent validity criterion for the resulting score.</p></article>
-    <article><span class="tag purple">Model output</span><h3>Predicted behavior</h3><p>A generated proxy whose psychological meaning needs evidence beyond the training relationship.</p></article>
-  </div>
-</div></section>
-
-<section class="section" id="workflow" aria-labelledby="workflow-title"><div class="wrap">
-  <header class="section-label"><span>02 / Four-step method</span><span>Current implementation</span></header>
-  <div class="section-heading"><h2 id="workflow-title">The framework, illustrated by the CEO case.</h2><p>The four stages define the shared workflow. The implementation below illustrates the CEO case with its own scientific choices. Its adapters preserve the delivered code and settings; complete inputs are available through the private replication release. Saved inputs, selected topic IDs, score files and model inputs form the handoffs.</p></div>
-  <ol class="stages">
-    <li id="step1"><span class="stage-number">01</span><h3>Topic representation</h3><dl><dt>Input</dt><dd>Saved catalogue, topic densities and component metadata.</dd><dt>Procedure</dt><dd>Bind the ordered 354-topic catalogue and delivered density matrix. Optional inference reuses the existing topic-model implementation and checks model identity.</dd><dt>Output</dt><dd>Topic densities and catalogue for the fixed study.</dd></dl><p class="boundary">Saved row ordering is delivery-declared. The assembly does not independently authenticate historical unkeyed ordering or create new-corpus sentiment.</p><a class="source" href="https://github.com/jianghan6666/worddeed/blob/main/agent_system/empirical/step1.py">Step 1 adapter ↗</a></li>
-    <li id="step2"><span class="stage-number">02</span><h3>Relevance screening</h3><dl><dt>Input</dt><dd>All 354 descriptors, followed by the frozen source passages.</dd><dt>Procedure</dt><dd>Three independent initial readings; seal all initial responses; continue each reader’s own history through Stage B; export a two-of-three relevance majority.</dd><dt>Output</dt><dd>Selected topic IDs, initial labels, reasons and minority votes.</dd></dl><p class="boundary">Confidence does not weight votes. The delivered primary is Astra xhigh, repetition 1: 321 selected topics.</p><a class="source" href="https://github.com/jianghan6666/worddeed/blob/main/agent_system/empirical/screening.py">Screening adapter ↗</a></li>
-    <li id="step3"><span class="stage-number">03</span><h3>Behavioral prediction</h3><dl><dt>Input</dt><dd>Selected topic features, aggregate sentiment and R&amp;D/assets.</dd><dt>Procedure</dt><dd>Reuse the supplied Ridge and XGBoost training scripts, firm–CEO connected-component grouping, five folds, seeds and tuning grids.</dd><dt>Output</dt><dd>New scores, including grouped out-of-fold predictions.</dd></dl><p class="boundary">The predictors are topic features plus aggregate sentiment. This is not the earlier scalar-<var>N</var>-plus-controls specification.</p><a class="source" href="https://github.com/jianghan6666/worddeed/blob/main/agent_system/empirical/step3.py">Step 3 adapter ↗</a></li>
-    <li id="step4"><span class="stage-number">04</span><h3>Matching &amp; estimation</h3><dl><dt>Input</dt><dd>The new score file and original financial/CEO identity sources.</dd><dt>Procedure</dt><dd>Pass scores to the original matcher, check keys and folds, prepare the same 25 formulas, then estimate separately in Stata.</dd><dt>Output</dt><dd>Matched data, model inputs, estimation receipts and tables when executed.</dd></dl><p class="boundary">Regression score = 100 × max(out-of-fold predicted R&amp;D/assets, 0). Preparation and estimation have separate completion states.</p><a class="source" href="https://github.com/jianghan6666/worddeed/blob/main/agent_system/empirical/step4.py">Step 4 adapter ↗</a></li>
-  </ol>
-  <div class="screening-detail">
-    <div><p class="tag">Inside Step 2</p><h3>Independent histories.<br>A common release barrier.</h3><p>Each reader sees the full catalogue. The readers do not divide topics between them, and no reader receives peer votes.</p></div>
-    <div class="triad" aria-label="Each of three readers independently reads 354 descriptors, waits until every initial response is sealed, then reviews 18 pages and 1,062 passages in its own history.">
-      <div class="triad-head"><span>Initial reading</span><span>Stage B review</span></div>
-      <div class="reader-row"><b>A</b><span>354 descriptors</span><i aria-hidden="true">→</i><span>18 pages · 1,062 passages</span></div>
-      <div class="reader-row"><b>B</b><span>354 descriptors</span><i aria-hidden="true">→</i><span>18 pages · 1,062 passages</span></div>
-      <div class="reader-row"><b>C</b><span>354 descriptors</span><i aria-hidden="true">→</i><span>18 pages · 1,062 passages</span></div>
-      <p class="barrier">All three initial responses sealed before any passages are released</p>
-      <p class="majority">Stage B relevance: <strong>at least 2 of 3 votes</strong><br><small>Initial labels, reasons and minority judgments remain inspectable.</small></p>
+<main id="main" tabindex="-1">
+  <section class="hero wrap" id="question" aria-labelledby="page-title">
+    <div class="hero-copy">
+      <p class="kicker"><span class="rule"></span> Organizational measurement</p>
+      <h1 id="page-title">Match Words<br>with Deeds</h1>
+      <p class="paper-subtitle">An AI-empowered proxy framework for organizational microfoundations</p>
+      <p class="hero-question" id="question-title">How can we measure the beliefs or traits behind an organizational decision when speech can be strategic and the same action has several causes?</p>
+      <div class="hero-actions">
+        <a class="action primary" href="#workflow">See the framework <span aria-hidden="true">↓</span></a>
+        <a class="action secondary" href="#case">Explore the CEO study <span aria-hidden="true">↓</span></a>
+      </div>
+      <a class="film-shortcut" href="#film"><span class="play-icon" aria-hidden="true">▶</span> Watch the research film</a>
     </div>
-  </div>
-</div></section>
+    <aside class="question-plate" aria-label="Two sources of evidence about CEO risk preference">
+      <div class="plate-meta"><span>First application</span><span>CEO risk preference</span></div>
+      <div class="plate-lane words"><span class="lane-dot" aria-hidden="true"></span><div><p class="lane-tag">01 &nbsp; Words / Authenticity</p><p>A CEO talks about entering new markets.</p></div></div>
+      <div class="plate-lane deeds"><span class="lane-dot" aria-hidden="true"></span><div><p class="lane-tag">02 &nbsp; Deeds / Attribution</p><p>The firm spends heavily on R&amp;D.</p></div></div>
+      <div class="plate-question"><span class="branch" aria-hidden="true">↳</span><p>Risk preference, industry opportunity, or both?</p></div>
+    </aside>
+  </section>
 
-<section class="section" id="system" aria-labelledby="system-title"><div class="wrap">
-  <header class="section-label"><span>03 / Agent architecture</span><span>Bounded execution</span></header>
-  <div class="section-heading"><h2 id="system-title">Four tools.<br>One durable workflow.</h2><p>The coordinator selects permitted operations. The dispatcher enforces order, and saved artifacts determine completion. Direct and agent execution use the same workflow.</p></div>
-  <div class="authority"><span class="tag">Research authority</span><p>Researchers determine constructs, scientific specifications and interpretation. The coordinator cannot change the method or execute arbitrary commands.</p></div>
-  <div class="architecture">
-    <div class="architecture-label"><span class="tag">Coordinator</span><p>Model-driven tool loop<br><small>Offline demo: scripted replies</small></p></div>
-    <dl class="tools"><div><dt><code>get_status</code></dt><dd>Inspect saved state and verify completed outputs.</dd></div><div><dt><code>run_stage</code></dt><dd>Dispatch the next permitted stage.</dd></div><div><dt><code>read_result</code></dt><dd>Inspect a completed stage’s receipt.</dd></div><div><dt><code>finish</code></dt><dd>Finish only when required artifacts are complete.</dd></div></dl>
-    <div class="dispatcher"><b>Shared dispatcher</b><span>Step 1 → Step 2 → Step 3 → Step 4 preparation → Step 4 estimation</span></div>
-    <div class="persistence"><span>State and event history</span><span>Input and output hashes</span><span>Stage and reader checkpoints</span><span>Preserved interrupted attempts</span></div>
-  </div>
-  <div class="two-columns notes"><p><strong>Reader recovery.</strong> Initial responses and reader histories persist. Resume skips completed pages. Invalid or uncertain attempts remain visible and require explicit recovery; labels are not silently repaired.</p><p><strong>Configured defaults.</strong> Coordinator: GPT-6.1 Sol / high. Fresh screening: three GPT-6 Astra / xhigh readers. These are configurable defaults, not live-provider evaluations performed here.</p></div>
-</div></section>
+  <section class="chapter framework" id="workflow" aria-labelledby="workflow-title">
+    <div class="wrap">
+      <div class="folio"><span>01 / Framework</span><span>The proposed method</span></div>
+      <div class="section-intro">
+        <h2 id="workflow-title">How words and<br>deeds meet</h2>
+        <p>Researchers want to measure traits, beliefs or priorities that organizational records cannot directly reveal. The proposal uses AI to identify language about a chosen trait, then predict a separately chosen behavior. Predictions for observations held out of model fitting become a candidate measure. Researchers specify the construct and evaluation; AI readers supply inspectable semantic judgments.</p>
+      </div>
+      <div class="figure-grid">
+        <figure class="figure">
+          <a class="figure-image" href="figures/figure-1.svg" aria-label="Open full-size Figure 1"><img src="figures/figure-1.svg" width="468" height="451" alt="Figure 1. Two input branches join at Step 3 to predict behavior. Step 4 tests the resulting proxy. The four steps are described in the adjacent text."></a>
+          <figcaption><span><strong>Figure 1</strong> · Constructing and testing a synthesized proxy · conceptual design</span><a href="figures/figure-1.pdf" download>Download PDF <span aria-hidden="true">↓</span></a></figcaption>
+        </figure>
+        <div class="figure-reading" id="figure-description"><p class="kicker">Figure 1 in words</p>
+          <ol class="steps">
+            <li id="step1"><span class="step-no">1</span><div><h3>Characterize the corpus</h3><p>Discover topics across the entire corpus without using the focal trait to define them. A common catalogue lets researchers compare firms and follow changes within each firm.</p></div></li>
+            <li id="step2"><span class="step-no">2</span><div><h3>Decontextualize topics</h3><p>Three AI readers judge descriptors, then review shared passages in their own histories. An unweighted two-of-three vote retains a topic judged to reflect the trait. Readers can disagree about whether a passage only describes the firm’s setting.</p></div></li>
+            <li id="step3"><span class="step-no">3</span><div><h3>Synthesize the proxies</h3><p>The <strong>behavioral proxy</strong> is the observed decision. Predict it using construct-relevant narrative features and any covariates specified for the application. The held-out predicted value is the <strong>synthesized proxy</strong>. The <strong>signed residual</strong> is observed minus predicted behavior. Its interpretation requires separate evidence.</p></div></li>
+            <li id="step4"><span class="step-no">4</span><div><h3>Validate the proxy</h3><p><strong>Convergent validity</strong> asks whether the score tracks both the narrative and behavioral measures. <strong>Incremental validity</strong> asks whether the score adds explanatory power for an external outcome beyond both measures together.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="section" id="demo" aria-labelledby="demo-title"><div class="wrap">
-  <header class="section-label"><span>04 / Offline demonstration</span><span>Executed and resumed</span></header>
-  <div class="section-heading"><h2 id="demo-title">Follow a score across the boundary.</h2><p>Two fabricated rows make the handoff observable. Selecting T1 and T3 produces toy sums of 0.7 and 0.8, which are written to the Step 3 score file and passed into the Step 4 input.</p></div>
-  <div class="demo-grid">
-    <div class="demo-example"><p class="tag">Invented values · no scientific interpretation</p><div class="table-scroll"><table><caption>Fixture weights and generated toy scores</caption><thead><tr><th scope="col">Row</th><th scope="col">T1</th><th scope="col">T2</th><th scope="col">T3</th><th scope="col">T1 + T3</th></tr></thead><tbody><tr><th scope="row">fixture-a</th><td class="selected">0.1</td><td>0.3</td><td class="selected">0.6</td><td><strong>0.7</strong></td></tr><tr><th scope="row">fixture-b</th><td class="selected">0.6</td><td>0.2</td><td class="selected">0.2</td><td><strong>0.8</strong></td></tr></tbody></table></div><p class="file-handoff"><code>selected_topics.json</code><span aria-hidden="true">↓</span><code>generated_scores.csv</code><span aria-hidden="true">↓</span><code>step4_input.csv</code></p><p>The generated score file and Step 4 input were byte-identical in this fixture run. The numerical subprocess is replaced by toy arithmetic; the dispatcher and persistence logic are real.</p></div>
-    <div class="receipt"><p class="tag">Observed saved summary</p><h3>demonstration_complete</h3><dl><div><dt>demonstration</dt><dd>true</dd></div><div><dt>live_model_calls</dt><dd>false</dd></div><div><dt>training_executed</dt><dd>false</dd></div><div><dt>estimation_executed</dt><dd>false</dd></div><div><dt>scientific_completion</dt><dd>false</dd></div></dl><p>The first run and the resumed run returned the same completion status. This is a software-integration result.</p><a href="video/fixture-evidence.json">Inspect the portable fixture receipt ↗</a></div>
-  </div>
-  <details class="commands"><summary>Run the fixture demonstration locally</summary><div><p>From the repository root with Python 3.11 or later; no API key or empirical assets are needed. Use a fresh output directory for the first command.</p><pre><code>python -m agent_system.empirical.demo --out .local/connected-demo
-python -m agent_system.empirical.demo --out .local/connected-demo --resume</code></pre><p>Inspect <code>summary.json</code>, <code>workflow/state.json</code> and <code>workflow/events.jsonl</code>. See the <a href="https://github.com/jianghan6666/worddeed/blob/main/agent_system/empirical/README.md">runtime guide</a> for setup and input contracts.</p></div></details>
-</div></section>
+  <section class="chapter case" id="case" aria-labelledby="case-title">
+    <div class="wrap">
+      <div class="folio"><span>02 / First application</span><span>CEO risk preference</span></div>
+      <div class="section-intro"><h2 id="case-title">From earnings calls<br>to dividend decisions</h2><p>The CEO study uses a fixed 354-topic catalogue to represent earnings-call speech. It asks how much that speech tells us about the firm’s R&amp;D spending, then follows the prediction into a separate decision about paying dividends.</p></div>
+      <ol class="chain" aria-label="Sequence of the CEO study"><li><span>01</span> Earnings-call topics</li><li><span>02</span> Reader votes</li><li><span>03</span> Predicted R&amp;D/assets</li><li><span>04</span> Dividend-payer status</li></ol>
+      <div class="case-grid">
+        <article class="case-panel screening"><p class="kicker">Selection / 354 regular topics</p><h3>What changed when readers saw the passages?</h3>
+          <dl class="readout"><div><dt>Descriptors alone</dt><dd>66–87</dd></div><div><dt>After passage review</dt><dd>313–321</dd></div></dl>
+          <p>These ranges count retained topics across 12 trials. After passage review, readers retained 88.4–90.7% of the 354 BERTopic topics. The prediction run used 321 topics from the first Astra xhigh trial. For topic 224, about the Canadian market, all three readers initially voted to exclude it. After passage review, two saw evidence about expansion risk and one still saw market context.</p>
+          <a class="source" href="https://github.com/jianghan6666/worddeed/blob/main/applications/ceo-risk-preference/summary/screening-counts.csv">Trial counts <span>· Source ↗</span></a>
+        </article>
+        <article class="case-panel specification"><p class="kicker">Prediction / Model specification</p><h3>What did the model actually use?</h3>
+          <div class="comparison"><div><h4>Proposed framework</h4><p>Each retained topic’s density measures emphasis and its sentiment measures tone. The target, feature transformations, and any covariates are specified for each application. Alternative AI selections can be carried through learning and assessment.</p></div><div><h4>Delivered CEO model</h4><p>321 transformed topic densities and <strong>one aggregate sentiment feature</strong>. The prediction models omitted firm controls and fixed effects. The target was contemporaneous R&amp;D divided by assets.</p></div></div>
+          <a class="source" href="https://github.com/jianghan6666/worddeed/blob/main/applications/ceo-risk-preference/study/prediction/docs/METHOD.md">Prediction method <span>· Source ↗</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<section class="section film-section" id="film" aria-labelledby="film-title"><div class="wrap">
-  <header class="section-label"><span>05 / Narrated walkthrough</span><span>English · synthetic narration</span></header>
-  <div class="section-heading"><h2 id="film-title">A guided reading of the system.</h2><p>Recorded during the 28 October assembly, the film follows the method, coordinator, observable handoff and evidence limits. It predates the completed empirical replication; use the reviewer guide for the current evidence. The full explanation is also available as a transcript. English captions are embedded in the picture; the optional caption track starts off to avoid duplication.</p></div>
-  <video id="walkthrough-video" controls playsinline preload="metadata" poster="video/poster.jpg" aria-label="Academic walkthrough of the connected four-step agent" aria-describedby="video-description"><source src="video/four-step-agent.mp4" type="video/mp4"><track kind="captions" src="video/four-step-agent.en.vtt" srclang="en" label="English (optional text track)"><p>Your browser does not support embedded video. <a href="video/four-step-agent.mp4">Download the MP4</a> or <a href="video/transcript.md">read the transcript</a>.</p></video>
-  <p id="video-description" class="caption">Measured narration timing drives the diagrams and captions. The fixture example is explicitly illustrative; no empirical estimates are presented in the film.</p>
-  <div class="film-links"><a href="video/transcript.md">Full transcript ↗</a><a href="video/four-step-agent.mp4" download>Download MP4 ↓</a><a href="video/four-step-agent.en.vtt" download>English captions ↓</a></div>
-  <nav id="chapters" class="chapters" aria-label="Video chapters"><p>Chapter times load with the video. The <a href="video/transcript.md">transcript</a> includes every section.</p></nav>
-  <p id="chapter-status" class="sr-only" aria-live="polite"></p>
-</div></section>
+  <section class="chapter evidence" id="evidence" aria-labelledby="evidence-title">
+    <div class="wrap">
+      <div class="folio"><span>03 / Evidence</span><span>Prediction and downstream association</span></div>
+      <div class="section-intro"><h2 id="evidence-title">What did the<br>score predict?</h2><p>The models predict a firm’s investment. Their scores also track dividend decisions after adjusting for actual R&amp;D. The final appendix extends that comparison to a narrative proxy. These conditional associations leave open how much of the signal belongs to the CEO.</p></div>
+      <div class="exhibits">
+        <article class="exhibit"><p class="kicker">Exhibit A / Predicting R&amp;D intensity</p><h3>How well did speech predict actual spending?</h3>
+          <dl class="metrics"><div><dt>Ridge R²</dt><dd>0.5351</dd></div><div><dt>XGBoost R²</dt><dd>0.6128</dd></div></dl>
+          <p>Both models scored 29,506 firm-years. Cross-fitted R² compares predictions with the 29,191 available targets. Five folds kept firms linked through a shared CEO together, so each prediction came from a model trained on other groups.</p>
+          <p class="measure-note">When assets were positive, the study set missing R&amp;D to zero. This applied to 42.7% of target-available rows. The firm–CEO holdout applies to supervised prediction. All folds used the same pre-existing topic catalogue.</p>
+          <a class="source" href="https://github.com/jianghan6666/worddeed/blob/main/applications/ceo-risk-preference/summary/prediction-metrics.json">Model metrics <span>· Source ↗</span></a>
+        </article>
+        <article class="exhibit"><p class="kicker">Exhibit B / Dividend-payer status</p><h3>Did firms with higher scores pay dividends?</h3>
+          <dl class="metrics dividend-metric"><div><dt>Log-odds coefficient</dt><dd>−0.1423</dd></div><div><dt>Firm-clustered SE</dt><dd>0.0347</dd></div></dl>
+          <p>In the Caliskan–Doukas dividend-policy setting, column (8) compares firms with the same included controls, including actual R&amp;D. Each percentage point of the XGBoost score was associated with lower odds of paying a dividend. The model used 2,927 observations across 591 firms.</p>
+          <p class="measure-note">The dividend models use out-of-fold predicted R&amp;D/assets, floored at zero and multiplied by 100. All 16 score specifications had negative coefficients. The signed residual is a separate framework output.</p>
+          <a class="source" href="https://github.com/jianghan6666/worddeed/blob/main/applications/ceo-risk-preference/summary/dividend-results.md">Dividend table <span>· Source ↗</span></a>
+        </article>
+      </div>
+      <article class="appendix-finding" id="appendix-result">
+        <p class="kicker">Final appendix / Table A13</p><h3>What changes when both component proxies enter?</h3>
+        <p>Eight additional dividend models include the narrative proxy and actual R&amp;D controls together. The synthesized-proxy coefficient stays negative and significant at the 1% level in all eight. In the inside-debt specification, the coefficients are <strong>−0.146 for Ridge</strong> and <strong>−0.141 for XGBoost</strong>. The narrative-proxy coefficients are negative but statistically insignificant.</p>
+        <p class="measure-note">This is an author-supplied appendix result. The repository’s existing connected reproduction covers 25 models; it does not yet reproduce the eight Table A13 extensions. Significance after adjustment is evidence of a conditional association, and does not by itself establish superior measurement.</p>
+        <a class="source" href="resources/technical-appendix.docx">Read Table A13 in the final appendix ↗</a>
+      </article>
+      <div class="reproduction"><h3>What the reproduction repeated</h3>
+        <dl><div><dt>Replayed</dt><dd>Checked the saved topic identities and ordering, then recomputed selections from saved reader judgments. The reproduction began with the existing topic catalogue. Historical row alignment depends on the supplied ordering.</dd></div>
+        <div><dt>Refitted</dt><dd>Trained Ridge and XGBoost again from fresh downloads, using the selected topics and the original grouped folds.</dd></div>
+        <div><dt>Estimated</dt><dd>Matched the new scores to financial inputs and ran all 25 dividend specifications in Stata, including the 16 models that use a predicted score.</dd></div></dl>
+      </div>
+    </div>
+  </section>
 
-<section class="section" id="evidence" aria-labelledby="evidence-title"><div class="wrap">
-  <header class="section-label"><span>06 / Evidence and limits</span><span>Separate claims</span></header>
-  <div class="section-heading"><h2 id="evidence-title">Connections are inspectable.<br>Validity remains empirical.</h2><p>The received results, the assembly checks, and the measurement claims have different evidential status. Completion of one does not imply completion of the others.</p></div>
-  <div class="evidence-rows"><article><span>01</span><h3>Received scientific work</h3><p>The fixed catalogue, completed screening trials, and supplied Step 3–4 packages are existing research artifacts. The delivered primary selection has 321 topics. The private repository now includes complete browsable results, with full reader evidence and study inputs in its inventoried releases.</p></article><article><span>02</span><h3>Assembled software</h3><p>Four adapters, a coordinator and saved state connect those interfaces. The package includes self-contained tests for the coordinator, handoffs, and resume, plus optional adapter checks. Fixtures cover handoffs, reader independence, completion and recovery.</p></article><article><span>03</span><h3>Empirical execution</h3><p>A fresh-download Windows refit and local Stata continuation passed the original checks for new scores, reconstructed data and all 25 models. Topic representation and reader judgments were replayed from saved evidence. The narrated fixture remains a separate software demonstration.</p></article><article><span>04</span><h3>Construct interpretation</h3><p>Prediction and conditional associations do not establish psychological validity, causality, or superiority over other measures. Missing R&amp;D handling, industry content, contemporaneous timing, and historical data alignment require substantive attention.</p></article></div>
-  <div class="materials"><h3>Source materials</h3><ul><li><a href="https://github.com/jianghan6666/worddeed/blob/main/docs/REVIEWER_GUIDE.md">Reviewer start: results, fresh download and reproduction ↗</a></li><li><a href="https://github.com/jianghan6666/worddeed/blob/main/applications/ceo-risk-preference/RESULTS.md">Complete CEO results ↗</a></li><li><a href="https://github.com/jianghan6666/worddeed/blob/main/applications/ceo-risk-preference/REPLICATION.md">CEO replication package and verification ↗</a></li><li><a href="https://github.com/jianghan6666/worddeed/blob/main/agent_system/empirical/README.md">Connected agent: interfaces, demo and execution boundaries ↗</a></li><li><a href="https://github.com/jianghan6666/worddeed/blob/main/applications/ceo-risk-preference/README.md">CEO application: research question and four-step walkthrough ↗</a></li><li><a href="https://github.com/jianghan6666/worddeed/blob/main/docs/workflows/02-screen-topics.md">Independent screening workflow ↗</a></li><li><a href="https://github.com/jianghan6666/worddeed/blob/main/docs/ROADMAP.md">Roadmap ↗</a></li></ul><p class="caption">See the repository for setup, workflows, the completed example, and the roadmap. This introduction runs locally.</p></div>
-</div></section>
+  <section class="chapter tests" id="open-tests" aria-labelledby="tests-title"><div class="wrap">
+    <div class="folio"><span>04 / Open tests</span><span>Research agenda</span></div>
+    <div class="section-intro"><h2 id="tests-title">What would change<br>the interpretation?</h2><p>The final appendix reports prediction and dividend-policy evidence, including adjustment for both component proxies. Independent construct validation and downstream comparisons across AI configurations remain the next tests.</p></div>
+    <ol class="questions">
+      <li><h3>Can people recognize the same evidence?</h3><p>Calibrate AI votes against independent human judgments, including disputed cases. Record model versions, prompts, source context and votes. Persistent disagreement with humans or large shifts across settings would weaken confidence in selection.</p></li>
+      <li><h3>Does synthesis add anything?</h3><p>Check convergence with both component measures and with an independent criterion. Extend the Table A13 adjustment with common-sample performance comparisons at comparable model flexibility. No added performance would weaken the incremental claim.</p></li>
+      <li><h3>Do different AI judgments change the result?</h3><p>Refit all twelve retained topic selections and compare them with all topics, conventional feature selection, prediction averaging, and selection-informed Ridge penalties. Preserve the same held-out groups to test whether AI judgments improve measurement.</p></li>
+      <li><h3>Does the signal follow the person?</h3><p>Separate variation across CEOs, firms and industries. If common industry shocks or persistent firm differences explain most of the signal, attributing it to personal risk preference becomes harder.</p></li>
+      <li><h3>Does the score move when expected?</h3><p>Preregister events that change firms’ decision environments and specify the expected score response in advance. Flat or opposite movements would challenge that interpretation.</p></li>
+      <li><h3>Does the method travel?</h3><p>The proposal reports an additional political-ideology trial using donation records. That trial’s results and reproduction package are not included here. A documented second application would test what transfers beyond the CEO case.</p></li>
+    </ol>
+  </div></section>
+
+  <section class="chapter film" id="film" aria-labelledby="film-title"><div class="wrap">
+    <div class="folio"><span>05 / Research film</span><span>4 min 30 sec · English captions</span></div>
+    <div class="section-intro"><h2 id="film-title">Watch <em>Match Words<br>with Deeds</em></h2><p>Follow one disputed topic through the reader votes, see how investment becomes a score, and examine the dividend results, including the final appendix extension. English narration is synthesized with Kokoro. Choose a chapter to jump to that part of the film.</p></div>
+    <div class="film-grid">
+      <div><video id="research-video" controls playsinline preload="metadata" poster="video/research/poster.jpg" aria-label="Match Words with Deeds research film">
+        <source src="video/research/match-words-with-deeds.mp4" type="video/mp4">
+        <track kind="captions" src="video/research/captions.en.vtt" srclang="en" label="English" default>
+        <p><a href="video/research/match-words-with-deeds.mp4">Download the research film</a> or <a href="video/research/transcript.html">read the transcript</a>.</p>
+      </video>
+      <div class="media-links"><a href="video/research/transcript.html">Read transcript</a><a href="video/research/captions.en.vtt" download>English captions ↓</a><a href="video/research/match-words-with-deeds.mp4" download>Download MP4 ↓</a></div></div>
+      <div class="chapter-list"><h3>Film chapters</h3>
+        <nav id="chapters" aria-label="Research film chapters" data-player="research-video" data-timeline="video/research/timeline.json">
+            <a class="chapter-button" data-start="0" href="video/research/match-words-with-deeds.mp4#t=0"><time datetime="PT0S">0:00</time><span>One decision, two explanations</span></a>
+            <a class="chapter-button" data-start="30" href="video/research/match-words-with-deeds.mp4#t=30"><time datetime="PT30S">0:30</time><span>How Figure 1 joins words and deeds</span></a>
+            <a class="chapter-button" data-start="65" href="video/research/match-words-with-deeds.mp4#t=65"><time datetime="PT65S">1:05</time><span>Topic 224 and the deciding vote</span></a>
+            <a class="chapter-button" data-start="115" href="video/research/match-words-with-deeds.mp4#t=115"><time datetime="PT115S">1:55</time><span>What the score actually predicts</span></a>
+            <a class="chapter-button" data-start="170" href="video/research/match-words-with-deeds.mp4#t=170"><time datetime="PT170S">2:50</time><span>What the dividend test establishes</span></a>
+            <a class="chapter-button" data-start="225" href="video/research/match-words-with-deeds.mp4#t=225"><time datetime="PT225S">3:45</time><span>What could change the interpretation?</span></a>
+          </nav>
+        <p class="sr-only" aria-live="polite" id="chapter-status"></p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="chapter review" id="review" aria-labelledby="review-title"><div class="wrap">
+    <div class="folio"><span>06 / Reviewer materials</span><span>Proposal supplement</span></div>
+    <div class="section-intro"><h2 id="review-title">Inspect the evidence</h2><p>The WordDeed repository brings together the prototype, results, and reproduction instructions. Start with the final proposal and technical appendix, then follow the evidence into the code and saved outputs.</p></div>
+    <div class="document-links"><a href="resources/proposal.pdf">Read the proposal <span>PDF ↗</span></a><a href="resources/technical-appendix.docx">Read the technical appendix <span>Word ↓</span></a><a href="resources/README.md">Document versions and evidence scope ↗</a></div>
+    <div class="review-links">
+      <a href="https://github.com/jianghan6666/worddeed/blob/main/docs/REVIEWER_GUIDE.md"><span>01 / Reviewer guide</span><strong>Find your starting point <i aria-hidden="true">↗</i></strong><small>Map of the files, packages and verification records.</small></a>
+      <a href="https://github.com/jianghan6666/worddeed/blob/main/applications/ceo-risk-preference/RESULTS.md"><span>02 / Results</span><strong>Inspect the CEO evidence <i aria-hidden="true">↗</i></strong><small>Saved topics, votes, score metrics and all 25 specifications.</small></a>
+      <a href="https://github.com/jianghan6666/worddeed/blob/main/applications/ceo-risk-preference/REPLICATION.md"><span>03 / Replication</span><strong>Reproduce the analysis <i aria-hidden="true">↗</i></strong><small>Restore inputs, run fits and estimates, and inspect the checks.</small></a>
+    </div>
+    <div class="technical" id="system"><h3 id="system-title">Technical background</h3><p>The coordinator dispatches four stages and preserves their inputs and outputs so an interrupted run can resume. Researchers choose the construct, specification and interpretation.</p>
+      <details id="demo"><summary id="demo-title">Run the invented software fixture</summary><div class="details-body"><p>Two invented rows carry toy scores of 0.7 and 0.8 from prediction into the downstream input. This exercises the software handoff. From the repository root, run the example and resume it with these commands.</p><pre><code>python -m agent_system.empirical.demo --out .local/connected-demo
+python -m agent_system.empirical.demo --out .local/connected-demo --resume</code></pre><div class="media-links"><a href="video/fixture-evidence.json">Fixture receipt</a><a href="https://github.com/jianghan6666/worddeed/blob/main/agent_system/empirical/README.md">Runtime guide · Source ↗</a></div></div></details>
+      <details id="october-walkthrough"><summary>Watch the October software walkthrough <small>9 min 50 sec</small></summary><div class="details-body"><p id="video-description">Recorded on 28 October, this film explains the coordinator and the invented three-topic fixture. It predates the completed empirical reproduction. Captions are burned into the picture.</p>
+        <video id="walkthrough-video" controls playsinline preload="none" poster="video/poster.jpg" aria-label="October software walkthrough" aria-describedby="video-description"><source src="video/four-step-agent.mp4" type="video/mp4"><track kind="captions" src="video/four-step-agent.en.vtt" srclang="en" label="English"><p><a href="video/four-step-agent.mp4">Download the October film</a>.</p></video>
+        <div class="media-links"><a href="video/transcript.md">October transcript (Markdown)</a><a href="video/four-step-agent.en.vtt" download>October captions ↓</a><a href="video/four-step-agent.mp4" download>October MP4 ↓</a></div>
+        <nav class="archive-chapters" aria-label="October walkthrough chapters" data-player="walkthrough-video" data-timeline="video/timeline.json">
+            <a class="chapter-button" data-start="0" href="video/four-step-agent.mp4#t=0"><time datetime="PT0S">0:00</time><span>What does the prediction measure?</span></a>
+            <a class="chapter-button" data-start="41.666666666666664" href="video/four-step-agent.mp4#t=41.666666666666664"><time datetime="PT41.666666666666664S">0:41</time><span>Existing methods, newly connected</span></a>
+            <a class="chapter-button" data-start="82.95833333333333" href="video/four-step-agent.mp4#t=82.95833333333333"><time datetime="PT82.95833333333333S">1:22</time><span>A fixed catalogue of 354 topics</span></a>
+            <a class="chapter-button" data-start="124.91666666666667" href="video/four-step-agent.mp4#t=124.91666666666667"><time datetime="PT124.91666666666667S">2:04</time><span>Three readers, one sealed barrier</span></a>
+            <a class="chapter-button" data-start="166.33333333333334" href="video/four-step-agent.mp4#t=166.33333333333334"><time datetime="PT166.33333333333334S">2:46</time><span>Own history, then a majority</span></a>
+            <a class="chapter-button" data-start="210.45833333333334" href="video/four-step-agent.mp4#t=210.45833333333334"><time datetime="PT210.45833333333334S">3:30</time><span>Topic features + aggregate sentiment</span></a>
+            <a class="chapter-button" data-start="266.125" href="video/four-step-agent.mp4#t=266.125"><time datetime="PT266.125S">4:26</time><span>What enters the supervised mapping?</span></a>
+            <a class="chapter-button" data-start="315.5" href="video/four-step-agent.mp4#t=315.5"><time datetime="PT315.5S">5:15</time><span>New scores enter the original matcher</span></a>
+            <a class="chapter-button" data-start="365.4166666666667" href="video/four-step-agent.mp4#t=365.4166666666667"><time datetime="PT365.4166666666667S">6:05</time><span>Dividend-payer status is the outcome</span></a>
+            <a class="chapter-button" data-start="413.7916666666667" href="video/four-step-agent.mp4#t=413.7916666666667"><time datetime="PT413.7916666666667S">6:53</time><span>Four tools, one durable workflow</span></a>
+            <a class="chapter-button" data-start="459.2083333333333" href="video/four-step-agent.mp4#t=459.2083333333333"><time datetime="PT459.2083333333333S">7:39</time><span>A small, observable handoff</span></a>
+            <a class="chapter-button" data-start="497.125" href="video/four-step-agent.mp4#t=497.125"><time datetime="PT497.125S">8:17</time><span>Resume from recorded artifacts</span></a>
+            <a class="chapter-button" data-start="541.9583333333334" href="video/four-step-agent.mp4#t=541.9583333333334"><time datetime="PT541.9583333333334S">9:01</time><span>Integration is one layer of evidence</span></a>
+          </nav><p class="sr-only" aria-live="polite"></p>
+      </div></details>
+    </div>
+  </div></section>
 </main>
-<footer class="wrap footer"><span>AI Microfoundation Proxy</span><span>Reviewer package · 31 October 2026</span><a href="#top">Back to top ↑</a></footer>
-</body></html>
+<footer class="wrap footer"><span>WordDeed</span><span>Research companion · 2 November 2026</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>

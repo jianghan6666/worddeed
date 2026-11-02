@@ -1,0 +1,302 @@
+WEBVTT
+
+00:00:00.578 --> 00:00:04.321
+Why would a firm spend heavily
+on research and development?
+
+00:00:04.828 --> 00:00:08.088
+Its chief executive might welcome risk.
+
+00:00:08.088 --> 00:00:10.636
+Or the industry might
+offer an opportunity
+
+00:00:10.636 --> 00:00:13.704
+that even a cautious
+executive would pursue.
+
+00:00:14.294 --> 00:00:16.415
+Now listen to the earnings call.
+
+00:00:16.415 --> 00:00:21.931
+An executive may talk boldly to impress
+investors, while committing very little.
+
+00:00:22.438 --> 00:00:26.650
+If both the decision and the words
+are open to interpretation,
+
+00:00:26.650 --> 00:00:29.330
+what can we learn by
+reading them together?
+
+00:00:30.501 --> 00:00:32.262
+Figure 1 starts with a choice.
+
+00:00:32.262 --> 00:00:34.284
+Which unobserved trait are we measuring?
+
+00:00:34.284 --> 00:00:37.375
+Here, it is a chief executive’s
+willingness to take risks.
+
+00:00:37.844 --> 00:00:39.613
+On the words branch, unsupervised
+
+00:00:39.613 --> 00:00:42.503
+discovery builds one
+catalogue across firms.
+
+00:00:42.503 --> 00:00:46.178
+Three language model readers judge
+which topics bear on the trait.
+
+00:00:46.646 --> 00:00:48.248
+On the deeds branch, researchers
+
+00:00:48.248 --> 00:00:51.180
+choose a theoretically
+justified behavioral measure.
+
+00:00:51.180 --> 00:00:54.624
+Each application specifies
+its target and any covariates.
+
+00:00:55.093 --> 00:00:58.308
+Step 3 predicts behavior from
+the selected narrative features.
+
+00:00:58.308 --> 00:01:02.131
+Predictions for held-out observations
+form the synthesized proxy.
+
+00:01:02.131 --> 00:01:04.330
+Step 4 evaluates the measure.
+
+00:01:05.508 --> 00:01:08.756
+The CEO study used
+a saved topic catalogue.
+
+00:01:08.756 --> 00:01:12.298
+Topic 224 described the Canadian market.
+
+00:01:12.298 --> 00:01:15.171
+All three readers initially
+voted to exclude it.
+
+00:01:15.694 --> 00:01:19.164
+Each reader then reviewed
+the same passages independently.
+
+00:01:19.164 --> 00:01:23.477
+Two saw the discussion of expansion
+as evidence of risk taking.
+
+00:01:24.001 --> 00:01:25.738
+One still saw geography.
+
+00:01:25.738 --> 00:01:29.328
+Under an unweighted two-out-of-three
+rule, the topic stayed in.
+
+00:01:29.328 --> 00:01:31.018
+The dissent was preserved.
+
+00:01:31.518 --> 00:01:35.297
+Across 12 trials and 354 regular topics,
+
+00:01:35.297 --> 00:01:39.591
+descriptors alone yielded
+66 to 87 selections.
+
+00:01:39.591 --> 00:01:44.777
+Passage review raised
+that range to 313 to 321.
+
+00:01:45.254 --> 00:01:49.405
+The prediction study used
+the 321 topics from this trial.
+
+00:01:49.405 --> 00:01:52.395
+Would human readers agree
+on the borderline cases?
+
+00:01:52.395 --> 00:01:54.330
+That test remains open.
+
+00:01:55.523 --> 00:01:59.370
+Each firm-year had 321
+transformed topic densities
+
+00:01:59.370 --> 00:02:01.681
+and one overall sentiment measure.
+
+00:02:01.681 --> 00:02:04.924
+Prediction used no firm
+controls or fixed effects.
+
+00:02:05.415 --> 00:02:08.589
+The target was same-year
+R&D divided by assets.
+
+00:02:08.589 --> 00:02:12.196
+With positive assets,
+missing R&D was set to zero.
+
+00:02:12.687 --> 00:02:16.980
+That rule supplied 42.7 percent
+of the available targets.
+
+00:02:16.980 --> 00:02:19.747
+Missing disclosure may
+differ from true zero.
+
+00:02:20.260 --> 00:02:23.771
+Five folds kept connected
+firms and executives together.
+
+00:02:23.771 --> 00:02:27.783
+Each firm received a score from a
+model trained on four other folds.
+
+00:02:28.273 --> 00:02:31.746
+The models scored 29,506 firm-years.
+
+00:02:31.746 --> 00:02:35.823
+Cross-fitted R squared
+was 0.5351 for Ridge
+
+00:02:35.823 --> 00:02:40.777
+and 0.6128 for XGBoost, for
+contemporaneous spending.
+
+00:02:41.289 --> 00:02:44.605
+Observed minus predicted
+behavior gives a signed gap.
+
+00:02:44.605 --> 00:02:46.525
+It cannot establish intent.
+
+00:02:46.525 --> 00:02:49.330
+The dividend study uses
+the prediction itself.
+
+00:02:50.495 --> 00:02:52.834
+Does the score relate
+to a different decision?
+
+00:02:52.834 --> 00:02:55.996
+Following the Caliskan and Doukas
+dividend-policy setting,
+
+00:02:55.996 --> 00:02:58.736
+the study asked whether
+the firm paid a dividend.
+
+00:02:59.208 --> 00:03:02.650
+It used held-out predicted
+R&D divided by assets,
+
+00:03:02.650 --> 00:03:04.678
+set negative predictions to zero,
+
+00:03:04.678 --> 00:03:07.095
+and expressed the score
+in percentage points.
+
+00:03:07.612 --> 00:03:10.583
+Look at column eight
+with actual R&D controls.
+
+00:03:10.583 --> 00:03:13.352
+For each one-point increase
+in the XGBoost score,
+
+00:03:13.352 --> 00:03:17.227
+the estimated log odds fell by 0.1423.
+
+00:03:17.227 --> 00:03:21.549
+The firm-clustered
+standard error was 0.0347.
+
+00:03:22.066 --> 00:03:25.804
+Higher scores were associated
+with lower odds of paying dividends.
+
+00:03:25.804 --> 00:03:30.390
+The sign was negative in all sixteen
+specifications that included a score.
+
+00:03:30.885 --> 00:03:32.426
+The final appendix adds eight
+
+00:03:32.426 --> 00:03:36.859
+models with both a narrative
+proxy and actual R&D controls.
+
+00:03:36.859 --> 00:03:40.913
+The synthesized score remains
+negative and significant in all eight.
+
+00:03:40.913 --> 00:03:44.330
+These additional results
+are reported in Table A13.
+
+00:03:45.489 --> 00:03:46.976
+Return to Figure 1.
+
+00:03:46.976 --> 00:03:48.942
+Convergence asks
+whether the score tracks
+
+00:03:48.942 --> 00:03:51.548
+both narrative and behavioral measures.
+
+00:03:51.548 --> 00:03:53.480
+Checking it against
+an independent measure
+
+00:03:53.480 --> 00:03:56.108
+of executive risk
+preference remains open.
+
+00:03:56.615 --> 00:03:58.461
+Suppose an industry shock changes
+
+00:03:58.461 --> 00:04:01.763
+both the language of earnings
+calls and research spending.
+
+00:04:01.763 --> 00:04:05.065
+If industry and firm conditions
+account for the association,
+
+00:04:05.065 --> 00:04:07.910
+the interpretation as
+a personal trait weakens.
+
+00:04:08.395 --> 00:04:11.409
+Or shuffle the narrative
+features and fit the same models.
+
+00:04:11.409 --> 00:04:13.719
+If shuffled topics predict just as well,
+
+00:04:13.719 --> 00:04:16.484
+topic selection has little
+claim to the result.
+
+00:04:16.990 --> 00:04:18.826
+WordDeed provides the results,
+
+00:04:18.826 --> 00:04:21.802
+reproduction instructions,
+and final appendix.
+
+00:04:21.802 --> 00:04:24.855
+The next tests will carry
+alternative AI selections through
+
+00:04:24.855 --> 00:04:29.330
+prediction and assessment, and examine
+shared causes and additional constructs.

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6.5in" height="6.26in" viewBox="0 0 468 451" role="img" aria-labelledby="title description">
+  <title id="title">Figure 1. Constructing and testing a synthesized proxy</title>
+  <desc id="description">Researchers define a focal microfoundation. Steps 1 and 2 discover topics across corporate texts and select construct-relevant topics by reader vote. In Step 3, narrative features and a separately chosen behavioral target enter a predictive model. Predicted behavior is the synthesized proxy. Observed minus predicted behavior is a signed gap. Step 4 tests the proxy for convergent and incremental validity.</desc>
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; fill: #142f39; }
+    .title { font-family: Georgia, 'Times New Roman', serif; font-size: 19.5px; }
+    .eyebrow { font-size: 8.1px; font-weight: bold; letter-spacing: .85px; }
+    .stage { font-size: 12.4px; font-weight: bold; }
+    .body { font-size: 10px; }
+    .subhead { font-size: 10.6px; font-weight: bold; }
+    .teal { fill: #176665; } .umber { fill: #825625; }
+    .num { fill: #fff; font-size: 9.3px; font-weight: bold; text-anchor: middle; }
+    .wire { fill: none; stroke: #324f56; stroke-width: 1.3; }
+  </style>
+  <rect width="468" height="451" fill="#fff"/>
+  <g id="heading">
+    <text x="11" y="13" class="eyebrow teal">FIGURE 1</text>
+    <text x="11" y="37" class="title">Constructing and testing a synthesized proxy</text>
+    <text x="11" y="55" class="body">Researchers define the focal microfoundation and the unit of analysis.</text>
+  </g>
+  <g id="words">
+    <text x="11" y="78" class="eyebrow teal">WORDS  /  CORPORATE TEXTS</text>
+    <path d="M11 85 H237" fill="none" stroke="#176665" stroke-width="1.5"/>
+    <g id="step-1">
+      <circle cx="19" cy="102" r="7.7" fill="#176665"/>
+      <text x="19" y="105.2" class="num">1</text>
+      <text x="32" y="106" class="stage">Characterize the corpus</text>
+      <text x="32" y="121" class="body">Use unsupervised topic discovery to build</text>
+      <text x="32" y="134" class="body">one topic catalogue across all firms’ texts.</text>
+    </g>
+    <path d="M19 114 V148" class="wire"/>
+    <path d="M16 145 L19 150 L22 145" fill="none" stroke="#324f56" stroke-width="1.2"/>
+    <g id="step-2">
+      <circle cx="19" cy="162" r="7.7" fill="#176665"/>
+      <text x="19" y="165.2" class="num">2</text>
+      <text x="32" y="166" class="stage">Decontextualize topics</text>
+      <text x="32" y="179" class="body">Three LLM readers screen descriptors, then</text>
+      <text x="32" y="191" class="body">review shared passages independently.</text>
+      <text x="32" y="203" class="body">Two votes retain a subject-specific topic.</text>
+      <text x="32" y="215" class="body">Context alone is insufficient.</text>
+    </g>
+  </g>
+  <g id="deeds">
+    <text x="255" y="78" class="eyebrow umber">DEEDS  /  OBSERVED BEHAVIOR</text>
+    <path d="M255 85 H457" fill="none" stroke="#926a38" stroke-width="1.5"/>
+    <text x="255" y="106" class="stage">Choose the behavioral proxy</text>
+    <text x="255" y="121" class="body">Select an established behavioral measure</text>
+    <text x="255" y="134" class="body">of the same focal microfoundation.</text>
+    <text x="255" y="166" class="subhead umber">Account for other determinants</text>
+    <text x="255" y="181" class="body">Specify firm-level determinants of the</text>
+    <text x="255" y="194" class="body">behavior and suitable panel fixed effects.</text>
+  </g>
+  <g id="join-inputs">
+    <path d="M124 219 V225 H356 V205 M234 225 V234" class="wire"/>
+    <path d="M230.5 229.5 L234 235 L237.5 229.5" fill="none" stroke="#324f56" stroke-width="1.3"/>
+  </g>
+  <g id="step-3">
+    <rect x="11" y="237" width="446" height="111" rx="3" fill="#f1f6f5" stroke="#a0b9b7" stroke-width=".8"/>
+    <circle cx="25" cy="253" r="7.7" fill="#244b55"/>
+    <text x="25" y="256.2" class="num">3</text>
+    <text x="38" y="257" class="stage">Synthesize the proxies</text>
+    <text x="23" y="273" class="body">Use Ridge or XGBoost to predict behavior from retained topics’ density (emphasis)</text>
+    <text x="23" y="286" class="body">and sentiment (orientation), together with the specified determinants and fixed effects.</text>
+    <path d="M23 296 H445 M226 302 V338" fill="none" stroke="#bcccca" stroke-width=".8"/>
+    <text x="23" y="311" class="eyebrow teal">SYNTHESIZED PROXY</text>
+    <text x="23" y="329" class="stage">Predicted behavior</text>
+    <text x="23" y="341" class="body">A fitted value for each firm-year.</text>
+    <text x="240" y="311" class="eyebrow umber">DECOUPLING</text>
+    <text x="240" y="329" class="subhead">Observed minus predicted behavior</text>
+    <text x="240" y="341" class="body">Intent requires independent evidence.</text>
+  </g>
+  <g id="pass-proxy-to-validation">
+    <path d="M124 348 V366" class="wire"/>
+    <path d="M120.5 362 L124 367.5 L127.5 362" fill="none" stroke="#324f56" stroke-width="1.3"/>
+  </g>
+  <g id="step-4">
+    <path d="M11 370 H457" fill="none" stroke="#415d66" stroke-width="1.4"/>
+    <circle cx="19" cy="386" r="7.7" fill="#244b55"/>
+    <text x="19" y="389.2" class="num">4</text>
+    <text x="32" y="390" class="stage">Validate the synthesized proxy</text>
+    <text x="11" y="410" class="subhead">Convergent validity</text>
+    <text x="11" y="426" class="body">Does the proxy track both narrative</text>
+    <text x="11" y="439" class="body">and behavioral measures?</text>
+    <path d="M237 402 V440" fill="none" stroke="#c6d1d3" stroke-width=".8"/>
+    <text x="249" y="410" class="subhead">Incremental validity</text>
+    <text x="249" y="426" class="body">Does it explain an external outcome beyond</text>
+    <text x="249" y="439" class="body">both measures considered together?</text>
+  </g>
+</svg>

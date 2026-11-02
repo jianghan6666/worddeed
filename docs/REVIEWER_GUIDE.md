@@ -1,6 +1,10 @@
 # Reviewer start here
 
-AI Microfoundation Proxy is a framework for connecting narratives, relevance judgments, behavioral prediction and downstream assessment. [CEO risk preference](../applications/ceo-risk-preference/README.md) is its first complete application. The shared orchestration is reusable; the current numerical adapters implement that case. A new application needs its own scientific specification and compatible adapters; see [Adding an application](NEW_APPLICATION.md).
+WordDeed is a framework for connecting narratives, relevance judgments, behavioral prediction and downstream assessment. [CEO risk preference](../applications/ceo-risk-preference/README.md) is its first complete application. The shared orchestration is reusable; the current numerical adapters implement that case. A new application needs its own scientific specification and compatible adapters; see [Adding an application](NEW_APPLICATION.md).
+
+## Final proposal and appendix
+
+Read the [proposal](resources/proposal.pdf) and [final technical appendix](resources/technical-appendix.docx). The appendix adds eight narrative-plus-actual-R&D control models in Table A13. These are author-reported results; the existing connected reproduction below covers the original 25 models and has not been extended to Table A13. See [document versions and evidence scope](resources/README.md).
 
 ## Read the findings
 
@@ -10,7 +14,7 @@ The [replication package](../applications/ceo-risk-preference/REPLICATION.md) is
 
 ## Get a fresh copy and check it
 
-This repository and its release assets are private. The owner must grant your GitHub account access first. Sign in to GitHub, then use **Code → Download ZIP** and extract it, or clone with authenticated GitHub CLI:
+This repository is public. Use **Code → Download ZIP** and extract it, or clone with GitHub CLI:
 
 ```sh
 gh auth login
@@ -18,7 +22,7 @@ gh repo clone jianghan6666/worddeed
 cd worddeed
 ```
 
-For a ZIP, open a terminal in the extracted folder containing `README.md`, `agent_system/` and `applications/`. The verification and reproduction scripts do not require `.git`. A source ZIP or clone includes the reading copies and full browsable results; large empirical inputs are downloaded separately from the private releases. Keep the downloaded folder writable because screening restore adds inventoried evidence beside its replay code.
+For a ZIP, open a terminal in the extracted folder containing `README.md`, `agent_system/` and `applications/`. The verification and reproduction scripts do not require `.git`. A source ZIP or clone includes the reading copies and full browsable results; large empirical inputs are downloaded separately from the repository releases. Keep the downloaded folder writable because screening restore adds inventoried evidence beside its replay code.
 
 With **Python 3.11+**, run these checks from that root. They use only the standard library and need no model account, Stata or empirical input download. On Windows, replace `python3` with `py -3.11`.
 

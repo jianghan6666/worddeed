@@ -1,0 +1,949 @@
+{
+  "title": "Match Words with Deeds",
+  "subtitle": "An AI-empowered proxy framework for organizational microfoundations",
+  "fps": 24,
+  "duration": 270,
+  "synthesis": {
+    "engine": "Kokoro 0.9.4",
+    "voice": "af_heart",
+    "sample_rate": 24000,
+    "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987"
+  },
+  "scenes": [
+    {
+      "id": "question",
+      "title": "One decision, two explanations",
+      "start": 0,
+      "end": 30,
+      "visual_note": "Two explanations lead to the same high research and development (R&D) spending. A second comparison pairs a bold public statement with limited investment. Both examples are illustrative.",
+      "references": []
+    },
+    {
+      "id": "figure",
+      "title": "How Figure 1 joins words and deeds",
+      "start": 30,
+      "end": 65,
+      "visual_note": "Figure 1 joins a corporate-text branch and a separately chosen behavioral anchor. Researchers specify the construct, target, features, and any covariates for each application. Held-out predictions form the synthesized proxy; a separate outcome and component-proxy comparisons assess it.",
+      "references": [
+        [
+          "View Figure 1",
+          "../../figures/figure-1.svg"
+        ],
+        [
+          "Download Figure 1 as a PDF",
+          "../../figures/figure-1.pdf"
+        ]
+      ]
+    },
+    {
+      "id": "topic",
+      "title": "Topic 224 and the deciding vote",
+      "start": 65,
+      "end": 115,
+      "visual_note": "The selected trial is b1-gpt-6-astra-P0-xhigh. Initially A, B and C all voted to exclude Topic 224. After independent review of the same passages, A still voted to exclude it, while B and C voted to include it. Across the 12 trials, passage-review majorities retained 313–321 of 354 topics (88.4–90.7%). Reviewer reproduction checks the delivered rows and ordering. The historical alignment has limited independent provenance.",
+      "references": [
+        [
+          "Initial topic labels",
+          "https://github.com/jianghan6666/worddeed/blob/5aae577d4d09f5fb93bc5dd93704b18ed3eae368/applications/ceo-risk-preference/results/step2/analyses/primary/handoffs/b1-gpt-6-astra-P0-xhigh/initial_topic_labels.csv"
+        ],
+        [
+          "Final topic labels",
+          "https://github.com/jianghan6666/worddeed/blob/5aae577d4d09f5fb93bc5dd93704b18ed3eae368/applications/ceo-risk-preference/results/step2/analyses/primary/handoffs/b1-gpt-6-astra-P0-xhigh/topic_labels.csv"
+        ],
+        [
+          "Counts for all 12 trials",
+          "https://github.com/jianghan6666/worddeed/blob/5aae577d4d09f5fb93bc5dd93704b18ed3eae368/applications/ceo-risk-preference/summary/screening-counts.csv"
+        ]
+      ]
+    },
+    {
+      "id": "predict",
+      "title": "What the score actually predicts",
+      "start": 115,
+      "end": 170,
+      "visual_note": "Five folds kept every firm and all firms linked through a CEO in the same fold. The score estimates same-year R&D/assets for 29,506 firm-years. Cross-fitted R² is evaluated on the 29,191 observations with a target. Of these, 12,452 with positive assets had missing R&D coded as zero. The metric uses the target winsorized at the full-sample thresholds. A signed residual records a departure from fitted behavior. Its cause needs separate evidence.",
+      "references": [
+        [
+          "Prediction methods",
+          "https://github.com/jianghan6666/worddeed/blob/5aae577d4d09f5fb93bc5dd93704b18ed3eae368/applications/ceo-risk-preference/study/prediction/docs/METHOD.md"
+        ],
+        [
+          "Machine-readable model metrics",
+          "https://github.com/jianghan6666/worddeed/blob/5aae577d4d09f5fb93bc5dd93704b18ed3eae368/applications/ceo-risk-preference/summary/prediction-metrics.json"
+        ]
+      ]
+    },
+    {
+      "id": "dividends",
+      "title": "What the dividend test establishes",
+      "start": 170,
+      "end": 225,
+      "visual_note": "The dividend-payer logit coefficient for the XGBoost score in the original column (8), with actual R&D controls, is −0.1423 (firm-clustered SE 0.0347; 2,927 observations, 591 firms). Table A13 in the final appendix adds a narrative proxy to eight R&D-adjusted specifications. All eight synthesized-proxy coefficients remain negative and significant at p < 0.01. The inside-debt estimates are −0.146 for Ridge and −0.141 for XGBoost. Table A13 is author-reported and is not covered by the repository’s existing 25-model connected reproduction.",
+      "references": [
+        [
+          "Dividend estimates, including column (8)",
+          "https://github.com/jianghan6666/worddeed/blob/5aae577d4d09f5fb93bc5dd93704b18ed3eae368/applications/ceo-risk-preference/summary/dividend-results.md"
+        ],
+        [
+          "All 25 regression specifications",
+          "https://github.com/jianghan6666/worddeed/blob/5aae577d4d09f5fb93bc5dd93704b18ed3eae368/applications/ceo-risk-preference/RESULTS.md"
+        ],
+        [
+          "Final appendix, Table A13",
+          "../../resources/technical-appendix.docx"
+        ]
+      ]
+    },
+    {
+      "id": "tests",
+      "title": "What could change the interpretation?",
+      "start": 225,
+      "end": 270,
+      "visual_note": "An industry shock can affect both earnings-call language and spending. A permutation test illustrates an alternative explanation. The appendix proposes carrying all twelve topic selections through learning and dividend assessment, prediction averaging, and selection-informed regularization. Human-reference assessment and independent construct validation remain open. The proposal reports a political-ideology trial whose results are not packaged here.",
+      "references": [
+        [
+          "Inspect the CEO results",
+          "https://github.com/jianghan6666/worddeed/blob/5aae577d4d09f5fb93bc5dd93704b18ed3eae368/applications/ceo-risk-preference/RESULTS.md"
+        ],
+        [
+          "Reproduce the analysis",
+          "https://github.com/jianghan6666/worddeed/blob/5aae577d4d09f5fb93bc5dd93704b18ed3eae368/applications/ceo-risk-preference/REPLICATION.md"
+        ],
+        [
+          "Read the planned tests",
+          "../../index.html#open-tests"
+        ],
+        [
+          "Proposal and evidence scope",
+          "../../resources/README.md"
+        ]
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "shot": "opening",
+      "start_frame": 0,
+      "scene": "question",
+      "text": "Why would a firm spend heavily on research and development?",
+      "spoken_text": "Why would a firm spend heavily on research and development?"
+    },
+    {
+      "shot": "causes",
+      "start_frame": 107,
+      "scene": "question",
+      "text": "Its chief executive might welcome risk. Or the industry might offer an opportunity that even a cautious executive would pursue.",
+      "spoken_text": "Its chief executive might welcome risk. Or the industry might offer an opportunity that even a cautious executive would pursue."
+    },
+    {
+      "shot": "speech",
+      "start_frame": 332,
+      "scene": "question",
+      "text": "Now listen to the earnings call. An executive may talk boldly to impress investors, while committing very little.",
+      "spoken_text": "Now listen to the earnings call. An executive may talk boldly to impress investors, while committing very little."
+    },
+    {
+      "shot": "question",
+      "start_frame": 530,
+      "scene": "question",
+      "text": "If both the decision and the words are open to interpretation, what can we learn by reading them together?",
+      "spoken_text": "If both the decision and the words are open to interpretation, what can we learn by reading them together?"
+    },
+    {
+      "shot": "figwhole",
+      "start_frame": 720,
+      "scene": "figure",
+      "text": "Figure 1 starts with a choice. Which unobserved trait are we measuring? Here, it is a chief executive’s willingness to take risks.",
+      "spoken_text": "Figure one starts with a choice. Which unobserved trait are we measuring? Here, it is a chief executive’s willingness to take risks."
+    },
+    {
+      "shot": "figwords",
+      "start_frame": 900,
+      "scene": "figure",
+      "text": "On the words branch, unsupervised discovery builds one catalogue across firms. Three language model readers judge which topics bear on the trait.",
+      "spoken_text": "On the words branch, unsupervised discovery builds one catalogue across firms. Three language model readers judge which topics bear on the trait."
+    },
+    {
+      "shot": "figdeeds",
+      "start_frame": 1112,
+      "scene": "figure",
+      "text": "On the deeds branch, researchers choose a theoretically justified behavioral measure. Each application specifies its target and any covariates.",
+      "spoken_text": "On the deeds branch, researchers choose a theoretically justified behavioral measure. Each application specifies its target and any covariates."
+    },
+    {
+      "shot": "figjoin",
+      "start_frame": 1314,
+      "scene": "figure",
+      "text": "Step 3 predicts behavior from the selected narrative features. Predictions for held-out observations form the synthesized proxy. Step 4 evaluates the measure.",
+      "spoken_text": "Step three predicts behavior from the selected narrative features. Predictions for held out observations form the synthesized proxy. Step four evaluates the measure."
+    },
+    {
+      "shot": "topic",
+      "start_frame": 1560,
+      "scene": "topic",
+      "text": "The CEO study used a saved topic catalogue. Topic 224 described the Canadian market. All three readers initially voted to exclude it.",
+      "spoken_text": "The CEO study used a saved topic catalogue. Topic two twenty four described the Canadian market. All three readers initially voted to exclude it."
+    },
+    {
+      "shot": "topicreview",
+      "start_frame": 1808,
+      "scene": "topic",
+      "text": "Each reader then reviewed the same passages independently. Two saw the discussion of expansion as evidence of risk taking.",
+      "spoken_text": "Each reader then reviewed the same passages independently. Two saw the discussion of expansion as evidence of risk taking."
+    },
+    {
+      "shot": "votes",
+      "start_frame": 2007,
+      "scene": "topic",
+      "text": "One still saw geography. Under an unweighted two-out-of-three rule, the topic stayed in. The dissent was preserved.",
+      "spoken_text": "One still saw geography. Under an unweighted two-out of three rule, the topic stayed in. The dissent was preserved."
+    },
+    {
+      "shot": "ranges",
+      "start_frame": 2188,
+      "scene": "topic",
+      "text": "Across 12 trials and 354 regular topics, descriptors alone yielded 66 to 87 selections. Passage review raised that range to 313 to 321.",
+      "spoken_text": "Across twelve trials and three hundred fifty four regular topics, descriptors alone yielded sixty six to eighty seven selections. Passage review raised that range to three hundred thirteen to three hundred twenty one."
+    },
+    {
+      "shot": "choice",
+      "start_frame": 2518,
+      "scene": "topic",
+      "text": "The prediction study used the 321 topics from this trial. Would human readers agree on the borderline cases? That test remains open.",
+      "spoken_text": "The prediction study used the three hundred twenty one topics from this trial. Would human readers agree on the borderline cases? That test remains open."
+    },
+    {
+      "shot": "features",
+      "start_frame": 2760,
+      "scene": "predict",
+      "text": "Each firm-year had 321 transformed topic densities and one overall sentiment measure. Prediction used no firm controls or fixed effects.",
+      "spoken_text": "Each firm year had three hundred twenty one transformed topic densities and one overall sentiment measure. Prediction used no firm controls or fixed effects."
+    },
+    {
+      "shot": "target",
+      "start_frame": 3002,
+      "scene": "predict",
+      "text": "The target was same-year R&D divided by assets. With positive assets, missing R&D was set to zero.",
+      "spoken_text": "The target was same-year R and D divided by assets. With positive assets, missing R and D was set to zero."
+    },
+    {
+      "shot": "missing",
+      "start_frame": 3176,
+      "scene": "predict",
+      "text": "That rule supplied 42.7 percent of the available targets. Missing disclosure may differ from true zero.",
+      "spoken_text": "That rule supplied forty two point seven percent of the available targets. Missing disclosure may differ from true zero."
+    },
+    {
+      "shot": "folds",
+      "start_frame": 3357,
+      "scene": "predict",
+      "text": "Five folds kept connected firms and executives together. Each firm received a score from a model trained on four other folds.",
+      "spoken_text": "Five folds kept connected firms and executives together. Each firm received a score from a model trained on four other folds."
+    },
+    {
+      "shot": "metric",
+      "start_frame": 3550,
+      "scene": "predict",
+      "text": "The models scored 29,506 firm-years. Cross-fitted R squared was 0.5351 for Ridge and 0.6128 for XGBoost, for contemporaneous spending.",
+      "spoken_text": "The models scored twenty nine thousand five hundred six firm years. Cross fitted R squared was zero point five three five one for Ridge and zero point six one two eight for X G Boost, for contemporaneous spending."
+    },
+    {
+      "shot": "gap",
+      "start_frame": 3862,
+      "scene": "predict",
+      "text": "Observed minus predicted behavior gives a signed gap. It cannot establish intent. The dividend study uses the prediction itself.",
+      "spoken_text": "Observed minus predicted behavior gives a signed gap. It cannot establish intent. The dividend study uses the prediction itself."
+    },
+    {
+      "shot": "divsetup",
+      "start_frame": 4080,
+      "scene": "dividends",
+      "text": "Does the score relate to a different decision? Following the Caliskan and Doukas dividend-policy setting, the study asked whether the firm paid a dividend.",
+      "spoken_text": "Does the score relate to a different decision? Following the Chalishkan and Dookas dividend policy setting, the study asked whether the firm paid a dividend."
+    },
+    {
+      "shot": "divscale",
+      "start_frame": 4293,
+      "scene": "dividends",
+      "text": "It used held-out predicted R&D divided by assets, set negative predictions to zero, and expressed the score in percentage points.",
+      "spoken_text": "It used held out predicted R and D divided by assets, set negative predictions to zero, and expressed the score in percentage points."
+    },
+    {
+      "shot": "coef",
+      "start_frame": 4494,
+      "scene": "dividends",
+      "text": "Look at column eight with actual R&D controls. For each one-point increase in the XGBoost score, the estimated log odds fell by 0.1423. The firm-clustered standard error was 0.0347.",
+      "spoken_text": "Look at column eight with actual R and D controls. For each one-point increase in the X G Boost score, the estimated log odds fell by zero point one four two three. The firm clustered standard error was zero point zero three four seven."
+    },
+    {
+      "shot": "direction",
+      "start_frame": 4841,
+      "scene": "dividends",
+      "text": "Higher scores were associated with lower odds of paying dividends. The sign was negative in all sixteen specifications that included a score.",
+      "spoken_text": "Higher scores were associated with lower odds of paying dividends. The sign was negative in all sixteen specifications that included a score."
+    },
+    {
+      "shot": "benchmark",
+      "start_frame": 5053,
+      "scene": "dividends",
+      "text": "The final appendix adds eight models with both a narrative proxy and actual R&D controls. The synthesized score remains negative and significant in all eight. These additional results are reported in Table A13.",
+      "spoken_text": "The final appendix adds eight models with both a narrative proxy and actual R and D controls. The synthesized score remains negative and significant in all eight. These additional results are reported in Table A thirteen."
+    },
+    {
+      "shot": "figback",
+      "start_frame": 5400,
+      "scene": "tests",
+      "text": "Return to Figure 1. Convergence asks whether the score tracks both narrative and behavioral measures. Checking it against an independent measure of executive risk preference remains open.",
+      "spoken_text": "Return to Figure one. Convergence asks whether the score tracks both narrative and behavioral measures. Checking it against an independent measure of executive risk preference remains open."
+    },
+    {
+      "shot": "shocks",
+      "start_frame": 5670,
+      "scene": "tests",
+      "text": "Suppose an industry shock changes both the language of earnings calls and research spending. If industry and firm conditions account for the association, the interpretation as a personal trait weakens.",
+      "spoken_text": "Suppose an industry shock changes both the language of earnings calls and research spending. If industry and firm conditions account for the association, the interpretation as a personal trait weakens."
+    },
+    {
+      "shot": "shuffle",
+      "start_frame": 5953,
+      "scene": "tests",
+      "text": "Or shuffle the narrative features and fit the same models. If shuffled topics predict just as well, topic selection has little claim to the result.",
+      "spoken_text": "Or shuffle the narrative features and fit the same models. If shuffled topics predict just as well, topic selection has little claim to the result."
+    },
+    {
+      "shot": "route",
+      "start_frame": 6159,
+      "scene": "tests",
+      "text": "WordDeed provides the results, reproduction instructions, and final appendix. The next tests will carry alternative AI selections through prediction and assessment, and examine shared causes and additional constructs.",
+      "spoken_text": "Word Deed provides the results, reproduction instructions, and final appendix. The next tests will carry alternative AI selections through prediction and assessment, and examine shared causes and additional constructs."
+    }
+  ],
+  "captions": [
+    {
+      "start_ms": 578,
+      "end_ms": 4321,
+      "lines": [
+        "Why would a firm spend heavily",
+        "on research and development?"
+      ]
+    },
+    {
+      "start_ms": 4828,
+      "end_ms": 8088,
+      "lines": [
+        "Its chief executive might welcome risk."
+      ]
+    },
+    {
+      "start_ms": 8088,
+      "end_ms": 10636,
+      "lines": [
+        "Or the industry might",
+        "offer an opportunity"
+      ]
+    },
+    {
+      "start_ms": 10636,
+      "end_ms": 13704,
+      "lines": [
+        "that even a cautious",
+        "executive would pursue."
+      ]
+    },
+    {
+      "start_ms": 14294,
+      "end_ms": 16415,
+      "lines": [
+        "Now listen to the earnings call."
+      ]
+    },
+    {
+      "start_ms": 16415,
+      "end_ms": 21931,
+      "lines": [
+        "An executive may talk boldly to impress",
+        "investors, while committing very little."
+      ]
+    },
+    {
+      "start_ms": 22438,
+      "end_ms": 26650,
+      "lines": [
+        "If both the decision and the words",
+        "are open to interpretation,"
+      ]
+    },
+    {
+      "start_ms": 26650,
+      "end_ms": 29330,
+      "lines": [
+        "what can we learn by",
+        "reading them together?"
+      ]
+    },
+    {
+      "start_ms": 30501,
+      "end_ms": 32262,
+      "lines": [
+        "Figure 1 starts with a choice."
+      ]
+    },
+    {
+      "start_ms": 32262,
+      "end_ms": 34284,
+      "lines": [
+        "Which unobserved trait are we measuring?"
+      ]
+    },
+    {
+      "start_ms": 34284,
+      "end_ms": 37375,
+      "lines": [
+        "Here, it is a chief executive’s",
+        "willingness to take risks."
+      ]
+    },
+    {
+      "start_ms": 37844,
+      "end_ms": 39613,
+      "lines": [
+        "On the words branch, unsupervised"
+      ]
+    },
+    {
+      "start_ms": 39613,
+      "end_ms": 42503,
+      "lines": [
+        "discovery builds one",
+        "catalogue across firms."
+      ]
+    },
+    {
+      "start_ms": 42503,
+      "end_ms": 46178,
+      "lines": [
+        "Three language model readers judge",
+        "which topics bear on the trait."
+      ]
+    },
+    {
+      "start_ms": 46646,
+      "end_ms": 48248,
+      "lines": [
+        "On the deeds branch, researchers"
+      ]
+    },
+    {
+      "start_ms": 48248,
+      "end_ms": 51180,
+      "lines": [
+        "choose a theoretically",
+        "justified behavioral measure."
+      ]
+    },
+    {
+      "start_ms": 51180,
+      "end_ms": 54624,
+      "lines": [
+        "Each application specifies",
+        "its target and any covariates."
+      ]
+    },
+    {
+      "start_ms": 55093,
+      "end_ms": 58308,
+      "lines": [
+        "Step 3 predicts behavior from",
+        "the selected narrative features."
+      ]
+    },
+    {
+      "start_ms": 58308,
+      "end_ms": 62131,
+      "lines": [
+        "Predictions for held-out observations",
+        "form the synthesized proxy."
+      ]
+    },
+    {
+      "start_ms": 62131,
+      "end_ms": 64330,
+      "lines": [
+        "Step 4 evaluates the measure."
+      ]
+    },
+    {
+      "start_ms": 65508,
+      "end_ms": 68756,
+      "lines": [
+        "The CEO study used",
+        "a saved topic catalogue."
+      ]
+    },
+    {
+      "start_ms": 68756,
+      "end_ms": 72298,
+      "lines": [
+        "Topic 224 described the Canadian market."
+      ]
+    },
+    {
+      "start_ms": 72298,
+      "end_ms": 75171,
+      "lines": [
+        "All three readers initially",
+        "voted to exclude it."
+      ]
+    },
+    {
+      "start_ms": 75694,
+      "end_ms": 79164,
+      "lines": [
+        "Each reader then reviewed",
+        "the same passages independently."
+      ]
+    },
+    {
+      "start_ms": 79164,
+      "end_ms": 83477,
+      "lines": [
+        "Two saw the discussion of expansion",
+        "as evidence of risk taking."
+      ]
+    },
+    {
+      "start_ms": 84001,
+      "end_ms": 85738,
+      "lines": [
+        "One still saw geography."
+      ]
+    },
+    {
+      "start_ms": 85738,
+      "end_ms": 89328,
+      "lines": [
+        "Under an unweighted two-out-of-three",
+        "rule, the topic stayed in."
+      ]
+    },
+    {
+      "start_ms": 89328,
+      "end_ms": 91018,
+      "lines": [
+        "The dissent was preserved."
+      ]
+    },
+    {
+      "start_ms": 91518,
+      "end_ms": 95297,
+      "lines": [
+        "Across 12 trials and 354 regular topics,"
+      ]
+    },
+    {
+      "start_ms": 95297,
+      "end_ms": 99591,
+      "lines": [
+        "descriptors alone yielded",
+        "66 to 87 selections."
+      ]
+    },
+    {
+      "start_ms": 99591,
+      "end_ms": 104777,
+      "lines": [
+        "Passage review raised",
+        "that range to 313 to 321."
+      ]
+    },
+    {
+      "start_ms": 105254,
+      "end_ms": 109405,
+      "lines": [
+        "The prediction study used",
+        "the 321 topics from this trial."
+      ]
+    },
+    {
+      "start_ms": 109405,
+      "end_ms": 112395,
+      "lines": [
+        "Would human readers agree",
+        "on the borderline cases?"
+      ]
+    },
+    {
+      "start_ms": 112395,
+      "end_ms": 114330,
+      "lines": [
+        "That test remains open."
+      ]
+    },
+    {
+      "start_ms": 115523,
+      "end_ms": 119370,
+      "lines": [
+        "Each firm-year had 321",
+        "transformed topic densities"
+      ]
+    },
+    {
+      "start_ms": 119370,
+      "end_ms": 121681,
+      "lines": [
+        "and one overall sentiment measure."
+      ]
+    },
+    {
+      "start_ms": 121681,
+      "end_ms": 124924,
+      "lines": [
+        "Prediction used no firm",
+        "controls or fixed effects."
+      ]
+    },
+    {
+      "start_ms": 125415,
+      "end_ms": 128589,
+      "lines": [
+        "The target was same-year",
+        "R&D divided by assets."
+      ]
+    },
+    {
+      "start_ms": 128589,
+      "end_ms": 132196,
+      "lines": [
+        "With positive assets,",
+        "missing R&D was set to zero."
+      ]
+    },
+    {
+      "start_ms": 132687,
+      "end_ms": 136980,
+      "lines": [
+        "That rule supplied 42.7 percent",
+        "of the available targets."
+      ]
+    },
+    {
+      "start_ms": 136980,
+      "end_ms": 139747,
+      "lines": [
+        "Missing disclosure may",
+        "differ from true zero."
+      ]
+    },
+    {
+      "start_ms": 140260,
+      "end_ms": 143771,
+      "lines": [
+        "Five folds kept connected",
+        "firms and executives together."
+      ]
+    },
+    {
+      "start_ms": 143771,
+      "end_ms": 147783,
+      "lines": [
+        "Each firm received a score from a",
+        "model trained on four other folds."
+      ]
+    },
+    {
+      "start_ms": 148273,
+      "end_ms": 151746,
+      "lines": [
+        "The models scored 29,506 firm-years."
+      ]
+    },
+    {
+      "start_ms": 151746,
+      "end_ms": 155823,
+      "lines": [
+        "Cross-fitted R squared",
+        "was 0.5351 for Ridge"
+      ]
+    },
+    {
+      "start_ms": 155823,
+      "end_ms": 160777,
+      "lines": [
+        "and 0.6128 for XGBoost, for",
+        "contemporaneous spending."
+      ]
+    },
+    {
+      "start_ms": 161289,
+      "end_ms": 164605,
+      "lines": [
+        "Observed minus predicted",
+        "behavior gives a signed gap."
+      ]
+    },
+    {
+      "start_ms": 164605,
+      "end_ms": 166525,
+      "lines": [
+        "It cannot establish intent."
+      ]
+    },
+    {
+      "start_ms": 166525,
+      "end_ms": 169330,
+      "lines": [
+        "The dividend study uses",
+        "the prediction itself."
+      ]
+    },
+    {
+      "start_ms": 170495,
+      "end_ms": 172834,
+      "lines": [
+        "Does the score relate",
+        "to a different decision?"
+      ]
+    },
+    {
+      "start_ms": 172834,
+      "end_ms": 175996,
+      "lines": [
+        "Following the Caliskan and Doukas",
+        "dividend-policy setting,"
+      ]
+    },
+    {
+      "start_ms": 175996,
+      "end_ms": 178736,
+      "lines": [
+        "the study asked whether",
+        "the firm paid a dividend."
+      ]
+    },
+    {
+      "start_ms": 179208,
+      "end_ms": 182650,
+      "lines": [
+        "It used held-out predicted",
+        "R&D divided by assets,"
+      ]
+    },
+    {
+      "start_ms": 182650,
+      "end_ms": 184678,
+      "lines": [
+        "set negative predictions to zero,"
+      ]
+    },
+    {
+      "start_ms": 184678,
+      "end_ms": 187095,
+      "lines": [
+        "and expressed the score",
+        "in percentage points."
+      ]
+    },
+    {
+      "start_ms": 187612,
+      "end_ms": 190583,
+      "lines": [
+        "Look at column eight",
+        "with actual R&D controls."
+      ]
+    },
+    {
+      "start_ms": 190583,
+      "end_ms": 193352,
+      "lines": [
+        "For each one-point increase",
+        "in the XGBoost score,"
+      ]
+    },
+    {
+      "start_ms": 193352,
+      "end_ms": 197227,
+      "lines": [
+        "the estimated log odds fell by 0.1423."
+      ]
+    },
+    {
+      "start_ms": 197227,
+      "end_ms": 201549,
+      "lines": [
+        "The firm-clustered",
+        "standard error was 0.0347."
+      ]
+    },
+    {
+      "start_ms": 202066,
+      "end_ms": 205804,
+      "lines": [
+        "Higher scores were associated",
+        "with lower odds of paying dividends."
+      ]
+    },
+    {
+      "start_ms": 205804,
+      "end_ms": 210390,
+      "lines": [
+        "The sign was negative in all sixteen",
+        "specifications that included a score."
+      ]
+    },
+    {
+      "start_ms": 210885,
+      "end_ms": 212426,
+      "lines": [
+        "The final appendix adds eight"
+      ]
+    },
+    {
+      "start_ms": 212426,
+      "end_ms": 216859,
+      "lines": [
+        "models with both a narrative",
+        "proxy and actual R&D controls."
+      ]
+    },
+    {
+      "start_ms": 216859,
+      "end_ms": 220913,
+      "lines": [
+        "The synthesized score remains",
+        "negative and significant in all eight."
+      ]
+    },
+    {
+      "start_ms": 220913,
+      "end_ms": 224330,
+      "lines": [
+        "These additional results",
+        "are reported in Table A13."
+      ]
+    },
+    {
+      "start_ms": 225489,
+      "end_ms": 226976,
+      "lines": [
+        "Return to Figure 1."
+      ]
+    },
+    {
+      "start_ms": 226976,
+      "end_ms": 228942,
+      "lines": [
+        "Convergence asks",
+        "whether the score tracks"
+      ]
+    },
+    {
+      "start_ms": 228942,
+      "end_ms": 231548,
+      "lines": [
+        "both narrative and behavioral measures."
+      ]
+    },
+    {
+      "start_ms": 231548,
+      "end_ms": 233480,
+      "lines": [
+        "Checking it against",
+        "an independent measure"
+      ]
+    },
+    {
+      "start_ms": 233480,
+      "end_ms": 236108,
+      "lines": [
+        "of executive risk",
+        "preference remains open."
+      ]
+    },
+    {
+      "start_ms": 236615,
+      "end_ms": 238461,
+      "lines": [
+        "Suppose an industry shock changes"
+      ]
+    },
+    {
+      "start_ms": 238461,
+      "end_ms": 241763,
+      "lines": [
+        "both the language of earnings",
+        "calls and research spending."
+      ]
+    },
+    {
+      "start_ms": 241763,
+      "end_ms": 245065,
+      "lines": [
+        "If industry and firm conditions",
+        "account for the association,"
+      ]
+    },
+    {
+      "start_ms": 245065,
+      "end_ms": 247910,
+      "lines": [
+        "the interpretation as",
+        "a personal trait weakens."
+      ]
+    },
+    {
+      "start_ms": 248395,
+      "end_ms": 251409,
+      "lines": [
+        "Or shuffle the narrative",
+        "features and fit the same models."
+      ]
+    },
+    {
+      "start_ms": 251409,
+      "end_ms": 253719,
+      "lines": [
+        "If shuffled topics predict just as well,"
+      ]
+    },
+    {
+      "start_ms": 253719,
+      "end_ms": 256484,
+      "lines": [
+        "topic selection has little",
+        "claim to the result."
+      ]
+    },
+    {
+      "start_ms": 256990,
+      "end_ms": 258826,
+      "lines": [
+        "WordDeed provides the results,"
+      ]
+    },
+    {
+      "start_ms": 258826,
+      "end_ms": 261802,
+      "lines": [
+        "reproduction instructions,",
+        "and final appendix."
+      ]
+    },
+    {
+      "start_ms": 261802,
+      "end_ms": 264855,
+      "lines": [
+        "The next tests will carry",
+        "alternative AI selections through"
+      ]
+    },
+    {
+      "start_ms": 264855,
+      "end_ms": 269330,
+      "lines": [
+        "prediction and assessment, and examine",
+        "shared causes and additional constructs."
+      ]
+    }
+  ],
+  "edition": "Final proposal and appendix update, 2 November 2026"
+}

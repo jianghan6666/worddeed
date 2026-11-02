@@ -22,15 +22,21 @@ Resolve remaining historical alignment limits where evidence permits, document s
 
 **Done when:** input mappings and annotation procedures are reproducible, and an assessment report distinguishes stability, agreement, accuracy, and unresolved cases.
 
-## 3. Assess what the proxy measures
+## 3. Propagate AI choices through measurement
 
-Evaluate competing interpretations such as industry, opportunity, and disclosure practices. Examine target missingness, timing, sample selection, and first-stage uncertainty. Define independent criteria and fair comparisons with alternative narrative and behavioral measures.
+Refit the twelve completed topic selections under the same grouped folds; compare them with all topics and conventional feature selectors. Evaluate equal-weight prediction averaging and selection-frequency-informed Ridge penalties, including standard Ridge in the tuning grid. Tune only within training data, and retain unsuccessful configurations. These are proposed extensions in the final appendix, not completed findings.
+
+**Done when:** the alternative selections have linked prediction and dividend outputs, common comparison rules, and a report of sensitivity and any gains or losses.
+
+## 4. Assess what the proxy measures
+
+Evaluate competing interpretations such as industry, opportunity, and disclosure practices. Examine target missingness, timing, sample selection, and first-stage uncertainty. The final appendix Table A13 reports eight models adjusting for both a narrative proxy and actual R&D. Add their code, input definition, and reproducible outputs to the existing 25-model chain, then define independent criteria and fair performance comparisons with alternative measures.
 
 **Done when:** a prespecified assessment reports supporting evidence, counterevidence, uncertainty, and limits. Predictive fit and significant associations alone do not establish psychological meaning.
 
-## 4. Support another application
+## 5. Support another application
 
-The [application collection](../applications/README.md) now separates the completed CEO case from the shared framework, and a [planning template](../applications/_template/README.md) describes what a new case must specify. Next, separate the remaining application-specific adapter assumptions behind explicit interfaces and implement a second authorized study with its own construct definition, target, timing and assessment plan.
+The [application collection](../applications/README.md) now separates the completed CEO case from the shared framework, and a [planning template](../applications/_template/README.md) describes what a new case must specify. The proposal reports an additional political-ideology trial, whose results are not packaged in this repository. Next, separate the remaining application-specific adapter assumptions behind explicit interfaces and implement a second authorized study with its own construct definition, target, timing and assessment plan.
 
 **Done when:** the second study runs from its own inputs and documents what transferred, what changed, and what its results support.
 
