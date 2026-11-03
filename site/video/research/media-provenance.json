@@ -1,0 +1,76 @@
+{
+  "narration_wav_sha256": "95e113f245d2a02a900d9945dd08ad8f6bf75f758be717e8e36043eece37108c",
+  "timing_basis": "Line/scene timing from measured synthesized samples; word cue timing from approximate Kokoro phoneme durations.",
+  "picture_basis": "New original explanatory diagrams; no submitted page artwork.",
+  "scope": "Local preview; no publication or external distribution.",
+  "synthesis": {
+    "engine": "Kokoro 0.9.4",
+    "voice": "af_heart",
+    "model_revision": "f3ff3571791e39611d31c381e3a41a3af07b4987",
+    "sample_rate": 24000
+  },
+  "duration": 244.125,
+  "audio_processing": "FFmpeg loudnorm target -16 LUFS / -1.5 dBTP / 11 LU range; mono 48 kHz AAC 160 kbps. Final measurements are recorded in QA.",
+  "source_hashes": {
+    "build.py": "1ac03706c57dc5ab9447464d29db098e222416a0c09f3e3bf9d0a82fdf7d012a",
+    "script.json": "6380e66aa0d9ee62e7002e914390fef6b28e1c2454e47b49197a0cbde1d50d1c",
+    "assemble_audio.py": "e2bd19bd49998561ddd9082bd6c5d0869e735fbaa33a1e928c9773c18c091d82",
+    "plates.py": "86170466e46842e55c5af14593e5d6e03c35fb45e364e269f46516bf7b068bcd",
+    "synthesize.py": "3b31251595bafee44797554c165d44388464cf3d3f29de340c7853f9c0787f99",
+    "burn_subtitles.py": "bad72b77e4b13f1d5f4459923e57c92597b91fecd8c9d79af1aede9604633923",
+    "presentation.py": "f89e93f7f2da78c9e070389f5a99bc776c0126adf3a5132505cd676d54b0f872"
+  },
+  "files": {
+    "captions.en.srt": {
+      "bytes": 5875,
+      "sha256": "1a42facca75bf130e66f14cd555152fede703b49b191afa41297ef486dd5ba57"
+    },
+    "captions.en.vtt": {
+      "bytes": 5694,
+      "sha256": "64e11e2bc035c109a12329661e77692efb13ee362039543da4b3295470654321"
+    },
+    "chapters.vtt": {
+      "bytes": 399,
+      "sha256": "b3014397af42389fd5c8eb0c771584c1c5d1a460390f01b825db7716f06d5aed"
+    },
+    "player.html": {
+      "bytes": 18679,
+      "sha256": "5bdd5e62eefca332d4d1157a73fbc313af4993e90711f640fcbb1f44ec1c6237"
+    },
+    "poster-subtitled.jpg": {
+      "bytes": 107380,
+      "sha256": "8aab148ac3a3d8af97112a6cf6cf99471c9061981b68b3851230b1bb0243de11"
+    },
+    "poster.jpg": {
+      "bytes": 113041,
+      "sha256": "cf99e5579384323f90fc45a52516290d2772a3b1bfccbd8c571d2859c05122e7"
+    },
+    "timeline.json": {
+      "bytes": 6478,
+      "sha256": "baa9d606a8126b9de88b19818c9c8b5ec2e0225cb1e35aab7b4ff59fa6fea77c"
+    },
+    "transcript.html": {
+      "bytes": 16242,
+      "sha256": "42953a15bbed328f476fe3e206c293d00ab4af0649a8213cf82d4d7de2c20a1f"
+    },
+    "transcript.md": {
+      "bytes": 8120,
+      "sha256": "a631e24b92a06e19ce3edcf103af6c2b7d13935f1e7e030dc354f7920fc80aa9"
+    },
+    "visible-subtitles-provenance.json": {
+      "bytes": 961,
+      "sha256": "33d5329c6ae3a465427012f87d80b5bae288e0ac2854432166ee8a6ef410b7ec"
+    },
+    "workflow-preview.mp4": {
+      "bytes": 9875610,
+      "sha256": "6950bf61f9b3143cd0e1c30dfc37d5931d227485e6329ecaf06a7af372ef0300"
+    },
+    "workflow-subtitled.mp4": {
+      "bytes": 9589005,
+      "sha256": "c26aba03647d1821cf23b2bc184c4061b37310c7b72d1f2fc9a007c02aa5597e"
+    }
+  },
+  "baseline_author_wording_script_sha256": "98ff86da4af0f64e25c981e4cf0bf5b4432b3af9bdc9a35e5ad76bebf3b8dcad",
+  "primary_movie": "workflow-subtitled.mp4",
+  "clean_movie": "workflow-preview.mp4"
+}

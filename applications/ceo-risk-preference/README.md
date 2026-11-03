@@ -1,108 +1,16 @@
-# CEO risk preference: speech, R&D prediction, and dividends
+# CEO risk preference
 
-**An AI Microfoundation Proxy application from narrative representation to a behavioral proxy and downstream analysis.**
+This demonstration study examines the feasibility of the proposed [AI-empowered proxy framework](../../README.md). It focuses on CEOs’ risk preference, using CEO language in conference calls as the ground for narrative evidence and R&D intensity as the behavioral proxy.
 
-This is the first completed application of the broader [AI Microfoundation Proxy framework](../../README.md). It studies CEO speech, R&D prediction and dividend decisions using its own data, model choices and interpretation limits.
+The framework integrates behavioral and narrative cues for the same latent microfoundational feature to develop a synthesized proxy. The CEO case illustrates how that workflow connects topic judgments, behavioral prediction and an empirical assessment.
 
-The original results are preserved, and a [fresh-download connected reproduction](REPLICATION.md) has passed new prediction fits and all 25 downstream models. The offline agent demo is separate and uses invented inputs.
-
-| Explore this application | Start here |
+| Proposed step | CEO application |
 | --- | --- |
-| First-time reviewer route | [Fresh download, results and reproduction](../../docs/REVIEWER_GUIDE.md) |
-| Scientific methods and source packages | [study/](study/README.md) |
-| Selected aggregate findings | [summary/](summary/README.md) |
-| Complete reports, scores, workbooks and reader evidence | [RESULTS.md](RESULTS.md) |
-| Inputs, executable reproduction and new verification | [REPLICATION.md](REPLICATION.md) |
+| Characterizing the Corpus | A saved topic model provides a common representation of conference-call language. |
+| Topic decontextualization | Three LLM readers classify topic descriptors, then review common source passages within their own histories. Votes determine selection; reasons, disagreement and missing responses remain inspectable. |
+| Synthesize the narrative and behavioral proxies | Ridge and XGBoost use selected topic densities and overall sentiment to predict R&D intensity. Each score excludes its connected firm–CEO group from model fitting. The predicted behavior serves as the synthesized proxy. |
+| Validate the synthesized proxy | Dividend-payment models examine the proxy against a decision separate from its prediction target. Higher scores are associated with lower odds of dividend payment after the included controls. |
 
-Other applications belong beside this folder in [applications/](../README.md), with their own scientific specifications.
-## Research question
+This is preliminary evidence of feasibility. Firm circumstances can shape both language and investment, and the topic set was adopted after preliminary predictive comparisons. Prediction and dividend associations do not establish a psychological ground truth or causal effect. The submitted appendix reports additional narrative-benchmark comparisons; their separate computation is outside the current 25-model reproduction.
 
-Can CEO speech support a candidate proxy for risk-taking, and is that proxy associated with firms' dividend decisions?
-
-The study predicts **R&D divided by total assets** from earnings-call topic features and aggregate sentiment. It then tests whether higher predicted R&D intensity is associated with a lower likelihood of paying dividends, including after accounting for actual R&D and the specified compensation and firm controls.
-
-The resulting score is a text-predicted behavioral outcome. Its interpretation as psychological risk preference requires evidence beyond prediction and regression significance.
-
-## 1. Represent the narratives
-
-The supplied study starts with 1,775,355 CEO-tagged speech components and an existing 354-topic representation. Speech is matched to company-year financial records; the CEO with the most spoken words is retained for each firm-year. Topic densities and sentiment are aggregated using speech word counts, with different handling of zero-topic components.
-
-The resulting input panel contains **29,506 firm-years, 4,517 firms, and 6,933 CEOs**, covering 2013–2023. Screening determines which topic columns enter prediction. The original density matrix lacks embedded row identities and model/column fingerprints, so its historical ordering remains delivery-declared.
-
-[Topic workflow](../../docs/workflows/01-topics.md)
-
-## 2. Select relevant topics
-
-The completed pilot contains **12 trials and 36 readers**: two requested model families, three effort settings, and two repetitions per configuration. Every reader first evaluates all 354 topic descriptors independently. Initial attempts are sealed or explicitly recorded as missing before passages are released. The protocol then continues each reader's own history through source review without peer judgments. A two-of-three Stage B majority determines topic selection; initial labels remain a separate comparison.
-
-The [screening counts](summary/screening-counts.csv) preserve both stages and incomplete voting coverage. Initial descriptor readings selected **66–87 topics** per trial; source review selected **313–321**. The primary results retain one unresolved majority. This broadening shows sensitivity to the reading procedure; it is not an accuracy estimate.
-
-The delivered prediction analysis uses primary trial `b1-gpt-6-astra-P0-xhigh`, repetition 1: **321 selected, 33 excluded, and zero unresolved topics**. This identifies the input actually used. The pilot did not establish that this classifier was superior to the alternatives. Its twelve-trial scope was ratified after collection.
-
-[Screening workflow](../../docs/workflows/02-screen-topics.md)
-
-## 3. Predict the behavioral outcome
-
-Step 3 predicts R&D/assets using the **321 selected topic features plus one aggregate sentiment feature**. Topic features receive a centered log-ratio transformation and standardization. Ridge and XGBoost use firm–CEO connected-component grouped five-fold cross-fitting: each firm's score comes from a model trained without that firm or other firms connected to it through shared CEOs.
-
-Scores are provided for all 29,506 firm-years. The target is available for 29,191. Missing R&D is set to zero when assets are positive; **42.7% of available targets arise from this zero-fill rule**. The remaining 315 observations lack a target because assets are missing or nonpositive.
-
-| Delivered cross-fitted performance | Ridge | XGBoost |
-| --- | ---: | ---: |
-| R² | **0.5351** | **0.6128** |
-| Mean squared error | 0.006006 | 0.005001 |
-| Correlation with target | 0.7315 | 0.7829 |
-| Selected tuning value | α = 1,000 | Max depth = 6 |
-
-The [machine-readable metrics](summary/prediction-metrics.json) include per-fold settings and counts. Evaluation uses target-available rows and the delivered full-model winsorization convention. Full-sample fitted scores also exist, but downstream analysis uses out-of-fold scores. The prediction features contain no industry, size, or year controls. This method differs from the earlier proposed scalar narrative measure N followed by `f(N, controls)`.
-
-[Proxy workflow](../../docs/workflows/03-build-proxy.md)
-
-## 4. Assess the proxy in dividend decisions
-
-Strict company/person/time matching yields **2,967 inputs across 600 firms** from an eligible pool of 7,086 firm-years. Ordinary score models use 2,927 observations across 591 firms after excluding industry groups that perfectly predict dividend status. The positive-relative-leverage specification uses 1,653 observations across 340 firms.
-
-The dependent variable is dividend payment. Pooled Logit models include separate industry and year effects and company-clustered standard errors. Ridge and XGBoost enter separate models, using:
-
-```text
-Score = 100 × max(out-of-fold predicted R&D/assets, 0)
-```
-
-A prediction of 0.05 therefore enters as 5 percentage points. Four specifications for each algorithm, with and without actual R&D controls, produce **16 score models**. All 16 delivered score coefficients are negative with company-clustered p < .01.
-
-One representative specification, column (8), gives:
-
-| Score | Without actual R&D: coefficient (SE) | With actual R&D: coefficient (SE) |
-| --- | ---: | ---: |
-| XGBoost | −0.1915 (0.0322) | −0.1423 (0.0347) |
-| Ridge | −0.1836 (0.0218) | −0.1478 (0.0241) |
-
-These are conditional log-odds coefficients. The controlled XGBoost coefficient implies an odds ratio of approximately 0.867 for a one-percentage-point increase in the score, holding included variables fixed. It does not represent a 13-percentage-point change in dividend probability or a causal effect.
-
-Read [all 16 result tables and estimation notes](summary/dividend-results.md). They are the score-model subset of a larger 25-specification delivered study.
-
-[Assessment workflow](../../docs/workflows/04-assess-proxy.md)
-
-## What remains open
-
-The study connects a recorded topic-selection procedure, grouped text-based prediction, and a completed dividend analysis. Several questions remain:
-
-- **Meaning:** R&D prediction can reflect industry, opportunities, and disclosure practices as well as risk preference. Independent construct validation and a separate N/B/S comparison remain open.
-- **Inputs and timing:** Historical density alignment is delivery-declared; missing R&D is often zero-filled; speech and the target overlap in time. The topic model also used held-out firms' text during unsupervised fitting.
-- **Screening:** No human-reference accuracy study or superior classifier was established.
-- **Inference:** Matching selects a subset. Clustered standard errors condition on the frozen first-stage score and do not propagate retraining uncertainty. Related specifications are not independent replications.
-
-The [roadmap](../../docs/ROADMAP.md) develops these questions into next steps.
-
-## Try the connected workflow
-
-From the repository root, with Python 3.11 or newer:
-
-```sh
-python3 -m agent_system.empirical.demo --out .local/example-fixture
-python3 -m agent_system.empirical.demo --out .local/example-fixture --resume
-```
-
-Inspect `summary.json`, `workflow/state.json`, and `workflow/events.jsonl` inside that output directory. The fixture uses three invented topics and two invented rows to exercise coordinator dispatch, stage handoffs, persistence, and resume. It makes no live model calls and performs no empirical training or Stata estimation.
-
-The summary files provide a quick reading view. Use [REPLICATION.md](REPLICATION.md) for the complete inputs, pinned environment and empirical execution commands; use the shared [workflow guide](../../docs/WORKFLOW.md) for coordination and handoffs.
+Read the [results and interpretation](RESULTS.md), [evidence scope](EVIDENCE_SCOPE.md), or [replication routes](REPLICATION.md) for supporting detail. The [workflow guide](../../docs/WORKFLOW.md) explains the shared design; the [application guide](../../docs/NEW_APPLICATION.md) identifies the scientific choices and adapters another study would require.
