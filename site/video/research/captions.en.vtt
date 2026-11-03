@@ -1,0 +1,253 @@
+WEBVTT
+
+00:00:00.759 --> 00:00:04.454
+Organizational microfoundations—the
+cognitions, beliefs,
+
+00:00:04.454 --> 00:00:08.550
+and traits of individual members—can
+steer firms' strategic decisions,
+
+00:00:08.550 --> 00:00:10.465
+operations, and performance.
+
+00:00:11.031 --> 00:00:14.007
+These latent cognitive
+and psychological properties
+
+00:00:14.007 --> 00:00:16.685
+are generally hard
+to observe and quantify.
+
+00:00:17.226 --> 00:00:20.534
+Behavioral proxies face
+the problem of attribution;
+
+00:00:20.534 --> 00:00:23.685
+narrative proxies face
+the problem of authenticity.
+
+00:00:24.228 --> 00:00:26.413
+Both face potential measurement errors.
+
+00:00:27.003 --> 00:00:31.062
+In this study, we strive to integrate
+the behavioral and narrative cues
+
+00:00:31.062 --> 00:00:36.025
+for the same latent microfoundational
+feature to develop a synthesized proxy.
+
+00:00:37.260 --> 00:00:39.633
+Step one: Characterizing the Corpus.
+
+00:00:40.175 --> 00:00:42.630
+We use unsupervised topic discovery
+
+00:00:42.630 --> 00:00:46.722
+to establish the thematic structure
+emerging from corporate linguistics.
+
+00:00:47.264 --> 00:00:49.804
+Step two: Topic decontextualization.
+
+00:00:50.346 --> 00:00:54.189
+The task here is one of selection
+and interpretation—establishing
+
+00:00:54.189 --> 00:00:57.452
+which topics constitute evidence
+about the focal feature.
+
+00:00:58.017 --> 00:01:01.113
+AI agents first classify
+topic descriptors,
+
+00:01:01.113 --> 00:01:04.452
+then review common source passages
+within their own histories.
+
+00:01:05.019 --> 00:01:08.057
+An unweighted two-of-three
+majority determines selection.
+
+00:01:08.623 --> 00:01:13.028
+Agreement measures repeatability,
+not independently validated accuracy.
+
+00:01:13.593 --> 00:01:17.188
+Step three: Synthesize the narrative
+and behavioral proxies.
+
+00:01:17.778 --> 00:01:21.926
+Narrative features are used to predict
+an established behavioral proxy.
+
+00:01:22.467 --> 00:01:25.456
+The behavioral outcome,
+reconstructed from the narrative
+
+00:01:25.456 --> 00:01:28.610
+evidence for observations
+excluded from model fitting,
+
+00:01:28.610 --> 00:01:30.972
+serves as the synthesized proxy.
+
+00:01:31.513 --> 00:01:35.843
+This is the predicted common variation
+that the framework seeks to examine.
+
+00:01:36.409 --> 00:01:39.134
+Step four: Validate
+the synthesized proxy.
+
+00:01:39.676 --> 00:01:41.865
+We assess consistency with alternative
+
+00:01:41.865 --> 00:01:45.514
+measurements and whether the
+synthesized proxy affords extra
+
+00:01:45.514 --> 00:01:49.854
+explanatory power beyond the narrative
+and behavioral proxies together.
+
+00:01:50.419 --> 00:01:52.421
+Evidence of this kind licenses
+
+00:01:52.421 --> 00:01:56.622
+a falsifiable proposition rather
+than a claim of superiority.
+
+00:01:57.860 --> 00:02:01.931
+To accomplish this task, we
+integrate three core AI techniques:
+
+00:02:01.931 --> 00:02:06.246
+unsupervised machine learning, AI
+agents, and supervised machine learning.
+
+00:02:06.787 --> 00:02:11.460
+The aim is a scalable and inspectable
+toolkit for organizational research,
+
+00:02:11.460 --> 00:02:14.545
+allowing AI judgments
+to function as explicit,
+
+00:02:14.545 --> 00:02:17.367
+versioned, and falsifiable
+measurement inputs.
+
+00:02:17.909 --> 00:02:21.181
+The prototype retains judgments
+and outputs for inspection.
+
+00:02:21.700 --> 00:02:23.988
+Comparing alternative topic selections
+
+00:02:23.988 --> 00:02:27.205
+through the full analysis
+remains a development task.
+
+00:02:28.485 --> 00:02:31.226
+We have conducted
+a demonstration study to examine
+
+00:02:31.226 --> 00:02:35.881
+the feasibility of this workflow,
+focusing on CEOs' risk preference.
+
+00:02:36.422 --> 00:02:41.332
+We use CEOs' linguistics in conference
+calls to develop narrative features,
+
+00:02:41.332 --> 00:02:44.087
+then fit selected topic
+densities and overall
+
+00:02:44.087 --> 00:02:48.464
+sentiment to research and development
+intensity, a behavioral proxy.
+
+00:02:49.005 --> 00:02:50.516
+The fitted value is used
+
+00:02:50.516 --> 00:02:54.538
+as the synthesized proxy in an
+assessment of dividend decisions.
+
+00:02:55.105 --> 00:02:58.757
+Higher scores are associated
+with lower odds of paying dividends.
+
+00:02:59.300 --> 00:03:01.736
+The interpretation as underlying CEO
+
+00:03:01.736 --> 00:03:04.984
+risk preference still
+needs independent evidence.
+
+00:03:06.236 --> 00:03:10.711
+The repository provides a connected
+prototype and an offline demonstration.
+
+00:03:11.253 --> 00:03:12.763
+The empirical review route
+
+00:03:12.763 --> 00:03:16.547
+starts from saved text
+representations and reader judgments.
+
+00:03:17.137 --> 00:03:20.832
+Some reported comparisons remain
+outside that reproduction.
+
+00:03:21.399 --> 00:03:24.710
+Fresh screening through the newer
+API route is not yet ready
+
+00:03:24.710 --> 00:03:26.113
+to run from the release.
+
+00:03:26.678 --> 00:03:30.527
+A new application needs its own
+behavioral and narrative cues,
+
+00:03:30.527 --> 00:03:34.031
+validation evidence,
+and compatible numerical tools.
+
+00:03:34.573 --> 00:03:37.210
+The current adapters
+target the CEO case.
+
+00:03:38.444 --> 00:03:41.118
+The key assumption is
+that this common variation
+
+00:03:41.118 --> 00:03:45.450
+is primarily caused by latent
+microfoundations as the shared driver.
+
+00:03:45.992 --> 00:03:48.793
+We plan to examine
+common-factor variation,
+
+00:03:48.793 --> 00:03:51.909
+judgment stability,
+and independent human reference.
+
+00:03:52.427 --> 00:03:55.229
+If the framework works, it
+offers a design template
+
+00:03:55.229 --> 00:03:59.584
+that confronts a central empirical
+challenge: inherent measurement error,
+
+00:03:59.584 --> 00:04:03.101
+helping enhance consistency
+between theory and empirics.
+

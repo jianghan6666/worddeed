@@ -1,0 +1,48 @@
+# Using and checking the workflow
+
+Start at `reproduce.html`, after `index.html#workflow`. WordDeed connects narrative evidence, AI relevance judgments and behavioral prediction so researchers can inspect how a measure was constructed. The practical question is whether another scholar can follow those connections, test the software and adapt the method to a defensible research question. The CEO case is one demonstration.
+
+**S1** denotes the submitted proposal, **S2** the final appendix, **S3** an authorized source snapshot and manifest, and **S4** the [venue call](https://orgsci.org/). S1–S3 are not bundled or uploaded. Use originals only when supplied separately through authorized editorial access; do not seek public copies. No anonymous source destination is assumed. The route reflects a 2 November 2026 review; obtain exact identities from the supplied manifest and distinguish draft revisions, previews and deployed pages.
+
+S4 welcomes partial workflows, reusable infrastructure and new measurement. Assess this prototype from what each part actually does and what remains to develop.
+
+## A short route for an editor
+
+Read S3 `docs/WORKFLOW.md` for the sequence and `docs/NEW_APPLICATION.md` for reuse. Follow one chain: representation → relevance decisions with reasons → features predicting behavior → assessment in a separate outcome. The CEO example uses speech, R&D and dividend payment. Detailed estimates belong in supporting results material.
+
+The workflow preserves semantic judgments alongside numerical outputs. Researchers choose the construct, relevance rule, anchor and interpretation. Current numerical adapters implement the CEO specification; another study needs compatible computation and its own validity tests. Relevance and prediction do not establish a latent trait by themselves. No installation is needed for this orientation.
+
+## Choose the evidence you need
+
+| Question | Useful route | Evidence and boundary |
+|---|---|---|
+| How do the stages connect? | Read the workflow; optionally try the small offline demo. | Coordinator, handoffs and resume execute with fabricated scientific outputs; no AI account or empirical inputs needed. |
+| Are packaged files consistent? | Standard-library integrity checks. | Passed in review; identities and saved-output consistency, not fresh estimation. |
+| Can I recalculate recorded AI votes? | Saved-reader replay. | Passed in review: analysis recomputed from saved judgments, primary/recovered records separate; no new inference. |
+| Can I rerun the numerical case? | Windows fitting and Stata route. | Prior recorded success from saved representation/judgments; substantial prerequisites, not a fresh run performed by this guide's reader. |
+| Can I collect new AI judgments from this release? | New API screening. | Blocked: required-input preflight fails on 21 missing files, before any provider call. |
+| Can I use another construct? | Specify a new study and adapt inputs/computation. | Orchestration provides a starting point; scientific choices and compatible adapters are required. |
+
+A demo shows software behavior. Saved-reader replay checks aggregation of past judgments. Fresh numerical fitting recomputes estimates from fixed upstream evidence. None alone establishes measurement or causal validity.
+
+## Try the small demonstration only if useful
+
+With an isolated authorized source copy and Python 3.11+, consult the supplied instructions for the offline `agent_system.empirical.demo` and its explicit resume operation. Choose a new output directory. Inspect its `summary.json`, `workflow/state.json` and `workflow/events.jsonl` to follow stage handoffs.
+
+The summary should explicitly report `scientific_completion: false`, `live_model_calls: false`, `training_executed: false` and `estimation_executed: false`. This is an introduction to orchestration, not reproduction of the CEO estimates. The initial reading prompt does not authorize execution. If a later check is requested, inspect commands and write destinations first, preserve logs and report the exact environment, commands and exits.
+
+## What adoption requires
+
+Define the construct, narrative source, behavioral anchor, observation unit, period and separate assessment. Check data rights, identifiers, timing, missingness and competing explanations. Use S3 `docs/NEW_APPLICATION.md` to identify decisions and interfaces to supply; CEO financial variables are not universal workflow defaults.
+
+Fresh screening needs a packaging repair. The reviewed release lacks `packets/prompts/P0.md`, `packets/initial_addendum.md`, `packets/source_evidence.private.jsonl` and eighteen canonical `packets/stageB/` source-page files required by the new adapter. All 21 are absent from the release inventory, so restoring the same archive again is insufficient. A complete authorized tree must pass the actual no-call preflight before execution. Model availability, supported settings, costs and permission to transmit passages are separate requirements. Saved-judgment replay succeeds because it uses a different input route.
+
+New AI outputs should be retained as a new condition with prompts, requested/observed settings, input identities, histories, reasons and missing responses. Historical requested model labels do not establish immutable backend versions. Agreement is not an accuracy benchmark. Topic training and sentiment regeneration remain separate from numerical replay.
+
+## Optional technical depth
+
+S3 `applications/ceo-risk-preference/REPLICATION.md` provides the maintained execution route; `applications/ceo-risk-preference/replication/verification/CONNECTED_REPRODUCTION.json` records the prior numerical scope. The accepted route uses Windows x64/Python 3.11.7, directly pinned packages and compatible Stata; it is not a fully locked transitive environment. Do not silently substitute a platform/backend or widen tolerances. Preparing downstream inputs is not estimating them.
+
+The recorded numerical chain covers the original 25-model package. S2 reports eight additional narrative-controlled models in A13, outside that replay. Full upstream regeneration, A13, new screening and adaptation to a second construct each need separate evidence. Public availability does not establish rights to redistribute licensed input data.
+
+For any check record the source version, environment, commands/exits, inputs reused, outputs newly computed and failed checks. Label submitted claims, available implementation/recorded output, work actually checked and proposed or blocked work separately. If only reading, say so. A historical success receipt is not a current rerun, and this guide performs no computation.

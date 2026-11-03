@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Match Words with Deeds — accessible transcript</title><style>
+:root { color-scheme: light; --paper:#fcf9f1; --ink:#132d33; --deep:#0d292d;
+  --teal:#126560; --mint:#8ad9bb; --line:#c1cfc6; --muted:#435f60; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--paper); color:var(--ink);
+  font:18px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; }
+a { color:var(--teal); text-decoration-thickness:.08em; text-underline-offset:.2em; }
+a:hover { text-decoration-thickness:.15em; }
+a:focus-visible,button:focus-visible,summary:focus-visible,video:focus-visible {
+  outline:3px solid var(--teal); outline-offset:5px; }
+.skip { position:absolute; left:1rem; top:-6rem; padding:.6rem 1rem;
+  z-index:5; background:white; }
+.skip:focus { top:1rem; }
+main { max-width:1160px; margin:0 auto; padding:28px 38px 64px; }
+.topbar { display:flex; flex-wrap:wrap; gap:12px 24px; align-items:center;
+  justify-content:space-between; padding-bottom:20px; border-bottom:1px solid var(--line); }
+.brand { letter-spacing:.15em; text-transform:uppercase; font-size:.78rem; font-weight:700; }
+.preview { font-size:.76rem; color:var(--muted); border:1px solid var(--line);
+  border-radius:100px; padding:3px 12px; }
+header { padding:38px 0 24px; }
+.eyebrow { color:var(--teal); text-transform:uppercase; letter-spacing:.14em;
+  font-size:.72rem; font-weight:700; margin:0 0 10px; }
+h1,h2,h3 { font-family:Georgia,"Times New Roman",serif; font-weight:400;
+  line-height:1.14; text-wrap:balance; }
+h1 { margin:0 0 14px; font-size:clamp(2.35rem,5.5vw,4rem); max-width:20ch; }
+h2 { font-size:2rem; margin:34px 0 16px; }
+h3 { font-size:1.55rem; margin:0 0 14px; }
+.deck { margin:0 0 15px; max-width:58ch; font-size:1.15rem; line-height:1.5; }
+.meta { color:var(--muted); font-size:.82rem; margin:8px 0; }
+.screen { background:var(--deep); border-radius:8px; overflow:hidden; }
+video { display:block; width:100%; height:auto; aspect-ratio:40/27; background:var(--deep); }
+.tools { display:flex; flex-wrap:wrap; gap:8px 24px; margin:14px 0 6px; font-size:.88rem; }
+.hint { color:var(--muted); font-size:.82rem; margin:7px 0 0; }
+.chapter-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:9px; list-style:none; margin:0; padding:0; }
+.chapter-list li { min-width:0; }
+.chapter-list button,.chapter-list a { width:100%; display:flex; gap:18px;
+  align-items:flex-start; text-align:left; border:1px solid var(--line); border-radius:5px;
+  background:transparent; padding:14px 16px; color:var(--ink); font:inherit;
+  font-size:.92rem; line-height:1.45; text-decoration:none; cursor:pointer; }
+.chapter-list time { color:var(--teal); font: .78rem/1.7 ui-monospace,Menlo,monospace;
+  white-space:nowrap; }
+.chapter-list button:hover,.chapter-list a:hover { background:#e9f1e9; }
+.chapter-list button[aria-current="true"] { border-color:var(--teal); background:#dfede5; }
+.reader { max-width:77ch; }
+.scene { scroll-margin-top:24px; margin:36px 0; padding-top:24px; border-top:1px solid var(--line); }
+.time { display:block; color:var(--teal); font:.8rem/1.6 ui-monospace,Menlo,monospace;
+  margin-bottom:8px; }
+.narration { margin:0 0 16px; }
+.visual { border-left:3px solid var(--line); padding:0 0 0 18px; color:var(--muted);
+  font-size:.9rem; margin:18px 0 0; }
+.visual strong { display:block; margin-bottom:4px; color:var(--ink); font-size:.85rem; }
+.scope { background:#eaf0e8; border-radius:8px; padding:24px 28px; margin:38px 0; }
+.scope h2 { margin:0 0 16px; }
+.scope p { font-size:.9rem; margin:0 0 14px; }
+.scope p:last-child { margin-bottom:0; }
+details { border-top:1px solid var(--line); border-bottom:1px solid var(--line); margin:30px 0; }
+summary { padding:20px 0; cursor:pointer; color:var(--teal); font-weight:600; }
+details .scene:first-child { margin-top:0; }
+.routes { display:flex; flex-wrap:wrap; gap:12px 26px; font-size:.9rem; }
+footer { margin-top:34px; padding-top:20px; border-top:1px solid var(--line); }
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+@media (max-width:650px) {
+  body { font-size:17px; }
+  main { padding:20px 18px 42px; }
+  header { padding:28px 0 20px; }
+  h1 { font-size:2.5rem; }
+  h2 { font-size:1.75rem; }
+  .chapter-list { grid-template-columns:1fr; }
+  .chapter-list button,.chapter-list a { min-height:48px; padding:13px; gap:14px; }
+  .scope { padding:21px 19px; }
+  .tools { gap:7px 18px; }
+  .screen { margin-inline:-6px; border-radius:4px; }
+  .topbar { gap:10px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+@media print {
+  body { color:black; background:white; font-size:11pt; }
+  main { max-width:none; padding:0; }
+  .topbar,.tools,.routes,video,.skip,.preview { display:none; }
+  .scene { break-inside:avoid; }
+  details { border:0; } details>* { display:block; }
+  .scope { background:white; border:1px solid #999; }
+}
+</style></head>
+<body><a class="skip" href="#content">Skip to content</a><main id="content">
+<div class="topbar"><a class="brand" href="../../index.html">WordDeed</a><span class="preview">Local preview · not published</span></div><header><p class="eyebrow">AI-empowered proxy framework</p>
+<h1>Match Words with Deeds</h1><p class="deck">An AI-empowered proxy framework for organizational microfoundations</p>
+<p class="meta">4 min 04 sec · English narration synthesized with Kokoro 0.9.4 (voice af_heart).</p></header>
+<div class="tools"><a href="player.html">Watch the subtitled film</a><a href="transcript.md" download>Markdown transcript</a><a href="workflow-preview.mp4">Clean film</a><a href="captions.en.vtt" download>Separate English captions</a></div>
+<p class="hint">Subtitles are included in the picture of the main film.</p>
+<p class="hint">The narration below is verbatim. “On screen” paragraphs describe the explanatory graphics; they are not additional spoken claims.</p>
+<nav aria-label="Transcript chapters"><h2>In this film</h2><ol class="chapter-list"><li><a href="#chapter-1-problem"><time>00:00</time><span>Organizational microfoundations</span></a></li>
+<li><a href="#chapter-2-workflow"><time>00:36</time><span>The four-step workflow</span></a></li>
+<li><a href="#chapter-3-ai"><time>01:57</time><span>AI judgments as measurement inputs</span></a></li>
+<li><a href="#chapter-4-ceo"><time>02:28</time><span>One illustration: CEO risk preference</span></a></li>
+<li><a href="#chapter-5-reuse"><time>03:05</time><span>Inspecting and reusing the workflow</span></a></li>
+<li><a href="#chapter-6-development"><time>03:37</time><span>Key risks, future work, and implications</span></a></li></ol></nav>
+<div class="reader"><section class="scene" id="chapter-1-problem" aria-labelledby="heading-0">
+  <span class="time">00:00–00:36</span>
+  <h3 id="heading-0">Organizational microfoundations</h3>
+  <p class="narration">Organizational microfoundations—the cognitions, beliefs, and traits of individual members—can steer firms&#x27; strategic decisions, operations, and performance. These latent cognitive and psychological properties are generally hard to observe and quantify. Behavioral proxies face the problem of attribution; narrative proxies face the problem of authenticity. Both face potential measurement errors. In this study, we strive to integrate the behavioral and narrative cues for the same latent microfoundational feature to develop a synthesized proxy.</p>
+  <p class="visual"><strong>On screen</strong>Beliefs and priorities are posed as unobserved constructs. Narrative and behavioral branches carry separate contextual influences before approaching a candidate measure. No removal of those influences is asserted.</p>
+</section>
+<section class="scene" id="chapter-2-workflow" aria-labelledby="heading-1">
+  <span class="time">00:36–01:57</span>
+  <h3 id="heading-1">The four-step workflow</h3>
+  <p class="narration">Step one: Characterizing the Corpus. We use unsupervised topic discovery to establish the thematic structure emerging from corporate linguistics. Step two: Topic decontextualization. The task here is one of selection and interpretation—establishing which topics constitute evidence about the focal feature. AI agents first classify topic descriptors, then review common source passages within their own histories. An unweighted two-of-three majority determines selection. Agreement measures repeatability, not independently validated accuracy. Step three: Synthesize the narrative and behavioral proxies. Narrative features are used to predict an established behavioral proxy. The behavioral outcome, reconstructed from the narrative evidence for observations excluded from model fitting, serves as the synthesized proxy. This is the predicted common variation that the framework seeks to examine. Step four: Validate the synthesized proxy. We assess consistency with alternative measurements and whether the synthesized proxy affords extra explanatory power beyond the narrative and behavioral proxies together. Evidence of this kind licenses a falsifiable proposition rather than a claim of superiority.</p>
+  <p class="visual"><strong>On screen</strong>One four-step diagram is developed through topic discovery, relevance judgments, supervised prediction and empirical assessment. The researcher chooses the construct, behavioral indicator and evaluation. Reasons and disagreement remain visible; predictions are made for observations excluded from model fitting.</p>
+</section>
+<section class="scene" id="chapter-3-ai" aria-labelledby="heading-2">
+  <span class="time">01:57–02:28</span>
+  <h3 id="heading-2">AI judgments as measurement inputs</h3>
+  <p class="narration">To accomplish this task, we integrate three core AI techniques: unsupervised machine learning, AI agents, and supervised machine learning. The aim is a scalable and inspectable toolkit for organizational research, allowing AI judgments to function as explicit, versioned, and falsifiable measurement inputs. The prototype retains judgments and outputs for inspection. Comparing alternative topic selections through the full analysis remains a development task.</p>
+  <p class="visual"><strong>On screen</strong>The different roles of topic discovery, language models and numerical models are shown. A conceptual record connects source material, a relevance judgment and disagreement to the measure. Alternative selections are marked as a planned comparison, not a completed finding.</p>
+</section>
+<section class="scene" id="chapter-4-ceo" aria-labelledby="heading-3">
+  <span class="time">02:28–03:05</span>
+  <h3 id="heading-3">One illustration: CEO risk preference</h3>
+  <p class="narration">We have conducted a demonstration study to examine the feasibility of this workflow, focusing on CEOs&#x27; risk preference. We use CEOs&#x27; linguistics in conference calls to develop narrative features, then fit selected topic densities and overall sentiment to research and development intensity, a behavioral proxy. The fitted value is used as the synthesized proxy in an assessment of dividend decisions. Higher scores are associated with lower odds of paying dividends. The interpretation as underlying CEO risk preference still needs independent evidence.</p>
+  <p class="visual"><strong>On screen</strong>The same workflow is instantiated with earnings-call themes, risk-relevance judgments, features including overall sentiment, predicted research spending relative to assets and dividend assessment. A qualitative negative association is accompanied by the limit that the underlying trait interpretation still needs independent evidence.</p>
+</section>
+<section class="scene" id="chapter-5-reuse" aria-labelledby="heading-4">
+  <span class="time">03:05–03:37</span>
+  <h3 id="heading-4">Inspecting and reusing the workflow</h3>
+  <p class="narration">The repository provides a connected prototype and an offline demonstration. The empirical review route starts from saved text representations and reader judgments. Some reported comparisons remain outside that reproduction. Fresh screening through the newer API route is not yet ready to run from the release. A new application needs its own behavioral and narrative cues, validation evidence, and compatible numerical tools. The current adapters target the CEO case.</p>
+  <p class="visual"><strong>On screen</strong>Three routes invite the viewer to understand the workflow, try an offline example and inspect evidence. Saved-record replay is separated from fresh screening, whose release inputs are incomplete. New applications require their own scientific specification and compatible tools.</p>
+</section>
+<section class="scene" id="chapter-6-development" aria-labelledby="heading-5">
+  <span class="time">03:37–04:04</span>
+  <h3 id="heading-5">Key risks, future work, and implications</h3>
+  <p class="narration">The key assumption is that this common variation is primarily caused by latent microfoundations as the shared driver. We plan to examine common-factor variation, judgment stability, and independent human reference. If the framework works, it offers a design template that confronts a central empirical challenge: inherent measurement error, helping enhance consistency between theory and empirics.</p>
+  <p class="visual"><strong>On screen</strong>The common variation must reflect the latent microfoundations as a shared driver. Open tests concern common-factor variation, judgment stability and independent human reference. The framework is presented conditionally as a design template addressing measurement error and consistency between theory and empirics.</p>
+</section><section class="scope" aria-labelledby="scope-title"><h2 id="scope-title">Evidence and scope</h2><p><strong>Design and implementation.</strong> The general workflow allows application-specific features and controls. The CEO model uses selected topic densities and one overall annual sentiment feature, without firm controls or fixed effects. The narrative-only comparison measure is separate from these model inputs.</p>
+<p><strong>Selection and interpretation.</strong> The adopted topic selection followed inspection of preliminary predictive performance. Reader agreement measures repeatability, not independently verified accuracy. Grouped fitting limits overlap within model fitting; it does not make the full representation and selection process independent. Shared circumstances may still explain the apparent signal.</p>
+<p><strong>Evidence beyond the film.</strong> Additional narrative-controlled comparisons and component correlations have been reported beyond the packaged reproduction. Some narrative–synthesized correlations are weak. The evidence does not establish uniformly strong convergence, causal effects or an independently validated CEO trait.</p>
+<p><strong>What can be replayed.</strong> The empirical route starts from saved text representations and reader judgments. It does not regenerate topic discovery, sentiment or historical AI readings. Fresh screening through the newer API route lacks required release inputs. The offline demonstration checks software handoffs; it is distinct from empirical reproduction.</p>
+<p><strong>Adapting the workflow.</strong> A new application requires its own construct definition, appropriate narratives and behavioral indicator, evaluation evidence and compatible numerical tools. The current adapters implement the CEO case.</p><p>For the case and inspection routes, see the <a href="../../ceo-case.html">CEO illustration</a> and <a href="../../reproduce.html">reproduction guide</a>.</p></section></div>
+<footer><nav class="routes" aria-label="Continue exploring">
+<a href="../../index.html">Explore the workflow</a>
+<a href="../../ceo-case.html">CEO illustration</a>
+<a href="../../reproduce.html">Inspect and reproduce</a>
+<a href="../../review-ai/">AI reading aid</a>
+</nav><p class="meta">Local preview. Chapter timings follow the measured narration in this edition.</p></footer>
+</main></body></html>
